@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-08-21",
+  "notes": "Read-only local review clones. The upstream/ directory is gitignored; this file records the reviewed revisions without vendoring third-party code.",
+  "sources": [
+    {
+      "name": "30x-image",
+      "url": "https://github.com/norahe0304-art/30x-image.git",
+      "commit": "e8a101f7ad45c169ac534c363f82472e81ba12ac",
+      "scope": "skills/30x-image"
+    },
+    {
+      "name": "am-will-codex-skills",
+      "url": "https://github.com/am-will/codex-skills.git",
+      "commit": "9f954c3b63fda0d1875252009c196bf15072c1ca",
+      "scope": "skills/img-to-frontend"
+    },
+    {
+      "name": "agentara-skills",
+      "url": "https://github.com/agentara/skills.git",
+      "commit": "dcb37f647711a2765d4bb92c86096a91587d11fc",
+      "scope": "skills/aigc/video-poster-design, skills/aigc/video-storyboard"
+    },
+    {
+      "name": "baoyu-skills",
+      "url": "https://github.com/JimLiu/baoyu-skills.git",
+      "commit": "6b7a2e417500561a5ecdd0b168332f4142584617",
+      "scope": "five visual skills and their screenshot references"
+    },
+    {
+      "name": "codex-illustrator",
+      "url": "https://github.com/99Gaoxiaoqi/codex-illustrator.git",
+      "commit": "63c36e256e919ca7102192d7e412a446567dca8b"
+    },
+    {
+      "name": "codex-paper-figure-skill",
+      "url": "https://github.com/pengqianhan/codex-paper-figure-skill.git",
+      "commit": "797bf80a29974aad1edc50254a26e8212a58d026"
+    },
+    {
+      "name": "dreamcore-collage-poster",
+      "url": "https://github.com/AndrwewHan/dreamcore-collage-poster.git",
+      "commit": "509a2d8392f995a45716d57bdcb60a57c2973dca"
+    },
+    {
+      "name": "gathered-scenes-zine-skill",
+      "url": "https://github.com/Zeejay0/gathered-scenes-zine-skill.git",
+      "commit": "eae9a62e20cb570c0adabc94cb189b1c91b7be99"
+    },
+    {
+      "name": "gc-minimal-zine-poster",
+      "url": "https://github.com/LiamGvchi/gc-minimal-zine-poster.git",
+      "commit": "ddb0d66b24a94f9c4fdd1f02835a836a2db3774e"
+    },
+    {
+      "name": "hiapi-icon-skills",
+      "url": "https://github.com/HiAPIAI/hiapi-icon-skills.git",
+      "commit": "f9988a13d10534b815bceb2d4b72e64f1545cfb2"
+    },
+    {
+      "name": "ian-handdrawn-ppt",
+      "url": "https://github.com/helloianneo/ian-handdrawn-ppt.git",
+      "commit": "b2cc5f303337e5470fd6ac2870d261a43b218439"
+    },
+    {
+      "name": "ian-xiaohei-illustrations",
+      "url": "https://github.com/helloianneo/ian-xiaohei-illustrations.git",
+      "commit": "91b560849e8f883922cc2fa8a358a668caa94105"
+    },
+    {
+      "name": "ian-xiaohei-scenes",
+      "url": "https://github.com/helloianneo/ian-xiaohei-scenes.git",
+      "commit": "3555bcb9ecaba284aec77ee492fdfd21c52faae3"
+    },
+    {
+      "name": "illustrations-codex-skill",
+      "url": "https://github.com/tonykipkemboi/illustrations-codex-skill.git",
+      "commit": "a08e9eb560f88867a5924582774c7f9ae9a91c0e",
+      "scope": "reviewed derivative of ian-xiaohei-illustrations"
+    },
+    {
+      "name": "ip-as-logo-skill",
+      "url": "https://github.com/s1dashu/ip-as-logo-skill.git",
+      "commit": "b1bf517c54a407452cfaca98a54668cd052f8e63"
+    },
+    {
+      "name": "identity-skill",
+      "url": "https://github.com/Sac-Y/identity-skill.git",
+      "commit": "d46f44264f8747432c1dcbf5a5ed5b051abc6832"
+    },
+    {
+      "name": "minecraft-agent-skills",
+      "url": "https://github.com/Jahrome907/minecraft-agent-skills.git",
+      "commit": "17a0812d1c21b88ce14f5fe1ab42fcfe38f5c92a",
+      "scope": ".codex/skills/minecraft-imagegen"
+    },
+    {
+      "name": "openai-plugins",
+      "url": "https://github.com/openai/plugins.git",
+      "commit": "11c74d6ba24d3a6d48f54a194cd00ef3beea18f9",
+      "scope": "plugins/game-studio/skills/sprite-pipeline"
+    },
+    {
+      "name": "philipbankier-codex-image-skill",
+      "url": "https://github.com/philipbankier/codex-image-skill.git",
+      "commit": "1640af4feacceee6e3683ab112153c843fbfdb8e"
+    },
+    {
+      "name": "photo-abstract-editorial",
+      "url": "https://github.com/ZzzLc0405/photo-abstract-editorial.git",
+      "commit": "49e55073d6d0330274d31f75d27f5dd6eb35fd6d"
+    },
+    {
+      "name": "photo-to-monthly-zine-postcard",
+      "url": "https://github.com/shenchangyi/photo-to-monthly-zine-postcard.git",
+      "commit": "26ab8d1a0435c1f96439647a6c4be3914e423878"
+    },
+    {
+      "name": "skill-make-photo-stamp-archive",
+      "url": "https://github.com/Dlcccc71913/skill-make-photo-stamp-archive.git",
+      "commit": "1eaae73ad1d4b64a56cee297a924d253f860ac5b"
+    },
+    {
+      "name": "taste-skill",
+      "url": "https://github.com/Leonxlnx/taste-skill.git",
+      "commit": "78a81c53eac43f6f6bba665c9fe8f11f592fa550",
+      "scope": "skills/imagegen-frontend-web, skills/imagegen-frontend-mobile, skills/brandkit"
+    },
+    {
+      "name": "yarn-rug-reference",
+      "url": "https://github.com/rlx-better/yarn-rug-reference.git",
+      "commit": "edfc7e997754d1b73b68d48b8c35d85902a0fed6"
+    }
+  ]
+}

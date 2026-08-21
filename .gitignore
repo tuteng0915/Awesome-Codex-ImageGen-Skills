@@ -1,0 +1,8 @@
+.DS_Store
+
+# Read-only clones of upstream skills used for local review and benchmarks.
+/upstream/
+
+# Generated benchmark artifacts and scratch work can be large and stochastic.
+/benchmarks/
+
