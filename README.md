@@ -1,5 +1,6 @@
 <div align="center">
-  <h1>🎨 Awesome Codex ImageGen Skills</h1>
+  <h1>🎨 Codex ImageGen 技能精选</h1>
+  <p><strong>中文</strong> · <a href="README_EN.md">English</a></p>
   <p><strong>让好用的视觉方法被发现、被比较、被复用。</strong></p>
   <p>一份持续更新、带真实生成示例的 Codex ImageGen skills 精选清单。</p>
   <p>
@@ -10,9 +11,9 @@
     <a href="#contributing"><img src="https://img.shields.io/badge/PRs-welcome-22c55e?style=flat-square" alt="PRs welcome"></a>
   </p>
   <p>
-    <a href="#photo--editorial">Explore skills</a> ·
-    <a href="#sample-inputs--reproduction">View the test scenes</a> ·
-    <a href="#contributing">Submit a skill</a>
+    <a href="#photo--editorial">浏览 Skills</a> ·
+    <a href="#sample-inputs--reproduction">查看示例输入</a> ·
+    <a href="#contributing">提交 Skill</a>
   </p>
   <p><strong>喜欢这份清单？欢迎点亮 Star ⭐　发现好 skill？带着 PR 一起上车 🚀</strong></p>
 </div>
@@ -23,22 +24,23 @@
 
 > 本仓库以索引、分类、简评和实际生成示例为主。第三方 skill 只会按需浅克隆到被 Git 忽略的本地 `upstream/`，不会提交为镜像；所有项目的版权、许可和使用限制仍以原仓库为准。
 
-## 🧭 Contents
+## 🧭 目录
 
-- 📸 [Photo & Editorial](#photo--editorial)
-- 🪄 [Branding & Identity](#branding--identity)
-- 🧶 [Craft & Textile](#craft--textile)
-- 📚 [Articles, Knowledge & Presentations](#articles-knowledge--presentations)
-- 🖥️ [UI & Product Design](#ui--product-design)
-- 🎮 [Game Assets & Characters](#game-assets--characters)
-- 🎬 [Storyboards & Visual Narratives](#storyboards--visual-narratives)
-- 🧪 [Sample Inputs & Reproduction](#sample-inputs--reproduction)
-- 🤝 [Contributing](#contributing)
-  - 🔎 [Curation](#curation)
-- 🔗 [Related Collections](#related-collections)
-  - 🧱 [Official Foundations](#official-foundations)
+- 📸 [照片与编辑设计](#photo--editorial)
+- 🪄 [品牌与视觉识别](#branding--identity)
+- 🧶 [手工艺与织物](#craft--textile)
+- 📚 [文章、知识与演示](#articles-knowledge--presentations)
+- 🖥️ [UI 与产品设计](#ui--product-design)
+- 🎮 [游戏资产与角色](#game-assets--characters)
+- 🎬 [故事板与视觉叙事](#storyboards--visual-narratives)
+- 🧪 [示例输入与复现](#sample-inputs--reproduction)
+- 🤝 [参与贡献](#contributing)
+  - 🔎 [收录标准](#curation)
+- 🔗 [相关合集](#related-collections)
+  - 🧱 [官方基础](#official-foundations)
 
-## Photo & Editorial
+<a id="photo--editorial"></a>
+## 照片与编辑设计
 
 ### [Photo Abstract Editorial](https://github.com/ZzzLc0405/photo-abstract-editorial)
 
@@ -51,7 +53,7 @@
 - **Structure:** `SKILL.md`、`agents/openai.yaml`、中英双语 reference prompts 与示例图片
 - **License:** 仅限个人、教育、研究和非商业用途；商业使用需联系作者授权
 
-#### ✨ Features
+#### ✨ 特点
 
 - 保留原摄影区域，不把任务退化成滤镜或整图风格迁移。
 - 先识别主体关系、轴线、间隔、光线、色彩角色与负空间，再把这些关系翻译成抽象图形。
@@ -59,22 +61,20 @@
 - `SKILL.md` 很短，完整视觉规范按语言放在 `references/`，是不错的 progressive disclosure 案例。
 
 <details>
-<summary><strong>📝 Editor’s note</strong></summary>
+<summary><strong>📝 编辑点评</strong></summary>
 
 示例整体有稳定的上下分区、留白和色彩映射，但“抽象程度”会随题材变化。夕阳等案例接近纯关系抽象，城市与地标案例会保留较强轮廓，部分自然题材更接近插画式重述。其“照片保持原样”主要依赖生成模型遵循指令，并非确定性的逐像素保证。
 
 </details>
 
-<p><strong>🖼️ Samples</strong> · <code>photo-abstract-editorial</code></p>
+<p><strong>🖼️ 示例</strong> · <code>photo-abstract-editorial</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/photo-abstract-editorial/01-architecture-cafe.png"><img src="examples/photo-abstract-editorial/01-architecture-cafe.png" alt="photo-abstract-editorial — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/photo-abstract-editorial/02-mountain-lake.png"><img src="examples/photo-abstract-editorial/02-mountain-lake.png" alt="photo-abstract-editorial — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/photo-abstract-editorial/03-portrait-camera-duo.png"><img src="examples/photo-abstract-editorial/03-portrait-camera-duo.png" alt="photo-abstract-editorial — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/photo-abstract-editorial/04-animal-cat-dog.png"><img src="examples/photo-abstract-editorial/04-animal-cat-dog.png" alt="photo-abstract-editorial — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/photo-abstract-editorial/01-architecture-cafe.png"><img src="examples/photo-abstract-editorial/01-architecture-cafe.png" alt="photo-abstract-editorial — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/photo-abstract-editorial/02-mountain-lake.png"><img src="examples/photo-abstract-editorial/02-mountain-lake.png" alt="photo-abstract-editorial — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/photo-abstract-editorial/03-portrait-camera-duo.png"><img src="examples/photo-abstract-editorial/03-portrait-camera-duo.png" alt="photo-abstract-editorial — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/photo-abstract-editorial/04-animal-cat-dog.png"><img src="examples/photo-abstract-editorial/04-animal-cat-dog.png" alt="photo-abstract-editorial — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
@@ -89,7 +89,7 @@
 - **Structure:** `SKILL.md`、`agents/openai.yaml`、两组官方 source/result 示例
 - **License:** 仅限个人非商业使用；商用、受托创作、组织内部使用及付费服务均需书面许可
 
-#### ✨ Features
+#### ✨ 特点
 
 - 先生成 Scene Card，记录主体、空间不变量、主导动势、视觉重量、色彩气氛、可抽象形状与安静区域，再进入提示编译，方法比单纯描述风格更可复用。
 - Minimal Abstraction Engine 明确要求删除多数微小细节，并限制为一种主要插画语法和至多一种辅助语法，能抑制常见的“什么都画、哪里都满”。
@@ -97,22 +97,20 @@
 - 对照片隐私、文字长度、中文/英文微型排版、缩略图检查和一次定向重生成都有具体约束。
 
 <details>
-<summary><strong>📝 Editor’s note</strong></summary>
+<summary><strong>📝 编辑点评</strong></summary>
 
 两组官方示例都能清楚保留原照片的地标、桥梁、人群和空间层次，同时让纸张、撕边和版画/水彩区域承担新的构图功能，视觉方法完成度很高。第二组结果沿用了原图横向构图，说明 3:5 更适合作为默认值而非硬约束。当前 skill 约 400 行且几乎全部集中在 `SKILL.md`，规则完整但上下文开销较大；官方样本目前也只有两组，跨题材稳定性仍需更多案例验证。照片保真依赖生成模型，没有确定性合成或像素级校验。
 
 </details>
 
-<p><strong>🖼️ Samples</strong> · <code>scenes-gathered-zine-v1-3</code></p>
+<p><strong>🖼️ 示例</strong> · <code>scenes-gathered-zine-v1-3</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/scenes-gathered-zine-v1-3/01-architecture-cafe.png"><img src="examples/scenes-gathered-zine-v1-3/01-architecture-cafe.png" alt="scenes-gathered-zine-v1-3 — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/scenes-gathered-zine-v1-3/02-mountain-lake.png"><img src="examples/scenes-gathered-zine-v1-3/02-mountain-lake.png" alt="scenes-gathered-zine-v1-3 — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/scenes-gathered-zine-v1-3/03-portrait-camera-duo.png"><img src="examples/scenes-gathered-zine-v1-3/03-portrait-camera-duo.png" alt="scenes-gathered-zine-v1-3 — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/scenes-gathered-zine-v1-3/04-animal-cat-dog.png"><img src="examples/scenes-gathered-zine-v1-3/04-animal-cat-dog.png" alt="scenes-gathered-zine-v1-3 — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/scenes-gathered-zine-v1-3/01-architecture-cafe.png"><img src="examples/scenes-gathered-zine-v1-3/01-architecture-cafe.png" alt="scenes-gathered-zine-v1-3 — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/scenes-gathered-zine-v1-3/02-mountain-lake.png"><img src="examples/scenes-gathered-zine-v1-3/02-mountain-lake.png" alt="scenes-gathered-zine-v1-3 — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/scenes-gathered-zine-v1-3/03-portrait-camera-duo.png"><img src="examples/scenes-gathered-zine-v1-3/03-portrait-camera-duo.png" alt="scenes-gathered-zine-v1-3 — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/scenes-gathered-zine-v1-3/04-animal-cat-dog.png"><img src="examples/scenes-gathered-zine-v1-3/04-animal-cat-dog.png" alt="scenes-gathered-zine-v1-3 — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
@@ -127,7 +125,7 @@
 - **Structure:** 精简入口 `SKILL.md`、3 份工作 references、完整规则草案、视觉参考与 8 张成品示例
 - **License:** MIT
 
-#### ✨ Features
+#### ✨ 特点
 
 - 根据原图宽高比设置了 5 档路由，对横图、方图、竖图和极窄长图分别规定 `contain` 尺寸与占位；极窄输入会先询问用户，而不是自动裁切。
 - 把文学与音乐策展从图片生成中分离：先根据主体、光线、空间、情绪和主色检索并核验，再把最终文字作为锁定字符串交给生成器；找不到可靠内容时使用原创旁白或留空歌曲。
@@ -135,22 +133,20 @@
 - 主流程将 layout、content curation 和 quality gate 拆入独立 references，是清楚的 progressive disclosure 结构。
 
 <details>
-<summary><strong>📝 Editor’s note</strong></summary>
+<summary><strong>📝 编辑点评</strong></summary>
 
 8 张成品示例在暖白纸张、原图—水彩呼应、右栏层级和页脚节奏上相当统一，且能处理常规风景、超宽场景和自带相机框的输入。但 gallery 没有单独提供原始输入文件，无法独立验证“上半照片完全不变”；`dusk-field-camera-frame.png` 实际为 1024×1536（2:3），也未满足规则声明的 3:4 硬约束。当前质量门槛是人工检查清单，没有确定性合成、尺寸验证或文字校验脚本；`SKILL.md` 要求生成成品，但未显式指定调用内置 `$imagegen`，因此尺寸、逐字排版和原图保真仍取决于 agent 与生成模型执行。
 
 </details>
 
-<p><strong>🖼️ Samples</strong> · <code>photo-to-monthly-zine-postcard</code></p>
+<p><strong>🖼️ 示例</strong> · <code>photo-to-monthly-zine-postcard</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/photo-to-monthly-zine-postcard/01-architecture-cafe.png"><img src="examples/photo-to-monthly-zine-postcard/01-architecture-cafe.png" alt="photo-to-monthly-zine-postcard — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/photo-to-monthly-zine-postcard/02-mountain-lake.png"><img src="examples/photo-to-monthly-zine-postcard/02-mountain-lake.png" alt="photo-to-monthly-zine-postcard — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/photo-to-monthly-zine-postcard/03-portrait-camera-duo.png"><img src="examples/photo-to-monthly-zine-postcard/03-portrait-camera-duo.png" alt="photo-to-monthly-zine-postcard — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/photo-to-monthly-zine-postcard/04-animal-cat-dog.png"><img src="examples/photo-to-monthly-zine-postcard/04-animal-cat-dog.png" alt="photo-to-monthly-zine-postcard — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/photo-to-monthly-zine-postcard/01-architecture-cafe.png"><img src="examples/photo-to-monthly-zine-postcard/01-architecture-cafe.png" alt="photo-to-monthly-zine-postcard — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/photo-to-monthly-zine-postcard/02-mountain-lake.png"><img src="examples/photo-to-monthly-zine-postcard/02-mountain-lake.png" alt="photo-to-monthly-zine-postcard — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/photo-to-monthly-zine-postcard/03-portrait-camera-duo.png"><img src="examples/photo-to-monthly-zine-postcard/03-portrait-camera-duo.png" alt="photo-to-monthly-zine-postcard — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/photo-to-monthly-zine-postcard/04-animal-cat-dog.png"><img src="examples/photo-to-monthly-zine-postcard/04-animal-cat-dog.png" alt="photo-to-monthly-zine-postcard — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
@@ -165,7 +161,7 @@
 - **Structure:** `SKILL.md`、5 份专项 references、6 张作者示例、8 条 eval、Codex UI metadata 与三语 README
 - **License:** MIT
 
-#### ✨ Features
+#### ✨ 特点
 
 - 同一 skill 内区分 Generate、Photo Input、Reference Analysis、Prompt-only 和 Analyze + Generate 五种路由，并要求选择满足请求的最小模式。
 - 视觉系统具有可检查的尺度：默认 70%–90% 留白、8%–25% 主视觉簇、0.8%–2.5% 画布面积的高饱和主色，以及一个核心隐喻而非完整插画场景。
@@ -174,22 +170,20 @@
 - Prompt Compiler、Reference Analysis 和 Quality Gate 均独立成文；eval 还覆盖人物身份、产品几何、参考图防复制、prompt-only 和非海洋主题误生航海图标等回归场景。
 
 <details>
-<summary><strong>📝 Editor’s note</strong></summary>
+<summary><strong>📝 编辑点评</strong></summary>
 
 6 张作者示例全部为 686×1144，接近严格 3:5，并稳定呈现纸张扫描感、大留白、小型视觉事件与单色焦点；center fragment、dual panel、type-led 和 offset cluster 等构图也有实际差异。它是当前清单中对内置 ImageGen 调用、输入图片传递和失败后重生成写得最明确的项目之一。不过示例集中于文本主题海报，没有公开 source/result 照片对照或 Reference Analysis 成品，High preservation 等高级路由尚缺视觉验证；质量检查和 eval 仍是声明式规则，没有自动尺寸、留白比例、色彩占比或文字可读性测试，微型生成文字也会受模型能力影响。skill 的可调用名称仍是 `gc-minimal-zine-poster-v0-3`，README 展示版本则为 v0.3.1，这是上游为兼容旧安装保留的命名。
 
 </details>
 
-<p><strong>🖼️ Samples</strong> · <code>gc-minimal-zine-poster-v0-3</code></p>
+<p><strong>🖼️ 示例</strong> · <code>gc-minimal-zine-poster-v0-3</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/gc-minimal-zine-poster-v0-3/01-architecture-cafe.png"><img src="examples/gc-minimal-zine-poster-v0-3/01-architecture-cafe.png" alt="gc-minimal-zine-poster-v0-3 — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/gc-minimal-zine-poster-v0-3/02-mountain-lake.png"><img src="examples/gc-minimal-zine-poster-v0-3/02-mountain-lake.png" alt="gc-minimal-zine-poster-v0-3 — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/gc-minimal-zine-poster-v0-3/03-portrait-camera-duo.png"><img src="examples/gc-minimal-zine-poster-v0-3/03-portrait-camera-duo.png" alt="gc-minimal-zine-poster-v0-3 — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/gc-minimal-zine-poster-v0-3/04-animal-cat-dog.png"><img src="examples/gc-minimal-zine-poster-v0-3/04-animal-cat-dog.png" alt="gc-minimal-zine-poster-v0-3 — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/gc-minimal-zine-poster-v0-3/01-architecture-cafe.png"><img src="examples/gc-minimal-zine-poster-v0-3/01-architecture-cafe.png" alt="gc-minimal-zine-poster-v0-3 — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/gc-minimal-zine-poster-v0-3/02-mountain-lake.png"><img src="examples/gc-minimal-zine-poster-v0-3/02-mountain-lake.png" alt="gc-minimal-zine-poster-v0-3 — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/gc-minimal-zine-poster-v0-3/03-portrait-camera-duo.png"><img src="examples/gc-minimal-zine-poster-v0-3/03-portrait-camera-duo.png" alt="gc-minimal-zine-poster-v0-3 — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/gc-minimal-zine-poster-v0-3/04-animal-cat-dog.png"><img src="examples/gc-minimal-zine-poster-v0-3/04-animal-cat-dog.png" alt="gc-minimal-zine-poster-v0-3 — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
@@ -204,7 +198,7 @@
 - **Structure:** 单文件 `SKILL.md`、Codex UI metadata 与精简 README
 - **License:** MIT
 
-#### ✨ Features
+#### ✨ 特点
 
 - 不是只堆“梦核”风格词，而是把画面拆成主锚点、回声、环境、几何打断和 anomaly 五种功能层。
 - 提供 fractured mosaic、altar grid、interface collage、dark void 等 7 个构造家族，并要求批次间改变视觉语法而不只是移动主体。
@@ -212,22 +206,20 @@
 - 清楚区分高密度梦核与留白主导的 minimal zine，也为参考图 fusion 规定了主锚点、细节、环境、装饰和纹理的顺序角色。
 
 <details>
-<summary><strong>📝 Editor’s note</strong></summary>
+<summary><strong>📝 编辑点评</strong></summary>
 
 方法定义很完整，且原生调用、保存路径、一次定向重生成和意外水印检查都写得清楚；它正好补足当前清单中“高密度拼贴”这一端。不过仓库目前没有作者生成样例、eval 或自动 QA，README 也只有一句简介，因此这些构图家族的跨题材稳定性仍未获得公开视觉证据。对短中文、伪界面标签、几何对齐和参考主体保真仍需人工复核。
 
 </details>
 
-<p><strong>🖼️ Samples</strong> · <code>dreamcore-collage-poster</code></p>
+<p><strong>🖼️ 示例</strong> · <code>dreamcore-collage-poster</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/dreamcore-collage-poster/01-architecture-cafe.png"><img src="examples/dreamcore-collage-poster/01-architecture-cafe.png" alt="dreamcore-collage-poster — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/dreamcore-collage-poster/02-mountain-lake.png"><img src="examples/dreamcore-collage-poster/02-mountain-lake.png" alt="dreamcore-collage-poster — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/dreamcore-collage-poster/03-portrait-camera-duo.png"><img src="examples/dreamcore-collage-poster/03-portrait-camera-duo.png" alt="dreamcore-collage-poster — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/dreamcore-collage-poster/04-animal-cat-dog.png"><img src="examples/dreamcore-collage-poster/04-animal-cat-dog.png" alt="dreamcore-collage-poster — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/dreamcore-collage-poster/01-architecture-cafe.png"><img src="examples/dreamcore-collage-poster/01-architecture-cafe.png" alt="dreamcore-collage-poster — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/dreamcore-collage-poster/02-mountain-lake.png"><img src="examples/dreamcore-collage-poster/02-mountain-lake.png" alt="dreamcore-collage-poster — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/dreamcore-collage-poster/03-portrait-camera-duo.png"><img src="examples/dreamcore-collage-poster/03-portrait-camera-duo.png" alt="dreamcore-collage-poster — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/dreamcore-collage-poster/04-animal-cat-dog.png"><img src="examples/dreamcore-collage-poster/04-animal-cat-dog.png" alt="dreamcore-collage-poster — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
@@ -242,7 +234,7 @@
 - **Structure:** `SKILL.md`、一份 prompt/修订模板、`agents/openai.yaml`、三语 README 与 3 张外链示例
 - **License:** MIT
 
-#### ✨ Features
+#### ✨ 特点
 
 - 先锁定照片区的不变量，包括人物身份、面孔、手势、服装、物件数量、建筑、标牌文字、视角、遮挡与色彩关系，再设计另一侧图章。
 - 根据主体语义选择圆形、方框、横向山脊、拱形或自定义轮廓章，不把所有照片统一塞进矩形缩略图。
@@ -251,26 +243,25 @@
 - 多图输入会逐张生成独立资产而不是合成 contact sheet，适合制作同一视觉体系下的照片档案系列。
 
 <details>
-<summary><strong>📝 Editor’s note</strong></summary>
+<summary><strong>📝 编辑点评</strong></summary>
 
 3 张官方示例均为 1448×1086（4:3），都具有清楚的笔直拼缝、暖白留白和较小的图章组；建筑轮廓、拱窗与圆形佛像章也证明了形状选择并非固定模板。实际照片区约占 50%–58%，因此 55/45 应理解为指导比例。仓库没有单独发布对应源照片，无法验证照片区的逐像素保真；当前流程把整张照片交给生成/编辑模型，也没有确定性拼接脚本，所以人物身份、标牌文字、精确裁切和只改一个属性仍可能漂移。项目没有 eval 或自动 QA，三张样例也没有覆盖真人、多图批处理、上下拼接和连续修改。“Archive”描述的是视觉气质，产物只是栅格图，不包含原始文件保存、EXIF/元数据、索引或长期归档能力。
 
 </details>
 
-<p><strong>🖼️ Samples</strong> · <code>make-photo-stamp-archive</code></p>
+<p><strong>🖼️ 示例</strong> · <code>make-photo-stamp-archive</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/make-photo-stamp-archive/01-architecture-cafe.png"><img src="examples/make-photo-stamp-archive/01-architecture-cafe.png" alt="make-photo-stamp-archive — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/make-photo-stamp-archive/02-mountain-lake.png"><img src="examples/make-photo-stamp-archive/02-mountain-lake.png" alt="make-photo-stamp-archive — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/make-photo-stamp-archive/03-portrait-camera-duo.png"><img src="examples/make-photo-stamp-archive/03-portrait-camera-duo.png" alt="make-photo-stamp-archive — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/make-photo-stamp-archive/04-animal-cat-dog.png"><img src="examples/make-photo-stamp-archive/04-animal-cat-dog.png" alt="make-photo-stamp-archive — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/make-photo-stamp-archive/01-architecture-cafe.png"><img src="examples/make-photo-stamp-archive/01-architecture-cafe.png" alt="make-photo-stamp-archive — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/make-photo-stamp-archive/02-mountain-lake.png"><img src="examples/make-photo-stamp-archive/02-mountain-lake.png" alt="make-photo-stamp-archive — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/make-photo-stamp-archive/03-portrait-camera-duo.png"><img src="examples/make-photo-stamp-archive/03-portrait-camera-duo.png" alt="make-photo-stamp-archive — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/make-photo-stamp-archive/04-animal-cat-dog.png"><img src="examples/make-photo-stamp-archive/04-animal-cat-dog.png" alt="make-photo-stamp-archive — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
-## Branding & Identity
+<a id="branding--identity"></a>
+## 品牌与视觉识别
 
 ### [IP as Logo](https://github.com/s1dashu/ip-as-logo-skill)
 
@@ -283,7 +274,7 @@
 - **Structure:** 单文件 `SKILL.md`、README、MIT License 与一张 showcase 拼墙图
 - **License:** MIT
 
-#### ✨ Features
+#### ✨ 特点
 
 - 先根据产品目的、受众和人格提出三个有理由的 IP 方向，再默认生成每个方向两张候选；用户选定单一方向时则生成六个受控变体。
 - 六图批次固定测试左右下角构图，并要求每张独立生成、保存和标注，避免图片模型在一张网格里混淆角色与细节。
@@ -292,22 +283,20 @@
 - 能根据现代单 prompt 或旧式独立 negative-prompt 接口调整约束传递方式，并要求记录模型、provider 和实际约束模式。
 
 <details>
-<summary><strong>📝 Editor’s note</strong></summary>
+<summary><strong>📝 编辑点评</strong></summary>
 
 showcase 中的动物、幽灵、机器人和物件整体具有清楚的圆形大轮廓、克制配色与下角裁切，视觉家族一致，适合快速品牌探索。但仓库只发布一张 2560×2200 拼墙图，没有独立候选、对应 prompt、产品 brief、32×32 缩略图或多批次复现实验；它也不接受既有角色图作为明确的 edit target，因此名称中的 “IP” 更接近“新吉祥物设计”，不是现有 IP 的身份保真转换。该 skill 刻意把生成视为一次随机抽签，明确不检查、不筛选、不重试、不后处理，适合发散候选，却不能验证三色、纯色背景、构图和小尺寸识别等约束。最终产物是带实色背景的栅格图，不包含 SVG、透明版、单色版、字标组合、商标检索或品牌应用系统，不应直接等同于生产级 Logo 交付。
 
 </details>
 
-<p><strong>🖼️ Samples</strong> · <code>ip-as-logo</code></p>
+<p><strong>🖼️ 示例</strong> · <code>ip-as-logo</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/ip-as-logo/01-architecture-cafe.png"><img src="examples/ip-as-logo/01-architecture-cafe.png" alt="ip-as-logo — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/ip-as-logo/02-mountain-lake.png"><img src="examples/ip-as-logo/02-mountain-lake.png" alt="ip-as-logo — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/ip-as-logo/03-portrait-camera-duo.png"><img src="examples/ip-as-logo/03-portrait-camera-duo.png" alt="ip-as-logo — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/ip-as-logo/04-animal-cat-dog.png"><img src="examples/ip-as-logo/04-animal-cat-dog.png" alt="ip-as-logo — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/ip-as-logo/01-architecture-cafe.png"><img src="examples/ip-as-logo/01-architecture-cafe.png" alt="ip-as-logo — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/ip-as-logo/02-mountain-lake.png"><img src="examples/ip-as-logo/02-mountain-lake.png" alt="ip-as-logo — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/ip-as-logo/03-portrait-camera-duo.png"><img src="examples/ip-as-logo/03-portrait-camera-duo.png" alt="ip-as-logo — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/ip-as-logo/04-animal-cat-dog.png"><img src="examples/ip-as-logo/04-animal-cat-dog.png" alt="ip-as-logo — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
@@ -322,7 +311,7 @@ showcase 中的动物、幽灵、机器人和物件整体具有清楚的圆形�
 - **Structure:** 约 800 行入口、3 份专项 references、Stripe 与 Google Atmospheric Glass profile 示例、Codex metadata
 - **License:** MIT
 
-#### ✨ Features
+#### ✨ 特点
 
 - 先把品牌抽成 9 段 profile 与 `taste:` 数值，再用 variance、density、art direction、spacing、realism 和 text density 驱动模板轴选择。
 - 模板不是一个万能 prompt：不同资产分别锁定构图、光线、文案密度、真实感和变化轴，carousel 还要求每页独立生成而非图生图串联。
@@ -330,26 +319,25 @@ showcase 中的动物、幽灵、机器人和物件整体具有清楚的圆形�
 - `init`、generate 和局部 edit 被写成三条独立路径；生成记录包含 prompt、工具参数、轴选择、文件和 manifest。
 
 <details>
-<summary><strong>📝 Editor’s note</strong></summary>
+<summary><strong>📝 编辑点评</strong></summary>
 
 这是目前找到的少数“品牌 profile → 多类营销资产”系统型 skill，方法密度很高。但仓库只捆绑 Stripe profile，并不包含所宣称的其他 60+ 品牌或公开渲染成品；它们运行时依赖 `npx getdesign`。更重要的是，当前说明假定内置工具暴露 `size`、`quality`、`n`、`output_format` 和 `input_image_mask` 等 Responses API 参数；官方 Codex ImageGen skill 把其中多项视为显式 CLI/API fallback 控件，因此不同 harness 上需要先核对真实 tool schema，不能直接承诺精确尺寸、单次四图或 mask 编辑。上游的 M0–M3 状态是作者验收记录，不等同于本仓库独立 benchmark。
 
 </details>
 
-<p><strong>🖼️ Samples</strong> · <code>30x-image</code></p>
+<p><strong>🖼️ 示例</strong> · <code>30x-image</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/30x-image/01-architecture-cafe.png"><img src="examples/30x-image/01-architecture-cafe.png" alt="30x-image — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/30x-image/02-mountain-lake.png"><img src="examples/30x-image/02-mountain-lake.png" alt="30x-image — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/30x-image/03-portrait-camera-duo.png"><img src="examples/30x-image/03-portrait-camera-duo.png" alt="30x-image — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/30x-image/04-animal-cat-dog.png"><img src="examples/30x-image/04-animal-cat-dog.png" alt="30x-image — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/30x-image/01-architecture-cafe.png"><img src="examples/30x-image/01-architecture-cafe.png" alt="30x-image — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/30x-image/02-mountain-lake.png"><img src="examples/30x-image/02-mountain-lake.png" alt="30x-image — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/30x-image/03-portrait-camera-duo.png"><img src="examples/30x-image/03-portrait-camera-duo.png" alt="30x-image — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/30x-image/04-animal-cat-dog.png"><img src="examples/30x-image/04-animal-cat-dog.png" alt="30x-image — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
-## Craft & Textile
+<a id="craft--textile"></a>
+## 手工艺与织物
 
 ### [Yarn Rug Reference](https://github.com/rlx-better/yarn-rug-reference)
 
@@ -362,7 +350,7 @@ showcase 中的动物、幽灵、机器人和物件整体具有清楚的圆形�
 - **Structure:** `SKILL.md`、`agents/openai.yaml` 与 5 张 reference images
 - **License:** MIT
 
-#### ✨ Features
+#### ✨ 特点
 
 - 明确要求先减少摄影细节和颜色，再添加纤维材质，避免把照片直接贴到织物纹理上。
 - 对天空、地面、建筑、水体等大区域设定统一色族，能明显减少常见的彩色噪点和碎片化渐变。
@@ -370,26 +358,25 @@ showcase 中的动物、幽灵、机器人和物件整体具有清楚的圆形�
 - 对材质的反例描述具体：排除珠子、塑料、马赛克、规则编织线和装饰性毛边。
 
 <details>
-<summary><strong>📝 Editor’s note</strong></summary>
+<summary><strong>📝 编辑点评</strong></summary>
 
 参考图中的绒面、色块与构图一致性较好，成品具有真实的 tufted rug 触感。当前实现仍是纯提示型 skill：没有确定性拼图或尺寸验证脚本，`SKILL.md` 也没有显式写出调用内置 `$imagegen` 的步骤。因此 1080×1620、固定像素坐标和原图区域保真应理解为生成目标，而不是每次运行都能严格验证的保证。
 
 </details>
 
-<p><strong>🖼️ Samples</strong> · <code>yarn-rug-reference</code></p>
+<p><strong>🖼️ 示例</strong> · <code>yarn-rug-reference</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/yarn-rug-reference/01-architecture-cafe.png"><img src="examples/yarn-rug-reference/01-architecture-cafe.png" alt="yarn-rug-reference — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/yarn-rug-reference/02-mountain-lake.png"><img src="examples/yarn-rug-reference/02-mountain-lake.png" alt="yarn-rug-reference — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/yarn-rug-reference/03-portrait-camera-duo.png"><img src="examples/yarn-rug-reference/03-portrait-camera-duo.png" alt="yarn-rug-reference — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/yarn-rug-reference/04-animal-cat-dog.png"><img src="examples/yarn-rug-reference/04-animal-cat-dog.png" alt="yarn-rug-reference — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/yarn-rug-reference/01-architecture-cafe.png"><img src="examples/yarn-rug-reference/01-architecture-cafe.png" alt="yarn-rug-reference — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/yarn-rug-reference/02-mountain-lake.png"><img src="examples/yarn-rug-reference/02-mountain-lake.png" alt="yarn-rug-reference — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/yarn-rug-reference/03-portrait-camera-duo.png"><img src="examples/yarn-rug-reference/03-portrait-camera-duo.png" alt="yarn-rug-reference — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/yarn-rug-reference/04-animal-cat-dog.png"><img src="examples/yarn-rug-reference/04-animal-cat-dog.png" alt="yarn-rug-reference — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
-## Articles, Knowledge & Presentations
+<a id="articles-knowledge--presentations"></a>
+## 文章、知识与演示
 
 ### [Ian Xiaohei Illustrations](https://github.com/helloianneo/ian-xiaohei-illustrations)
 
@@ -402,7 +389,7 @@ showcase 中的动物、幽灵、机器人和物件整体具有清楚的圆形�
 - **Structure:** 精简入口 `SKILL.md`、5 份专项 references、14 张风格锚点与示例 prompt
 - **License:** MIT
 
-#### ✨ Features
+#### ✨ 特点
 
 - 先找“认知锚点”，不按段落平均配图；每张图只承担一个判断或结构。
 - 小黑必须参与核心动作，不能只作为装饰；视觉隐喻需要从当前文章重新发明，禁止把旧案例换字复刻。
@@ -410,22 +397,20 @@ showcase 中的动物、幽灵、机器人和物件整体具有清楚的圆形�
 - references 将角色设定、风格 DNA、构图模式、prompt 模板和检查表分开，入口文件保持在约百行。
 
 <details>
-<summary><strong>📝 Editor’s note</strong></summary>
+<summary><strong>📝 编辑点评</strong></summary>
 
 公开示例的白底、黑色主角、红橙蓝批注和荒诞物理动作相当稳定，尤其适合中文方法论与职场内容。它的优势是“先提炼观点，再发明一个动作隐喻”，不是通用插画风格包。模型生成的中文字仍可能漂移；角色一致性也依赖提示与人工检查。另有 [illustrations-codex-skill](https://github.com/tonykipkemboi/illustrations-codex-skill) 这一英文包装与吉祥物扩展版，上游已明确注明改编自本项目，因此这里以原作者仓库作为主条目。
 
 </details>
 
-<p><strong>🖼️ Samples</strong> · <code>ian-xiaohei-illustrations</code></p>
+<p><strong>🖼️ 示例</strong> · <code>ian-xiaohei-illustrations</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/ian-xiaohei-illustrations/01-architecture-cafe.png"><img src="examples/ian-xiaohei-illustrations/01-architecture-cafe.png" alt="ian-xiaohei-illustrations — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/ian-xiaohei-illustrations/02-mountain-lake.png"><img src="examples/ian-xiaohei-illustrations/02-mountain-lake.png" alt="ian-xiaohei-illustrations — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/ian-xiaohei-illustrations/03-portrait-camera-duo.png"><img src="examples/ian-xiaohei-illustrations/03-portrait-camera-duo.png" alt="ian-xiaohei-illustrations — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/ian-xiaohei-illustrations/04-animal-cat-dog.png"><img src="examples/ian-xiaohei-illustrations/04-animal-cat-dog.png" alt="ian-xiaohei-illustrations — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/ian-xiaohei-illustrations/01-architecture-cafe.png"><img src="examples/ian-xiaohei-illustrations/01-architecture-cafe.png" alt="ian-xiaohei-illustrations — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/ian-xiaohei-illustrations/02-mountain-lake.png"><img src="examples/ian-xiaohei-illustrations/02-mountain-lake.png" alt="ian-xiaohei-illustrations — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/ian-xiaohei-illustrations/03-portrait-camera-duo.png"><img src="examples/ian-xiaohei-illustrations/03-portrait-camera-duo.png" alt="ian-xiaohei-illustrations — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/ian-xiaohei-illustrations/04-animal-cat-dog.png"><img src="examples/ian-xiaohei-illustrations/04-animal-cat-dog.png" alt="ian-xiaohei-illustrations — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
@@ -440,7 +425,7 @@ showcase 中的动物、幽灵、机器人和物件整体具有清楚的圆形�
 - **Structure:** 详细 `SKILL.md`、7 份 references 与 7 张母版级示例
 - **License:** MIT
 
-#### ✨ Features
+#### ✨ 特点
 
 - 把抽象概念强制转成一个真实主物件、一个核心物理冲突、小黑动作和 2–4 个短标签。
 - 对“参考而非复刻”给出可执行规则：每张标准图至少改变主物件、空间方向、动作、道具、标签位置或视角中的三项。
@@ -448,22 +433,20 @@ showcase 中的动物、幽灵、机器人和物件整体具有清楚的圆形�
 - 提供两级质量门：母版锁定、小黑动作、画面比例与事实来源属于不可跳过项；文字与材质小瑕疵则可以标注后继续迭代。
 
 <details>
-<summary><strong>📝 Editor’s note</strong></summary>
+<summary><strong>📝 编辑点评</strong></summary>
 
 7 张示例清楚区分了“手绘解释图”和“白色摄影棚真实物件现场”；长卷母版也展示了少见的个人经历可视化方式。规则非常完整，但 `SKILL.md` 超过 300 行且强依赖母版浏览，运行成本高于轻量 prompt skill。它还带有鲜明作者 IP，不适合作为无品牌痕迹的通用商业插画器。
 
 </details>
 
-<p><strong>🖼️ Samples</strong> · <code>ian-xiaohei-scenes</code></p>
+<p><strong>🖼️ 示例</strong> · <code>ian-xiaohei-scenes</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/ian-xiaohei-scenes/01-architecture-cafe.png"><img src="examples/ian-xiaohei-scenes/01-architecture-cafe.png" alt="ian-xiaohei-scenes — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/ian-xiaohei-scenes/02-mountain-lake.png"><img src="examples/ian-xiaohei-scenes/02-mountain-lake.png" alt="ian-xiaohei-scenes — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/ian-xiaohei-scenes/03-portrait-camera-duo.png"><img src="examples/ian-xiaohei-scenes/03-portrait-camera-duo.png" alt="ian-xiaohei-scenes — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/ian-xiaohei-scenes/04-animal-cat-dog.png"><img src="examples/ian-xiaohei-scenes/04-animal-cat-dog.png" alt="ian-xiaohei-scenes — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/ian-xiaohei-scenes/01-architecture-cafe.png"><img src="examples/ian-xiaohei-scenes/01-architecture-cafe.png" alt="ian-xiaohei-scenes — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/ian-xiaohei-scenes/02-mountain-lake.png"><img src="examples/ian-xiaohei-scenes/02-mountain-lake.png" alt="ian-xiaohei-scenes — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/ian-xiaohei-scenes/03-portrait-camera-duo.png"><img src="examples/ian-xiaohei-scenes/03-portrait-camera-duo.png" alt="ian-xiaohei-scenes — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/ian-xiaohei-scenes/04-animal-cat-dog.png"><img src="examples/ian-xiaohei-scenes/04-animal-cat-dog.png" alt="ian-xiaohei-scenes — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
@@ -478,7 +461,7 @@ showcase 中的动物、幽灵、机器人和物件整体具有清楚的圆形�
 - **Structure:** 入口 `SKILL.md`、6 份叙事与视觉 references、主题 token 和 4 张成品示例
 - **License:** MIT
 
-#### ✨ Features
+#### ✨ 特点
 
 - 先选择 teaching、persuasive、report 等叙事类型，再按语义为每页选择不同 archetype，而不是机械套模板顺序。
 - 在多页生成前锁定纸张、标题、页码、线条、色板、角色和间距，页面中部的语义图形才随内容变化。
@@ -486,22 +469,20 @@ showcase 中的动物、幽灵、机器人和物件整体具有清楚的圆形�
 - 对生成文字不稳有合理降级：先压缩文字预算，仍失败时留出标签位再确定性叠字。
 
 <details>
-<summary><strong>📝 Editor’s note</strong></summary>
+<summary><strong>📝 编辑点评</strong></summary>
 
 公开样例的近白纸面、细线、淡彩和页面骨架一致性不错。不过名称里的 “PPT” 指最终视觉像 PPT；主产物是文字已烘焙进去的 PNG，不是可编辑 PPTX，也不负责 PDF/PPTX 打包。样例目前只有四页，长 deck 的跨页稳定性值得纳入后续 benchmark。
 
 </details>
 
-<p><strong>🖼️ Samples</strong> · <code>ian-handdrawn-ppt</code></p>
+<p><strong>🖼️ 示例</strong> · <code>ian-handdrawn-ppt</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/ian-handdrawn-ppt/01-architecture-cafe.png"><img src="examples/ian-handdrawn-ppt/01-architecture-cafe.png" alt="ian-handdrawn-ppt — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/ian-handdrawn-ppt/02-mountain-lake.png"><img src="examples/ian-handdrawn-ppt/02-mountain-lake.png" alt="ian-handdrawn-ppt — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/ian-handdrawn-ppt/03-portrait-camera-duo.png"><img src="examples/ian-handdrawn-ppt/03-portrait-camera-duo.png" alt="ian-handdrawn-ppt — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/ian-handdrawn-ppt/04-animal-cat-dog.png"><img src="examples/ian-handdrawn-ppt/04-animal-cat-dog.png" alt="ian-handdrawn-ppt — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/ian-handdrawn-ppt/01-architecture-cafe.png"><img src="examples/ian-handdrawn-ppt/01-architecture-cafe.png" alt="ian-handdrawn-ppt — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/ian-handdrawn-ppt/02-mountain-lake.png"><img src="examples/ian-handdrawn-ppt/02-mountain-lake.png" alt="ian-handdrawn-ppt — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/ian-handdrawn-ppt/03-portrait-camera-duo.png"><img src="examples/ian-handdrawn-ppt/03-portrait-camera-duo.png" alt="ian-handdrawn-ppt — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/ian-handdrawn-ppt/04-animal-cat-dog.png"><img src="examples/ian-handdrawn-ppt/04-animal-cat-dog.png" alt="ian-handdrawn-ppt — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
@@ -516,29 +497,27 @@ showcase 中的动物、幽灵、机器人和物件整体具有清楚的圆形�
 - **Structure:** `SKILL.md`、`agents/openai.yaml`、3 份 references、5 套 styles、2 个确定性导出脚本与流程示意图
 - **License:** MIT
 
-#### ✨ Features
+#### ✨ 特点
 
 - 不强迫所有内容都走生成模型：流程、层级和关系图可以使用 Mermaid/Excalidraw，隐喻、场景和封面才使用 ImageGen。
 - 先扫描标题层级和视觉机会，再生成命名稳定的资产并回写 Markdown，产物与原文之间有明确连接。
 - 同一工作流覆盖正文配图、封面和 presentation visuals，适合观察“通用视觉编排器”如何做路由。
 
 <details>
-<summary><strong>📝 Editor’s note</strong></summary>
+<summary><strong>📝 编辑点评</strong></summary>
 
 这是混合型 skill，价值更多在“什么时候该用哪种视觉工具”，而不是单一画风。其说明和风格库较丰富，但公开视觉验证材料少于 Ian 与 Baoyu 系列；自动回写文档也意味着 benchmark 不能只看最终图片，还要检查插入位置和引用完整性。
 
 </details>
 
-<p><strong>🖼️ Samples</strong> · <code>codex-illustrator</code></p>
+<p><strong>🖼️ 示例</strong> · <code>codex-illustrator</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/codex-illustrator/01-architecture-cafe.png"><img src="examples/codex-illustrator/01-architecture-cafe.png" alt="codex-illustrator — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/codex-illustrator/02-mountain-lake.png"><img src="examples/codex-illustrator/02-mountain-lake.png" alt="codex-illustrator — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/codex-illustrator/03-portrait-camera-duo.png"><img src="examples/codex-illustrator/03-portrait-camera-duo.png" alt="codex-illustrator — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/codex-illustrator/04-animal-cat-dog.png"><img src="examples/codex-illustrator/04-animal-cat-dog.png" alt="codex-illustrator — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/codex-illustrator/01-architecture-cafe.png"><img src="examples/codex-illustrator/01-architecture-cafe.png" alt="codex-illustrator — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/codex-illustrator/02-mountain-lake.png"><img src="examples/codex-illustrator/02-mountain-lake.png" alt="codex-illustrator — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/codex-illustrator/03-portrait-camera-duo.png"><img src="examples/codex-illustrator/03-portrait-camera-duo.png" alt="codex-illustrator — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/codex-illustrator/04-animal-cat-dog.png"><img src="examples/codex-illustrator/04-animal-cat-dog.png" alt="codex-illustrator — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
@@ -553,7 +532,7 @@ showcase 中的动物、幽灵、机器人和物件整体具有清楚的圆形�
 - **Structure:** 5 个独立 skill：`baoyu-article-illustrator`、`baoyu-cover-image`、`baoyu-comic`、`baoyu-infographic`、`baoyu-xhs-images`，各自带流程、references 与示例
 - **License:** MIT
 
-#### ✨ Features
+#### ✨ 特点
 
 - 任务覆盖面很广，但没有把所有规则堆进一个入口：文章、封面、漫画、信息图和社媒卡片分别建模。
 - 风格与布局通常是两个独立选择轴，并提供相当多的真实样例作为视觉词典。
@@ -561,74 +540,64 @@ showcase 中的动物、幽灵、机器人和物件整体具有清楚的圆形�
 - 对 Codex 原生 ImageGen 的优先级写得明确，同时保留跨 agent/backend 的可移植性。
 
 <details>
-<summary><strong>📝 Editor’s note</strong></summary>
+<summary><strong>📝 编辑点评</strong></summary>
 
 这是本轮发现中覆盖最完整的一组，适合成为分类 benchmark 的重要参照。代价是仓库和配置面都很大，并非 built-in-only：同一 skill 也包含其他运行时与 provider 的分支。收录时把它视为一套 suite，而不是用五个相近条目挤占清单。
 
 </details>
 
-<p><strong>🖼️ Samples</strong> · <code>baoyu-article-illustrator</code></p>
+<p><strong>🖼️ 示例</strong> · <code>baoyu-article-illustrator</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/baoyu-article-illustrator/01-architecture-cafe.png"><img src="examples/baoyu-article-illustrator/01-architecture-cafe.png" alt="baoyu-article-illustrator — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/baoyu-article-illustrator/02-mountain-lake.png"><img src="examples/baoyu-article-illustrator/02-mountain-lake.png" alt="baoyu-article-illustrator — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/baoyu-article-illustrator/03-portrait-camera-duo.png"><img src="examples/baoyu-article-illustrator/03-portrait-camera-duo.png" alt="baoyu-article-illustrator — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/baoyu-article-illustrator/04-animal-cat-dog.png"><img src="examples/baoyu-article-illustrator/04-animal-cat-dog.png" alt="baoyu-article-illustrator — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/baoyu-article-illustrator/01-architecture-cafe.png"><img src="examples/baoyu-article-illustrator/01-architecture-cafe.png" alt="baoyu-article-illustrator — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/baoyu-article-illustrator/02-mountain-lake.png"><img src="examples/baoyu-article-illustrator/02-mountain-lake.png" alt="baoyu-article-illustrator — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/baoyu-article-illustrator/03-portrait-camera-duo.png"><img src="examples/baoyu-article-illustrator/03-portrait-camera-duo.png" alt="baoyu-article-illustrator — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/baoyu-article-illustrator/04-animal-cat-dog.png"><img src="examples/baoyu-article-illustrator/04-animal-cat-dog.png" alt="baoyu-article-illustrator — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
-<p><strong>🖼️ Samples</strong> · <code>baoyu-cover-image</code></p>
+<p><strong>🖼️ 示例</strong> · <code>baoyu-cover-image</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/baoyu-cover-image/01-architecture-cafe.png"><img src="examples/baoyu-cover-image/01-architecture-cafe.png" alt="baoyu-cover-image — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/baoyu-cover-image/02-mountain-lake.png"><img src="examples/baoyu-cover-image/02-mountain-lake.png" alt="baoyu-cover-image — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/baoyu-cover-image/03-portrait-camera-duo.png"><img src="examples/baoyu-cover-image/03-portrait-camera-duo.png" alt="baoyu-cover-image — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/baoyu-cover-image/04-animal-cat-dog.png"><img src="examples/baoyu-cover-image/04-animal-cat-dog.png" alt="baoyu-cover-image — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/baoyu-cover-image/01-architecture-cafe.png"><img src="examples/baoyu-cover-image/01-architecture-cafe.png" alt="baoyu-cover-image — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/baoyu-cover-image/02-mountain-lake.png"><img src="examples/baoyu-cover-image/02-mountain-lake.png" alt="baoyu-cover-image — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/baoyu-cover-image/03-portrait-camera-duo.png"><img src="examples/baoyu-cover-image/03-portrait-camera-duo.png" alt="baoyu-cover-image — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/baoyu-cover-image/04-animal-cat-dog.png"><img src="examples/baoyu-cover-image/04-animal-cat-dog.png" alt="baoyu-cover-image — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
-<p><strong>🖼️ Samples</strong> · <code>baoyu-comic</code></p>
+<p><strong>🖼️ 示例</strong> · <code>baoyu-comic</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/baoyu-comic/01-architecture-cafe.png"><img src="examples/baoyu-comic/01-architecture-cafe.png" alt="baoyu-comic — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/baoyu-comic/02-mountain-lake.png"><img src="examples/baoyu-comic/02-mountain-lake.png" alt="baoyu-comic — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/baoyu-comic/03-portrait-camera-duo.png"><img src="examples/baoyu-comic/03-portrait-camera-duo.png" alt="baoyu-comic — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/baoyu-comic/04-animal-cat-dog.png"><img src="examples/baoyu-comic/04-animal-cat-dog.png" alt="baoyu-comic — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/baoyu-comic/01-architecture-cafe.png"><img src="examples/baoyu-comic/01-architecture-cafe.png" alt="baoyu-comic — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/baoyu-comic/02-mountain-lake.png"><img src="examples/baoyu-comic/02-mountain-lake.png" alt="baoyu-comic — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/baoyu-comic/03-portrait-camera-duo.png"><img src="examples/baoyu-comic/03-portrait-camera-duo.png" alt="baoyu-comic — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/baoyu-comic/04-animal-cat-dog.png"><img src="examples/baoyu-comic/04-animal-cat-dog.png" alt="baoyu-comic — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
-<p><strong>🖼️ Samples</strong> · <code>baoyu-infographic</code></p>
+<p><strong>🖼️ 示例</strong> · <code>baoyu-infographic</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/baoyu-infographic/01-architecture-cafe.png"><img src="examples/baoyu-infographic/01-architecture-cafe.png" alt="baoyu-infographic — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/baoyu-infographic/02-mountain-lake.png"><img src="examples/baoyu-infographic/02-mountain-lake.png" alt="baoyu-infographic — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/baoyu-infographic/03-portrait-camera-duo.png"><img src="examples/baoyu-infographic/03-portrait-camera-duo.png" alt="baoyu-infographic — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/baoyu-infographic/04-animal-cat-dog.png"><img src="examples/baoyu-infographic/04-animal-cat-dog.png" alt="baoyu-infographic — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/baoyu-infographic/01-architecture-cafe.png"><img src="examples/baoyu-infographic/01-architecture-cafe.png" alt="baoyu-infographic — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/baoyu-infographic/02-mountain-lake.png"><img src="examples/baoyu-infographic/02-mountain-lake.png" alt="baoyu-infographic — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/baoyu-infographic/03-portrait-camera-duo.png"><img src="examples/baoyu-infographic/03-portrait-camera-duo.png" alt="baoyu-infographic — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/baoyu-infographic/04-animal-cat-dog.png"><img src="examples/baoyu-infographic/04-animal-cat-dog.png" alt="baoyu-infographic — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
-<p><strong>🖼️ Samples</strong> · <code>baoyu-xhs-images</code></p>
+<p><strong>🖼️ 示例</strong> · <code>baoyu-xhs-images</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/baoyu-xhs-images/01-architecture-cafe.png"><img src="examples/baoyu-xhs-images/01-architecture-cafe.png" alt="baoyu-xhs-images — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/baoyu-xhs-images/02-mountain-lake.png"><img src="examples/baoyu-xhs-images/02-mountain-lake.png" alt="baoyu-xhs-images — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/baoyu-xhs-images/03-portrait-camera-duo.png"><img src="examples/baoyu-xhs-images/03-portrait-camera-duo.png" alt="baoyu-xhs-images — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/baoyu-xhs-images/04-animal-cat-dog.png"><img src="examples/baoyu-xhs-images/04-animal-cat-dog.png" alt="baoyu-xhs-images — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/baoyu-xhs-images/01-architecture-cafe.png"><img src="examples/baoyu-xhs-images/01-architecture-cafe.png" alt="baoyu-xhs-images — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/baoyu-xhs-images/02-mountain-lake.png"><img src="examples/baoyu-xhs-images/02-mountain-lake.png" alt="baoyu-xhs-images — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/baoyu-xhs-images/03-portrait-camera-duo.png"><img src="examples/baoyu-xhs-images/03-portrait-camera-duo.png" alt="baoyu-xhs-images — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/baoyu-xhs-images/04-animal-cat-dog.png"><img src="examples/baoyu-xhs-images/04-animal-cat-dog.png" alt="baoyu-xhs-images — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
@@ -643,7 +612,7 @@ showcase 中的动物、幽灵、机器人和物件整体具有清楚的圆形�
 - **Structure:** `.agents/skills/codex-image/SKILL.md`、3 份 templates、3 份 examples、验收文档、测试与静态检查脚本
 - **License:** MIT
 
-#### ✨ Features
+#### ✨ 特点
 
 - 在生图前把来源拆成主张、关系、受众、必要标签、文字预算和敏感信息，适合代码库与技术内容。
 - 将社交素材和密集信息图分成两条 director 路由，分别控制手机可读性与结构密度。
@@ -651,22 +620,20 @@ showcase 中的动物、幽灵、机器人和物件整体具有清楚的圆形�
 - 内置五套“house look”，目标是摆脱常见的深色 SaaS 卡片加箭头默认风格。
 
 <details>
-<summary><strong>📝 Editor’s note</strong></summary>
+<summary><strong>📝 编辑点评</strong></summary>
 
 这是非常新的社区项目，运行契约、隐私边界和质量门写得扎实，也明确依赖当前 Codex 内置能力。当前仓库主要展示 brief、prompt 与验收 fixture，没有足够的公开成品 gallery；视觉风格的稳定性和技术事实保真需要我们自己跑 benchmark 后再评价。
 
 </details>
 
-<p><strong>🖼️ Samples</strong> · <code>codex-image</code></p>
+<p><strong>🖼️ 示例</strong> · <code>codex-image</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/codex-image/01-architecture-cafe.png"><img src="examples/codex-image/01-architecture-cafe.png" alt="codex-image — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/codex-image/02-mountain-lake.png"><img src="examples/codex-image/02-mountain-lake.png" alt="codex-image — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/codex-image/03-portrait-camera-duo.png"><img src="examples/codex-image/03-portrait-camera-duo.png" alt="codex-image — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/codex-image/04-animal-cat-dog.png"><img src="examples/codex-image/04-animal-cat-dog.png" alt="codex-image — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/codex-image/01-architecture-cafe.png"><img src="examples/codex-image/01-architecture-cafe.png" alt="codex-image — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/codex-image/02-mountain-lake.png"><img src="examples/codex-image/02-mountain-lake.png" alt="codex-image — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/codex-image/03-portrait-camera-duo.png"><img src="examples/codex-image/03-portrait-camera-duo.png" alt="codex-image — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/codex-image/04-animal-cat-dog.png"><img src="examples/codex-image/04-animal-cat-dog.png" alt="codex-image — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
@@ -681,33 +648,32 @@ showcase 中的动物、幽灵、机器人和物件整体具有清楚的圆形�
 - **Structure:** 单个 `SKILL.md`、Codex metadata 与两组 Draw.io/预览示例
 - **License:** MIT
 
-#### ✨ Features
+#### ✨ 特点
 
 - 把 ImageGen 擅长的构图探索与确定性工具擅长的精确文字、连接关系和可编辑性结合起来。
 - 先解析科学主张、实体、关系、必需标签和约束，再明确检查 XML、箭头方向、面板顺序与导出预览。
 - 对外部图标来源、许可和署名有单独流程，无法确认许可时退回可编辑基础图形。
 
 <details>
-<summary><strong>📝 Editor’s note</strong></summary>
+<summary><strong>📝 编辑点评</strong></summary>
 
 它属于边界条目：ImageGen 是重要中间步骤，但最终作品不是位图。正因为这种“生成参考 → 原生重建”能处理学术图中文字和可编辑性痛点，值得保留在清单中并显式标成 hybrid。当前版本仍很早，示例只有两组。
 
 </details>
 
-<p><strong>🖼️ Samples</strong> · <code>codex-paper-figure-skill</code></p>
+<p><strong>🖼️ 示例</strong> · <code>codex-paper-figure-skill</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/codex-paper-figure-skill/01-architecture-cafe.png"><img src="examples/codex-paper-figure-skill/01-architecture-cafe.png" alt="codex-paper-figure-skill — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/codex-paper-figure-skill/02-mountain-lake.png"><img src="examples/codex-paper-figure-skill/02-mountain-lake.png" alt="codex-paper-figure-skill — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/codex-paper-figure-skill/03-portrait-camera-duo.png"><img src="examples/codex-paper-figure-skill/03-portrait-camera-duo.png" alt="codex-paper-figure-skill — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/codex-paper-figure-skill/04-animal-cat-dog.png"><img src="examples/codex-paper-figure-skill/04-animal-cat-dog.png" alt="codex-paper-figure-skill — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/codex-paper-figure-skill/01-architecture-cafe.png"><img src="examples/codex-paper-figure-skill/01-architecture-cafe.png" alt="codex-paper-figure-skill — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/codex-paper-figure-skill/02-mountain-lake.png"><img src="examples/codex-paper-figure-skill/02-mountain-lake.png" alt="codex-paper-figure-skill — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/codex-paper-figure-skill/03-portrait-camera-duo.png"><img src="examples/codex-paper-figure-skill/03-portrait-camera-duo.png" alt="codex-paper-figure-skill — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/codex-paper-figure-skill/04-animal-cat-dog.png"><img src="examples/codex-paper-figure-skill/04-animal-cat-dog.png" alt="codex-paper-figure-skill — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
-## UI & Product Design
+<a id="ui--product-design"></a>
+## UI 与产品设计
 
 ### [Prototype Native UI with Image Generation](https://github.com/dnesdan/Skills/tree/main/prototype-ui-with-imagegen)
 
@@ -720,16 +686,14 @@ showcase 中的动物、幽灵、机器人和物件整体具有清楚的圆形�
 - **Structure:** `SKILL.md` 与后端、提示、原生组件、平台实现、对话输出和视觉验证等专项 references
 - **License:** 上游仓库未声明开源许可证
 
-<p><strong>🖼️ Samples</strong> · <code>prototype-ui-with-imagegen</code></p>
+<p><strong>🖼️ 示例</strong> · <code>prototype-ui-with-imagegen</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/prototype-ui-with-imagegen/01-architecture-cafe.png"><img src="examples/prototype-ui-with-imagegen/01-architecture-cafe.png" alt="prototype-ui-with-imagegen — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/prototype-ui-with-imagegen/02-mountain-lake.png"><img src="examples/prototype-ui-with-imagegen/02-mountain-lake.png" alt="prototype-ui-with-imagegen — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/prototype-ui-with-imagegen/03-portrait-camera-duo.png"><img src="examples/prototype-ui-with-imagegen/03-portrait-camera-duo.png" alt="prototype-ui-with-imagegen — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/prototype-ui-with-imagegen/04-animal-cat-dog.png"><img src="examples/prototype-ui-with-imagegen/04-animal-cat-dog.png" alt="prototype-ui-with-imagegen — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/prototype-ui-with-imagegen/01-architecture-cafe.png"><img src="examples/prototype-ui-with-imagegen/01-architecture-cafe.png" alt="prototype-ui-with-imagegen — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/prototype-ui-with-imagegen/02-mountain-lake.png"><img src="examples/prototype-ui-with-imagegen/02-mountain-lake.png" alt="prototype-ui-with-imagegen — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/prototype-ui-with-imagegen/03-portrait-camera-duo.png"><img src="examples/prototype-ui-with-imagegen/03-portrait-camera-duo.png" alt="prototype-ui-with-imagegen — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/prototype-ui-with-imagegen/04-animal-cat-dog.png"><img src="examples/prototype-ui-with-imagegen/04-animal-cat-dog.png" alt="prototype-ui-with-imagegen — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
@@ -744,16 +708,14 @@ OpenAI 官方组合型 skill。先通过 ImageGen 设计完整页面、界面状
 - **Structure:** `SKILL.md`、`agents/openai.yaml` 与网站概念、视觉验证等专项 references
 - **License:** 上游仓库未声明开源许可证
 
-<p><strong>🖼️ Samples</strong> · <code>frontend-app-builder</code></p>
+<p><strong>🖼️ 示例</strong> · <code>frontend-app-builder</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/frontend-app-builder/01-architecture-cafe.png"><img src="examples/frontend-app-builder/01-architecture-cafe.png" alt="frontend-app-builder — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/frontend-app-builder/02-mountain-lake.png"><img src="examples/frontend-app-builder/02-mountain-lake.png" alt="frontend-app-builder — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/frontend-app-builder/03-portrait-camera-duo.png"><img src="examples/frontend-app-builder/03-portrait-camera-duo.png" alt="frontend-app-builder — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/frontend-app-builder/04-animal-cat-dog.png"><img src="examples/frontend-app-builder/04-animal-cat-dog.png" alt="frontend-app-builder — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/frontend-app-builder/01-architecture-cafe.png"><img src="examples/frontend-app-builder/01-architecture-cafe.png" alt="frontend-app-builder — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/frontend-app-builder/02-mountain-lake.png"><img src="examples/frontend-app-builder/02-mountain-lake.png" alt="frontend-app-builder — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/frontend-app-builder/03-portrait-camera-duo.png"><img src="examples/frontend-app-builder/03-portrait-camera-duo.png" alt="frontend-app-builder — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/frontend-app-builder/04-animal-cat-dog.png"><img src="examples/frontend-app-builder/04-animal-cat-dog.png" alt="frontend-app-builder — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
@@ -768,29 +730,27 @@ OpenAI 官方组合型 skill。先通过 ImageGen 设计完整页面、界面状
 - **Structure:** `SKILL.md`、`agents/openai.yaml` 与一份视觉迭代检查 reference
 - **License:** MIT
 
-#### ✨ Features
+#### ✨ 特点
 
 - 把“先画再写代码”做成硬门槛，并要求四个方向在结构、层级、字体、交互模型、信息架构和品牌行为上真正分化，不接受只换配色。
 - 用户选择是清楚的阶段边界；选定后才把图像拆成布局、组件、响应式行为和验收标准。
 - 最终 QA 不只看单个桌面截图，还覆盖宽屏、受限桌面/平板和移动端，并逐轮修正最大视觉差异。
 
 <details>
-<summary><strong>📝 Editor’s note</strong></summary>
+<summary><strong>📝 编辑点评</strong></summary>
 
 它与 Prototype Native UI with Image Generation 的差别很清楚：前者面向 Web 且要求落地到真实前端，后者更偏 Apple/Android 原生产品方向探索。四张高质量概念图会明显增加一次运行的时间与生成配额，适合完整设计任务，不适合只改一个按钮的轻量请求。
 
 </details>
 
-<p><strong>🖼️ Samples</strong> · <code>img-to-frontend</code></p>
+<p><strong>🖼️ 示例</strong> · <code>img-to-frontend</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/img-to-frontend/01-architecture-cafe.png"><img src="examples/img-to-frontend/01-architecture-cafe.png" alt="img-to-frontend — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/img-to-frontend/02-mountain-lake.png"><img src="examples/img-to-frontend/02-mountain-lake.png" alt="img-to-frontend — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/img-to-frontend/03-portrait-camera-duo.png"><img src="examples/img-to-frontend/03-portrait-camera-duo.png" alt="img-to-frontend — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/img-to-frontend/04-animal-cat-dog.png"><img src="examples/img-to-frontend/04-animal-cat-dog.png" alt="img-to-frontend — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/img-to-frontend/01-architecture-cafe.png"><img src="examples/img-to-frontend/01-architecture-cafe.png" alt="img-to-frontend — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/img-to-frontend/02-mountain-lake.png"><img src="examples/img-to-frontend/02-mountain-lake.png" alt="img-to-frontend — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/img-to-frontend/03-portrait-camera-duo.png"><img src="examples/img-to-frontend/03-portrait-camera-duo.png" alt="img-to-frontend — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/img-to-frontend/04-animal-cat-dog.png"><img src="examples/img-to-frontend/04-animal-cat-dog.png" alt="img-to-frontend — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
@@ -805,7 +765,7 @@ OpenAI 官方组合型 skill。先通过 ImageGen 设计完整页面、界面状
 - **Structure:** 3 个独立单文件 `SKILL.md`：`imagegen-frontend-web`、`imagegen-frontend-mobile` 与 `brandkit`
 - **License:** MIT
 
-#### ✨ Features
+#### ✨ 特点
 
 - Web skill 把“一个 section 一张独立图”设成硬规则，并记录每节的 composition anchor 与 background mode，避免整页长图和反复左文右图。
 - Mobile skill 先锁定 iOS、Android 或 cross-platform 模式，再约束 safe area、导航、设备框、文字可读性、跨屏状态和设计 bible。
@@ -813,48 +773,42 @@ OpenAI 官方组合型 skill。先通过 ImageGen 设计完整页面、界面状
 - 三份 skill 都内置较完整的 anti-slop 清单和变化引擎，覆盖紫蓝渐变、无意义卡片、假奢侈、无关图像、默认 SaaS 构图等常见生成偏差。
 
 <details>
-<summary><strong>📝 Editor’s note</strong></summary>
+<summary><strong>📝 编辑点评</strong></summary>
 
 这套规则非常庞大：三份 `SKILL.md` 合计超过 3,200 行，适合作为视觉规范库，但 progressive disclosure 和单次上下文成本都不理想。它们属于 tool-agnostic 的图片指令，文件本身不显式调用 Codex `image_gen`、不管理本地输出，也没有独立的 imagegen 成品 gallery 或自动 QA；仓库现有 Floria 示例主要证明整个 Taste 前端生态，而不能单独证明这三份图片 skill。收录时因此标作“Codex image mode compatible”，而不是 built-in-only 执行器。
 
 </details>
 
-<p><strong>🖼️ Samples</strong> · <code>taste-imagegen-frontend-web</code></p>
+<p><strong>🖼️ 示例</strong> · <code>taste-imagegen-frontend-web</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/taste-imagegen-frontend-web/01-architecture-cafe.png"><img src="examples/taste-imagegen-frontend-web/01-architecture-cafe.png" alt="taste-imagegen-frontend-web — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/taste-imagegen-frontend-web/02-mountain-lake.png"><img src="examples/taste-imagegen-frontend-web/02-mountain-lake.png" alt="taste-imagegen-frontend-web — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/taste-imagegen-frontend-web/03-portrait-camera-duo.png"><img src="examples/taste-imagegen-frontend-web/03-portrait-camera-duo.png" alt="taste-imagegen-frontend-web — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/taste-imagegen-frontend-web/04-animal-cat-dog.png"><img src="examples/taste-imagegen-frontend-web/04-animal-cat-dog.png" alt="taste-imagegen-frontend-web — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/taste-imagegen-frontend-web/01-architecture-cafe.png"><img src="examples/taste-imagegen-frontend-web/01-architecture-cafe.png" alt="taste-imagegen-frontend-web — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/taste-imagegen-frontend-web/02-mountain-lake.png"><img src="examples/taste-imagegen-frontend-web/02-mountain-lake.png" alt="taste-imagegen-frontend-web — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/taste-imagegen-frontend-web/03-portrait-camera-duo.png"><img src="examples/taste-imagegen-frontend-web/03-portrait-camera-duo.png" alt="taste-imagegen-frontend-web — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/taste-imagegen-frontend-web/04-animal-cat-dog.png"><img src="examples/taste-imagegen-frontend-web/04-animal-cat-dog.png" alt="taste-imagegen-frontend-web — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
-<p><strong>🖼️ Samples</strong> · <code>taste-imagegen-frontend-mobile</code></p>
+<p><strong>🖼️ 示例</strong> · <code>taste-imagegen-frontend-mobile</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/taste-imagegen-frontend-mobile/01-architecture-cafe.png"><img src="examples/taste-imagegen-frontend-mobile/01-architecture-cafe.png" alt="taste-imagegen-frontend-mobile — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/taste-imagegen-frontend-mobile/02-mountain-lake.png"><img src="examples/taste-imagegen-frontend-mobile/02-mountain-lake.png" alt="taste-imagegen-frontend-mobile — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/taste-imagegen-frontend-mobile/03-portrait-camera-duo.png"><img src="examples/taste-imagegen-frontend-mobile/03-portrait-camera-duo.png" alt="taste-imagegen-frontend-mobile — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/taste-imagegen-frontend-mobile/04-animal-cat-dog.png"><img src="examples/taste-imagegen-frontend-mobile/04-animal-cat-dog.png" alt="taste-imagegen-frontend-mobile — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/taste-imagegen-frontend-mobile/01-architecture-cafe.png"><img src="examples/taste-imagegen-frontend-mobile/01-architecture-cafe.png" alt="taste-imagegen-frontend-mobile — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/taste-imagegen-frontend-mobile/02-mountain-lake.png"><img src="examples/taste-imagegen-frontend-mobile/02-mountain-lake.png" alt="taste-imagegen-frontend-mobile — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/taste-imagegen-frontend-mobile/03-portrait-camera-duo.png"><img src="examples/taste-imagegen-frontend-mobile/03-portrait-camera-duo.png" alt="taste-imagegen-frontend-mobile — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/taste-imagegen-frontend-mobile/04-animal-cat-dog.png"><img src="examples/taste-imagegen-frontend-mobile/04-animal-cat-dog.png" alt="taste-imagegen-frontend-mobile — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
-<p><strong>🖼️ Samples</strong> · <code>taste-brandkit</code></p>
+<p><strong>🖼️ 示例</strong> · <code>taste-brandkit</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/taste-brandkit/01-architecture-cafe.png"><img src="examples/taste-brandkit/01-architecture-cafe.png" alt="taste-brandkit — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/taste-brandkit/02-mountain-lake.png"><img src="examples/taste-brandkit/02-mountain-lake.png" alt="taste-brandkit — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/taste-brandkit/03-portrait-camera-duo.png"><img src="examples/taste-brandkit/03-portrait-camera-duo.png" alt="taste-brandkit — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/taste-brandkit/04-animal-cat-dog.png"><img src="examples/taste-brandkit/04-animal-cat-dog.png" alt="taste-brandkit — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/taste-brandkit/01-architecture-cafe.png"><img src="examples/taste-brandkit/01-architecture-cafe.png" alt="taste-brandkit — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/taste-brandkit/02-mountain-lake.png"><img src="examples/taste-brandkit/02-mountain-lake.png" alt="taste-brandkit — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/taste-brandkit/03-portrait-camera-duo.png"><img src="examples/taste-brandkit/03-portrait-camera-duo.png" alt="taste-brandkit — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/taste-brandkit/04-animal-cat-dog.png"><img src="examples/taste-brandkit/04-animal-cat-dog.png" alt="taste-brandkit — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
@@ -869,7 +823,7 @@ OpenAI 官方组合型 skill。先通过 ImageGen 设计完整页面、界面状
 - **Structure:** 精简 `SKILL.md`、10 套原创风格、5 套角色化色板、规划/注册/QC CLI、2 张验证样例、12 项测试
 - **License:** MIT
 
-#### ✨ Features
+#### ✨ 特点
 
 - 风格不是模糊形容词，而是锁定材质、表面、几何、比例、相机、光线、阴影、边缘、细节密度、背景和跨图一致性的结构化 preset。
 - batch 要求相近的语义与几何复杂度、统一 optical baseline 和视觉重量；individual 模式则为每个主题生成独立 job。
@@ -877,22 +831,20 @@ OpenAI 官方组合型 skill。先通过 ImageGen 设计完整页面、界面状
 - 透明背景走色键、alpha 与边缘检查，并明确不把它描述成模型原生透明生成。
 
 <details>
-<summary><strong>📝 Editor’s note</strong></summary>
+<summary><strong>📝 编辑点评</strong></summary>
 
 本地运行上游测试为 12/12 通过；两张 1254×1254 样例也验证了马卡龙角色的材质、相机、脸型、阴影和色板一致性，以及“搜索”单图返修的基本连续性。当前公开视觉证据只覆盖 10 种风格中的一种、5 个图标主题与非透明背景；其他材质、individual export、色键去背和复杂功能图标仍需 benchmark。名称里的 HIAPI 是项目品牌，但正常执行明确不提交付费 HiAPI 任务。
 
 </details>
 
-<p><strong>🖼️ Samples</strong> · <code>hiapi-icon-skills</code></p>
+<p><strong>🖼️ 示例</strong> · <code>hiapi-icon-skills</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/hiapi-icon-skills/01-architecture-cafe.png"><img src="examples/hiapi-icon-skills/01-architecture-cafe.png" alt="hiapi-icon-skills — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/hiapi-icon-skills/02-mountain-lake.png"><img src="examples/hiapi-icon-skills/02-mountain-lake.png" alt="hiapi-icon-skills — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/hiapi-icon-skills/03-portrait-camera-duo.png"><img src="examples/hiapi-icon-skills/03-portrait-camera-duo.png" alt="hiapi-icon-skills — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/hiapi-icon-skills/04-animal-cat-dog.png"><img src="examples/hiapi-icon-skills/04-animal-cat-dog.png" alt="hiapi-icon-skills — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/hiapi-icon-skills/01-architecture-cafe.png"><img src="examples/hiapi-icon-skills/01-architecture-cafe.png" alt="hiapi-icon-skills — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/hiapi-icon-skills/02-mountain-lake.png"><img src="examples/hiapi-icon-skills/02-mountain-lake.png" alt="hiapi-icon-skills — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/hiapi-icon-skills/03-portrait-camera-duo.png"><img src="examples/hiapi-icon-skills/03-portrait-camera-duo.png" alt="hiapi-icon-skills — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/hiapi-icon-skills/04-animal-cat-dog.png"><img src="examples/hiapi-icon-skills/04-animal-cat-dog.png" alt="hiapi-icon-skills — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
@@ -907,7 +859,7 @@ OpenAI 官方组合型 skill。先通过 ImageGen 设计完整页面、界面状
 - **Structure:** 约 480 行主流程、8 份专项 references、12 张正反视觉样本与确定性证据验证器
 - **License:** MIT
 
-#### ✨ Features
+#### ✨ 特点
 
 - 在写代码前设置内容/风格、参考图、素材拆分和生成素材四个确认关卡，把图片从一次性 moodboard 变成受版本锁定的实现契约。
 - 每张获批参考图进入不可覆盖目录并记录 SHA-256；变更主角、媒介、裁切、层级或响应式行为会触发 `reference-invalidated`，必须回到设计阶段。
@@ -915,26 +867,25 @@ OpenAI 官方组合型 skill。先通过 ImageGen 设计完整页面、界面状
 - 最终验证同时检查 desktop、ultrawide、mobile 证据、逐区状态、fresh review、引用哈希和截图是否只是参考图改名。
 
 <details>
-<summary><strong>📝 Editor’s note</strong></summary>
+<summary><strong>📝 编辑点评</strong></summary>
 
 这是 hybrid 边界条目，ImageGen 负责参考图和部分素材，最终交付仍是代码网站。12 张内置样本覆盖安静电影蓝、暗色编辑与多元素 hero，也包含“信件式重复文案”和“过密混乱”两个负例；但 README 的视频案例不是可离线复跑的完整项目。验证器只能证明证据文件与哈希完整，不能自动证明视觉真的 1:1；上游也允许在内置 ImageGen 不可用时退回“把 prompt 贴到 GPT web”，所以实际 backend 必须在运行记录中注明。
 
 </details>
 
-<p><strong>🖼️ Samples</strong> · <code>identity-skill</code></p>
+<p><strong>🖼️ 示例</strong> · <code>identity-skill</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/identity-skill/01-architecture-cafe.png"><img src="examples/identity-skill/01-architecture-cafe.png" alt="identity-skill — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/identity-skill/02-mountain-lake.png"><img src="examples/identity-skill/02-mountain-lake.png" alt="identity-skill — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/identity-skill/03-portrait-camera-duo.png"><img src="examples/identity-skill/03-portrait-camera-duo.png" alt="identity-skill — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/identity-skill/04-animal-cat-dog.png"><img src="examples/identity-skill/04-animal-cat-dog.png" alt="identity-skill — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/identity-skill/01-architecture-cafe.png"><img src="examples/identity-skill/01-architecture-cafe.png" alt="identity-skill — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/identity-skill/02-mountain-lake.png"><img src="examples/identity-skill/02-mountain-lake.png" alt="identity-skill — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/identity-skill/03-portrait-camera-duo.png"><img src="examples/identity-skill/03-portrait-camera-duo.png" alt="identity-skill — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/identity-skill/04-animal-cat-dog.png"><img src="examples/identity-skill/04-animal-cat-dog.png" alt="identity-skill — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
-## Game Assets & Characters
+<a id="game-assets--characters"></a>
+## 游戏资产与角色
 
 ### [Hatch Pet](https://github.com/openai/skills/tree/main/skills/.curated/hatch-pet)
 
@@ -947,16 +898,14 @@ OpenAI 官方组合型 skill。先通过 ImageGen 设计完整页面、界面状
 - **Structure:** `SKILL.md`、`agents/openai.yaml`、专项 references、完整 spritesheet/验证脚本与 `LICENSE.txt`
 - **License:** Apache-2.0
 
-<p><strong>🖼️ Samples</strong> · <code>hatch-pet</code></p>
+<p><strong>🖼️ 示例</strong> · <code>hatch-pet</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/hatch-pet/01-architecture-cafe.png"><img src="examples/hatch-pet/01-architecture-cafe.png" alt="hatch-pet — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/hatch-pet/02-mountain-lake.png"><img src="examples/hatch-pet/02-mountain-lake.png" alt="hatch-pet — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/hatch-pet/03-portrait-camera-duo.png"><img src="examples/hatch-pet/03-portrait-camera-duo.png" alt="hatch-pet — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/hatch-pet/04-animal-cat-dog.png"><img src="examples/hatch-pet/04-animal-cat-dog.png" alt="hatch-pet — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/hatch-pet/01-architecture-cafe.png"><img src="examples/hatch-pet/01-architecture-cafe.png" alt="hatch-pet — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/hatch-pet/02-mountain-lake.png"><img src="examples/hatch-pet/02-mountain-lake.png" alt="hatch-pet — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/hatch-pet/03-portrait-camera-duo.png"><img src="examples/hatch-pet/03-portrait-camera-duo.png" alt="hatch-pet — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/hatch-pet/04-animal-cat-dog.png"><img src="examples/hatch-pet/04-animal-cat-dog.png" alt="hatch-pet — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
@@ -971,16 +920,14 @@ OpenAI 官方组合型 skill。先通过 ImageGen 设计完整页面、界面状
 - **Structure:** `SKILL.md`、`agents/`、`references/`、`scripts/`、`examples/` 与 `LICENSE.txt`
 - **License:** Apache-2.0
 
-<p><strong>🖼️ Samples</strong> · <code>character-sprite-maker</code></p>
+<p><strong>🖼️ 示例</strong> · <code>character-sprite-maker</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/character-sprite-maker/01-architecture-cafe.png"><img src="examples/character-sprite-maker/01-architecture-cafe.png" alt="character-sprite-maker — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/character-sprite-maker/02-mountain-lake.png"><img src="examples/character-sprite-maker/02-mountain-lake.png" alt="character-sprite-maker — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/character-sprite-maker/03-portrait-camera-duo.png"><img src="examples/character-sprite-maker/03-portrait-camera-duo.png" alt="character-sprite-maker — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/character-sprite-maker/04-animal-cat-dog.png"><img src="examples/character-sprite-maker/04-animal-cat-dog.png" alt="character-sprite-maker — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/character-sprite-maker/01-architecture-cafe.png"><img src="examples/character-sprite-maker/01-architecture-cafe.png" alt="character-sprite-maker — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/character-sprite-maker/02-mountain-lake.png"><img src="examples/character-sprite-maker/02-mountain-lake.png" alt="character-sprite-maker — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/character-sprite-maker/03-portrait-camera-duo.png"><img src="examples/character-sprite-maker/03-portrait-camera-duo.png" alt="character-sprite-maker — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/character-sprite-maker/04-animal-cat-dog.png"><img src="examples/character-sprite-maker/04-animal-cat-dog.png" alt="character-sprite-maker — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
@@ -995,16 +942,14 @@ OpenAI 官方组合型 skill。先通过 ImageGen 设计完整页面、界面状
 - **Structure:** `SKILL.md`、ImageGen CLI 恢复 reference 与 cutout/pixelize/fit/validate 脚本
 - **License:** MIT
 
-<p><strong>🖼️ Samples</strong> · <code>generating-dot-assets</code></p>
+<p><strong>🖼️ 示例</strong> · <code>generating-dot-assets</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/generating-dot-assets/01-architecture-cafe.png"><img src="examples/generating-dot-assets/01-architecture-cafe.png" alt="generating-dot-assets — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/generating-dot-assets/02-mountain-lake.png"><img src="examples/generating-dot-assets/02-mountain-lake.png" alt="generating-dot-assets — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/generating-dot-assets/03-portrait-camera-duo.png"><img src="examples/generating-dot-assets/03-portrait-camera-duo.png" alt="generating-dot-assets — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/generating-dot-assets/04-animal-cat-dog.png"><img src="examples/generating-dot-assets/04-animal-cat-dog.png" alt="generating-dot-assets — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/generating-dot-assets/01-architecture-cafe.png"><img src="examples/generating-dot-assets/01-architecture-cafe.png" alt="generating-dot-assets — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/generating-dot-assets/02-mountain-lake.png"><img src="examples/generating-dot-assets/02-mountain-lake.png" alt="generating-dot-assets — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/generating-dot-assets/03-portrait-camera-duo.png"><img src="examples/generating-dot-assets/03-portrait-camera-duo.png" alt="generating-dot-assets — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/generating-dot-assets/04-animal-cat-dog.png"><img src="examples/generating-dot-assets/04-animal-cat-dog.png" alt="generating-dot-assets — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
@@ -1019,7 +964,7 @@ OpenAI 官方组合型 skill。先通过 ImageGen 设计完整页面、界面状
 - **Structure:** 约 190 行 `SKILL.md`、prompt patterns、asset recipes、brief scaffold 与跨 skill 交接约定
 - **License:** MIT
 
-#### ✨ Features
+#### ✨ 特点
 
 - 清楚区分位图概念与 `pack.mcmeta`、block model、blockstate、字体、声音、shader 等确定性资源包工作。
 - 每类资产有不同验收目标：`pack.png` 看 64×64 轮廓，横幅看桌面/移动裁切，纹理看正视、均匀光和可重绘性，UI 看真实控件的留白。
@@ -1027,22 +972,20 @@ OpenAI 官方组合型 skill。先通过 ImageGen 设计完整页面、界面状
 - 对现有 `pack.png` refresh、纹理概念到资源包交接、UI/服务器品牌 mockup 给出端到端路径。
 
 <details>
-<summary><strong>📝 Editor’s note</strong></summary>
+<summary><strong>📝 编辑点评</strong></summary>
 
 它是领域路由和 brief skill，而不是像 Sprite Pipeline 那样带完整图像几何处理链；缩放、像素清理、平铺和 pack wiring 都明确留给人工或其他 skill。仓库没有专属于 `minecraft-imagegen` 的公开生成样例，因此目前只能验证流程和源码，不能评价视觉质量或 vanilla-faithful 稳定性。
 
 </details>
 
-<p><strong>🖼️ Samples</strong> · <code>minecraft-imagegen</code></p>
+<p><strong>🖼️ 示例</strong> · <code>minecraft-imagegen</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/minecraft-imagegen/01-architecture-cafe.png"><img src="examples/minecraft-imagegen/01-architecture-cafe.png" alt="minecraft-imagegen — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/minecraft-imagegen/02-mountain-lake.png"><img src="examples/minecraft-imagegen/02-mountain-lake.png" alt="minecraft-imagegen — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/minecraft-imagegen/03-portrait-camera-duo.png"><img src="examples/minecraft-imagegen/03-portrait-camera-duo.png" alt="minecraft-imagegen — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/minecraft-imagegen/04-animal-cat-dog.png"><img src="examples/minecraft-imagegen/04-animal-cat-dog.png" alt="minecraft-imagegen — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/minecraft-imagegen/01-architecture-cafe.png"><img src="examples/minecraft-imagegen/01-architecture-cafe.png" alt="minecraft-imagegen — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/minecraft-imagegen/02-mountain-lake.png"><img src="examples/minecraft-imagegen/02-mountain-lake.png" alt="minecraft-imagegen — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/minecraft-imagegen/03-portrait-camera-duo.png"><img src="examples/minecraft-imagegen/03-portrait-camera-duo.png" alt="minecraft-imagegen — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/minecraft-imagegen/04-animal-cat-dog.png"><img src="examples/minecraft-imagegen/04-animal-cat-dog.png" alt="minecraft-imagegen — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
@@ -1058,26 +1001,25 @@ OpenAI 官方 game-studio skill：从基准角色或 seed frame 生成动作条�
 - **License:** 上游仓库未声明开源许可证
 
 <details>
-<summary><strong>📝 Editor’s note</strong></summary>
+<summary><strong>📝 编辑点评</strong></summary>
 
 相比只描述“生成一张 sprite sheet”的 prompt，它把生成模型限制在视觉内容，将几何、帧数、尺寸和预览交给脚本，是更适合作为 benchmark 基准的工程化组合。
 
 </details>
 
-<p><strong>🖼️ Samples</strong> · <code>sprite-pipeline</code></p>
+<p><strong>🖼️ 示例</strong> · <code>sprite-pipeline</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/sprite-pipeline/01-architecture-cafe.png"><img src="examples/sprite-pipeline/01-architecture-cafe.png" alt="sprite-pipeline — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/sprite-pipeline/02-mountain-lake.png"><img src="examples/sprite-pipeline/02-mountain-lake.png" alt="sprite-pipeline — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/sprite-pipeline/03-portrait-camera-duo.png"><img src="examples/sprite-pipeline/03-portrait-camera-duo.png" alt="sprite-pipeline — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/sprite-pipeline/04-animal-cat-dog.png"><img src="examples/sprite-pipeline/04-animal-cat-dog.png" alt="sprite-pipeline — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/sprite-pipeline/01-architecture-cafe.png"><img src="examples/sprite-pipeline/01-architecture-cafe.png" alt="sprite-pipeline — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/sprite-pipeline/02-mountain-lake.png"><img src="examples/sprite-pipeline/02-mountain-lake.png" alt="sprite-pipeline — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/sprite-pipeline/03-portrait-camera-duo.png"><img src="examples/sprite-pipeline/03-portrait-camera-duo.png" alt="sprite-pipeline — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/sprite-pipeline/04-animal-cat-dog.png"><img src="examples/sprite-pipeline/04-animal-cat-dog.png" alt="sprite-pipeline — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
-## Storyboards & Visual Narratives
+<a id="storyboards--visual-narratives"></a>
+## 故事板与视觉叙事
 
 ### [Agentara Cinematic Visual Skills](https://github.com/agentara/skills/tree/main/skills/aigc)
 
@@ -1090,7 +1032,7 @@ OpenAI 官方 game-studio skill：从基准角色或 seed frame 生成动作条�
 - **Structure:** `video-poster-design/SKILL.md` 与 `video-storyboard/SKILL.md` 两个独立单文件工作流
 - **License:** MIT
 
-#### ✨ Features
+#### ✨ 特点
 
 - Poster skill 在方向不明确时先给 3–5 个构图、字体、光线和情绪都真正不同的概念，再生成获选方向。
 - Storyboard skill 根据时长路由 9、12 或 16 格，并把每格编号、持续时间、镜头变化、人物/服装/道具/地理连续性写成同一份生成契约。
@@ -1098,35 +1040,31 @@ OpenAI 官方 game-studio skill：从基准角色或 seed frame 生成动作条�
 - 分镜图之后还生成时间总和一致的视频 prompt script，将静态画面、动作、机位、声音与剪辑节奏连接起来。
 
 <details>
-<summary><strong>📝 Editor’s note</strong></summary>
+<summary><strong>📝 编辑点评</strong></summary>
 
 这两个 skill 的领域信息架构很清楚，但仓库没有随包成品或 eval。Storyboard 又要求图片模型在一张图里同时满足精确网格、编号、时长文字与多格角色一致性，这恰好都是生成模型的薄弱项；它禁止用确定性工具组装网格，因此在我们的 benchmark 中应重点检查 panel count、文字和连续性，而不能把声明的 9/12/16 格当成保证。Poster 的确定性叠字只是建议的第二遍处理，没有附带实现脚本。
 
 </details>
 
-<p><strong>🖼️ Samples</strong> · <code>video-poster-design</code></p>
+<p><strong>🖼️ 示例</strong> · <code>video-poster-design</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/video-poster-design/01-architecture-cafe.png"><img src="examples/video-poster-design/01-architecture-cafe.png" alt="video-poster-design — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/video-poster-design/02-mountain-lake.png"><img src="examples/video-poster-design/02-mountain-lake.png" alt="video-poster-design — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/video-poster-design/03-portrait-camera-duo.png"><img src="examples/video-poster-design/03-portrait-camera-duo.png" alt="video-poster-design — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/video-poster-design/04-animal-cat-dog.png"><img src="examples/video-poster-design/04-animal-cat-dog.png" alt="video-poster-design — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/video-poster-design/01-architecture-cafe.png"><img src="examples/video-poster-design/01-architecture-cafe.png" alt="video-poster-design — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/video-poster-design/02-mountain-lake.png"><img src="examples/video-poster-design/02-mountain-lake.png" alt="video-poster-design — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/video-poster-design/03-portrait-camera-duo.png"><img src="examples/video-poster-design/03-portrait-camera-duo.png" alt="video-poster-design — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/video-poster-design/04-animal-cat-dog.png"><img src="examples/video-poster-design/04-animal-cat-dog.png" alt="video-poster-design — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
-<p><strong>🖼️ Samples</strong> · <code>video-storyboard</code></p>
+<p><strong>🖼️ 示例</strong> · <code>video-storyboard</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/video-storyboard/01-architecture-cafe.png"><img src="examples/video-storyboard/01-architecture-cafe.png" alt="video-storyboard — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/video-storyboard/02-mountain-lake.png"><img src="examples/video-storyboard/02-mountain-lake.png" alt="video-storyboard — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/video-storyboard/03-portrait-camera-duo.png"><img src="examples/video-storyboard/03-portrait-camera-duo.png" alt="video-storyboard — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/video-storyboard/04-animal-cat-dog.png"><img src="examples/video-storyboard/04-animal-cat-dog.png" alt="video-storyboard — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/video-storyboard/01-architecture-cafe.png"><img src="examples/video-storyboard/01-architecture-cafe.png" alt="video-storyboard — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/video-storyboard/02-mountain-lake.png"><img src="examples/video-storyboard/02-mountain-lake.png" alt="video-storyboard — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/video-storyboard/03-portrait-camera-duo.png"><img src="examples/video-storyboard/03-portrait-camera-duo.png" alt="video-storyboard — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/video-storyboard/04-animal-cat-dog.png"><img src="examples/video-storyboard/04-animal-cat-dog.png" alt="video-storyboard — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
@@ -1141,53 +1079,52 @@ OpenAI 官方 game-studio skill：从基准角色或 seed frame 生成动作条�
 - **Structure:** `SKILL.md`、`assets/template.html`、`references/styles.md` 与 `evals/evals.json`
 - **License:** 上游仓库未声明开源许可证
 
-<p><strong>🖼️ Samples</strong> · <code>storyboard-skill</code></p>
+<p><strong>🖼️ 示例</strong> · <code>storyboard-skill</code></p>
 
 <table>
   <tr>
-    <td width="50%" align="center"><a href="examples/storyboard-skill/01-architecture-cafe.png"><img src="examples/storyboard-skill/01-architecture-cafe.png" alt="storyboard-skill — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="50%" align="center"><a href="examples/storyboard-skill/02-mountain-lake.png"><img src="examples/storyboard-skill/02-mountain-lake.png" alt="storyboard-skill — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-  </tr>
-  <tr>
-    <td width="50%" align="center"><a href="examples/storyboard-skill/03-portrait-camera-duo.png"><img src="examples/storyboard-skill/03-portrait-camera-duo.png" alt="storyboard-skill — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="50%" align="center"><a href="examples/storyboard-skill/04-animal-cat-dog.png"><img src="examples/storyboard-skill/04-animal-cat-dog.png" alt="storyboard-skill — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+    <td width="25%" align="center"><a href="examples/storyboard-skill/01-architecture-cafe.png"><img src="examples/storyboard-skill/01-architecture-cafe.png" alt="storyboard-skill — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/storyboard-skill/02-mountain-lake.png"><img src="examples/storyboard-skill/02-mountain-lake.png" alt="storyboard-skill — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/storyboard-skill/03-portrait-camera-duo.png"><img src="examples/storyboard-skill/03-portrait-camera-duo.png" alt="storyboard-skill — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/storyboard-skill/04-animal-cat-dog.png"><img src="examples/storyboard-skill/04-animal-cat-dog.png" alt="storyboard-skill — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
-## Sample Inputs & Reproduction
+<a id="sample-inputs--reproduction"></a>
+## 示例输入与复现
 
-### Source images
+### 输入图片
 
 四张输入图都由系统 `imagegen` skill 生成或编辑。这里使用仓库相对路径，fork、clone 和 GitHub 页面都能直接显示。
 
 <table>
   <tr>
-    <td width="50%" align="center">
+    <td width="25%" align="center">
       <a href="fixtures/01-architecture-cafe.png"><img src="fixtures/01-architecture-cafe.png" alt="imagegen — architecture-cafe" width="100%"></a><br>
       <code>imagegen / 01-architecture-cafe</code>
     </td>
-    <td width="50%" align="center">
+    <td width="25%" align="center">
       <a href="fixtures/02-mountain-lake.png"><img src="fixtures/02-mountain-lake.png" alt="imagegen — mountain-lake" width="100%"></a><br>
       <code>imagegen / 02-mountain-lake</code>
     </td>
-  </tr>
-  <tr>
-    <td width="50%" align="center">
+    <td width="25%" align="center">
       <a href="fixtures/03-portrait-camera-duo.png"><img src="fixtures/03-portrait-camera-duo.png" alt="imagegen — portrait-camera-duo" width="100%"></a><br>
       <code>imagegen / 03-portrait-camera-duo</code>
     </td>
-    <td width="50%" align="center">
+    <td width="25%" align="center">
       <a href="fixtures/04-animal-cat-dog.png"><img src="fixtures/04-animal-cat-dog.png" alt="imagegen — animal-cat-dog" width="100%"></a><br>
       <code>imagegen / 04-animal-cat-dog</code>
     </td>
   </tr>
 </table>
 
-Example outputs 统一放在 `examples/<skill-id>/`，目录名就是 skill id；其中图片文件名对应输入场景。一个 skill 有多个强制方向时，先组合成一张场景板，README 仍然保持每个输入一张图。
+示例输出统一放在 `examples/<skill-id>/`，目录名就是 skill id；其中图片文件名对应输入场景。一个 skill 有多个强制方向时，先组合成一张场景板，README 仍然保持每个输入一张图。
 
-## Contributing
+<a id="contributing"></a>
+## 参与贡献
 
-### Curation
+<a id="curation"></a>
+### 收录标准
 
 优先收录满足以下条件的项目：
 
@@ -1207,7 +1144,7 @@ Example outputs 统一放在 `examples/<skill-id>/`，目录名就是 skill id�
 - 冒充、未署名搬运或违反原作者许可的副本
 - 与图片生成关系很弱的通用 agent skill
 
-### Submit a skill
+### 提交 Skill
 
 欢迎通过 issue 或 pull request 推荐项目。每条推荐最好包含：
 
@@ -1236,15 +1173,17 @@ Example outputs 统一放在 `examples/<skill-id>/`，目录名就是 skill id�
 - **License:** ...
 ```
 
-## Disclaimer
+## 免责声明
 
 “Awesome” 表示值得研究或使用，不代表本仓库为项目的安全性、稳定性、输出质量或授权范围背书。安装第三方 skill 前请阅读其源代码和许可证；不要把“GitHub 上可见”误解为可以自由复制、修改或商用。
 
-## Related Collections
+<a id="related-collections"></a>
+## 相关合集
 
 下面这些汇总项目覆盖范围比本仓库更广，适合发现候选、比较分类方式或了解 Agent Skills 生态。被它们收录不代表项目自动满足本仓库的 built-in ImageGen、示例与许可标准。
 
-### Official Foundations
+<a id="official-foundations"></a>
+### 官方基础
 
 这些是理解或编写 Codex ImageGen skills 时最重要的官方基线，不计入社区精选排名。
 
@@ -1257,14 +1196,14 @@ Example outputs 统一放在 `examples/<skill-id>/`，目录名就是 skill id�
 
 > `openai/skills` 仓库已标记为 deprecated；查找最新官方示例时优先查看 `openai/plugins` 和 `openai/codex`。
 
-### Skills discovery
+### Skills 发现
 
 - [Awesome Codex Skills](https://github.com/composio-community/awesome-codex-skills) — Codex 专门的通用 skills 清单，包含分类、安装说明和部分外部社区项目；不限于视觉或 ImageGen。
 - [Awesome Agent Skills](https://github.com/VoltAgent/awesome-agent-skills) — 按官方团队和社区来源整理的大型跨运行时目录，覆盖 Codex，并单列 OpenAI skills 与质量标准；维护者明确提醒其收录项目未经安全审计。
 - [Agent Skill Index](https://github.com/heilcheng/awesome-agent-skills) — 多语言 Agent Skills 指南和索引，连接 GitHub 清单、网页目录及多种运行时；适合广泛检索，不应把自动索引或热度当作质量证明。
 - [skills.sh](https://skills.sh) / [vercel-labs/skills](https://github.com/vercel-labs/skills) — 可搜索的 Skills 排行与开源安装 CLI，当前支持 Codex 及多种 agent；适合发现和试装，安装前仍需审查来源及内容。
 
-### Design and plugin ecosystem
+### 设计与 Plugin 生态
 
 - [Awesome Design Skills](https://github.com/bergside/awesome-design-skills) — 面向 Codex、Cursor 等工具的设计系统与 `SKILL.md` / `DESIGN.md` 清单，带预览和拉取命令；主要关注 UI/设计语言，不等同于位图 ImageGen skills。
 - [Awesome Codex & ChatGPT Plugins](https://github.com/hashgraph-online/awesome-codex-plugins) — 更广的 Codex plugin、skill 与资源市场，包含 scanner-backed 的提交流程；plugin 可能同时打包 skills、MCP 和 app，边界不同于本仓库。
