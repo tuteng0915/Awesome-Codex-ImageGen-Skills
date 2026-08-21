@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-21",
+  "updated_at": "2026-08-22",
   "notes": "Read-only local review clones. The upstream/ directory is gitignored; this file records the reviewed revisions without vendoring third-party code.",
   "sources": [
     {
@@ -51,6 +51,23 @@
       "name": "gc-minimal-zine-poster",
       "url": "https://github.com/LiamGvchi/gc-minimal-zine-poster.git",
       "commit": "ddb0d66b24a94f9c4fdd1f02835a836a2db3774e"
+    },
+    {
+      "name": "gpt-image2-ecommerce",
+      "url": "https://github.com/buluslan/gpt-image2-ecommerce.git",
+      "commit": "a3673fb6f316664280e6abd90a60a578c6fb2228"
+    },
+    {
+      "name": "hbg-travel-photo-redraw",
+      "url": "https://github.com/Mr-funny/hbg-travel-photo-redraw.git",
+      "commit": "5c32beca77cbff565db3b0ded6c9acc1f64cfa6c",
+      "scope": "skill/hbg-travel-photo-redraw"
+    },
+    {
+      "name": "heart-sticker-imagegen-skill",
+      "url": "https://github.com/SpaceZephyr/heart-sticker-imagegen-skill.git",
+      "commit": "fbeab748bf744e95183643ec73a6bb2e74723025",
+      "scope": "heart-sticker-imagegen"
     },
     {
       "name": "hiapi-icon-skills",

@@ -6,8 +6,8 @@
   <p>
     <a href="https://github.com/sindresorhus/awesome"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
     <img src="https://img.shields.io/badge/Codex-ImageGen-111827?style=flat-square&logo=openai&logoColor=white" alt="Codex ImageGen">
-    <img src="https://img.shields.io/badge/showcases-36-ec4899?style=flat-square" alt="36 skill showcases">
-    <img src="https://img.shields.io/badge/generated_samples-144-7c3aed?style=flat-square" alt="144 generated samples">
+    <img src="https://img.shields.io/badge/showcases-39-ec4899?style=flat-square" alt="39 skill showcases">
+    <img src="https://img.shields.io/badge/generated_samples-156-7c3aed?style=flat-square" alt="156 generated samples">
     <a href="#contributing"><img src="https://img.shields.io/badge/PRs-welcome-22c55e?style=flat-square" alt="PRs welcome"></a>
   </p>
   <p>
@@ -53,7 +53,21 @@ Turns a photograph into a vertical editorial composition combining an intact pho
 - **Structure:** `SKILL.md`, `agents/openai.yaml`, bilingual reference prompts, and examples
 - **License:** Personal, educational, research, and non-commercial use only; contact the author for commercial licensing
 
-<p><strong>🖼️ Samples</strong> · <code>photo-abstract-editorial</code></p>
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Keeps an intact photographic region instead of reducing the task to a filter or full-image style transfer.
+- Identifies subject relationships, axes, spacing, light, color roles, and negative space before translating them into abstract forms.
+- Applies strict restraint to the abstract panel: an ivory ground, a limited shape family, muted colors sampled from the source, and no decorative texture, shadow, collage, or unsupported elements.
+- Keeps `SKILL.md` short while moving the complete bilingual visual specification into `references/`, making it a good progressive-disclosure example.
+
+**Notes**
+
+The examples maintain a stable split layout, generous whitespace, and source-aware color mapping, although the degree of abstraction varies by subject. Sunset examples approach pure relational abstraction, while cities and landmarks retain stronger silhouettes and some nature scenes become more illustrative. “Keep the photo unchanged” remains an instruction to the model rather than a deterministic pixel-level guarantee.
+
+</details>
 
 <table>
   <tr>
@@ -75,7 +89,21 @@ Extends a recognizable source photograph into a tactile zine poster with torn-pa
 - **Structure:** `SKILL.md`, `agents/openai.yaml`, and two official source/result examples
 - **License:** Personal non-commercial use only; commercial, commissioned, internal, and paid use requires written permission
 
-<p><strong>🖼️ Samples</strong> · <code>scenes-gathered-zine-v1-3</code></p>
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Builds a Scene Card first, recording subjects, spatial invariants, dominant motion, visual weight, color mood, abstractable forms, and quiet zones before prompt compilation.
+- Its Minimal Abstraction Engine removes most small details and limits each piece to one primary illustration language plus at most one supporting language.
+- New saturated colors must serve a compositional purpose; the Structural Removal Test asks whether removing a color would change the structure.
+- Includes concrete constraints for photo privacy, text length, Chinese and English microtype, thumbnail review, and one targeted regeneration.
+
+**Notes**
+
+Both official examples preserve landmarks, bridges, crowds, and spatial depth while giving paper, torn edges, printmaking, and watercolor regions real compositional roles. The second keeps the source landscape orientation, suggesting that 3:5 is a default rather than a hard requirement. The roughly 400-line skill is comprehensive but concentrated almost entirely in `SKILL.md`, and only two official examples are available. Photo fidelity still depends on the image model; there is no deterministic compositing or pixel-level validation.
+
+</details>
 
 <table>
   <tr>
@@ -97,7 +125,21 @@ Turns a photo into a 3:4 monthly zine postcard with the complete image above and
 - **Structure:** A compact `SKILL.md`, three workflow references, a full rule draft, visual references, and eight examples
 - **License:** MIT
 
-<p><strong>🖼️ Samples</strong> · <code>photo-to-monthly-zine-postcard</code></p>
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Uses five aspect-ratio routes with explicit `contain` sizing and placement for landscape, square, portrait, and extremely narrow inputs; it asks before cropping unusual images.
+- Separates literary and music curation from generation: sources are researched and verified first, then passed to the generator as locked strings, with original narration or a blank song field as safe fallbacks.
+- Defines relative size and hierarchy for the watercolor field, bookmark rail, month, vertical literature group, song, and three-part footer.
+- Splits layout, content curation, and quality gates into focused references for clear progressive disclosure.
+
+**Notes**
+
+The eight finished examples are consistent in warm paper, photo-to-watercolor correspondence, right-rail hierarchy, and footer rhythm, and they cover ordinary landscapes, panoramic scenes, and a camera-framed input. The gallery does not publish the original source files, so the claim that the upper photo remains completely unchanged cannot be independently verified. `dusk-field-camera-frame.png` is 1024×1536 (2:3), not the stated hard 3:4 target. QA is a manual checklist without deterministic compositing, dimension checks, or text validation, and the skill does not explicitly require the built-in `$imagegen` tool.
+
+</details>
 
 <table>
   <tr>
@@ -119,7 +161,22 @@ Transforms text, objects, moods, photos, or references into quiet paper-textured
 - **Structure:** `SKILL.md`, five references, six author examples, eight evals, Codex UI metadata, and a trilingual README
 - **License:** MIT
 
-<p><strong>🖼️ Samples</strong> · <code>gc-minimal-zine-poster-v0-3</code></p>
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Routes among Generate, Photo Input, Reference Analysis, Prompt-only, and Analyze + Generate, choosing the smallest mode that satisfies the request.
+- Makes the visual system measurable: typically 70%–90% whitespace, an 8%–25% primary visual cluster, a saturated accent covering 0.8%–2.5% of the canvas, and one core metaphor rather than a full scene.
+- Combines layout, focal carrier, typography, texture, and decoration axes, with batch-level variation rules that prevent repetitive centered-thumbnail results.
+- Distinguishes edit targets, reference images, and supporting inserts, then records High, Medium, or Low preservation; people, pets, characters, artwork, and products default to High.
+- Separates the Prompt Compiler, Reference Analysis, and Quality Gate, with evals covering identity, product geometry, reference non-copying, prompt-only output, and irrelevant icon leakage.
+
+**Notes**
+
+All six author examples are 686×1144, close to a strict 3:5 ratio, and consistently show scanned paper, large whitespace, small visual events, and a single-color focus. Layouts such as center fragment, dual panel, type-led, and offset cluster differ meaningfully. It is one of the clearest entries about invoking built-in ImageGen, passing source images, and regenerating after failure. However, the examples are text-led posters rather than public source/result photo pairs, so advanced preservation routes remain visually unverified. QA and evals are declarative rather than automated, and generated microtype remains model-dependent. The callable name remains `gc-minimal-zine-poster-v0-3` while the README displays v0.3.1 for installation compatibility.
+
+</details>
 
 <table>
   <tr>
@@ -141,7 +198,21 @@ Recomposes a theme or photo as a dense dreamcore collage with one recognizable a
 - **Structure:** A single `SKILL.md`, Codex UI metadata, and a compact README
 - **License:** MIT
 
-<p><strong>🖼️ Samples</strong> · <code>dreamcore-collage-poster</code></p>
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Decomposes the image into five functional layers—primary anchor, echo, environment, geometric interruption, and anomaly—instead of merely stacking dreamcore adjectives.
+- Provides seven construction families, including fractured mosaic, altar grid, interface collage, and dark void, and requires batches to vary visual grammar rather than just subject position.
+- Limits the palette to two to four dominant colors and assigns explicit media roles to CRT scanlines, halftone, JPEG blocks, copier dirt, or misregistration.
+- Clearly separates dense dreamcore from whitespace-led minimal zines and defines an ordered role system for reference-image fusion.
+
+**Notes**
+
+The method is well specified, including native invocation, output paths, one targeted regeneration, and accidental-watermark checks. It fills the high-density collage end of this collection. The repository currently has no author-generated samples, evals, or automated QA, and its README is extremely brief, so cross-subject stability is not yet supported by public visual evidence. Short Chinese text, pseudo-interface labels, geometry, and reference-subject fidelity still require manual review.
+
+</details>
 
 <table>
   <tr>
@@ -163,7 +234,22 @@ Pairs a photo with warm archival paper, a small handmade stamp derived from the 
 - **Structure:** `SKILL.md`, a prompt/revision template, `agents/openai.yaml`, a trilingual README, and three linked examples
 - **License:** MIT
 
-<p><strong>🖼️ Samples</strong> · <code>make-photo-stamp-archive</code></p>
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Locks invariants in the photo panel—identity, faces, gestures, clothing, object count, architecture, signage, viewpoint, occlusion, and color relationships—before designing the stamp panel.
+- Chooses circular, framed, ridge-shaped, arched, or custom stamp silhouettes from subject semantics instead of forcing every image into a rectangular thumbnail.
+- Strictly defines the straight seam between the two main panels and forbids gradients, feathering, spines, overlap, diagonals, page-turn effects, and decorative dividers.
+- Maps feedback such as “10% smaller,” “move to the upper right,” or “less aged paper” to single-attribute revisions while preserving everything else.
+- Produces one independent asset per input photo rather than combining multiple photos into a contact sheet.
+
+**Notes**
+
+The three official 1448×1086 examples have clean seams, warm whitespace, and compact stamp groups; their building silhouettes, arched windows, and circular Buddha stamp show that silhouette selection is not a fixed template. The photo panel occupies roughly 50%–58%, so 55/45 is best treated as guidance. Source photos are not published separately, and the workflow sends the whole composition through a generation/edit model without deterministic compositing, so identity, signage, exact crops, and isolated revisions may drift. There are no evals or automated QA, and the examples do not cover people, multi-photo batches, vertical seams, or revision sequences. “Archive” describes the aesthetic—the raster output does not preserve originals, EXIF, indexing, or long-term archival metadata.
+
+</details>
 
 <table>
   <tr>
@@ -171,6 +257,78 @@ Pairs a photo with warm archival paper, a small handmade stamp derived from the 
     <td width="25%" align="center"><a href="examples/make-photo-stamp-archive/02-mountain-lake.png"><img src="examples/make-photo-stamp-archive/02-mountain-lake.png" alt="make-photo-stamp-archive — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
     <td width="25%" align="center"><a href="examples/make-photo-stamp-archive/03-portrait-camera-duo.png"><img src="examples/make-photo-stamp-archive/03-portrait-camera-duo.png" alt="make-photo-stamp-archive — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
     <td width="25%" align="center"><a href="examples/make-photo-stamp-archive/04-animal-cat-dog.png"><img src="examples/make-photo-stamp-archive/04-animal-cat-dog.png" alt="make-photo-stamp-archive — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+  </tr>
+</table>
+
+### [HBG Travel Photo Redraw](https://github.com/Mr-funny/hbg-travel-photo-redraw)
+
+Treats each travel photo as the sole factual source, then selects one modular method—printmaking, watercolor, architectural observation, postcard, textile, souvenir, or memory diorama—to produce a high-fidelity photo-to-redraw artwork.
+
+- **Author:** [Mr-funny](https://github.com/Mr-funny)
+- **Input:** One or more travel photos; optional style, layout, and use-case direction
+- **Output:** One independent artwork per input; the default is a 3:4 vertical diptych pairing a high-fidelity photo with a redraw of the same scene
+- **ImageGen role:** Uses built-in image generation for high-fidelity editing, preserving people, objects, architecture, terrain, and viewpoint before simplifying and reorganizing them through one selected style module
+- **Structure:** A concise `SKILL.md`, shared constraints, a style catalog, 17 focused style modules, extension guidance, Codex metadata, and 27 official examples
+- **License:** MIT
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Uses three-level progressive disclosure—shared photo constraints, catalog routing, then exactly one style module—rather than loading all 17 styles into context.
+- Defines invariants for identity and count, pose, architecture, terrain, viewpoint, source-derived color, and text; when a location is uncertain, it uses a scene theme rather than inventing a place name.
+- Processes multiple photos through independent calls, forbids cross-scene grids, and allows only one targeted correction so a failed detail does not trigger unrelated composition or palette changes.
+- Covers architectural ink observation, terrain relief, postage relief, enamel magnets, travel journals, textile craft, and memory dioramas, with a common interface for adding more modules.
+
+**Notes**
+
+The upstream repository publishes 17 style modules, with 27 examples across eight of them. Its modularity and progressive loading are unusually mature, although most examples show only finished outputs rather than paired sources and reproducible run records. Our four samples route to architectural ink observation, lakeside terrain, travel memory field note, and felted memory diorama; they preserve subject count, key objects, color, and short English text well. The default claim that the photo panel remains unchanged still relies on model compliance rather than deterministic compositing, so hands, exact pixels, and generated text require review. The indoor pet scene is outside the skill's native travel scope and is deliberately interpreted here as a domestic memory souvenir to preserve the shared input set.
+
+</details>
+
+<table>
+  <tr>
+    <td width="25%" align="center"><a href="examples/hbg-travel-photo-redraw/01-architecture-cafe.png"><img src="examples/hbg-travel-photo-redraw/01-architecture-cafe.png" alt="hbg-travel-photo-redraw — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/hbg-travel-photo-redraw/02-mountain-lake.png"><img src="examples/hbg-travel-photo-redraw/02-mountain-lake.png" alt="hbg-travel-photo-redraw — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/hbg-travel-photo-redraw/03-portrait-camera-duo.png"><img src="examples/hbg-travel-photo-redraw/03-portrait-camera-duo.png" alt="hbg-travel-photo-redraw — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/hbg-travel-photo-redraw/04-animal-cat-dog.png"><img src="examples/hbg-travel-photo-redraw/04-animal-cat-dog.png" alt="hbg-travel-photo-redraw — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+  </tr>
+</table>
+
+### [Heart Sticker ImageGen Skill](https://github.com/SpaceZephyr/heart-sticker-imagegen-skill)
+
+Turns a person, pet, object photo, or exact short text into a sticker by recommending suitable styles, waiting for confirmation, and then invoking Codex built-in `image_gen`.
+
+- **Author:** [SpaceZephyr](https://github.com/SpaceZephyr)
+- **Input:** A person, pet, or object image; alternatively, exact text to render
+- **Output:** Eleven image-sticker styles, nine text-sticker styles, custom styling, or background extraction
+- **ImageGen role:** Compiles the selected source prompt into a built-in `image_gen` edit or generation request and adds subject-preservation, error, and text-review constraints
+- **Structure:** `SKILL.md`, Codex metadata, image and text style libraries, a case index, a source manifest, and 31 generated examples
+- **License:** No independent open-source license; the 20 base prompts come from `mundane799699/heart-sticker`, whose README reserves all rights, so redistribution and commercial use require separate review
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Makes “collect material → recommend 3–5 styles → wait for confirmation → generate” a hard gate, avoiding generation spend before the user chooses.
+- Distinguishes local paths from conversation images and selects either `referenced_image_paths` or `num_last_images_to_include` correctly.
+- Loads eleven image styles and nine text styles on demand, with routing guidance for people, pets, action scenes, clean cutouts, short slogans, and longer copy.
+- Locks the user's exact text and asks for one text-only correction when characters are wrong; the source manifest records the original repository, commit, and extraction paths.
+
+**Notes**
+
+Our samples use cartoon sticker, vintage comic, kawaii 3D, and clay. The method can be forced onto non-character architecture and landscapes, while the two people, camera, pets, and yarn ball remain correctly counted; `NICE SHOT!` also renders accurately. The café result does not strictly follow the requested plain off-white background, showing how source style prompts and appended constraints can compete. Licensing is the largest limitation: this repository explicitly declares no independent open-source license, and its base prompts come from an all-rights-reserved upstream. `SKILL.md` also contains hard-coded WeChat customer-service routing for the trigger phrases “print stickers” and “image API”; that is a commercial service hook rather than an ImageGen method and should be reviewed separately before adoption or modification.
+
+</details>
+
+<table>
+  <tr>
+    <td width="25%" align="center"><a href="examples/heart-sticker-imagegen/01-architecture-cafe.png"><img src="examples/heart-sticker-imagegen/01-architecture-cafe.png" alt="heart-sticker-imagegen — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/heart-sticker-imagegen/02-mountain-lake.png"><img src="examples/heart-sticker-imagegen/02-mountain-lake.png" alt="heart-sticker-imagegen — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/heart-sticker-imagegen/03-portrait-camera-duo.png"><img src="examples/heart-sticker-imagegen/03-portrait-camera-duo.png" alt="heart-sticker-imagegen — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/heart-sticker-imagegen/04-animal-cat-dog.png"><img src="examples/heart-sticker-imagegen/04-animal-cat-dog.png" alt="heart-sticker-imagegen — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
@@ -188,7 +346,22 @@ Generates extremely simplified, rounded square mascot candidates designed to rem
 - **Structure:** A single `SKILL.md`, README, MIT License, and one showcase wall
 - **License:** MIT
 
-<p><strong>🖼️ Samples</strong> · <code>ip-as-logo</code></p>
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Proposes three reasoned IP directions from product purpose, audience, and personality, then generates two candidates per direction by default; a chosen direction receives six controlled variations.
+- Tests fixed lower-left and lower-right compositions across the six-image batch, generating, saving, and labeling each image independently instead of asking the model for a confusing grid.
+- Uses a Complexity Budget built around one continuous silhouette, at most one species cue, two internal color regions, and minimal facial marks—well targeted to small mascots.
+- Deliberately omits terms such as `logo`, `brand mark`, and `app icon` from generation prompts to reduce unwanted frames, text, and showcase mockups.
+- Adapts constraints to either modern single-prompt interfaces or older separate negative-prompt APIs and records the model, provider, and actual constraint mode.
+
+**Notes**
+
+The showcase animals, ghosts, robots, and objects share bold rounded silhouettes, restrained color, and corner crops, making the method useful for fast brand exploration. The repository publishes only one 2560×2200 montage—not the individual candidates, prompts, product briefs, 32×32 tests, or repeated runs. It also does not treat an existing character as an explicit edit target, so “IP” here means new mascot exploration rather than identity-preserving conversion. Generation is intentionally treated as a random draw with no inspection, selection, retry, or post-processing. The final asset is a raster image on a solid background, not a production logo system with SVG, transparency, monochrome, wordmark lockups, trademark checks, or brand applications.
+
+</details>
 
 <table>
   <tr>
@@ -210,7 +383,21 @@ Combines a brand `DESIGN.md`, eight marketing templates, variation axes, and ant
 - **Structure:** An approximately 800-line entry skill, three references, brand profiles, and Codex metadata
 - **License:** MIT
 
-<p><strong>🖼️ Samples</strong> · <code>30x-image</code></p>
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Converts a brand into a nine-part profile plus numeric `taste:` values, then uses variance, density, art direction, spacing, realism, and text density to choose template axes.
+- Treats each asset as its own template rather than using one universal prompt; carousels generate each slide independently instead of chaining image-to-image edits.
+- Combines general anti-slop rules with each brand profile's `Don't` list to suppress purple neon, vague calls to action, fake placeholder brands, and unsupported visual defaults.
+- Defines separate `init`, generation, and local-edit paths, with records for prompts, tool parameters, chosen axes, files, and manifests.
+
+**Notes**
+
+This is one of the few system-level skills that maps a brand profile to many marketing asset types, and its methodology is dense. The repository bundles only the Stripe profile, not the advertised 60+ brands or public renders; those are fetched through `npx getdesign`. Its instructions also assume that the built-in tool exposes Responses API fields such as `size`, `quality`, `n`, `output_format`, and `input_image_mask`. Several of these are explicit CLI/API fallback controls in the official Codex ImageGen skill, so the real tool schema must be checked per harness. The upstream M0–M3 states are author acceptance records, not independent results from this collection.
+
+</details>
 
 <table>
   <tr>
@@ -218,6 +405,42 @@ Combines a brand `DESIGN.md`, eight marketing templates, variation axes, and ant
     <td width="25%" align="center"><a href="examples/30x-image/02-mountain-lake.png"><img src="examples/30x-image/02-mountain-lake.png" alt="30x-image — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
     <td width="25%" align="center"><a href="examples/30x-image/03-portrait-camera-duo.png"><img src="examples/30x-image/03-portrait-camera-duo.png" alt="30x-image — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
     <td width="25%" align="center"><a href="examples/30x-image/04-animal-cat-dog.png"><img src="examples/30x-image/04-animal-cat-dog.png" alt="30x-image — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+  </tr>
+</table>
+
+### [GPT Image 2 Ecommerce](https://github.com/buluslan/gpt-image2-ecommerce)
+
+Maps a natural-language request and optional product reference to hero images, lifestyle shots, A+ content, social posts, UGC, packaging, model photography, storefronts, and campaigns through 25 structured scene templates.
+
+- **Author:** [buluslan](https://github.com/buluslan)
+- **Input:** Product description, category, selling points, style, and scene requirements; optional product or environment reference images
+- **Output:** Independent e-commerce images across 25 scene types and their variants
+- **ImageGen role:** Matches and simplifies one JSON template, then invokes Codex built-in ImageGen through `codex exec`; an optional local HTTP image service is also supported
+- **Structure:** An approximately 180-line `SKILL.md`, 25 standalone JSON templates, a hybrid `imagegen.sh` runner, README, banner, and MIT License
+- **License:** MIT
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Covers 25 common commerce tasks, including hero, lifestyle, flat lay, macro, poster, social, UGC, model, comparison, packaging, infographic, exploded view, ghost mannequin, seasonal campaign, device mockup, and physical storefront imagery.
+- Reads only the template matching the request, then fills non-empty variables, style overrides, and category tips rather than loading the whole library into one prompt.
+- Gives UGC, livestream, and social routes explicit anti-AI constraints for phone model, noise, color cast, imperfections, lived-in environments, and non-professional framing.
+- Supports both reference-free and product-reference generation, and can route its runner between direct Codex CLI execution and an optional local HTTP service.
+
+**Notes**
+
+This is fundamentally an e-commerce template router plus a nested Codex CLI executor, not a direct caller of the current harness tool. Its `allowed-tools` frontmatter follows a Claude-style convention, the normal path launches a new `codex exec` process, and result handling assumes `~/.codex/generated_images/`; cleanup instructions also delete the corresponding session directory, so paths and deletion scope should be audited before integration elsewhere. Our samples cover a storefront, a four-season umbrella campaign, camera lifestyle photography, and pet-toy UGC. The storefront and portrait routes change the source conservatively, the seasonal grid demonstrates the clearest template value, and UGC mainly changes crop and texture. The 25 templates do not ship with per-template outputs or automated evals, so logos, packaging text, exact structure, and grid consistency remain manual review items.
+
+</details>
+
+<table>
+  <tr>
+    <td width="25%" align="center"><a href="examples/gpt-image2-ecommerce/01-architecture-cafe.png"><img src="examples/gpt-image2-ecommerce/01-architecture-cafe.png" alt="gpt-image2-ecommerce — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/gpt-image2-ecommerce/02-mountain-lake.png"><img src="examples/gpt-image2-ecommerce/02-mountain-lake.png" alt="gpt-image2-ecommerce — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/gpt-image2-ecommerce/03-portrait-camera-duo.png"><img src="examples/gpt-image2-ecommerce/03-portrait-camera-duo.png" alt="gpt-image2-ecommerce — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/gpt-image2-ecommerce/04-animal-cat-dog.png"><img src="examples/gpt-image2-ecommerce/04-animal-cat-dog.png" alt="gpt-image2-ecommerce — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
@@ -235,7 +458,21 @@ Simplifies an image into a low-color handmade yarn, tufted-rug, or textile inter
 - **Structure:** `SKILL.md`, `agents/openai.yaml`, and five reference images
 - **License:** MIT
 
-<p><strong>🖼️ Samples</strong> · <code>yarn-rug-reference</code></p>
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Reduces photographic detail and color before adding fiber texture, avoiding the common failure of simply overlaying a textile texture on a photo.
+- Assigns unified color families to large regions such as sky, ground, architecture, and water, substantially reducing chromatic noise and fragmented gradients.
+- Preserves primary subject relationships while intentionally discarding secondary detail; its landscape, animal, and portrait references remain semantically legible.
+- Gives concrete material counterexamples, excluding beads, plastic, mosaic, regular woven lines, and decorative fringe.
+
+**Notes**
+
+The references show convincing pile, color blocking, and compositional consistency, with a believable tufted-rug feel. The implementation is still prompt-only: it has no deterministic compositing or dimension-validation scripts, and `SKILL.md` does not explicitly invoke built-in `$imagegen`. The stated 1080×1620 canvas, fixed pixel coordinates, and source-region fidelity should therefore be treated as generation targets rather than guarantees that every run can verify exactly.
+
+</details>
 
 <table>
   <tr>
@@ -260,7 +497,21 @@ Translates key claims, processes, states, and metaphors from Chinese articles in
 - **Structure:** A compact `SKILL.md`, five references, fourteen style anchors, and example prompts
 - **License:** MIT
 
-<p><strong>🖼️ Samples</strong> · <code>ian-xiaohei-illustrations</code></p>
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Finds cognitive anchors instead of illustrating every paragraph evenly; each image carries one judgment or structure.
+- Requires Xiaohei to perform the central action rather than appear as decoration, and each visual metaphor must be newly invented for the current article.
+- Sets explicit generation and QA constraints for white backgrounds, whitespace, limited accent colors, short Chinese annotations, and avoiding slide-like layouts.
+- Separates character design, style DNA, composition patterns, prompt templates, and checklists into references while keeping the entry file near one hundred lines.
+
+**Notes**
+
+The public examples are notably consistent in their white ground, black protagonist, red-orange-blue annotations, and absurd physical actions, making the skill particularly useful for Chinese workplace and methodology content. Its strength is the sequence “extract a point, then invent an action metaphor,” not a generic illustration style pack. Generated Chinese text can still drift, and character consistency depends on prompting and human review. An English wrapper and mascot extension exists as `illustrations-codex-skill`, but it explicitly credits this project, so the original author repository remains the primary entry.
+
+</details>
 
 <table>
   <tr>
@@ -282,7 +533,21 @@ Uses Xiaohei, real objects, and physical action to illustrate workplace situatio
 - **Structure:** A detailed `SKILL.md`, seven references, and seven master-quality examples
 - **License:** MIT
 
-<p><strong>🖼️ Samples</strong> · <code>ian-xiaohei-scenes</code></p>
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Forces an abstract idea into one real hero object, one core physical conflict, a Xiaohei action, and two to four short labels.
+- Makes “reference, do not copy” actionable: each standard image must change at least three of the hero object, spatial direction, action, props, label position, or viewpoint.
+- Builds scroll mode from irregular curved paths, physical-object nodes, and staged actions rather than simply placing cards in a row.
+- Uses two quality gates: master lock, character action, aspect ratio, and factual grounding are mandatory, while minor text or material defects can be recorded for iteration.
+
+**Notes**
+
+Seven examples clearly distinguish hand-drawn explanatory diagrams from white-studio object scenes, and the scroll master demonstrates an unusual approach to visualizing personal experience. The rules are thorough, but `SKILL.md` exceeds 300 lines and relies heavily on browsing master references, making it more expensive to run than a lightweight prompt skill. It also carries a strong creator-specific IP and is not suited to neutral, unbranded commercial illustration.
+
+</details>
 
 <table>
   <tr>
@@ -304,7 +569,21 @@ Turns articles, courses, PDFs, DOCX files, or existing presentation material int
 - **Structure:** An entry `SKILL.md`, six narrative and visual references, theme tokens, and four examples
 - **License:** MIT
 
-<p><strong>🖼️ Samples</strong> · <code>ian-handdrawn-ppt</code></p>
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Selects a narrative type such as teaching, persuasive, or report, then chooses page archetypes semantically instead of following a mechanical template order.
+- Locks paper, titles, page numbers, linework, palette, characters, and spacing before multi-page generation; only the central semantic graphic changes with content.
+- Distinguishes cover and body-page proportions and requires final checks for page dimensions, Chinese accuracy, and whole-deck rhythm.
+- Degrades sensibly when generated text is unstable: reduce the text budget first, then leave label slots for deterministic typesetting if needed.
+
+**Notes**
+
+The public examples maintain a convincing near-white paper surface, fine lines, pale color, and consistent page skeleton. “PPT” describes the appearance of the final visuals: the primary output is text baked into PNG images, not an editable PPTX, and the skill does not package PDF or PPTX files. Only four pages are public, so consistency across a long deck remains a useful future test.
+
+</details>
 
 <table>
   <tr>
@@ -326,7 +605,20 @@ Detects passages in Markdown that need visual explanation and routes them to Mer
 - **Structure:** `SKILL.md`, `agents/openai.yaml`, three references, five styles, two export scripts, and a workflow diagram
 - **License:** MIT
 
-<p><strong>🖼️ Samples</strong> · <code>codex-illustrator</code></p>
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Does not force every visual through generation: flows, hierarchies, and relationship diagrams may use Mermaid or Excalidraw, while metaphors, scenes, and covers use ImageGen.
+- Scans heading hierarchy and visual opportunities first, then generates predictably named assets and writes them back into Markdown with explicit source connections.
+- Covers body illustrations, covers, and presentation visuals in one workflow, making it useful for studying how a general visual orchestrator routes tasks.
+
+**Notes**
+
+This is a hybrid skill whose main value lies in deciding when to use each visual tool rather than enforcing one art style. Its instructions and style library are substantial, but it has less public visual evidence than the Ian and Baoyu collections. Because it also edits the document, evaluation should check insertion points and reference integrity in addition to the final image.
+
+</details>
 
 <table>
   <tr>
@@ -348,7 +640,21 @@ A multi-skill suite for article illustrations, covers, comics, infographics, and
 - **Structure:** Five independent skills with their own workflows, references, and examples
 - **License:** MIT
 
-<p><strong>🖼️ Samples</strong> · <code>baoyu-article-illustrator</code></p>
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Covers a broad task range without putting every rule into one entry file: article illustrations, covers, comics, infographics, and social cards are modeled separately.
+- Usually treats style and layout as independent choices and provides many real examples as a visual vocabulary.
+- Plans content structure, pacing, and continuity before multi-image generation; saved prompts make review and reruns practical.
+- Clearly prioritizes native Codex ImageGen while preserving portability across agents and backends.
+
+**Notes**
+
+This is the most complete suite found in the current collection and is a strong reference for category-level evaluation. The tradeoff is a large repository and configuration surface, and it is not built-in-only: the same skills include branches for other runtimes and providers. It is listed as one suite rather than consuming five entries with closely related components.
+
+</details>
 
 <table>
   <tr>
@@ -359,8 +665,6 @@ A multi-skill suite for article illustrations, covers, comics, infographics, and
   </tr>
 </table>
 
-<p><strong>🖼️ Samples</strong> · <code>baoyu-cover-image</code></p>
-
 <table>
   <tr>
     <td width="25%" align="center"><a href="examples/baoyu-cover-image/01-architecture-cafe.png"><img src="examples/baoyu-cover-image/01-architecture-cafe.png" alt="baoyu-cover-image — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
@@ -369,8 +673,6 @@ A multi-skill suite for article illustrations, covers, comics, infographics, and
     <td width="25%" align="center"><a href="examples/baoyu-cover-image/04-animal-cat-dog.png"><img src="examples/baoyu-cover-image/04-animal-cat-dog.png" alt="baoyu-cover-image — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
-
-<p><strong>🖼️ Samples</strong> · <code>baoyu-comic</code></p>
 
 <table>
   <tr>
@@ -381,8 +683,6 @@ A multi-skill suite for article illustrations, covers, comics, infographics, and
   </tr>
 </table>
 
-<p><strong>🖼️ Samples</strong> · <code>baoyu-infographic</code></p>
-
 <table>
   <tr>
     <td width="25%" align="center"><a href="examples/baoyu-infographic/01-architecture-cafe.png"><img src="examples/baoyu-infographic/01-architecture-cafe.png" alt="baoyu-infographic — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
@@ -391,8 +691,6 @@ A multi-skill suite for article illustrations, covers, comics, infographics, and
     <td width="25%" align="center"><a href="examples/baoyu-infographic/04-animal-cat-dog.png"><img src="examples/baoyu-infographic/04-animal-cat-dog.png" alt="baoyu-infographic — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
-
-<p><strong>🖼️ Samples</strong> · <code>baoyu-xhs-images</code></p>
 
 <table>
   <tr>
@@ -414,7 +712,21 @@ Creates source-grounded technical infographics, explainers, and content packs fr
 - **Structure:** A skill file, three templates, three examples, acceptance docs, tests, and static checks
 - **License:** MIT
 
-<p><strong>🖼️ Samples</strong> · <code>codex-image</code></p>
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Decomposes source material into claims, relationships, audience, required labels, text budget, and sensitive information before generation—well suited to technical content and codebases.
+- Splits social assets and dense infographics into separate director routes, controlling mobile readability and structural density independently.
+- Uses P0/P1/P2 tiers for exact text and records the chosen visual grammar, pre-generation checks, and one retry delta in the prompt.
+- Includes five house looks intended to escape the common dark SaaS-card-and-arrow default.
+
+**Notes**
+
+This is a very new community project with a strong execution contract, privacy boundary, and quality gate, and it explicitly targets current built-in Codex capabilities. The repository mainly exposes briefs, prompts, and acceptance fixtures rather than a substantial public gallery. Its style stability and technical fidelity should therefore be judged after running our own examples.
+
+</details>
 
 <table>
   <tr>
@@ -436,7 +748,20 @@ Explores academic-figure composition with built-in ImageGen, then rebuilds the r
 - **Structure:** One `SKILL.md`, Codex metadata, and two Draw.io/preview examples
 - **License:** MIT
 
-<p><strong>🖼️ Samples</strong> · <code>codex-paper-figure-skill</code></p>
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Combines ImageGen's strength in composition exploration with deterministic tools for exact text, connections, and editability.
+- Parses scientific claims, entities, relationships, required labels, and constraints first, then checks XML, arrow direction, panel order, and exported previews explicitly.
+- Provides a separate workflow for external icon sources, licenses, and attribution, falling back to editable primitives when rights cannot be confirmed.
+
+**Notes**
+
+This is a boundary entry: ImageGen is an important intermediate step, but the final artifact is not a bitmap. That “generated reference → native reconstruction” pattern directly addresses text accuracy and editability in academic figures, so it remains in the collection with a hybrid label. The current version is still early and publishes only two example groups.
+
+</details>
 
 <table>
   <tr>
@@ -461,8 +786,6 @@ Explores several native Apple or Android UI directions, compares them with produ
 - **Structure:** `SKILL.md` plus focused references for backends, prompting, native components, implementation, dialogue, and validation
 - **License:** No open-source license declared upstream
 
-<p><strong>🖼️ Samples</strong> · <code>prototype-ui-with-imagegen</code></p>
-
 <table>
   <tr>
     <td width="25%" align="center"><a href="examples/prototype-ui-with-imagegen/01-architecture-cafe.png"><img src="examples/prototype-ui-with-imagegen/01-architecture-cafe.png" alt="prototype-ui-with-imagegen — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
@@ -482,8 +805,6 @@ An official OpenAI composite skill that designs complete pages, UI states, or ga
 - **ImageGen role:** Creates full-page or state-level design references before coding and supplies production bitmap assets
 - **Structure:** `SKILL.md`, `agents/openai.yaml`, and references for website concepts and visual validation
 - **License:** No open-source license declared upstream
-
-<p><strong>🖼️ Samples</strong> · <code>frontend-app-builder</code></p>
 
 <table>
   <tr>
@@ -505,7 +826,20 @@ Generates four genuinely distinct web directions, waits for a user choice, then 
 - **Structure:** `SKILL.md`, `agents/openai.yaml`, and one visual-iteration reference
 - **License:** MIT
 
-<p><strong>🖼️ Samples</strong> · <code>img-to-frontend</code></p>
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Makes “design before code” a hard gate and requires four directions to differ in structure, hierarchy, typography, interaction model, information architecture, and brand behavior—not merely color.
+- Treats user selection as a clear phase boundary; only the chosen direction is decomposed into layout, components, responsive behavior, and acceptance criteria.
+- Validates wide desktop, constrained desktop or tablet, and mobile views, correcting the largest visual discrepancy each round.
+
+**Notes**
+
+Its distinction from Prototype Native UI with Image Generation is clear: this skill targets the web and requires implementation as a real frontend, while the latter focuses more on Apple and Android native-product direction finding. Four high-quality concept images significantly increase runtime and generation usage, so it suits full design engagements rather than a small button edit.
+
+</details>
 
 <table>
   <tr>
@@ -527,7 +861,21 @@ A set of image-only skills for web sections, mobile screens and flows, and full 
 - **Structure:** Three standalone skills: `imagegen-frontend-web`, `imagegen-frontend-mobile`, and `brandkit`
 - **License:** MIT
 
-<p><strong>🖼️ Samples</strong> · <code>taste-imagegen-frontend-web</code></p>
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- The web skill enforces one independent image per section and records a composition anchor and background mode, avoiding one giant page image and repetitive text-left/image-right layouts.
+- The mobile skill locks iOS, Android, or cross-platform mode before constraining safe areas, navigation, device framing, readable text, cross-screen state, and a design bible.
+- Brandkit starts from category, audience, emotional promise, and core metaphor, requiring logo, color, typography, imagery, and digital or physical applications to form an explainable system on one board.
+- All three skills include extensive anti-slop lists and variation engines covering purple gradients, meaningless cards, fake luxury, irrelevant imagery, and default SaaS composition.
+
+**Notes**
+
+The rule set is enormous: the three `SKILL.md` files total more than 3,200 lines. They work well as a visual specification library, but progressive disclosure and per-run context cost are weak. They are tool-agnostic image instructions rather than built-in-only executors: the files do not explicitly invoke Codex `image_gen`, manage local outputs, or provide a standalone ImageGen gallery or automated QA. The repository's Floria examples demonstrate the broader Taste frontend ecosystem, not these three image skills in isolation, so they are labeled “Codex image mode compatible.”
+
+</details>
 
 <table>
   <tr>
@@ -538,8 +886,6 @@ A set of image-only skills for web sections, mobile screens and flows, and full 
   </tr>
 </table>
 
-<p><strong>🖼️ Samples</strong> · <code>taste-imagegen-frontend-mobile</code></p>
-
 <table>
   <tr>
     <td width="25%" align="center"><a href="examples/taste-imagegen-frontend-mobile/01-architecture-cafe.png"><img src="examples/taste-imagegen-frontend-mobile/01-architecture-cafe.png" alt="taste-imagegen-frontend-mobile — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
@@ -548,8 +894,6 @@ A set of image-only skills for web sections, mobile screens and flows, and full 
     <td width="25%" align="center"><a href="examples/taste-imagegen-frontend-mobile/04-animal-cat-dog.png"><img src="examples/taste-imagegen-frontend-mobile/04-animal-cat-dog.png" alt="taste-imagegen-frontend-mobile — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
-
-<p><strong>🖼️ Samples</strong> · <code>taste-brandkit</code></p>
 
 <table>
   <tr>
@@ -571,7 +915,21 @@ Generates consistent icon sets for apps, websites, and product features, support
 - **Structure:** A compact skill, ten styles, five palettes, planning/registration/QC CLIs, examples, and tests
 - **License:** MIT
 
-<p><strong>🖼️ Samples</strong> · <code>hiapi-icon-skills</code></p>
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Defines style as a structured preset covering material, surface, geometry, proportions, camera, lighting, shadow, edges, detail density, background, and cross-image consistency.
+- Batch mode requires comparable semantic and geometric complexity, a shared optical baseline, and consistent visual weight; individual mode creates a separate job for each subject.
+- Revision manifests inherit the parent system and change one named defect without overwriting the approved prompt; states move strictly from planned to generated_unreviewed to approved or needs_revision.
+- Transparency uses chroma keying, alpha extraction, and edge checks and is not misrepresented as native transparent generation.
+
+**Notes**
+
+The upstream test suite passes 12/12 locally. Two 1254×1254 examples also demonstrate consistent macaron material, camera, face geometry, shadow, and palette, plus basic continuity when revising the search icon. Public visual evidence currently covers only one of ten styles, five icon subjects, and an opaque background; other materials, individual export, chroma-key removal, and complex functional icons still need evaluation. HIAPI is the project brand, but normal execution explicitly avoids submitting paid HIAPI jobs.
+
+</details>
 
 <table>
   <tr>
@@ -593,7 +951,21 @@ An image-first personal-site workflow that generates and locks section reference
 - **Structure:** An approximately 480-line workflow, eight references, twelve samples, and an evidence validator
 - **License:** MIT
 
-<p><strong>🖼️ Samples</strong> · <code>identity-skill</code></p>
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Adds four approval gates before coding—content and style, reference images, asset decomposition, and generated assets—turning images into a version-locked implementation contract.
+- Places each approved reference in an immutable directory with a SHA-256 record; changes to the protagonist, medium, crop, hierarchy, or responsive behavior trigger `reference-invalidated` and return the workflow to design.
+- Decomposes sections into code-native elements, shared textures, fused scenes, and independent media slots while recording bounding boxes, aspect ratios, width share, and responsive mode.
+- Final validation checks desktop, ultrawide, and mobile evidence, per-section state, a fresh review, reference hashes, and whether a screenshot is merely a renamed reference image.
+
+**Notes**
+
+This is a hybrid boundary entry: ImageGen creates references and some assets, while the final deliverable is a coded website. Twelve bundled samples cover quiet cinematic blue, dark editorial, and multi-element heroes, with two negative examples for letter-like repeated copy and excessive clutter. The README video is not a complete offline-rerunnable project. The validator proves evidence and hash integrity, not true visual 1:1 fidelity. Upstream also allows falling back to pasting a prompt into GPT on the web when built-in ImageGen is unavailable, so every run should record the actual backend.
+
+</details>
 
 <table>
   <tr>
@@ -618,8 +990,6 @@ Creates an animatable pet from a concept or reference. ImageGen supplies the bas
 - **Structure:** `SKILL.md`, metadata, references, complete spritesheet/validation scripts, and `LICENSE.txt`
 - **License:** Apache-2.0
 
-<p><strong>🖼️ Samples</strong> · <code>hatch-pet</code></p>
-
 <table>
   <tr>
     <td width="25%" align="center"><a href="examples/hatch-pet/01-architecture-cafe.png"><img src="examples/hatch-pet/01-architecture-cafe.png" alt="hatch-pet — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
@@ -639,8 +1009,6 @@ A character-sprite and animation-row workflow focused on consistency, strict chr
 - **ImageGen role:** Uses `$imagegen` for the baseline, action rows, and repairs; scripts perform deterministic processing and validation
 - **Structure:** `SKILL.md`, `agents/`, `references/`, `scripts/`, `examples/`, and `LICENSE.txt`
 - **License:** Apache-2.0
-
-<p><strong>🖼️ Samples</strong> · <code>character-sprite-maker</code></p>
 
 <table>
   <tr>
@@ -662,8 +1030,6 @@ An ImageGen skill for game objects, props, icons, and transparent-background pix
 - **Structure:** `SKILL.md`, an ImageGen recovery reference, and cutout/pixelize/fit/validate scripts
 - **License:** MIT
 
-<p><strong>🖼️ Samples</strong> · <code>generating-dot-assets</code></p>
-
 <table>
   <tr>
     <td width="25%" align="center"><a href="examples/generating-dot-assets/01-architecture-cafe.png"><img src="examples/generating-dot-assets/01-architecture-cafe.png" alt="generating-dot-assets — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
@@ -684,7 +1050,21 @@ Generates pack concepts, banners, marketplace thumbnails, texture look-dev, serv
 - **Structure:** An approximately 190-line skill, prompt patterns, recipes, a brief scaffold, and handoff guidance
 - **License:** MIT
 
-<p><strong>🖼️ Samples</strong> · <code>minecraft-imagegen</code></p>
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Clearly separates bitmap concepts from deterministic resource-pack work such as `pack.mcmeta`, block models, blockstates, fonts, sounds, and shaders.
+- Gives each asset type a distinct acceptance target: 64×64 silhouette for `pack.png`, desktop and mobile crops for banners, front view and even lighting for textures, and realistic control spacing for UI.
+- Recommends saving both a high-resolution source and a target-size deliverable; when text is unsettled, it separates art-only and composed versions for later editing.
+- Provides end-to-end routes for refreshing an existing `pack.png`, handing texture concepts into a resource pack, and producing UI or server-brand mockups.
+
+**Notes**
+
+This is a domain router and briefing skill rather than a complete image-geometry pipeline like Sprite Pipeline. Scaling, pixel cleanup, tiling, and pack wiring are explicitly left to people or other skills. The repository has no public generated examples dedicated to `minecraft-imagegen`, so its process and source can be reviewed, but its visual quality and vanilla-faithful consistency cannot yet be assessed.
+
+</details>
 
 <table>
   <tr>
@@ -706,7 +1086,14 @@ An official OpenAI game-studio skill that generates action strips from an approv
 - **Structure:** `SKILL.md`, metadata, a workflow reference, and canvas, normalization, and preview scripts
 - **License:** No open-source license declared upstream
 
-<p><strong>🖼️ Samples</strong> · <code>sprite-pipeline</code></p>
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Notes**
+
+Compared with a prompt that merely asks for a sprite sheet, this workflow confines the generative model to visual content and gives geometry, frame count, dimensions, and preview assembly to deterministic scripts. That makes it a stronger engineering baseline for evaluation.
+
+</details>
 
 <table>
   <tr>
@@ -731,7 +1118,21 @@ A paired poster and storyboard workflow that turns video-project context into 3:
 - **Structure:** Two standalone workflows: `video-poster-design` and `video-storyboard`
 - **License:** MIT
 
-<p><strong>🖼️ Samples</strong> · <code>video-poster-design</code></p>
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- When the direction is unclear, the poster skill proposes three to five genuinely different concepts across composition, typography, lighting, and mood before generating the selected one.
+- The storyboard skill routes by duration to 9, 12, or 16 panels and encodes panel number, duration, shot change, and character, costume, prop, and geographic continuity in one generation contract.
+- Both share character-asset discovery rules: an existing character sheet must be supplied as an image reference rather than merely redescribed in text.
+- After the storyboard, the workflow produces a video prompt script whose timing matches the panels and connects static imagery, action, camera, sound, and editing rhythm.
+
+**Notes**
+
+The domain information architecture is clear, but the repository ships no finished outputs or evals. The storyboard also asks an image model to satisfy exact grids, numbering, duration text, and multi-panel character continuity in one image—all known weak points. Because it forbids deterministic grid assembly, evaluation should inspect panel count, text, and continuity rather than treating 9, 12, or 16 panels as guaranteed. Deterministic poster typesetting is suggested only as a second pass and has no bundled implementation.
+
+</details>
 
 <table>
   <tr>
@@ -741,8 +1142,6 @@ A paired poster and storyboard workflow that turns video-project context into 3:
     <td width="25%" align="center"><a href="examples/video-poster-design/04-animal-cat-dog.png"><img src="examples/video-poster-design/04-animal-cat-dog.png" alt="video-poster-design — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
-
-<p><strong>🖼️ Samples</strong> · <code>video-storyboard</code></p>
 
 <table>
   <tr>
@@ -763,8 +1162,6 @@ A community skill for building storyboards and continuous visual narratives with
 - **ImageGen role:** Generates frames in parallel through an imagegen CLI; this is an API-key CLI path, not built-in-only
 - **Structure:** `SKILL.md`, `assets/template.html`, `references/styles.md`, and `evals/evals.json`
 - **License:** No open-source license declared upstream
-
-<p><strong>🖼️ Samples</strong> · <code>storyboard-skill</code></p>
 
 <table>
   <tr>
@@ -879,4 +1276,3 @@ These broader collections help discover candidates and understand the Agent Skil
 
 - [Awesome Design Skills](https://github.com/bergside/awesome-design-skills) — Design-system and `SKILL.md` / `DESIGN.md` resources focused mainly on UI and design language.
 - [Awesome Codex & ChatGPT Plugins](https://github.com/hashgraph-online/awesome-codex-plugins) — A broader collection of Codex plugins, skills, and resources.
-
