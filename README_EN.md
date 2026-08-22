@@ -6,8 +6,8 @@
   <p>
     <a href="https://github.com/sindresorhus/awesome"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
     <img src="https://img.shields.io/badge/Codex-ImageGen-111827?style=flat-square&logo=openai&logoColor=white" alt="Codex ImageGen">
-    <img src="https://img.shields.io/badge/showcases-39-ec4899?style=flat-square" alt="39 skill showcases">
-    <img src="https://img.shields.io/badge/generated_samples-156-7c3aed?style=flat-square" alt="156 generated samples">
+    <img src="https://img.shields.io/badge/showcases-42-ec4899?style=flat-square" alt="42 skill showcases">
+    <img src="https://img.shields.io/badge/generated_samples-168-7c3aed?style=flat-square" alt="168 generated samples">
     <a href="#contributing"><img src="https://img.shields.io/badge/PRs-welcome-22c55e?style=flat-square" alt="PRs welcome"></a>
   </p>
   <p>
@@ -22,22 +22,18 @@
 
 This collection highlights projects that package visual methods, domain knowledge, and creative workflows into `SKILL.md` files and use the Codex harness built-in `image_gen` capability.
 
-> This repository provides an index, categories, concise reviews, and generated examples. Third-party skills are shallow-cloned only when needed into the Git-ignored `upstream/` directory and are never committed as mirrors. Upstream copyright, licenses, and restrictions still apply.
-
 ## 🧭 Contents
 
 - 📸 [Photo & Editorial](#photo--editorial)
 - 🪄 [Branding & Identity](#branding--identity)
 - 🧶 [Craft & Textile](#craft--textile)
-- 📚 [Articles, Knowledge & Presentations](#articles-knowledge--presentations)
+- 🎨 [Illustrations & Posters](#illustrations--posters)
+- 📊 [Presentations & Diagrams](#presentations--diagrams)
 - 🖥️ [UI & Product Design](#ui--product-design)
 - 🎮 [Game Assets & Characters](#game-assets--characters)
 - 🎬 [Storyboards & Visual Narratives](#storyboards--visual-narratives)
-- 🧪 [Sample Inputs & Reproduction](#sample-inputs--reproduction)
 - 🤝 [Contributing](#contributing)
-  - 🔎 [Curation](#curation)
 - 🔗 [Related Collections](#related-collections)
-  - 🧱 [Official Foundations](#official-foundations)
 
 <a id="photo--editorial"></a>
 ## Photo & Editorial
@@ -332,6 +328,114 @@ Our samples use cartoon sticker, vintage comic, kawaii 3D, and clay. The method 
   </tr>
 </table>
 
+### [Starryear Threefold Memory](https://github.com/Starryear/Starryear-Threefold-Memory)
+
+Splits one locked documentary photograph into three continuous layers of memory: a perceptual abstraction derived from the source, the untouched photograph as evidence, and a relational memory map built from routes, nodes, intervals, and afterimages.
+
+- **Author:** [Starryear](https://github.com/Starryear)
+- **Input:** One travel, landscape, architecture, plant, animal, portrait, or quiet documentary photograph
+- **Output:** A vertical `1920×3240` triptych by default, assembled without gaps from three equal `1920×1080`, 16:9 panels
+- **ImageGen role:** Generates the perceptual and relational-memory panels separately; the source photo remains locked as the middle evidence layer, and a deterministic script handles assembly and dimension checks
+- **Structure:** A root `SKILL.md`; the downloadable package adds two references, `agents/openai.yaml`, `compose_triptych.py`, and 10 official triptych examples
+- **License:** No open-source license declared; the author explicitly reserves reuse rights for the original source photographs
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Separates `WHAT I SAW / WHAT HAPPENED / WHAT STAYED`, explicitly rejecting three-filter variations of the same photograph.
+- Requires every generated mark to trace back to a source fact such as shape, axis, interval, repetition, occlusion, light, or color.
+- Keeps the top panel minimally recognizable while forcing the bottom panel into a different relational grammar of routes, nodes, grids, and afterimages.
+- Uses the original photograph only in deterministic middle-panel assembly; `compose_triptych.py` validates aspect ratio, order, seams, dimensions, and delivery state.
+
+**Notes**
+
+The official repository shows 10 polished travel and nature examples, but its references, script, and examples are distributed only inside a downloadable ZIP, so copying the root `SKILL.md` alone leaves relative paths unresolved. The method also cites principles from `photo-abstract-editorial` and `travel-photo-abstraction`, while expanding the full generation scaffold inside the package. All four of our examples pass the upstream script's `DELIVERY PASS`; the animal-memory panel needed one targeted repair to separate it from the perception layer, while the portrait fixture loses some tabletop information under the default `cover` crop. People, animals, and complex architecture still need manual checks for count, recognition cues, and middle-photo cropping. Public visibility should not be mistaken for permission to redistribute or use commercially.
+
+</details>
+
+<table>
+  <tr>
+    <td width="25%" align="center"><a href="examples/starryear-threefold-memory/01-architecture-cafe.png"><img src="examples/starryear-threefold-memory/01-architecture-cafe.png" alt="starryear-threefold-memory — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/starryear-threefold-memory/02-mountain-lake.png"><img src="examples/starryear-threefold-memory/02-mountain-lake.png" alt="starryear-threefold-memory — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/starryear-threefold-memory/03-portrait-camera-duo.png"><img src="examples/starryear-threefold-memory/03-portrait-camera-duo.png" alt="starryear-threefold-memory — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/starryear-threefold-memory/04-animal-cat-dog.png"><img src="examples/starryear-threefold-memory/04-animal-cat-dog.png" alt="starryear-threefold-memory — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+  </tr>
+</table>
+
+### [Outsider Art v1.2](https://github.com/fihaaade/skills/tree/main/outsider-art)
+
+Translates photo semantics or a text theme into a flat, dense, and quiet naïve-art poster: top-down map-like ground meets upright objects, each broad color zone carries one handmade texture, and tiny faceless figures establish scale.
+
+- **Author:** [fihaaade](https://github.com/fihaaade)
+- **Input:** One photograph used only as semantic reference, or a text theme such as a place, season, memory, or everyday activity
+- **Output:** A text-free raster poster, 2:3 portrait by default or 3:2 landscape when appropriate, plus one short Chinese creative rationale
+- **ImageGen role:** Compiles a complete prompt from a Field Card, generates a flat original illustration with the available image tool, reviews it at full and thumbnail size, and allows at most one targeted repair
+- **Structure:** `outsider-art/SKILL.md` and `agents/openai.yaml`; currently no separate reference images, scripts, or evals
+- **License:** No open-source license declared in the upstream repository
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Photo mode extracts only place, spatial bands, activity, seasonal color, and mood; tracing, cropping, collaging, and retaining photographic pixels are explicitly forbidden.
+- Builds a mixed-projection world from 2–5 large color zones and limits each zone to one even texture; calm comes from dense repetition rather than broad emptiness.
+- Locks the palette to paper white, warm ink black, 2–4 muted scene colors, and exactly one saturated accent with a compositional job.
+- Defines executable gates for figure scale, filled silhouettes, facelessness, active poses, edge treatment, text, and failed-output repair.
+
+**Notes**
+
+This is a rule-dense single-file skill with a specific visual language, prompt compiler, and QA loop, but the repository currently includes no official samples, automated evaluation, or repair script, so consistency depends largely on model compliance with a long prompt. All four of our examples preserve the key count relationships and a single saturated accent, and the orientation switches appropriately by subject; personal identity is reduced to faceless color masses as designed. Photo mode intentionally discards pixels and personal identity. It is well suited to semantic translations of places, seasons, and daily activity, but not to edits that require photographic composition or facial fidelity.
+
+</details>
+
+<table>
+  <tr>
+    <td width="25%" align="center"><a href="examples/outsider-art-v1/01-architecture-cafe.png"><img src="examples/outsider-art-v1/01-architecture-cafe.png" alt="outsider-art-v1 — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/outsider-art-v1/02-mountain-lake.png"><img src="examples/outsider-art-v1/02-mountain-lake.png" alt="outsider-art-v1 — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/outsider-art-v1/03-portrait-camera-duo.png"><img src="examples/outsider-art-v1/03-portrait-camera-duo.png" alt="outsider-art-v1 — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/outsider-art-v1/04-animal-cat-dog.png"><img src="examples/outsider-art-v1/04-animal-cat-dog.png" alt="outsider-art-v1 — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+  </tr>
+</table>
+
+### [Phosphor Relay Style](https://github.com/fihaaade/skills/tree/main/phosphor-relay-style)
+
+“Photograph the screen, not the scene”: stages a photo or brief as a close-range rephotograph of a luminous broadcast display, turning fine phosphor grids, moiré, a cold field, one warm event, and failed highlight/shadow exposure into physical material.
+
+- **Author:** [fihaaade](https://github.com/fihaaade)
+- **Input:** One photograph in Treat mode, or a scene brief in Originate mode
+- **Output:** A screen-rephotography image in 4:3 by default, with support for 3:2, 1:1, or exact dimensions, plus the final prompt, nine-axis recipe, and QA status
+- **ImageGen role:** Edits the source in Treat mode or generates a new frame in Originate mode, then checks grid, moiré, color field, exposure, focus, anonymity, and composition before at most one repair
+- **Structure:** `SKILL.md`, Codex metadata, `EXAMPLES.md`, a quality-anchor index, a 16-class repair playbook, 10 reference frames, and 28+ trial outputs
+- **License:** No open-source license declared in the upstream repository
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Treat mode locks the source subject, composition, crop, and moment while overriding material with a grid, cold field, one warm event, failed tonal extremes, and “subject soft / grid sharp” focus.
+- A nine-axis recipe explicitly controls aspect ratio, framing family, single or paired structure, signal condition, color event, focus behavior, moment, grid type, and text degradation.
+- Requires hundreds of fine phosphor columns to remain visible through highlights, shadows, and midtones with genuine moiré; regular halftone dots or a simple scanline overlay fail.
+- Uses quality-anchor deltas and a repair playbook to suppress example copying, coarse dots, film looks, VHS, neon cyberpunk, and generic glitch art.
+
+**Notes**
+
+The visual constraints, failure taxonomy, and inspection loop are unusually complete, and the upstream includes a substantial reference and stress-test set. The skill anonymizes real people by default. Treat mode asks an image to remain recognizably the same source while strongly changing temperature, exposure, and sharpness, so identity and fine-detail fidelity are not primary goals. All four of our Treat examples retain the source scene, count, and single warm event, with grid structure visible through highlights, shadows, and midtones; the model nevertheless adds a slight rounded screen edge, so the set should be read as `DONE_WITH_CONCERNS` under the upstream gates. Keeping the fine grid alive inside crushed blacks remains the most fragile requirement. The repository has no license, and reference-frame provenance should be reviewed before redistribution.
+
+</details>
+
+<table>
+  <tr>
+    <td width="25%" align="center"><a href="examples/phosphor-relay-style/01-architecture-cafe.png"><img src="examples/phosphor-relay-style/01-architecture-cafe.png" alt="phosphor-relay-style — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/phosphor-relay-style/02-mountain-lake.png"><img src="examples/phosphor-relay-style/02-mountain-lake.png" alt="phosphor-relay-style — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/phosphor-relay-style/03-portrait-camera-duo.png"><img src="examples/phosphor-relay-style/03-portrait-camera-duo.png" alt="phosphor-relay-style — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/phosphor-relay-style/04-animal-cat-dog.png"><img src="examples/phosphor-relay-style/04-animal-cat-dog.png" alt="phosphor-relay-style — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+  </tr>
+</table>
+
 <a id="branding--identity"></a>
 ## Branding & Identity
 
@@ -483,8 +587,8 @@ The references show convincing pile, color blocking, and compositional consisten
   </tr>
 </table>
 
-<a id="articles-knowledge--presentations"></a>
-## Articles, Knowledge & Presentations
+<a id="illustrations--posters"></a>
+## Illustrations & Posters
 
 ### [Ian Xiaohei Illustrations](https://github.com/helloianneo/ian-xiaohei-illustrations)
 
@@ -557,6 +661,9 @@ Seven examples clearly distinguish hand-drawn explanatory diagrams from white-st
     <td width="25%" align="center"><a href="examples/ian-xiaohei-scenes/04-animal-cat-dog.png"><img src="examples/ian-xiaohei-scenes/04-animal-cat-dog.png" alt="ian-xiaohei-scenes — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
+
+<a id="presentations--diagrams"></a>
+## Presentations & Diagrams
 
 ### [Ian Handdrawn PPT](https://github.com/helloianneo/ian-handdrawn-ppt)
 
@@ -1172,10 +1279,13 @@ A community skill for building storyboards and continuous visual narratives with
   </tr>
 </table>
 
-<a id="sample-inputs--reproduction"></a>
-## Sample Inputs & Reproduction
+<a id="contributing"></a>
+## Contributing
 
-### Source images
+<a id="sample-inputs--reproduction"></a>
+### Sample Inputs & Reproduction
+
+#### Source images
 
 All four inputs were generated or edited with the system `imagegen` skill. Repository-relative paths keep them visible in forks, clones, and on GitHub.
 
@@ -1201,9 +1311,6 @@ All four inputs were generated or edited with the system `imagegen` skill. Repos
 </table>
 
 Outputs live under `examples/<skill-id>/`. Directory names match skill IDs and filenames match the input scenes. When a skill requires several directions, they are combined into one scene board so the README still shows one image per input.
-
-<a id="contributing"></a>
-## Contributing
 
 ### Curation
 

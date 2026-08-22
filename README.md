@@ -6,8 +6,8 @@
   <p>
     <a href="https://github.com/sindresorhus/awesome"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
     <img src="https://img.shields.io/badge/Codex-ImageGen-111827?style=flat-square&logo=openai&logoColor=white" alt="Codex ImageGen">
-    <img src="https://img.shields.io/badge/showcases-39-ec4899?style=flat-square" alt="39 skill showcases">
-    <img src="https://img.shields.io/badge/generated_samples-156-7c3aed?style=flat-square" alt="156 generated samples">
+    <img src="https://img.shields.io/badge/showcases-42-ec4899?style=flat-square" alt="42 skill showcases">
+    <img src="https://img.shields.io/badge/generated_samples-168-7c3aed?style=flat-square" alt="168 generated samples">
     <a href="#contributing"><img src="https://img.shields.io/badge/PRs-welcome-22c55e?style=flat-square" alt="PRs welcome"></a>
   </p>
   <p>
@@ -22,22 +22,19 @@
 
 这里收集那些把视觉方法、领域知识和创作流程封装进 `SKILL.md`，并使用 Codex harness 内置 `image_gen` 生成或编辑图片的优秀项目。
 
-> 本仓库以索引、分类、简评和实际生成示例为主。第三方 skill 只会按需浅克隆到被 Git 忽略的本地 `upstream/`，不会提交为镜像；所有项目的版权、许可和使用限制仍以原仓库为准。
 
 ## 🧭 目录
 
 - 📸 [照片与编辑设计](#photo--editorial)
 - 🪄 [品牌与视觉识别](#branding--identity)
 - 🧶 [手工艺与织物](#craft--textile)
-- 📚 [文章、知识与演示](#articles-knowledge--presentations)
-- 🖥️ [UI 与产品设计](#ui--product-design)
+- 🎨 [插画与海报](#illustrations--posters)
+- 📊 [演示与图示](#presentations--diagrams)
+- 🖥️ [界面与产品设计](#ui--product-design)
 - 🎮 [游戏资产与角色](#game-assets--characters)
 - 🎬 [故事板与视觉叙事](#storyboards--visual-narratives)
-- 🧪 [示例输入与复现](#sample-inputs--reproduction)
 - 🤝 [参与贡献](#contributing)
-  - 🔎 [收录标准](#curation)
 - 🔗 [相关合集](#related-collections)
-  - 🧱 [官方基础](#official-foundations)
 
 <a id="photo--editorial"></a>
 ## 照片与编辑设计
@@ -332,6 +329,114 @@
   </tr>
 </table>
 
+### [Starryear Threefold Memory](https://github.com/Starryear/Starryear-Threefold-Memory)
+
+把一张锁定的纪实照片拆成三层连续记忆：上层是由原图事实推导的感知抽象，中层是未经改写的原照片，下层是以路线、节点、间隔和残影组织的关系记忆地图。
+
+- **Author:** [Starryear](https://github.com/Starryear)
+- **Input:** 一张旅行、风景、建筑、植物、动物、人物或安静纪实照片
+- **Output:** 默认 `1920×3240` 的竖向三联画，由三张等高 `1920×1080`、16:9 面板无缝拼接
+- **ImageGen role:** 分别生成感知面板和关系记忆面板；原照片锁定为中间证据层，再由确定性脚本完成拼接与尺寸检查
+- **Structure:** 根目录 `SKILL.md`；下载包内含两份 references、`agents/openai.yaml`、`compose_triptych.py` 与 10 组官方三联画案例
+- **License:** 未声明开源许可证；作者明确保留原创源照片权利，未经许可不得复用
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- 明确区分 `WHAT I SAW / WHAT HAPPENED / WHAT STAYED`，禁止把任务退化成同一照片的三个滤镜版本。
+- 每个生成痕迹都必须回溯到原图中的形体、轴线、间隔、重复、遮挡、光线或色彩事实。
+- 顶层保持最低限度可辨识的全画幅感知语言，底层必须改用路线、节点、网格和残影等关系语法，两层不得复用布局。
+- 原照片只参与确定性中间层拼接；`compose_triptych.py` 检查面板比例、顺序、接缝、尺寸和交付状态。
+
+**备注**
+
+官方仓库展示 10 组完成度很高的旅行与自然题材案例，但运行所需的 references、脚本和 examples 只封装在 ZIP 下载包中，直接复制根目录 `SKILL.md` 会遇到相对路径缺失。方法还引用 `photo-abstract-editorial` 与 `travel-photo-abstraction` 的设计原则，不过完整生成脚手架已在下载包中展开。我们的四组样例都通过上游脚本的 `DELIVERY PASS`；动物记忆层经过一次定向修正才与感知层拉开差异，而竖版人物原图在默认 `cover` 中会裁掉部分桌面信息。人物、动物和复杂建筑仍要人工核对数量、识别线索与中间照片裁切；许可仅能确认公开阅读，不能据此推定可再分发或商用。
+
+</details>
+
+<table>
+  <tr>
+    <td width="25%" align="center"><a href="examples/starryear-threefold-memory/01-architecture-cafe.png"><img src="examples/starryear-threefold-memory/01-architecture-cafe.png" alt="starryear-threefold-memory — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/starryear-threefold-memory/02-mountain-lake.png"><img src="examples/starryear-threefold-memory/02-mountain-lake.png" alt="starryear-threefold-memory — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/starryear-threefold-memory/03-portrait-camera-duo.png"><img src="examples/starryear-threefold-memory/03-portrait-camera-duo.png" alt="starryear-threefold-memory — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/starryear-threefold-memory/04-animal-cat-dog.png"><img src="examples/starryear-threefold-memory/04-animal-cat-dog.png" alt="starryear-threefold-memory — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+  </tr>
+</table>
+
+### [Outsider Art v1.2](https://github.com/fihaaade/skills/tree/main/outsider-art)
+
+把照片语义或文字主题转译成扁平、稠密而安静的朴素艺术海报：俯视地图式地面与直立物件混合投影，大色区各自使用一种手工纹理，并由微小无脸人物建立尺度。
+
+- **Author:** [fihaaade](https://github.com/fihaaade)
+- **Input:** 一张仅作语义参考的照片，或一个地点、季节、记忆、日常活动等文字主题
+- **Output:** 默认 2:3 竖版、必要时 3:2 横版的无字栅格海报，以及一句中文创作说明
+- **ImageGen role:** 根据 Field Card 编译完整提示，调用可用的图像生成能力生成扁平原创插画，并在全尺寸与缩略图检查后最多定向修正一次
+- **Structure:** `outsider-art/SKILL.md` 与 `agents/openai.yaml`；当前没有独立参考图、脚本或 eval
+- **License:** 上游仓库未声明开源许可证
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- Photo mode 只提取地点、空间带、活动、季节色和情绪，明确禁止追踪、裁切、拼贴或保留任何摄影像素。
+- 用 2–5 个大色区搭建混合投影世界，并要求每个色区只使用一种均匀纹理；平静来自密集重复，而不是大面积空白。
+- 色彩系统锁定纸白、暖墨黑、2–4 个低饱和场景色和恰好一种承担构图职责的高饱和色。
+- 对人物尺寸、实心轮廓、无脸、活动姿态、边缘处理、文字和失败修正都有可执行的 gate。
+
+**备注**
+
+这是规则密度很高的单文件 skill，视觉语言、Prompt Compiler 和 QA 都很具体，但仓库目前没有随包官方样图、自动评测或修复脚本，稳定性主要依赖模型按长提示执行。我们的四张样例都保住了关键数量关系和唯一高饱和色，横纵版也能按题材切换；人物身份则如设计所要求被概括成无脸色块。Photo mode 刻意放弃像素和人物身份，因此适合场所、季节与日常活动的语义转译，不适合要求照片构图或人物相貌保真的编辑任务。
+
+</details>
+
+<table>
+  <tr>
+    <td width="25%" align="center"><a href="examples/outsider-art-v1/01-architecture-cafe.png"><img src="examples/outsider-art-v1/01-architecture-cafe.png" alt="outsider-art-v1 — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/outsider-art-v1/02-mountain-lake.png"><img src="examples/outsider-art-v1/02-mountain-lake.png" alt="outsider-art-v1 — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/outsider-art-v1/03-portrait-camera-duo.png"><img src="examples/outsider-art-v1/03-portrait-camera-duo.png" alt="outsider-art-v1 — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/outsider-art-v1/04-animal-cat-dog.png"><img src="examples/outsider-art-v1/04-animal-cat-dog.png" alt="outsider-art-v1 — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+  </tr>
+</table>
+
+### [Phosphor Relay Style](https://github.com/fihaaade/skills/tree/main/phosphor-relay-style)
+
+“拍屏幕，不拍现场”：把照片或文字简报编排成对发光转播屏幕的近距离重摄，让细密荧光网格、摩尔纹、冷色场、单一暖色事件与两端曝光失效成为画面的物理材料。
+
+- **Author:** [fihaaade](https://github.com/fihaaade)
+- **Input:** Treat 模式的一张照片，或 Originate 模式的场景简报
+- **Output:** 默认 4:3，也支持 3:2、1:1 或指定尺寸的屏幕重摄影像，并附最终 prompt、九轴 recipe 与 QA 状态
+- **ImageGen role:** Treat 模式编辑原照片，Originate 模式生成新帧；随后检查网格、摩尔纹、色场、曝光、焦点、匿名人物与构图，失败时最多修正一次
+- **Structure:** `SKILL.md`、Codex metadata、`EXAMPLES.md`、质量锚点索引、16 类故障修复表、10 张参考帧及 28+ 个试跑输出
+- **License:** 上游仓库未声明开源许可证
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- Treat 模式锁定原照片的主体、构图、裁切和瞬间，只覆盖网格、冷色场、单一暖色块、明暗失效和“主体软／网格锐”的材料系统。
+- 九轴 recipe 显式控制比例、取景族、单帧或双联结构、信号状态、色彩事件、焦点行为、时刻、网格类型与文字退化。
+- 要求高光、暗部和中间调中都能看到数百列细密荧光结构，并出现真实摩尔干涉；规则网点或简单 scanline overlay 直接判失败。
+- 用质量锚点差异表和修复 playbook 抑制范例复制、粗网点、胶片感、VHS、霓虹赛博朋克和通用 glitch art。
+
+**备注**
+
+该 skill 的视觉约束、失败分类和检查流程非常完整，官方也提供较大的参考与压力测试集合。它默认匿名化真实人物，且 Treat 模式要求“仍是同一张照片”但又强制显著改变色温、曝光和清晰度，因此身份与细节保真并非目标。我们的四张 Treat 样例都保住了原场景、数量和单一暖色事件，网格也贯穿高光、暗部和中间调；不过模型仍给画面加了轻微圆角屏幕边缘，因此按上游 gate 应视为 `DONE_WITH_CONCERNS`。内置生成模型能否在纯黑区域持续保留细密网格仍是最脆弱的 gate。仓库没有许可证，参考帧的来源说明也应在再分发前单独审查。
+
+</details>
+
+<table>
+  <tr>
+    <td width="25%" align="center"><a href="examples/phosphor-relay-style/01-architecture-cafe.png"><img src="examples/phosphor-relay-style/01-architecture-cafe.png" alt="phosphor-relay-style — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/phosphor-relay-style/02-mountain-lake.png"><img src="examples/phosphor-relay-style/02-mountain-lake.png" alt="phosphor-relay-style — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/phosphor-relay-style/03-portrait-camera-duo.png"><img src="examples/phosphor-relay-style/03-portrait-camera-duo.png" alt="phosphor-relay-style — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/phosphor-relay-style/04-animal-cat-dog.png"><img src="examples/phosphor-relay-style/04-animal-cat-dog.png" alt="phosphor-relay-style — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+  </tr>
+</table>
+
 <a id="branding--identity"></a>
 ## 品牌与视觉识别
 
@@ -483,8 +588,8 @@ showcase 中的动物、幽灵、机器人和物件整体具有清楚的圆形�
   </tr>
 </table>
 
-<a id="articles-knowledge--presentations"></a>
-## 文章、知识与演示
+<a id="illustrations--posters"></a>
+## 插画与海报
 
 ### [Ian Xiaohei Illustrations](https://github.com/helloianneo/ian-xiaohei-illustrations)
 
@@ -557,6 +662,9 @@ showcase 中的动物、幽灵、机器人和物件整体具有清楚的圆形�
     <td width="25%" align="center"><a href="examples/ian-xiaohei-scenes/04-animal-cat-dog.png"><img src="examples/ian-xiaohei-scenes/04-animal-cat-dog.png" alt="ian-xiaohei-scenes — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
+
+<a id="presentations--diagrams"></a>
+## 演示与图示
 
 ### [Ian Handdrawn PPT](https://github.com/helloianneo/ian-handdrawn-ppt)
 
@@ -773,7 +881,7 @@ showcase 中的动物、幽灵、机器人和物件整体具有清楚的圆形�
 </table>
 
 <a id="ui--product-design"></a>
-## UI 与产品设计
+## 界面与产品设计
 
 ### [Prototype Native UI with Image Generation](https://github.com/dnesdan/Skills/tree/main/prototype-ui-with-imagegen)
 
@@ -1172,10 +1280,13 @@ OpenAI 官方 game-studio skill：从基准角色或 seed frame 生成动作条�
   </tr>
 </table>
 
-<a id="sample-inputs--reproduction"></a>
-## 示例输入与复现
+<a id="contributing"></a>
+## 参与贡献
 
-### 输入图片
+<a id="sample-inputs--reproduction"></a>
+### 示例输入与复现
+
+#### 输入图片
 
 四张输入图都由系统 `imagegen` skill 生成或编辑。这里使用仓库相对路径，fork、clone 和 GitHub 页面都能直接显示。
 
@@ -1201,9 +1312,6 @@ OpenAI 官方 game-studio skill：从基准角色或 seed frame 生成动作条�
 </table>
 
 示例输出统一放在 `examples/<skill-id>/`，目录名就是 skill id；其中图片文件名对应输入场景。一个 skill 有多个强制方向时，先组合成一张场景板，README 仍然保持每个输入一张图。
-
-<a id="contributing"></a>
-## 参与贡献
 
 <a id="curation"></a>
 ### 收录标准

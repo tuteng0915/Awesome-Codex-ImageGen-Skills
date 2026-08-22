@@ -6,3 +6,5 @@
 # Generated benchmark artifacts and scratch work can be large and stochastic.
 /benchmarks/
 
+# Local promotional artwork and editable social-media sources.
+/promo/

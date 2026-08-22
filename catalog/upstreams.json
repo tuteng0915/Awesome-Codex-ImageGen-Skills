@@ -43,6 +43,12 @@
       "commit": "509a2d8392f995a45716d57bdcb60a57c2973dca"
     },
     {
+      "name": "fihaaade-skills",
+      "url": "https://github.com/fihaaade/skills.git",
+      "commit": "f2ce9a746e23e59f5b4834b4a31fd4020d603c85",
+      "scope": "outsider-art, phosphor-relay-style"
+    },
+    {
       "name": "gathered-scenes-zine-skill",
       "url": "https://github.com/Zeejay0/gathered-scenes-zine-skill.git",
       "commit": "eae9a62e20cb570c0adabc94cb189b1c91b7be99"
@@ -136,6 +142,12 @@
       "name": "skill-make-photo-stamp-archive",
       "url": "https://github.com/Dlcccc71913/skill-make-photo-stamp-archive.git",
       "commit": "1eaae73ad1d4b64a56cee297a924d253f860ac5b"
+    },
+    {
+      "name": "starryear-threefold-memory",
+      "url": "https://github.com/Starryear/Starryear-Threefold-Memory.git",
+      "commit": "ef9e16993ebe989439ff5e670018ecaafca81990",
+      "scope": "root SKILL.md; downloadable package contains references, composition script, metadata, and examples"
     },
     {
       "name": "taste-skill",
