@@ -6,8 +6,8 @@
   <p>
     <a href="https://github.com/sindresorhus/awesome"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
     <img src="https://img.shields.io/badge/Codex-ImageGen-111827?style=flat-square&logo=openai&logoColor=white" alt="Codex ImageGen">
-    <img src="https://img.shields.io/badge/showcases-42-ec4899?style=flat-square" alt="42 skill showcases">
-    <img src="https://img.shields.io/badge/generated_samples-168-7c3aed?style=flat-square" alt="168 generated samples">
+    <img src="https://img.shields.io/badge/showcases-53-ec4899?style=flat-square" alt="53 skill showcases">
+    <img src="https://img.shields.io/badge/generated_samples-212-7c3aed?style=flat-square" alt="212 generated samples">
     <a href="#contributing"><img src="https://img.shields.io/badge/PRs-welcome-22c55e?style=flat-square" alt="PRs welcome"></a>
   </p>
   <p>
@@ -71,6 +71,42 @@ The examples maintain a stable split layout, generous whitespace, and source-awa
     <td width="25%" align="center"><a href="examples/photo-abstract-editorial/02-mountain-lake.png"><img src="examples/photo-abstract-editorial/02-mountain-lake.png" alt="photo-abstract-editorial — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
     <td width="25%" align="center"><a href="examples/photo-abstract-editorial/03-portrait-camera-duo.png"><img src="examples/photo-abstract-editorial/03-portrait-camera-duo.png" alt="photo-abstract-editorial — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
     <td width="25%" align="center"><a href="examples/photo-abstract-editorial/04-animal-cat-dog.png"><img src="examples/photo-abstract-editorial/04-animal-cat-dog.png" alt="photo-abstract-editorial — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+  </tr>
+</table>
+
+### [Muge Photo Diptych](https://github.com/Yeshmuge/muge-photo-diptych)
+
+Transforms a photograph into a vertical 2:3 handmade art-zine diptych, binding the observed scene to a memory layer through an inverted white cutout, a repeated dark silhouette, and a single connecting thread.
+
+- **Author:** [Yeshmuge](https://github.com/Yeshmuge)
+- **Input:** One portrait, animal, architecture, landscape, or still-life photo; optional main phrase, text fragments, connection mode, and accent color
+- **Output:** A vertical 2:3 upper/lower art-zine diptych
+- **ImageGen role:** Preserves the scene and subject relationships, inverts the upper subject into a detail-free pure-white silhouette, repeats it below as a matching dark silhouette, and extends one hand-drawn thread from a source-native linear element
+- **Structure:** `SKILL.md`, `agents/openai.yaml`, a visual specification, normalized prompt template, usage examples, and two official reference images
+- **License:** CC BY-NC 4.0; reference images are excluded unless explicitly marked; non-commercial sharing requires attribution and a change notice, while commercial use requires separate permission
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Defines a clear constraint order: subject count, pose, and contour come before the white cutout, lower repetition, seam, thread, palette, and typography, making targeted QA and retries practical.
+- Offers two connection modes: Mode A wraps a line around a person or animal's action, while Mode B originates from an existing architectural or object line; ambiguous scenes default to the safer Mode B.
+- Derives the overall temperature and one accent from the source, then uses that accent for both the connecting thread and all handwriting instead of applying a generic sepia cast.
+- Includes explicit rejection and retry rules for white-cutout purity, text, subject count, and thread origin, with a two-pass fallback when typography is unstable.
+
+**Notes**
+
+Our café and lake tests use Mode B, the portrait starts its thread at the contact sheet, and the cat-and-dog test turns the source yarn itself into a Mode A narrative line. All four outputs consistently produce the two-panel structure and source-aware palette. The portrait needed one surgical correction to remove a camera outline left inside the white silhouette, confirming that “completely blank” remains an important manual quality gate. Public sharing of derivatives should include `Diptych Skill by @Yeshmuge`.
+
+</details>
+
+<table>
+  <tr>
+    <td width="25%" align="center"><a href="examples/muge-photo-diptych/01-architecture-cafe.png"><img src="examples/muge-photo-diptych/01-architecture-cafe.png" alt="muge-photo-diptych — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/muge-photo-diptych/02-mountain-lake.png"><img src="examples/muge-photo-diptych/02-mountain-lake.png" alt="muge-photo-diptych — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/muge-photo-diptych/03-portrait-camera-duo.png"><img src="examples/muge-photo-diptych/03-portrait-camera-duo.png" alt="muge-photo-diptych — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/muge-photo-diptych/04-animal-cat-dog.png"><img src="examples/muge-photo-diptych/04-animal-cat-dog.png" alt="muge-photo-diptych — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
@@ -146,6 +182,42 @@ The eight finished examples are consistent in warm paper, photo-to-watercolor co
   </tr>
 </table>
 
+### [Photo to Zine Postcard](https://github.com/Whiplashzeb/photo-to-zine-postcard)
+
+Turns one photograph into a minimal zine-postcard set. The front embeds the complete source above generous whitespace, with just one source-specific hand-drawn motif, restrained metadata, and three sampled colors below; the back is a coordinated, writable postal layout.
+
+- **Author:** [Whiplashzeb](https://github.com/Whiplashzeb)
+- **Input:** One user photograph; optional title, subtitle, location, date, and index
+- **Output:** Two coordinated portrait 2:3 images: a postcard front and a functional back
+- **ImageGen role:** Embeds the real source on the front, selects one motif by identity, color, and silhouette for a restrained hand-drawn reinterpretation, then generates a back with matching paper, linework, and proportions
+- **Structure:** One self-contained `SKILL.md`, bilingual READMEs, customization guidance, changelog and contribution docs, an example index, and nine official outputs
+- **License:** MIT
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Locks the front to “complete photo, generous transition space, lower-left metadata, one lower-right motif, exactly three swatches,” explicitly preventing the lower field from becoming a sample board or collage wall.
+- Chooses the motif for source identity, attractive color, and clear silhouette; water, mountains, plants, and architecture default to hand drawing, while faces, hands, text, and precise machinery may fall back to a source crop.
+- Permits only a title, short subtitle, location, date, and small index. Missing location and date values stay blank instead of being filled with invented placeholders.
+- Keeps the back functional: an outer border, off-center divider, stamp box, address lines, and large message area form a restrained print-ready system.
+
+**Notes**
+
+Upstream publishes nine landscape and architecture outputs but not each example's original input, so its “unchanged photo” claim cannot be verified pixel by pixel. We combine both generated sides into each sample image: all three landscape inputs passed on the first generation, while the portrait input was initially cropped into a landscape frame and passed after one correction limited to source aspect ratio. All four retain exactly three swatches and a functional back, showing why `contain` placement remains a critical manual check in a generative composition workflow.
+
+</details>
+
+<table>
+  <tr>
+    <td width="25%" align="center"><a href="examples/photo-to-zine-postcard/01-architecture-cafe.png"><img src="examples/photo-to-zine-postcard/01-architecture-cafe.png" alt="photo-to-zine-postcard — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/photo-to-zine-postcard/02-mountain-lake.png"><img src="examples/photo-to-zine-postcard/02-mountain-lake.png" alt="photo-to-zine-postcard — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/photo-to-zine-postcard/03-portrait-camera-duo.png"><img src="examples/photo-to-zine-postcard/03-portrait-camera-duo.png" alt="photo-to-zine-postcard — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/photo-to-zine-postcard/04-animal-cat-dog.png"><img src="examples/photo-to-zine-postcard/04-animal-cat-dog.png" alt="photo-to-zine-postcard — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+  </tr>
+</table>
+
 ### [GC Minimal Zine Poster v0.3.1](https://github.com/LiamGvchi/gc-minimal-zine-poster)
 
 Transforms text, objects, moods, photos, or references into quiet paper-textured micro-editorial posters with generous negative space and one saturated focal color.
@@ -180,6 +252,42 @@ All six author examples are 686×1144, close to a strict 3:5 ratio, and consiste
     <td width="25%" align="center"><a href="examples/gc-minimal-zine-poster-v0-3/02-mountain-lake.png"><img src="examples/gc-minimal-zine-poster-v0-3/02-mountain-lake.png" alt="gc-minimal-zine-poster-v0-3 — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
     <td width="25%" align="center"><a href="examples/gc-minimal-zine-poster-v0-3/03-portrait-camera-duo.png"><img src="examples/gc-minimal-zine-poster-v0-3/03-portrait-camera-duo.png" alt="gc-minimal-zine-poster-v0-3 — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
     <td width="25%" align="center"><a href="examples/gc-minimal-zine-poster-v0-3/04-animal-cat-dog.png"><img src="examples/gc-minimal-zine-poster-v0-3/04-animal-cat-dog.png" alt="gc-minimal-zine-poster-v0-3 — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+  </tr>
+</table>
+
+### [Photo Riso Poster](https://github.com/luckdvr/photo-riso-poster)
+
+Distills a photo or text theme into a quiet risograph archive poster by recording counts, spacing, occlusion, direction, and color roles, then rebuilding those relationships with two or three inks, restrained type, and generous empty paper.
+
+- **Author:** [luckdvr](https://github.com/luckdvr)
+- **Input:** One photo or a text theme, with optional faithful, standard, or minimal abstraction
+- **Output:** One flat riso poster whose orientation follows the source, plus the exact prompt, evidence mapping, paper-temperature choice, and aspect rationale
+- **ImageGen role:** Codex first deconstructs the photo visually, then sends a text-only evidence prompt to built-in image generation; the source photo is deliberately not attached to the generation call
+- **Structure:** A single `SKILL.md`, bilingual README, MIT License, and multiple poster, source/result comparison, and abstraction-level examples
+- **License:** MIT
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Requires every visual mark to trace to a named source fact and rejects decoration added merely to make the result feel designed.
+- Maps the source's large-area temperature and two or three dominant color roles to paper and separate ink layers, with grain, bleed, and slight misregistration supplying the print character.
+- Offers faithful, standard, and minimal abstraction, moving from recognizable old-book illustration contours to geometric marks that preserve only count, position, direction, and rhythm.
+- Treats typography as another evidence channel for counts, season, weather, date, and a short poetic phrase rather than random pseudo-editorial filler.
+
+**Notes**
+
+This is a restrained, single-page method skill with multiple public photo/result comparisons. Because it intentionally excludes the source photo from the final ImageGen call, it is better suited to testing whether visual analysis survives textual transfer than to strict identity or object-geometry preservation. All four of our text-only reconstructions retained the key counts, directions, color roles, and short English labels; the portrait anonymized faces as required, while the landscape and animal samples preserved the red umbrella, bridge line, and red-yarn relationship especially clearly. The author credits GC Minimal Zine Poster and Travel Photo Abstraction as inspirations while stating that no files, images, or text were copied.
+
+</details>
+
+<table>
+  <tr>
+    <td width="25%" align="center"><a href="examples/photo-riso-poster/01-architecture-cafe.png"><img src="examples/photo-riso-poster/01-architecture-cafe.png" alt="photo-riso-poster — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/photo-riso-poster/02-mountain-lake.png"><img src="examples/photo-riso-poster/02-mountain-lake.png" alt="photo-riso-poster — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/photo-riso-poster/03-portrait-camera-duo.png"><img src="examples/photo-riso-poster/03-portrait-camera-duo.png" alt="photo-riso-poster — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/photo-riso-poster/04-animal-cat-dog.png"><img src="examples/photo-riso-poster/04-animal-cat-dog.png" alt="photo-riso-poster — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
@@ -289,6 +397,114 @@ The upstream repository publishes 17 style modules, with 27 examples across eigh
     <td width="25%" align="center"><a href="examples/hbg-travel-photo-redraw/02-mountain-lake.png"><img src="examples/hbg-travel-photo-redraw/02-mountain-lake.png" alt="hbg-travel-photo-redraw — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
     <td width="25%" align="center"><a href="examples/hbg-travel-photo-redraw/03-portrait-camera-duo.png"><img src="examples/hbg-travel-photo-redraw/03-portrait-camera-duo.png" alt="hbg-travel-photo-redraw — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
     <td width="25%" align="center"><a href="examples/hbg-travel-photo-redraw/04-animal-cat-dog.png"><img src="examples/hbg-travel-photo-redraw/04-animal-cat-dog.png" alt="hbg-travel-photo-redraw — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+  </tr>
+</table>
+
+### [Travel Memory Sticker Card](https://github.com/carolinaaafy/travel-memory-sticker-card)
+
+Redraws one travel, street, landscape, lifestyle, portrait, or pet photo as a horizontal collectible card: a dominant scene illustration on the left, six source-derived stickers on the right, and three English phrases summarizing its memory cues below.
+
+- **Author:** [carolinaaafy](https://github.com/carolinaaafy)
+- **Input:** One travel, street, landscape, lifestyle, portrait, or pet photo
+- **Output:** One 3:2 horizontal memory card with a dominant illustration, exactly three English keyword phrases, and exactly six stickers
+- **ImageGen role:** Inspects the source, selects an identification anchor, sticker motifs, and keywords, then redraws the complete card with built-in `image_gen`; permits one directed regeneration only when a hard constraint fails
+- **Structure:** `SKILL.md`, Codex metadata, a lightweight README, and one visual style guide
+- **License:** No open-source license declared upstream
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Fixes the composition at roughly 66–68% for the left illustration and 30–32% for the right sticker rail, surrounded by one continuous warm off-white paper edge.
+- Selects one identification anchor from the source; landmark text defaults to none and may appear at most once when genuinely useful.
+- Builds a tactile matte-gouache, cut-paper, and light risograph-grain treatment from 5–8 broad color families and 3–6 large masses.
+- Requires exactly six separate source-derived sticker motifs and exactly three English keyword phrases, each printed once.
+
+**Notes**
+
+All four shared inputs passed on the first generation: keyword count, sticker count, panel proportions, and subject counts followed the specification, so no regeneration was needed. We have not yet tested the optional path that preserves and renders one real landmark name verbatim, and the upstream repository publishes no author-generated examples. Because it declares no license, confirm permission before reuse or redistribution.
+
+</details>
+
+<table>
+  <tr>
+    <td width="25%" align="center"><a href="examples/travel-memory-sticker-card/01-architecture-cafe.png"><img src="examples/travel-memory-sticker-card/01-architecture-cafe.png" alt="travel-memory-sticker-card — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/travel-memory-sticker-card/02-mountain-lake.png"><img src="examples/travel-memory-sticker-card/02-mountain-lake.png" alt="travel-memory-sticker-card — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/travel-memory-sticker-card/03-portrait-camera-duo.png"><img src="examples/travel-memory-sticker-card/03-portrait-camera-duo.png" alt="travel-memory-sticker-card — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/travel-memory-sticker-card/04-animal-cat-dog.png"><img src="examples/travel-memory-sticker-card/04-animal-cat-dog.png" alt="travel-memory-sticker-card — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+  </tr>
+</table>
+
+### [Pocket Postcard](https://github.com/kaijie-czyh/pocket-postcard-skill)
+
+Mails a photo or sentence as a vintage handwritten postcard, keeping a recognizable photo on one side and placing a short note, postmark, place, and weather shorthand on the other.
+
+- **Author:** [kaijie-czyh](https://github.com/kaijie-czyh)
+- **Input:** A photo, or a theme, sentence, mood, place, and content brief
+- **Output:** One 3:2 landscape or 2:3 portrait handwritten postcard, plus the final prompt and recipe notes
+- **ImageGen role:** Uses built-in image generation by default; photo mode prefers image-to-image subject preservation before composing the photo region, handwriting, postmark, and aged paper surface
+- **Structure:** `SKILL.md`, bilingual READMEs, six author examples, an optional MiniMax test script, and an MIT License
+- **License:** MIT
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Uses a fixed eight-field prompt compiler for canvas, photo region, handwriting, postal marks, paper, color, emotion, and negative constraints.
+- Combines layout, stamp, handwriting, paper tone, mood, and one high-chroma postal accent into recipes whose variations change more than position.
+- Gives subject fidelity priority in photo mode, favors fewer and larger decorations, and permits shorter copy when that protects faces.
+- A single saturated postal hue, matte cardstock, soft wear, and a faint fold make the result feel like an object that has actually traveled.
+
+**Notes**
+
+All four runs produced a clear photo region, handwriting area, and round postmark, with readable place and weather fields. To avoid inventing real travel metadata, we used only visible scene descriptions for place and weather. Model-generated postmark dates are visual props and should not be treated as factual metadata.
+
+</details>
+
+<table>
+  <tr>
+    <td width="25%" align="center"><a href="examples/pocket-postcard/01-architecture-cafe.png"><img src="examples/pocket-postcard/01-architecture-cafe.png" alt="pocket-postcard — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/pocket-postcard/02-mountain-lake.png"><img src="examples/pocket-postcard/02-mountain-lake.png" alt="pocket-postcard — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/pocket-postcard/03-portrait-camera-duo.png"><img src="examples/pocket-postcard/03-portrait-camera-duo.png" alt="pocket-postcard — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/pocket-postcard/04-animal-cat-dog.png"><img src="examples/pocket-postcard/04-animal-cat-dog.png" alt="pocket-postcard — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+  </tr>
+</table>
+
+### [Street Photo Illustration](https://github.com/fangzhengjin/skills-hub/tree/main/skills/street-photo-illustration-skill)
+
+Keeps a real photographic environment while replacing only its people with black-ink or colorful editorial-chibi characters, optionally adding place-aware typography and doodles.
+
+- **Author:** [fangzhengjin](https://github.com/fangzhengjin)
+- **Input:** Street, travel, lifestyle, casual, or commercial-space photos, with optional mode, copy, and decoration intensity
+- **Output:** A 3:4 photo-plus-illustrated-character editorial image by default
+- **ImageGen role:** Uses the source as a scene and character lock, replacing people in place while preserving pose, clothing, accessories, and the photographic environment
+- **Structure:** `SKILL.md`, `agents/openai.yaml`, black-ink and color-chibi prompt templates, an icon, and ten author examples
+- **License:** MIT
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Defines character replacement rather than full-image illustration: architecture, streets, furniture, merchandise, light, perspective, and depth remain photographic.
+- Both BLACK INK and COLOR CHIBI reduce faces to dot-eye logic while imposing unusually strict locks on adult proportions, long-limbed rhythm, and pose silhouette.
+- CUSTOM COPY, AUTO COPY, and NO TEXT are mutually exclusive; when typography is active, it must respond to the actual café, city, travel, or commercial context.
+- Two execution templates and a detailed QA list cover subject counts, duplicates, hidden faces, clothing detail, and environmental drift.
+
+**Notes**
+
+The skill natively handles people only. Our two-person fixture is therefore a normal case; the café and lake infer a courier and umbrella-holding traveler, while the animal fixture treats the cat and dog as replacement targets. Those three are deliberate out-of-scope generalization stress tests, not upstream promises. All four use COLOR CHIBI + NO TEXT. Their environments remain visibly photographic, but the results are not pixel-identical composites.
+
+</details>
+
+<table>
+  <tr>
+    <td width="25%" align="center"><a href="examples/street-photo-illustration/01-architecture-cafe.png"><img src="examples/street-photo-illustration/01-architecture-cafe.png" alt="street-photo-illustration — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/street-photo-illustration/02-mountain-lake.png"><img src="examples/street-photo-illustration/02-mountain-lake.png" alt="street-photo-illustration — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/street-photo-illustration/03-portrait-camera-duo.png"><img src="examples/street-photo-illustration/03-portrait-camera-duo.png" alt="street-photo-illustration — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/street-photo-illustration/04-animal-cat-dog.png"><img src="examples/street-photo-illustration/04-animal-cat-dog.png" alt="street-photo-illustration — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
@@ -590,6 +806,42 @@ The references show convincing pile, color blocking, and compositional consisten
 <a id="illustrations--posters"></a>
 ## Illustrations & Posters
 
+### [Oriental Editorial Poster](https://github.com/dacnay816y62-hub/fantasy-dongfang-jianyuehaibao)
+
+Builds Chinese cultural editorial posters, publication covers, and typographic experiments from real cultural evidence, material logic, refined Chinese titles, and structural whitespace.
+
+- **Author:** [dacnay816y62-hub](https://github.com/dacnay816y62-hub)
+- **Input:** A title, theme, exhibition, brand, or cultural brief; optional references, short-keyword batches, and A/B/C comparison requests
+- **Output:** A complete 3:4 Chinese editorial poster by default, with support for multi-topic batches, three-direction A/B/C tests, and comparison boards
+- **ImageGen role:** Image generation is mandatory: Mode A creates a more expressive image-title fusion, while Mode B generates a calmer publication-style complete layout with a clearer title field and reading hierarchy
+- **Structure:** `SKILL.md`, `agents/openai.yaml`, two composition and typography references, layout-reference assets, ten examples, and a v2 test suite containing images, prompts, and selected triptychs
+- **License:** No open-source license declared upstream; reference images do not imply commercial-use permission
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Runs a concept gate before every poster: six candidates must describe material fact, semantic pivot, title mechanism, non-interchangeability, and text reserve, then clear a scored threshold before generation.
+- Defaults to one hero evidence item, one title action, one dominant axis, one small interruptor, and at most one accent color, explicitly rejecting generic seals, ink splashes, QR codes, pseudo-microtype, and tourism-poster aesthetics.
+- Uses A/B/C directions for archival intervention, single-object evidence, and typographic structure, evaluates complete groups, and limits repeated use of giant cropped type, shadows, or other mechanisms.
+- Prefers material from museums, libraries, and archives for cultural subjects and requires source and rights-status tracking instead of presenting generated reinterpretations as historical evidence.
+
+**Notes**
+
+The repository publishes a substantial Image 2 test set and selected triptychs that show how experiments converged into v2. It is more concerned with material inevitability, semantic mechanisms, and group evaluation than a generic “Chinese style” prompt. The tradeoff is a long `SKILL.md`, with some paths requiring online research into calligraphy and cultural evidence. Our four tests used awning shadow, water reflection, a lens-light band, and yarn tension as distinct title mechanisms; all four Chinese titles—“檐下,” “雾线,” “共焦,” and “牵引”—rendered correctly, while subject count and the cat–dog tug interaction remained intact. With no license file upstream, permission should be confirmed before copying, modifying, redistributing, or using the work commercially.
+
+</details>
+
+<table>
+  <tr>
+    <td width="25%" align="center"><a href="examples/oriental-editorial-poster/01-architecture-cafe.png"><img src="examples/oriental-editorial-poster/01-architecture-cafe.png" alt="oriental-editorial-poster — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/oriental-editorial-poster/02-mountain-lake.png"><img src="examples/oriental-editorial-poster/02-mountain-lake.png" alt="oriental-editorial-poster — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/oriental-editorial-poster/03-portrait-camera-duo.png"><img src="examples/oriental-editorial-poster/03-portrait-camera-duo.png" alt="oriental-editorial-poster — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/oriental-editorial-poster/04-animal-cat-dog.png"><img src="examples/oriental-editorial-poster/04-animal-cat-dog.png" alt="oriental-editorial-poster — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+  </tr>
+</table>
+
 ### [Ian Xiaohei Illustrations](https://github.com/helloianneo/ian-xiaohei-illustrations)
 
 Translates key claims, processes, states, and metaphors from Chinese articles into 16:9 white-background Xiaohei illustrations.
@@ -659,6 +911,78 @@ Seven examples clearly distinguish hand-drawn explanatory diagrams from white-st
     <td width="25%" align="center"><a href="examples/ian-xiaohei-scenes/02-mountain-lake.png"><img src="examples/ian-xiaohei-scenes/02-mountain-lake.png" alt="ian-xiaohei-scenes — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
     <td width="25%" align="center"><a href="examples/ian-xiaohei-scenes/03-portrait-camera-duo.png"><img src="examples/ian-xiaohei-scenes/03-portrait-camera-duo.png" alt="ian-xiaohei-scenes — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
     <td width="25%" align="center"><a href="examples/ian-xiaohei-scenes/04-animal-cat-dog.png"><img src="examples/ian-xiaohei-scenes/04-animal-cat-dog.png" alt="ian-xiaohei-scenes — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+  </tr>
+</table>
+
+### [Story Cover](https://github.com/worldwonderer/oh-story-claudecode/tree/main/skills/story-cover)
+
+Infers a visual direction from a book title and genre, then combines an optional reference image with exact title, author, and platform ratio requirements to generate a web-fiction or novel cover.
+
+- **Author:** [worldwonderer](https://github.com/worldwonderer)
+- **Input:** Book title, author or pen name, and publishing platform; optional genre, reference image, and style requirements
+- **Output:** A 2:3 portrait cover by default, or 3:4 for Tomato Novel, with a saved output path
+- **ImageGen role:** Defaults to built-in `image_gen`, infers genre from title keywords, compiles style and typography, and uses edit/reference generation when an image is supplied
+- **Structure:** `skills/story-cover/SKILL.md` inside a larger serialized-fiction toolkit, plus one reference covering ten genre styles
+- **License:** MIT
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Locks title, author, and platform before generation instead of letting the model fill missing publication data with placeholders.
+- Routes historical romance, urban fiction, fantasy, mystery, science fiction, healing fiction, and other genres to distinct color, light, subject, and typography strategies.
+- Defines complete title, correct author, legible genre signal, and thumbnail readability as a release-oriented quality gate.
+- Falls back to an API only when built-in generation is unavailable, checking configuration without exposing credentials.
+
+**Notes**
+
+We fixed the author line to `IMAGEGEN SKILLS` and used `CORNER CAFE`, `MIST VALLEY`, `SHARED FOCUS`, and `RED THREAD` to test title rendering consistently. All four first-pass covers preserved the title, author line, and subject count. Production publishing would still require manual checks for typography, safe areas, and platform crops.
+
+</details>
+
+<table>
+  <tr>
+    <td width="25%" align="center"><a href="examples/story-cover/01-architecture-cafe.png"><img src="examples/story-cover/01-architecture-cafe.png" alt="story-cover — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/story-cover/02-mountain-lake.png"><img src="examples/story-cover/02-mountain-lake.png" alt="story-cover — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/story-cover/03-portrait-camera-duo.png"><img src="examples/story-cover/03-portrait-camera-duo.png" alt="story-cover — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/story-cover/04-animal-cat-dog.png"><img src="examples/story-cover/04-animal-cat-dog.png" alt="story-cover — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+  </tr>
+</table>
+
+### [TaiT CRT Interface Skill](https://github.com/TaiT-tt/tait-crt-interface-skill)
+
+Re-authors people, animals, objects, or scenes as circa-1980s CRT computer-interface illustrations: one large bitmap wallpaper subject, three to six unequal early Macintosh/Minitel windows, scanlines, signal artifacts, and spherical barrel distortion.
+
+- **Author:** [TaiT-tt](https://github.com/TaiT-tt)
+- **Input:** A portrait, group photograph, animal, object, scene, or described theme, plus a named or image-derived palette and an aspect ratio
+- **Output:** One finished CRT retro computer-interface raster illustration at the selected ratio
+- **ImageGen role:** Rebuilds a new bitmap subject from a few identity anchors, adds feature-extraction windows and period interface geometry, and either renders the final surface directly or hands it to same-resolution CRT finalization in a fully capable Codex environment
+- **Structure:** `SKILL.md`, `agents/openai.yaml`, three focused references, palette and visual assets, a CRT finalizer, and multiple author examples
+- **License:** No open-source license declared upstream
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Locks the subject roster, ordering, interaction, and a small identity-anchor set before deliberately severing the source contour, preventing the workflow from collapsing into an automatic pixelation filter.
+- Requires the subject, windows, icons, and glyphs to share one square pixel lattice, with three to six unequal windows and one to three partial feature extractions forming a visible hierarchy.
+- Uses a strict palette-then-ratio intake, while skipping both questions when valid values are already supplied.
+- Separates `codex-full` and `portable-direct` capability paths; the portable path compiles scanlines, pixel bloom, misregistration, barrel curvature, and the fixed signature into one direct generation.
+
+**Notes**
+
+Our four samples use the image-derived palette, 4:3 for landscape inputs, and 3:4 for the portrait. The café, mountain lake, two people, camera, cat, dog, and yarn ball all remain recognizable, and the fixed `tait-crt-interface-skill` signature is readable. Scanlines, window hierarchy, and curved CRT edges are unusually consistent across the set. Because this environment used `portable-direct`, exact two-to-five-color compliance and a mathematically shared integer grid were judged visually rather than verified through the deterministic report. The upstream repository has no license file or licensing statement, so permission should be confirmed before copying, modifying, or using it commercially.
+
+</details>
+
+<table>
+  <tr>
+    <td width="25%" align="center"><a href="examples/tait-crt-interface-skill/01-architecture-cafe.png"><img src="examples/tait-crt-interface-skill/01-architecture-cafe.png" alt="tait-crt-interface-skill — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/tait-crt-interface-skill/02-mountain-lake.png"><img src="examples/tait-crt-interface-skill/02-mountain-lake.png" alt="tait-crt-interface-skill — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/tait-crt-interface-skill/03-portrait-camera-duo.png"><img src="examples/tait-crt-interface-skill/03-portrait-camera-duo.png" alt="tait-crt-interface-skill — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/tait-crt-interface-skill/04-animal-cat-dog.png"><img src="examples/tait-crt-interface-skill/04-animal-cat-dog.png" alt="tait-crt-interface-skill — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
@@ -876,6 +1200,42 @@ This is a boundary entry: ImageGen is an important intermediate step, but the fi
     <td width="25%" align="center"><a href="examples/codex-paper-figure-skill/02-mountain-lake.png"><img src="examples/codex-paper-figure-skill/02-mountain-lake.png" alt="codex-paper-figure-skill — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
     <td width="25%" align="center"><a href="examples/codex-paper-figure-skill/03-portrait-camera-duo.png"><img src="examples/codex-paper-figure-skill/03-portrait-camera-duo.png" alt="codex-paper-figure-skill — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
     <td width="25%" align="center"><a href="examples/codex-paper-figure-skill/04-animal-cat-dog.png"><img src="examples/codex-paper-figure-skill/04-animal-cat-dog.png" alt="codex-paper-figure-skill — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+  </tr>
+</table>
+
+### [Image to SVG](https://github.com/cheshireyang/image-to-svg-skills)
+
+Decomposes a complex overview into independently regenerated PNG elements, then assembles them into a self-contained SVG whose text, arrows, panels, and layout remain second-editable.
+
+- **Author:** [cheshireyang](https://github.com/cheshireyang)
+- **Input:** A confirmed complex design, overview, mechanism, or framework image, with optional paper or structural context
+- **Output:** Multiple generated PNG elements, a contact sheet, a self-contained SVG, and an optional PNG preview
+- **ImageGen role:** Defaults to built-in `image_gen` and must regenerate each reusable sub-element from the confirmed overview as visual reference rather than cropping the source
+- **Structure:** `SKILL.md`, prompt references, Codex metadata, `assemble_svg_layout.py`, a Pillow dependency, and complete SVG/preview examples
+- **License:** No open-source license declared upstream
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Explicitly rejects wrapping one whole PNG in an SVG shell: a complex source must map to multiple concrete element image files.
+- Requires image-to-image for every sub-element; semantic descriptions and source crops cannot replace model-generated assets.
+- Keeps exact titles, labels, arrows, frames, numbering, and spacing SVG-native while preserving rich imagery as replaceable embedded PNG layers.
+- Co-locates overviews, elements, contact sheets, SVGs, and previews beside the source or requested output for project-level reproducibility.
+
+**Notes**
+
+A complete run generates multiple sub-elements for every source and then executes the assembly script, which does not map cleanly to this README's one-preview-per-input grid. The images below are therefore image-to-image four-stage overview proofs, not complete SVG deliverables, and they do not imply that the raster art has been fully vectorized. This pass evaluates whether the decomposition and assembly concept can be communicated visually.
+
+</details>
+
+<table>
+  <tr>
+    <td width="25%" align="center"><a href="examples/image-to-svg/01-architecture-cafe.png"><img src="examples/image-to-svg/01-architecture-cafe.png" alt="image-to-svg — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/image-to-svg/02-mountain-lake.png"><img src="examples/image-to-svg/02-mountain-lake.png" alt="image-to-svg — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/image-to-svg/03-portrait-camera-duo.png"><img src="examples/image-to-svg/03-portrait-camera-duo.png" alt="image-to-svg — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/image-to-svg/04-animal-cat-dog.png"><img src="examples/image-to-svg/04-animal-cat-dog.png" alt="image-to-svg — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
@@ -1256,6 +1616,42 @@ The domain information architecture is clear, but the repository ships no finish
     <td width="25%" align="center"><a href="examples/video-storyboard/02-mountain-lake.png"><img src="examples/video-storyboard/02-mountain-lake.png" alt="video-storyboard — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
     <td width="25%" align="center"><a href="examples/video-storyboard/03-portrait-camera-duo.png"><img src="examples/video-storyboard/03-portrait-camera-duo.png" alt="video-storyboard — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
     <td width="25%" align="center"><a href="examples/video-storyboard/04-animal-cat-dog.png"><img src="examples/video-storyboard/04-animal-cat-dog.png" alt="video-storyboard — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+  </tr>
+</table>
+
+### [TT Material Animation](https://github.com/pbwheel/tt-design/tree/main/skills/tt-material-animation)
+
+Designs opening and ending endpoints for clay, paper, collage, ink, printmaking, sand, felt, and other physical media, then compiles the material-plausible transformation between them into a short-video prompt.
+
+- **Author:** [pbwheel](https://github.com/pbwheel)
+- **Input:** An image or text brief with a theme or intent, plus a selected material direction and execution mode
+- **Output:** One endpoint sheet or two 9:16 endpoint frames, followed by a physically executable video prompt; optional video generation
+- **ImageGen role:** After material and mode confirmation, uses built-in `image_gen` for a two-panel sheet or sequential reference frames, passing the opening frame visually into the ending-frame generation path
+- **Structure:** `SKILL.md`, Codex metadata, material-selection guidance, eight physical-media contracts, an eval suite, and an MIT License
+- **License:** MIT
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Treats handmade media as physical contracts rather than adjectives: each material defines signature, light, composition, motion grammar, endpoint difference, avoids, and failure corrections.
+- Uses three confirmation gates—direction, mode, endpoint preview—while allowing direct execution when the request already contains those decisions.
+- Requires video prompts to use transformations the material can physically support, such as tearing, folding, stacking, absorbing, blooming, stitching, or pulling, rejecting weightless morphs.
+- Its one-sheet mode presents unlabeled side-by-side 9:16 opening and ending panels for fast art-direction review.
+
+**Notes**
+
+Following the project's earlier decision to force all selected skills across all four fixtures, we used one-sheet endpoint mode directly: handmade torn paper for the café, ink wash for the lake, editorial minimal collage for the duo, and felt textile for the animals. All four show a readable endpoint difference and consistent material identity. We did not continue into video generation, so this pass does not evaluate temporal continuity.
+
+</details>
+
+<table>
+  <tr>
+    <td width="25%" align="center"><a href="examples/tt-material-animation/01-architecture-cafe.png"><img src="examples/tt-material-animation/01-architecture-cafe.png" alt="tt-material-animation — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/tt-material-animation/02-mountain-lake.png"><img src="examples/tt-material-animation/02-mountain-lake.png" alt="tt-material-animation — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/tt-material-animation/03-portrait-camera-duo.png"><img src="examples/tt-material-animation/03-portrait-camera-duo.png" alt="tt-material-animation — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/tt-material-animation/04-animal-cat-dog.png"><img src="examples/tt-material-animation/04-animal-cat-dog.png" alt="tt-material-animation — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 

@@ -6,8 +6,8 @@
   <p>
     <a href="https://github.com/sindresorhus/awesome"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
     <img src="https://img.shields.io/badge/Codex-ImageGen-111827?style=flat-square&logo=openai&logoColor=white" alt="Codex ImageGen">
-    <img src="https://img.shields.io/badge/showcases-42-ec4899?style=flat-square" alt="42 skill showcases">
-    <img src="https://img.shields.io/badge/generated_samples-168-7c3aed?style=flat-square" alt="168 generated samples">
+    <img src="https://img.shields.io/badge/showcases-53-ec4899?style=flat-square" alt="53 skill showcases">
+    <img src="https://img.shields.io/badge/generated_samples-212-7c3aed?style=flat-square" alt="212 generated samples">
     <a href="#contributing"><img src="https://img.shields.io/badge/PRs-welcome-22c55e?style=flat-square" alt="PRs welcome"></a>
   </p>
   <p>
@@ -72,6 +72,42 @@
     <td width="25%" align="center"><a href="examples/photo-abstract-editorial/02-mountain-lake.png"><img src="examples/photo-abstract-editorial/02-mountain-lake.png" alt="photo-abstract-editorial — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
     <td width="25%" align="center"><a href="examples/photo-abstract-editorial/03-portrait-camera-duo.png"><img src="examples/photo-abstract-editorial/03-portrait-camera-duo.png" alt="photo-abstract-editorial — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
     <td width="25%" align="center"><a href="examples/photo-abstract-editorial/04-animal-cat-dog.png"><img src="examples/photo-abstract-editorial/04-animal-cat-dog.png" alt="photo-abstract-editorial — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+  </tr>
+</table>
+
+### [Muge Photo Diptych](https://github.com/Yeshmuge/muge-photo-diptych)
+
+将一张照片转化为竖幅 2:3 的手工艺术志双联拼贴，以纯白反相剪影、重复暗影和跨越纸面的连接线缝合现实场景与记忆层。
+
+- **Author:** [Yeshmuge](https://github.com/Yeshmuge)
+- **Input:** 一张人物、动物、建筑、景观或静物照片；可选主句、碎片文字、连接方式和点缀色
+- **Output:** 竖幅 2:3 的上下双联艺术志拼贴
+- **ImageGen role:** 保留场景与主体关系，将上层主体反转为无细节纯白剪影，在下层复现同姿态暗色剪影，并从原图线性元素延伸一根手绘连接线
+- **Structure:** `SKILL.md`、`agents/openai.yaml`、视觉规范、规范化 prompt 模板、使用示例和两张官方参考图
+- **License:** CC BY-NC 4.0；参考图不自动纳入许可；非商业分享需署名并标注修改，商业使用须另行授权
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- 约束优先级非常明确：主体数量、姿态和轮廓优先于纯白剪影、下层复现、分界线、连接线、配色与文字，便于定向检查和重试。
+- 提供两种连接方式：Mode A 让线围绕人物或动物的动作展开；Mode B 让线从建筑、栏杆等既有线性元素出发，题材含混时默认使用更稳妥的 Mode B。
+- 从原图提取整体色温和唯一点缀色，点缀色同时约束手绘线与全部手写字，避免无来源配色和一层泛黄滤镜。
+- 对纯白剪影、文字错误、主体数量和连接线来源均设有拒绝与重试规则，并允许在排字不稳定时采用两阶段工作流。
+
+**备注**
+
+本仓库对咖啡馆和湖景采用 Mode B，人物案例从接触印样边缘引线，猫狗案例则让原图红毛线直接成为 Mode A 的跨页叙事线。四组结果都稳定形成了上下双联和来源相关配色；人物案例需要一次局部修正，才能彻底去除白色剪影内部残留的相机线稿，说明“完全留白”仍值得作为人工质量门槛。公开分享这些衍生作品时应注明 `Diptych Skill by @Yeshmuge`。
+
+</details>
+
+<table>
+  <tr>
+    <td width="25%" align="center"><a href="examples/muge-photo-diptych/01-architecture-cafe.png"><img src="examples/muge-photo-diptych/01-architecture-cafe.png" alt="muge-photo-diptych — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/muge-photo-diptych/02-mountain-lake.png"><img src="examples/muge-photo-diptych/02-mountain-lake.png" alt="muge-photo-diptych — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/muge-photo-diptych/03-portrait-camera-duo.png"><img src="examples/muge-photo-diptych/03-portrait-camera-duo.png" alt="muge-photo-diptych — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/muge-photo-diptych/04-animal-cat-dog.png"><img src="examples/muge-photo-diptych/04-animal-cat-dog.png" alt="muge-photo-diptych — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
@@ -147,6 +183,42 @@
   </tr>
 </table>
 
+### [Photo to Zine Postcard](https://github.com/Whiplashzeb/photo-to-zine-postcard)
+
+把一张照片制作成一套极简 Zine 明信片：正面在上方完整嵌入原图，下方留下大面积空白，只放一个来源明确的手绘元素、少量元数据和三个取自原图的色块；背面则是可直接书写的统一邮资版式。
+
+- **Author:** [Whiplashzeb](https://github.com/Whiplashzeb)
+- **Input:** 一张用户照片；可选标题、副标题、地点、日期与编号
+- **Output:** 两张相互配套的 2:3 竖版图片，分别为明信片正面与功能性背面
+- **ImageGen role:** 将真实原图嵌入正面，按识别度、色彩和轮廓选择一个主元素进行克制的手绘转译，再生成同纸色、线条和比例的背面
+- **Structure:** 单文件 `SKILL.md`、中英文 README、定制指南、更新与贡献文档、案例索引及 9 张官方成品
+- **License:** MIT
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- 正面结构固定为“完整照片—大面积过渡留白—左下元数据—右下单一主元素—恰好三个色块”，明确禁止把下半页做成素材板或拼贴墙。
+- 主元素优先选择最能识别原图、色彩鲜明且轮廓清楚的部分；水体、山形、植物和建筑默认手绘，人物、手部、文字与精密器材才回退为原图裁片。
+- 只允许标题、短副标题、地点、日期和小编号；用户没有提供的地点与日期必须留空，不能用 `Unknown` 等占位内容补齐。
+- 背面保持功能优先：外框、偏右中线、邮票框、地址线和大面积留言区构成一套克制、可打印的系统。
+
+**备注**
+
+上游提供 9 张风景与建筑成品，但未单独发布每张案例的原始输入，因此无法像素级验证“照片完全不变”。本仓库把每次测试的正反面合并为一张展示图：三张横版输入首轮通过，竖版双人照片首轮被裁成横框，经过一次只针对原图比例的修正后通过。四张样例均保留了三色块与功能背面；这也说明在纯生成式合成中，原图 `contain` 仍是需要人工检查的关键约束。
+
+</details>
+
+<table>
+  <tr>
+    <td width="25%" align="center"><a href="examples/photo-to-zine-postcard/01-architecture-cafe.png"><img src="examples/photo-to-zine-postcard/01-architecture-cafe.png" alt="photo-to-zine-postcard — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/photo-to-zine-postcard/02-mountain-lake.png"><img src="examples/photo-to-zine-postcard/02-mountain-lake.png" alt="photo-to-zine-postcard — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/photo-to-zine-postcard/03-portrait-camera-duo.png"><img src="examples/photo-to-zine-postcard/03-portrait-camera-duo.png" alt="photo-to-zine-postcard — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/photo-to-zine-postcard/04-animal-cat-dog.png"><img src="examples/photo-to-zine-postcard/04-animal-cat-dog.png" alt="photo-to-zine-postcard — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+  </tr>
+</table>
+
 ### [GC Minimal Zine Poster v0.3.1](https://github.com/LiamGvchi/gc-minimal-zine-poster)
 
 把主题、句子、文章、物件、情绪、照片或参考图转化为安静的纸张质感微编辑海报：以大面积留白承载一个小型视觉事件、克制排版和单一高饱和色彩焦点。
@@ -181,6 +253,42 @@
     <td width="25%" align="center"><a href="examples/gc-minimal-zine-poster-v0-3/02-mountain-lake.png"><img src="examples/gc-minimal-zine-poster-v0-3/02-mountain-lake.png" alt="gc-minimal-zine-poster-v0-3 — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
     <td width="25%" align="center"><a href="examples/gc-minimal-zine-poster-v0-3/03-portrait-camera-duo.png"><img src="examples/gc-minimal-zine-poster-v0-3/03-portrait-camera-duo.png" alt="gc-minimal-zine-poster-v0-3 — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
     <td width="25%" align="center"><a href="examples/gc-minimal-zine-poster-v0-3/04-animal-cat-dog.png"><img src="examples/gc-minimal-zine-poster-v0-3/04-animal-cat-dog.png" alt="gc-minimal-zine-poster-v0-3 — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+  </tr>
+</table>
+
+### [Photo Riso Poster](https://github.com/luckdvr/photo-riso-poster)
+
+把照片或文字主题提炼成一张安静的孔版印刷档案海报：先记录数量、间隔、遮挡、方向与色彩角色，再用 2–3 层彩色油墨、少量排印和大面积留白重建这些关系。
+
+- **Author:** [luckdvr](https://github.com/luckdvr)
+- **Input:** 一张照片，或一个文字主题；可选具象、标准或极简抽象程度
+- **Output:** 一张画幅随原图方向变化的平面 riso 海报，以及实际 prompt、证据映射、纸色与画幅说明
+- **ImageGen role:** 先由 Codex 目视解构照片，再把视觉证据写成纯文本 prompt 交给内置图片生成；源照片不会直接附加到生成调用
+- **Structure:** 单文件 `SKILL.md`、中英文 README、MIT License，以及多组 poster、source/result 对照和抽象程度案例
+- **License:** MIT
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- 每一个图形标记都必须对应可描述的源图事实，禁止为“更像设计”而添加无来源装饰。
+- 把原图的大面积冷暖和 2–3 个主要色彩角色映射为纸色与独立油墨层，并用颗粒、渗墨和轻微错版建立真实印刷感。
+- 提供 faithful、standard 和 minimal 三档抽象：从可辨认的旧书插图轮廓逐步退化为只保留数量、位置、方向和节奏的几何标记。
+- 文字也是证据出口，可承载数量、季节、天气、日期和短诗句，而不是随机填充的伪编辑小字。
+
+**备注**
+
+这是一个很克制的单页方法型 skill，公开仓库提供多组照片与成品对照。它刻意不把照片传入最终 ImageGen 调用，因此更适合测试“视觉分析能否通过文字迁移”，而不是测试人物身份或物件几何的严格保真。本次四张纯文本重建均保留了关键数量、方向、色彩角色与短英文；人物按规则匿名化面孔，山湖和动物题材则尤其清楚地保留了红伞、桥线与红毛线的关系。作者明确注明其方法受到 GC Minimal Zine Poster 与 Travel Photo Abstraction 启发，但没有复制两者的文件、图片或文本。
+
+</details>
+
+<table>
+  <tr>
+    <td width="25%" align="center"><a href="examples/photo-riso-poster/01-architecture-cafe.png"><img src="examples/photo-riso-poster/01-architecture-cafe.png" alt="photo-riso-poster — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/photo-riso-poster/02-mountain-lake.png"><img src="examples/photo-riso-poster/02-mountain-lake.png" alt="photo-riso-poster — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/photo-riso-poster/03-portrait-camera-duo.png"><img src="examples/photo-riso-poster/03-portrait-camera-duo.png" alt="photo-riso-poster — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/photo-riso-poster/04-animal-cat-dog.png"><img src="examples/photo-riso-poster/04-animal-cat-dog.png" alt="photo-riso-poster — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
@@ -290,6 +398,114 @@
     <td width="25%" align="center"><a href="examples/hbg-travel-photo-redraw/02-mountain-lake.png"><img src="examples/hbg-travel-photo-redraw/02-mountain-lake.png" alt="hbg-travel-photo-redraw — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
     <td width="25%" align="center"><a href="examples/hbg-travel-photo-redraw/03-portrait-camera-duo.png"><img src="examples/hbg-travel-photo-redraw/03-portrait-camera-duo.png" alt="hbg-travel-photo-redraw — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
     <td width="25%" align="center"><a href="examples/hbg-travel-photo-redraw/04-animal-cat-dog.png"><img src="examples/hbg-travel-photo-redraw/04-animal-cat-dog.png" alt="hbg-travel-photo-redraw — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+  </tr>
+</table>
+
+### [Travel Memory Sticker Card](https://github.com/carolinaaafy/travel-memory-sticker-card)
+
+把一张旅行、街景、风光、生活、人像或宠物照片重绘成横版收藏卡：左侧是主场景插画，右侧是从原图提取的六枚贴纸，下方用三组英文短语概括记忆线索。
+
+- **Author:** [carolinaaafy](https://github.com/carolinaaafy)
+- **Input:** 一张旅行、街景、风光、生活、人像或宠物照片
+- **Output:** 一张 3:2 横版记忆收藏卡，包含主插画、恰好三组英文关键词与恰好六枚贴纸
+- **ImageGen role:** 分析原图，选择识别锚点、贴纸元素与关键词，再调用内置 `image_gen` 重绘整张卡片；仅在硬约束失败时允许一次定向重生成
+- **Structure:** `SKILL.md`、Codex metadata、轻量 README 与一份视觉风格指南
+- **License:** 上游仓库未声明开源许可证
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- 固定采用左侧约 66–68% 主插画、右侧约 30–32% 贴纸栏，以及贯穿全图的暖白纸张边缘。
+- 从原图选择一个识别锚点；地标文字默认不写，确有必要时最多出现一次，避免凭空补充地点。
+- 用 5–8 组宽泛色系和 3–6 个大色块建立哑光水粉、剪纸与轻微孔版印刷颗粒感。
+- 右栏必须是六枚彼此独立、来自原图的贴纸，底部三组英文短语各出现一次。
+
+**备注**
+
+本仓库的四张统一输入均在首轮通过：三组关键词、六枚贴纸、左右比例与主体数量都符合规则，没有触发重生成。尚未覆盖“保留并逐字生成一个真实地标名称”的可选路径；上游也没有提供作者生成案例。由于仓库未声明许可证，复用或再分发前需自行确认授权。
+
+</details>
+
+<table>
+  <tr>
+    <td width="25%" align="center"><a href="examples/travel-memory-sticker-card/01-architecture-cafe.png"><img src="examples/travel-memory-sticker-card/01-architecture-cafe.png" alt="travel-memory-sticker-card — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/travel-memory-sticker-card/02-mountain-lake.png"><img src="examples/travel-memory-sticker-card/02-mountain-lake.png" alt="travel-memory-sticker-card — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/travel-memory-sticker-card/03-portrait-camera-duo.png"><img src="examples/travel-memory-sticker-card/03-portrait-camera-duo.png" alt="travel-memory-sticker-card — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/travel-memory-sticker-card/04-animal-cat-dog.png"><img src="examples/travel-memory-sticker-card/04-animal-cat-dog.png" alt="travel-memory-sticker-card — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+  </tr>
+</table>
+
+### [Pocket Postcard](https://github.com/kaijie-czyh/pocket-postcard-skill)
+
+把照片或一句话寄成复古手写明信片：一侧保留可辨认的照片，另一侧放简短手写留言、邮戳、地点与天气速记。
+
+- **Author:** [kaijie-czyh](https://github.com/kaijie-czyh)
+- **Input:** 一张照片，或主题、句子、情绪、地点与内容 brief
+- **Output:** 一张 3:2 横版或 2:3 竖版的复古手写明信片，以及最终 prompt 和 recipe 说明
+- **ImageGen role:** 默认调用内置图片生成；照片模式优先以 image-to-image 保留原主体，再组合照片区、手写区、邮戳与旧纸表面
+- **Structure:** `SKILL.md`、中英文 README、6 张作者案例、可选 MiniMax 测试脚本与 MIT License
+- **License:** MIT
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- 用固定的八字段 prompt compiler 约束画布、照片区、手写区、邮政标记、纸张、色彩、情绪和反向条件。
+- 布局、邮票、手写、纸色、情绪和高饱和邮戳色组成可变 recipe，批量结果不只是换个位置。
+- 照片模式要求“主体保真优先”、更少更大的装饰元素，并允许为人脸保真缩短文字。
+- 单一高饱和邮戳色、哑光卡纸、轻微磨损和折痕让成品更像真正被寄出的物件。
+
+**备注**
+
+四张实测都清晰生成了照片区、手写区和圆形邮戳，地点与天气也可读。为避免伪造真实旅行信息，本次只使用画面内可见场景名称与天气描述；邮戳日期由模型作为视觉道具生成，不应视为真实元数据。
+
+</details>
+
+<table>
+  <tr>
+    <td width="25%" align="center"><a href="examples/pocket-postcard/01-architecture-cafe.png"><img src="examples/pocket-postcard/01-architecture-cafe.png" alt="pocket-postcard — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/pocket-postcard/02-mountain-lake.png"><img src="examples/pocket-postcard/02-mountain-lake.png" alt="pocket-postcard — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/pocket-postcard/03-portrait-camera-duo.png"><img src="examples/pocket-postcard/03-portrait-camera-duo.png" alt="pocket-postcard — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/pocket-postcard/04-animal-cat-dog.png"><img src="examples/pocket-postcard/04-animal-cat-dog.png" alt="pocket-postcard — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+  </tr>
+</table>
+
+### [Street Photo Illustration](https://github.com/fangzhengjin/skills-hub/tree/main/skills/street-photo-illustration-skill)
+
+在保留真实摄影环境的前提下，只把照片中的人物替换成黑白线稿或彩色 editorial-chibi 角色，可选加入与场景响应的排版和涂鸦。
+
+- **Author:** [fangzhengjin](https://github.com/fangzhengjin)
+- **Input:** 街拍、旅行、生活方式、休闲或商业空间照片；可选模式、文字和装饰强度
+- **Output:** 默认 3:4 竖版的“真实环境 + 插画人物”编辑图像
+- **ImageGen role:** 以原照为结构和人物锁定参考，在同一位置替换人物，保留姿势、服装、配件及摄影环境
+- **Structure:** `SKILL.md`、`agents/openai.yaml`、黑白与彩色两份 prompt 模板、图标和 10 张作者案例
+- **License:** MIT
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- 核心是“角色替换”而非全图插画化：建筑、街道、家具、商品、光线、透视与景深都应保持摄影。
+- BLACK INK 与 COLOR CHIBI 都将面部简化为点眼逻辑，却对成年人身体比例、长腿节奏和姿势剪影设置了严格保留规则。
+- 自定义文案、自动文案和无文字三种模式相互排他；排版必须来自咖啡店、城市、旅行或商业空间的实际语境。
+- 两种执行模板与详细 QA 清单将人物数量、重复、隐挡人脸、衣物细节和环境篡改纳入检查。
+
+**备注**
+
+这个 skill 原生只处理人物。因此本仓库的双人照是正常用法；咖啡店和山湖分别推断了一名骑手与持伞旅人，动物照则将猫狗当作替换对象，三者都是故意越界的泛化压力测试，不代表上游承诺。四张都使用 COLOR CHIBI + NO TEXT；背景保持了明显的摄影质感，但并非逐像素无变化合成。
+
+</details>
+
+<table>
+  <tr>
+    <td width="25%" align="center"><a href="examples/street-photo-illustration/01-architecture-cafe.png"><img src="examples/street-photo-illustration/01-architecture-cafe.png" alt="street-photo-illustration — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/street-photo-illustration/02-mountain-lake.png"><img src="examples/street-photo-illustration/02-mountain-lake.png" alt="street-photo-illustration — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/street-photo-illustration/03-portrait-camera-duo.png"><img src="examples/street-photo-illustration/03-portrait-camera-duo.png" alt="street-photo-illustration — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/street-photo-illustration/04-animal-cat-dog.png"><img src="examples/street-photo-illustration/04-animal-cat-dog.png" alt="street-photo-illustration — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
@@ -591,6 +807,42 @@ showcase 中的动物、幽灵、机器人和物件整体具有清楚的圆形�
 <a id="illustrations--posters"></a>
 ## 插画与海报
 
+### [Oriental Editorial Poster](https://github.com/dacnay816y62-hub/fantasy-dongfang-jianyuehaibao)
+
+用真实文化物证、材料逻辑、精炼中文标题和结构性留白，制作东方文化主题的编辑海报、出版封面与文字创意实验。
+
+- **Author:** [dacnay816y62-hub](https://github.com/dacnay816y62-hub)
+- **Input:** 标题、主题、展览、品牌或文化内容；可附参考图、短关键词批次和 A/B/C 对比要求
+- **Output:** 默认 3:4 的完整中文编辑海报，也支持多主题批次、A/B/C 三方向测试与对比总览
+- **ImageGen role:** ImageGen 是强制生产步骤；Mode A 生成图文融合更强的完整海报，Mode B 生成标题区和阅读层级更稳定的出版物式完整版面
+- **Structure:** `SKILL.md`、`agents/openai.yaml`、两份构图与文字专项 references、参考版式 assets、10 张示例，以及包含图片、prompt 和精选三联图的 v2 测试集
+- **License:** 上游仓库未声明开源许可证；参考图也不代表可商用授权
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- 每张海报先通过概念门：为材料事实、语义转折、标题机制、不可替换性和文字留白提出六个候选并评分，弱概念不能直接进入生成。
+- 默认只保留一个主物证、一个标题动作、一个主轴、一个小型干扰器和至多一个强调色，主动排除红章、泼墨、二维码、伪小字与旅游宣传感。
+- A/B/C 分别探索古图档案介入、单一物证和字体结构实验；系列按完整组评估，并限制连续复用大字裁切、投影等机制。
+- 对传统文化题材优先寻找博物馆、图书馆与档案机构的真实材料，并要求记录来源与权利状态，不把生成式重构冒充史料。
+
+**备注**
+
+上游公开了规模较大的 Image 2 测试资产和精选三联图，能够看到规则如何从试验收敛为 v2。它比一般“新中式风格 prompt”更强调材料必然性、语义机制和成组评测；代价是 `SKILL.md` 较长，部分路径还要求联网研究书画字形与文化材料。本次四张测试分别使用篷布阴影、水面反射、镜头光带与毛线张力作为标题机制，“檐下”“雾线”“共焦”“牵引”均正确生成，人物数量与猫狗争线关系也得到保留。仓库没有许可证文件，复制、修改、再分发或商用前应先向作者确认。
+
+</details>
+
+<table>
+  <tr>
+    <td width="25%" align="center"><a href="examples/oriental-editorial-poster/01-architecture-cafe.png"><img src="examples/oriental-editorial-poster/01-architecture-cafe.png" alt="oriental-editorial-poster — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/oriental-editorial-poster/02-mountain-lake.png"><img src="examples/oriental-editorial-poster/02-mountain-lake.png" alt="oriental-editorial-poster — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/oriental-editorial-poster/03-portrait-camera-duo.png"><img src="examples/oriental-editorial-poster/03-portrait-camera-duo.png" alt="oriental-editorial-poster — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/oriental-editorial-poster/04-animal-cat-dog.png"><img src="examples/oriental-editorial-poster/04-animal-cat-dog.png" alt="oriental-editorial-poster — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+  </tr>
+</table>
+
 ### [Ian Xiaohei Illustrations](https://github.com/helloianneo/ian-xiaohei-illustrations)
 
 把中文文章里的关键判断、流程、状态和隐喻，转译成 16:9 白底“小黑”手绘正文配图。
@@ -660,6 +912,78 @@ showcase 中的动物、幽灵、机器人和物件整体具有清楚的圆形�
     <td width="25%" align="center"><a href="examples/ian-xiaohei-scenes/02-mountain-lake.png"><img src="examples/ian-xiaohei-scenes/02-mountain-lake.png" alt="ian-xiaohei-scenes — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
     <td width="25%" align="center"><a href="examples/ian-xiaohei-scenes/03-portrait-camera-duo.png"><img src="examples/ian-xiaohei-scenes/03-portrait-camera-duo.png" alt="ian-xiaohei-scenes — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
     <td width="25%" align="center"><a href="examples/ian-xiaohei-scenes/04-animal-cat-dog.png"><img src="examples/ian-xiaohei-scenes/04-animal-cat-dog.png" alt="ian-xiaohei-scenes — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+  </tr>
+</table>
+
+### [Story Cover](https://github.com/worldwonderer/oh-story-claudecode/tree/main/skills/story-cover)
+
+从书名和类型推断视觉方向，再结合参考照生成带精确书名、作者名与平台比例的网文或小说封面。
+
+- **Author:** [worldwonderer](https://github.com/worldwonderer)
+- **Input:** 书名、作者/笔名、发布平台；可选类型、参考图和风格要求
+- **Output:** 默认 2:3 竖版小说封面；番茄小说适配 3:4，并返回已保存路径
+- **ImageGen role:** 默认使用内置 `image_gen`，根据书名关键词推断类型、组合风格与排版，并在有参考图时进行编辑/参考生成
+- **Structure:** 章节化写作工具中的 `skills/story-cover/SKILL.md` 与一份十类封面风格 reference
+- **License:** MIT
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- 先锁定书名、作者和平台，再生成；不让模型用虚构占位信息补齐封面。
+- 按古言、都市、玄幻、悬疑、科幻、治愈等十类题材路由对应的色彩、光线、主体与字体策略。
+- 将“书名完整、作者正确、类型明确、缩略图可读”定义为封面质量门，比纯风格 prompt 更接近真实发布任务。
+- 内置生成不可用时才回退到 API，并要求先检查配置而不输出密钥。
+
+**备注**
+
+本次固定作者行为 `IMAGEGEN SKILLS`，为四张照片分别设定 `CORNER CAFE`、`MIST VALLEY`、`SHARED FOCUS` 和 `RED THREAD`，统一测试书名可读性。四张首轮都正确保留了书名、作者行和主体数量；对于真实出版仍应人工检查字形、安全区与平台裁切。
+
+</details>
+
+<table>
+  <tr>
+    <td width="25%" align="center"><a href="examples/story-cover/01-architecture-cafe.png"><img src="examples/story-cover/01-architecture-cafe.png" alt="story-cover — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/story-cover/02-mountain-lake.png"><img src="examples/story-cover/02-mountain-lake.png" alt="story-cover — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/story-cover/03-portrait-camera-duo.png"><img src="examples/story-cover/03-portrait-camera-duo.png" alt="story-cover — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/story-cover/04-animal-cat-dog.png"><img src="examples/story-cover/04-animal-cat-dog.png" alt="story-cover — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+  </tr>
+</table>
+
+### [TaiT CRT Interface Skill](https://github.com/TaiT-tt/tait-crt-interface-skill)
+
+把人物、动物、物件或场景重新设计成 1980 年代 CRT 电脑界面插画：一个大面积像素壁纸主体、3–6 个不等大的早期 Macintosh / Minitel 视窗，以及扫描线、信号干扰和球面桶形畸变。
+
+- **Author:** [TaiT-tt](https://github.com/TaiT-tt)
+- **Input:** 人像、多人照片、动物、物件、场景或文字主题；需要指定色卡或“如图”，以及生成比例
+- **Output:** 一张所选比例的 CRT 复古电脑界面位图插画
+- **ImageGen role:** 从少量身份锚点重构独立像素主体、局部提取窗和复古界面；便携模式直接调用 ImageGen 一次，完整 Codex 环境还可接同分辨率 CRT 后处理
+- **Structure:** `SKILL.md`、`agents/openai.yaml`、3 份专项 references、色卡与视觉 assets、CRT 后处理脚本及多组作者样例
+- **License:** 上游仓库未声明开源许可证
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- 先锁定人物或动物的数量、顺序、互动和少量身份锚点，再主动切断源照片轮廓，避免把任务退化为自动像素化滤镜。
+- 主体、窗口、图标和字形必须共用同一个方形像素网格，并用 3–6 个不等大的窗口和 1–3 个局部提取窗建立明确层级。
+- 通过“色卡 → 比例”的两阶段入口收集必要参数；若初始请求已经给出两项，则立即生成，不重复确认。
+- 区分 `codex-full` 与 `portable-direct` 两条能力路径；后者把扫描线、像素辉光、信号错位、桶形畸变和固定署名直接编入单次生成。
+
+**备注**
+
+我们的四张样例使用“如图”色卡，横图按 4:3、人物按 3:4 生成。咖啡店、山湖、两位人物、相机、猫狗和毛球均被正确保留，`tait-crt-interface-skill` 固定署名也清晰可读；输出在扫描线、窗口层级与边缘曲率上具有很强一致性。由于本环境走 `portable-direct`，色彩是否严格只含 2–5 个值、所有元素是否共享精确整数网格只能目视判断，不能声称经过确定性报告验证。上游没有许可证文件或许可声明，复制、修改或商用前需先向作者确认。
+
+</details>
+
+<table>
+  <tr>
+    <td width="25%" align="center"><a href="examples/tait-crt-interface-skill/01-architecture-cafe.png"><img src="examples/tait-crt-interface-skill/01-architecture-cafe.png" alt="tait-crt-interface-skill — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/tait-crt-interface-skill/02-mountain-lake.png"><img src="examples/tait-crt-interface-skill/02-mountain-lake.png" alt="tait-crt-interface-skill — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/tait-crt-interface-skill/03-portrait-camera-duo.png"><img src="examples/tait-crt-interface-skill/03-portrait-camera-duo.png" alt="tait-crt-interface-skill — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/tait-crt-interface-skill/04-animal-cat-dog.png"><img src="examples/tait-crt-interface-skill/04-animal-cat-dog.png" alt="tait-crt-interface-skill — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
@@ -877,6 +1201,42 @@ showcase 中的动物、幽灵、机器人和物件整体具有清楚的圆形�
     <td width="25%" align="center"><a href="examples/codex-paper-figure-skill/02-mountain-lake.png"><img src="examples/codex-paper-figure-skill/02-mountain-lake.png" alt="codex-paper-figure-skill — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
     <td width="25%" align="center"><a href="examples/codex-paper-figure-skill/03-portrait-camera-duo.png"><img src="examples/codex-paper-figure-skill/03-portrait-camera-duo.png" alt="codex-paper-figure-skill — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
     <td width="25%" align="center"><a href="examples/codex-paper-figure-skill/04-animal-cat-dog.png"><img src="examples/codex-paper-figure-skill/04-animal-cat-dog.png" alt="codex-paper-figure-skill — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+  </tr>
+</table>
+
+### [Image to SVG](https://github.com/cheshireyang/image-to-svg-skills)
+
+把复杂的整体设计拆成经图像模型重生成的独立 PNG 元素，再组装成文字、箭头、面板和布局可二次编辑的自包含 SVG。
+
+- **Author:** [cheshireyang](https://github.com/cheshireyang)
+- **Input:** 一张已确认的复杂设计图、概览图、机制图或框架图，以及可选论文/结构上下文
+- **Output:** 多个独立生成的 PNG 元素、contact sheet、自包含 SVG 与可选 PNG 预览
+- **ImageGen role:** 默认使用内置 `image_gen`，必须以已确认概览图为视觉参考，逐个重新生成可复用子元素，而不是直接裁切原图
+- **Structure:** `SKILL.md`、prompt references、Codex metadata、`assemble_svg_layout.py`、Pillow 依赖与完整 SVG/预览案例
+- **License:** 上游仓库未声明开源许可证
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- 明确拒绝“把完整 PNG 塞进 SVG 外壳”：复杂图必须有多个可对应到实际图片文件的概念元素。
+- 每个子元素都必须走 image-to-image，原图只作为风格与内容参考，不能用语义文字或原图裁片替代生成。
+- 用 SVG 原生元素承担精确标题、标签、箭头、边框、编号和间距，同时把高细节图像作为可替换的嵌入 PNG 层。
+- 所有概览图、元素、contact sheet、SVG 和预览都必须与源图/输出就地存放，方便项目内复现。
+
+**备注**
+
+完整执行会为每张源图生成多个子元素，再运行组装脚本；这与 README 的“每个 skill × 四张输入×每张一个展示图”结构并不等价。因此下方只展示本次 image-to-image 生成的四阶段视觉概览证明，不是完整 SVG 交付，也不声称 PNG 内容已全矢量化。本次只评估拆解与组装概念是否可视化。
+
+</details>
+
+<table>
+  <tr>
+    <td width="25%" align="center"><a href="examples/image-to-svg/01-architecture-cafe.png"><img src="examples/image-to-svg/01-architecture-cafe.png" alt="image-to-svg — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/image-to-svg/02-mountain-lake.png"><img src="examples/image-to-svg/02-mountain-lake.png" alt="image-to-svg — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/image-to-svg/03-portrait-camera-duo.png"><img src="examples/image-to-svg/03-portrait-camera-duo.png" alt="image-to-svg — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/image-to-svg/04-animal-cat-dog.png"><img src="examples/image-to-svg/04-animal-cat-dog.png" alt="image-to-svg — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 
@@ -1257,6 +1617,42 @@ OpenAI 官方 game-studio skill：从基准角色或 seed frame 生成动作条�
     <td width="25%" align="center"><a href="examples/video-storyboard/02-mountain-lake.png"><img src="examples/video-storyboard/02-mountain-lake.png" alt="video-storyboard — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
     <td width="25%" align="center"><a href="examples/video-storyboard/03-portrait-camera-duo.png"><img src="examples/video-storyboard/03-portrait-camera-duo.png" alt="video-storyboard — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
     <td width="25%" align="center"><a href="examples/video-storyboard/04-animal-cat-dog.png"><img src="examples/video-storyboard/04-animal-cat-dog.png" alt="video-storyboard — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
+  </tr>
+</table>
+
+### [TT Material Animation](https://github.com/pbwheel/tt-design/tree/main/skills/tt-material-animation)
+
+为粘土、纸张、拼贴、水墨、版画、沙粒与毛毡等实体媒材设计首尾端点，并把两帧之间的物理变化编译为短视频生成 prompt。
+
+- **Author:** [pbwheel](https://github.com/pbwheel)
+- **Input:** 带主题/意图的图片或文本 brief，以及选定的媒材方向与执行模式
+- **Output:** 单张首尾对照 sheet 或两张 9:16 端点帧，再加一份物理可执行的视频 prompt；可选直接生成视频
+- **ImageGen role:** 在用户确认媒材和模式后，使用内置 `image_gen` 生成一张双端点 sheet 或两张连续参考帧，并把前一帧作为后一帧的视觉参考
+- **Structure:** `SKILL.md`、Codex metadata、媒材选择说明、8 份物理媒材合同、eval 套件与 MIT License
+- **License:** MIT
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- 不把“手工感”当作形容词：每种媒材都有材质签名、光线、构图、动作语法、端点差异、禁止项和失败修正。
+- 用“选方向→锁定模式→预览端点”三道确认门避免过早生成，同时对已提供完整决策的请求允许直接执行。
+- 视频 prompt 必须描述可被材料物理支持的变化，如撕、折、堆叠、吸收、沁散、缝合或牵拉，拒绝无重力 morph。
+- 一张 sheet 模式用无标签的左右 9:16 面板展示起点与终点，特别适合快速审核方向。
+
+**备注**
+
+本次依照先前“对每个 skill 强制跑四张 fixture”的选择，直接采用单张双端点模式：咖啡店为手撕纸，山湖为水墨，双人为极简编辑拼贴，猫狗为毛毡织物。四张都形成了可读的首尾差异和统一材质；本次没有继续生成视频，因此不评价时间连续性。
+
+</details>
+
+<table>
+  <tr>
+    <td width="25%" align="center"><a href="examples/tt-material-animation/01-architecture-cafe.png"><img src="examples/tt-material-animation/01-architecture-cafe.png" alt="tt-material-animation — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
+    <td width="25%" align="center"><a href="examples/tt-material-animation/02-mountain-lake.png"><img src="examples/tt-material-animation/02-mountain-lake.png" alt="tt-material-animation — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
+    <td width="25%" align="center"><a href="examples/tt-material-animation/03-portrait-camera-duo.png"><img src="examples/tt-material-animation/03-portrait-camera-duo.png" alt="tt-material-animation — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
+    <td width="25%" align="center"><a href="examples/tt-material-animation/04-animal-cat-dog.png"><img src="examples/tt-material-animation/04-animal-cat-dog.png" alt="tt-material-animation — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
   </tr>
 </table>
 

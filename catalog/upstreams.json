@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-22",
+  "updated_at": "2026-08-27",
   "notes": "Read-only local review clones. The upstream/ directory is gitignored; this file records the reviewed revisions without vendoring third-party code.",
   "sources": [
     {
@@ -118,6 +118,17 @@
       "scope": ".codex/skills/minecraft-imagegen"
     },
     {
+      "name": "muge-photo-diptych",
+      "url": "https://github.com/Yeshmuge/muge-photo-diptych.git",
+      "commit": "e45e5be9b6120947c62a99d008df68e77c51e227",
+      "scope": "skills/muge-photo-diptych"
+    },
+    {
+      "name": "oriental-editorial-poster",
+      "url": "https://github.com/dacnay816y62-hub/fantasy-dongfang-jianyuehaibao.git",
+      "commit": "6948d6b8c6c64c7de794597871d9c1cbb61d8898"
+    },
+    {
       "name": "openai-plugins",
       "url": "https://github.com/openai/plugins.git",
       "commit": "11c74d6ba24d3a6d48f54a194cd00ef3beea18f9",
@@ -134,9 +145,19 @@
       "commit": "49e55073d6d0330274d31f75d27f5dd6eb35fd6d"
     },
     {
+      "name": "photo-riso-poster",
+      "url": "https://github.com/luckdvr/photo-riso-poster.git",
+      "commit": "79564228948fd393ecf58ee9aeb74fbc3c1f1deb"
+    },
+    {
       "name": "photo-to-monthly-zine-postcard",
       "url": "https://github.com/shenchangyi/photo-to-monthly-zine-postcard.git",
       "commit": "26ab8d1a0435c1f96439647a6c4be3914e423878"
+    },
+    {
+      "name": "photo-to-zine-postcard",
+      "url": "https://github.com/Whiplashzeb/photo-to-zine-postcard.git",
+      "commit": "0091403bccb219d1be78c5be8552de29a6446f0a"
     },
     {
       "name": "skill-make-photo-stamp-archive",
@@ -150,10 +171,49 @@
       "scope": "root SKILL.md; downloadable package contains references, composition script, metadata, and examples"
     },
     {
+      "name": "tait-crt-interface-skill",
+      "url": "https://github.com/TaiT-tt/tait-crt-interface-skill.git",
+      "commit": "6bd76c91db0d5af9bbbf2a38ebb0880978be4105"
+    },
+    {
       "name": "taste-skill",
       "url": "https://github.com/Leonxlnx/taste-skill.git",
       "commit": "78a81c53eac43f6f6bba665c9fe8f11f592fa550",
       "scope": "skills/imagegen-frontend-web, skills/imagegen-frontend-mobile, skills/brandkit"
+    },
+    {
+      "name": "travel-memory-sticker-card",
+      "url": "https://github.com/carolinaaafy/travel-memory-sticker-card.git",
+      "commit": "77214a190b12e142f89537e07d96ce44c4f491fe"
+    },
+    {
+      "name": "image-to-svg-skills",
+      "url": "https://github.com/cheshireyang/image-to-svg-skills.git",
+      "commit": "a069bcea594b813b4de3cbb4407d76c93d78b6b1",
+      "scope": "root SKILL.md, references, and SVG assembly script"
+    },
+    {
+      "name": "pocket-postcard-skill",
+      "url": "https://github.com/kaijie-czyh/pocket-postcard-skill.git",
+      "commit": "025548a0b0509ae29d3da8c3ecf06a4f9561acc7"
+    },
+    {
+      "name": "skills-hub",
+      "url": "https://github.com/fangzhengjin/skills-hub.git",
+      "commit": "ded6a365e4864dd96f8f087eb603bc8442d84fa7",
+      "scope": "skills/street-photo-illustration-skill"
+    },
+    {
+      "name": "story-cover",
+      "url": "https://github.com/worldwonderer/oh-story-claudecode.git",
+      "commit": "d1f88587c0b88abdb0a62b101b850300e0617d7b",
+      "scope": "skills/story-cover"
+    },
+    {
+      "name": "tt-design",
+      "url": "https://github.com/pbwheel/tt-design.git",
+      "commit": "2d982d5d1c57527116f901f70461bd4e31f2b47a",
+      "scope": "skills/tt-material-animation"
     },
     {
       "name": "yarn-rug-reference",
