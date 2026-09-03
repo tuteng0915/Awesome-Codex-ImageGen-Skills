@@ -2,6 +2,17 @@
 
 这里的图片均为 2026-08-21 使用 Codex harness 内置 ImageGen 生成或编辑的合成素材，不来自真实人物、地点或第三方摄影作品。生成模式为 `photorealistic-natural`，未做手工图像后处理。
 
+[← 中文首页](../README.md) · [English home](../README_EN.md)
+
+<table>
+  <tr>
+    <td width="25%" align="center"><a href="01-architecture-cafe.png"><img src="01-architecture-cafe.png" alt="Architecture café fixture" width="100%"></a><br><code>人造 / 建筑</code></td>
+    <td width="25%" align="center"><a href="02-mountain-lake.png"><img src="02-mountain-lake.png" alt="Mountain lake fixture" width="100%"></a><br><code>自然 / 景观</code></td>
+    <td width="25%" align="center"><a href="03-portrait-camera-duo.png"><img src="03-portrait-camera-duo.png" alt="Portrait camera duo fixture" width="100%"></a><br><code>人物 / 道具</code></td>
+    <td width="25%" align="center"><a href="04-animal-cat-dog.png"><img src="04-animal-cat-dog.png" alt="Cat and dog fixture" width="100%"></a><br><code>动物 / 互动</code></td>
+  </tr>
+</table>
+
 ## 01 — Architecture café
 
 - File: `01-architecture-cafe.png`

@@ -22,6 +22,8 @@
 
 This collection highlights projects that package visual methods, domain knowledge, and creative workflows into `SKILL.md` files and use the Codex harness built-in `image_gen` capability.
 
+> 🖼️ Every four-up preview follows the same order: Built / Architecture · Nature / Landscape · People / Props · Animals / Interaction. Click any preview to open the four full-resolution originals.
+
 ## 🧭 Contents
 
 - 📸 [Photo & Editorial](#photo--editorial)
@@ -65,14 +67,9 @@ The examples maintain a stable split layout, generous whitespace, and source-awa
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/photo-abstract-editorial/01-architecture-cafe.png"><img src="examples/photo-abstract-editorial/01-architecture-cafe.png" alt="photo-abstract-editorial — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/photo-abstract-editorial/02-mountain-lake.png"><img src="examples/photo-abstract-editorial/02-mountain-lake.png" alt="photo-abstract-editorial — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/photo-abstract-editorial/03-portrait-camera-duo.png"><img src="examples/photo-abstract-editorial/03-portrait-camera-duo.png" alt="photo-abstract-editorial — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/photo-abstract-editorial/04-animal-cat-dog.png"><img src="examples/photo-abstract-editorial/04-animal-cat-dog.png" alt="photo-abstract-editorial — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/photo-abstract-editorial/README.md"><img src="assets/showcase-previews/photo-abstract-editorial.webp" alt="photo-abstract-editorial — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Muge Photo Diptych](https://github.com/Yeshmuge/muge-photo-diptych)
 
@@ -101,14 +98,9 @@ Our café and lake tests use Mode B, the portrait starts its thread at the conta
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/muge-photo-diptych/01-architecture-cafe.png"><img src="examples/muge-photo-diptych/01-architecture-cafe.png" alt="muge-photo-diptych — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/muge-photo-diptych/02-mountain-lake.png"><img src="examples/muge-photo-diptych/02-mountain-lake.png" alt="muge-photo-diptych — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/muge-photo-diptych/03-portrait-camera-duo.png"><img src="examples/muge-photo-diptych/03-portrait-camera-duo.png" alt="muge-photo-diptych — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/muge-photo-diptych/04-animal-cat-dog.png"><img src="examples/muge-photo-diptych/04-animal-cat-dog.png" alt="muge-photo-diptych — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/muge-photo-diptych/README.md"><img src="assets/showcase-previews/muge-photo-diptych.webp" alt="muge-photo-diptych — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Scenes Gathered Zine v1.3](https://github.com/Zeejay0/gathered-scenes-zine-skill/tree/main/skills/scenes-gathered-zine-v1-3)
 
@@ -137,14 +129,9 @@ Both official examples preserve landmarks, bridges, crowds, and spatial depth wh
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/scenes-gathered-zine-v1-3/01-architecture-cafe.png"><img src="examples/scenes-gathered-zine-v1-3/01-architecture-cafe.png" alt="scenes-gathered-zine-v1-3 — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/scenes-gathered-zine-v1-3/02-mountain-lake.png"><img src="examples/scenes-gathered-zine-v1-3/02-mountain-lake.png" alt="scenes-gathered-zine-v1-3 — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/scenes-gathered-zine-v1-3/03-portrait-camera-duo.png"><img src="examples/scenes-gathered-zine-v1-3/03-portrait-camera-duo.png" alt="scenes-gathered-zine-v1-3 — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/scenes-gathered-zine-v1-3/04-animal-cat-dog.png"><img src="examples/scenes-gathered-zine-v1-3/04-animal-cat-dog.png" alt="scenes-gathered-zine-v1-3 — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/scenes-gathered-zine-v1-3/README.md"><img src="assets/showcase-previews/scenes-gathered-zine-v1-3.webp" alt="scenes-gathered-zine-v1-3 — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Photo to Monthly Zine Postcard](https://github.com/shenchangyi/photo-to-monthly-zine-postcard/tree/main/skills/photo-to-monthly-zine-postcard)
 
@@ -173,14 +160,9 @@ The eight finished examples are consistent in warm paper, photo-to-watercolor co
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/photo-to-monthly-zine-postcard/01-architecture-cafe.png"><img src="examples/photo-to-monthly-zine-postcard/01-architecture-cafe.png" alt="photo-to-monthly-zine-postcard — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/photo-to-monthly-zine-postcard/02-mountain-lake.png"><img src="examples/photo-to-monthly-zine-postcard/02-mountain-lake.png" alt="photo-to-monthly-zine-postcard — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/photo-to-monthly-zine-postcard/03-portrait-camera-duo.png"><img src="examples/photo-to-monthly-zine-postcard/03-portrait-camera-duo.png" alt="photo-to-monthly-zine-postcard — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/photo-to-monthly-zine-postcard/04-animal-cat-dog.png"><img src="examples/photo-to-monthly-zine-postcard/04-animal-cat-dog.png" alt="photo-to-monthly-zine-postcard — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/photo-to-monthly-zine-postcard/README.md"><img src="assets/showcase-previews/photo-to-monthly-zine-postcard.webp" alt="photo-to-monthly-zine-postcard — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Photo to Zine Postcard](https://github.com/Whiplashzeb/photo-to-zine-postcard)
 
@@ -209,14 +191,9 @@ Upstream publishes nine landscape and architecture outputs but not each example'
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/photo-to-zine-postcard/01-architecture-cafe.png"><img src="examples/photo-to-zine-postcard/01-architecture-cafe.png" alt="photo-to-zine-postcard — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/photo-to-zine-postcard/02-mountain-lake.png"><img src="examples/photo-to-zine-postcard/02-mountain-lake.png" alt="photo-to-zine-postcard — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/photo-to-zine-postcard/03-portrait-camera-duo.png"><img src="examples/photo-to-zine-postcard/03-portrait-camera-duo.png" alt="photo-to-zine-postcard — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/photo-to-zine-postcard/04-animal-cat-dog.png"><img src="examples/photo-to-zine-postcard/04-animal-cat-dog.png" alt="photo-to-zine-postcard — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/photo-to-zine-postcard/README.md"><img src="assets/showcase-previews/photo-to-zine-postcard.webp" alt="photo-to-zine-postcard — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [GC Minimal Zine Poster v0.3.1](https://github.com/LiamGvchi/gc-minimal-zine-poster)
 
@@ -246,14 +223,9 @@ All six author examples are 686×1144, close to a strict 3:5 ratio, and consiste
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/gc-minimal-zine-poster-v0-3/01-architecture-cafe.png"><img src="examples/gc-minimal-zine-poster-v0-3/01-architecture-cafe.png" alt="gc-minimal-zine-poster-v0-3 — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/gc-minimal-zine-poster-v0-3/02-mountain-lake.png"><img src="examples/gc-minimal-zine-poster-v0-3/02-mountain-lake.png" alt="gc-minimal-zine-poster-v0-3 — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/gc-minimal-zine-poster-v0-3/03-portrait-camera-duo.png"><img src="examples/gc-minimal-zine-poster-v0-3/03-portrait-camera-duo.png" alt="gc-minimal-zine-poster-v0-3 — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/gc-minimal-zine-poster-v0-3/04-animal-cat-dog.png"><img src="examples/gc-minimal-zine-poster-v0-3/04-animal-cat-dog.png" alt="gc-minimal-zine-poster-v0-3 — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/gc-minimal-zine-poster-v0-3/README.md"><img src="assets/showcase-previews/gc-minimal-zine-poster-v0-3.webp" alt="gc-minimal-zine-poster-v0-3 — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Photo Riso Poster](https://github.com/luckdvr/photo-riso-poster)
 
@@ -282,14 +254,9 @@ This is a restrained, single-page method skill with multiple public photo/result
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/photo-riso-poster/01-architecture-cafe.png"><img src="examples/photo-riso-poster/01-architecture-cafe.png" alt="photo-riso-poster — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/photo-riso-poster/02-mountain-lake.png"><img src="examples/photo-riso-poster/02-mountain-lake.png" alt="photo-riso-poster — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/photo-riso-poster/03-portrait-camera-duo.png"><img src="examples/photo-riso-poster/03-portrait-camera-duo.png" alt="photo-riso-poster — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/photo-riso-poster/04-animal-cat-dog.png"><img src="examples/photo-riso-poster/04-animal-cat-dog.png" alt="photo-riso-poster — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/photo-riso-poster/README.md"><img src="assets/showcase-previews/photo-riso-poster.webp" alt="photo-riso-poster — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Dreamcore Collage Poster](https://github.com/AndrwewHan/dreamcore-collage-poster)
 
@@ -318,14 +285,9 @@ The method is well specified, including native invocation, output paths, one tar
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/dreamcore-collage-poster/01-architecture-cafe.png"><img src="examples/dreamcore-collage-poster/01-architecture-cafe.png" alt="dreamcore-collage-poster — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/dreamcore-collage-poster/02-mountain-lake.png"><img src="examples/dreamcore-collage-poster/02-mountain-lake.png" alt="dreamcore-collage-poster — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/dreamcore-collage-poster/03-portrait-camera-duo.png"><img src="examples/dreamcore-collage-poster/03-portrait-camera-duo.png" alt="dreamcore-collage-poster — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/dreamcore-collage-poster/04-animal-cat-dog.png"><img src="examples/dreamcore-collage-poster/04-animal-cat-dog.png" alt="dreamcore-collage-poster — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/dreamcore-collage-poster/README.md"><img src="assets/showcase-previews/dreamcore-collage-poster.webp" alt="dreamcore-collage-poster — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Make Photo Stamp Archive](https://github.com/Dlcccc71913/skill-make-photo-stamp-archive)
 
@@ -355,14 +317,9 @@ The three official 1448×1086 examples have clean seams, warm whitespace, and co
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/make-photo-stamp-archive/01-architecture-cafe.png"><img src="examples/make-photo-stamp-archive/01-architecture-cafe.png" alt="make-photo-stamp-archive — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/make-photo-stamp-archive/02-mountain-lake.png"><img src="examples/make-photo-stamp-archive/02-mountain-lake.png" alt="make-photo-stamp-archive — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/make-photo-stamp-archive/03-portrait-camera-duo.png"><img src="examples/make-photo-stamp-archive/03-portrait-camera-duo.png" alt="make-photo-stamp-archive — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/make-photo-stamp-archive/04-animal-cat-dog.png"><img src="examples/make-photo-stamp-archive/04-animal-cat-dog.png" alt="make-photo-stamp-archive — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/make-photo-stamp-archive/README.md"><img src="assets/showcase-previews/make-photo-stamp-archive.webp" alt="make-photo-stamp-archive — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [HBG Travel Photo Redraw](https://github.com/Mr-funny/hbg-travel-photo-redraw)
 
@@ -391,14 +348,9 @@ The upstream repository publishes 17 style modules, with 27 examples across eigh
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/hbg-travel-photo-redraw/01-architecture-cafe.png"><img src="examples/hbg-travel-photo-redraw/01-architecture-cafe.png" alt="hbg-travel-photo-redraw — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/hbg-travel-photo-redraw/02-mountain-lake.png"><img src="examples/hbg-travel-photo-redraw/02-mountain-lake.png" alt="hbg-travel-photo-redraw — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/hbg-travel-photo-redraw/03-portrait-camera-duo.png"><img src="examples/hbg-travel-photo-redraw/03-portrait-camera-duo.png" alt="hbg-travel-photo-redraw — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/hbg-travel-photo-redraw/04-animal-cat-dog.png"><img src="examples/hbg-travel-photo-redraw/04-animal-cat-dog.png" alt="hbg-travel-photo-redraw — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/hbg-travel-photo-redraw/README.md"><img src="assets/showcase-previews/hbg-travel-photo-redraw.webp" alt="hbg-travel-photo-redraw — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Travel Memory Sticker Card](https://github.com/carolinaaafy/travel-memory-sticker-card)
 
@@ -427,14 +379,9 @@ All four shared inputs passed on the first generation: keyword count, sticker co
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/travel-memory-sticker-card/01-architecture-cafe.png"><img src="examples/travel-memory-sticker-card/01-architecture-cafe.png" alt="travel-memory-sticker-card — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/travel-memory-sticker-card/02-mountain-lake.png"><img src="examples/travel-memory-sticker-card/02-mountain-lake.png" alt="travel-memory-sticker-card — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/travel-memory-sticker-card/03-portrait-camera-duo.png"><img src="examples/travel-memory-sticker-card/03-portrait-camera-duo.png" alt="travel-memory-sticker-card — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/travel-memory-sticker-card/04-animal-cat-dog.png"><img src="examples/travel-memory-sticker-card/04-animal-cat-dog.png" alt="travel-memory-sticker-card — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/travel-memory-sticker-card/README.md"><img src="assets/showcase-previews/travel-memory-sticker-card.webp" alt="travel-memory-sticker-card — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Pocket Postcard](https://github.com/kaijie-czyh/pocket-postcard-skill)
 
@@ -463,14 +410,9 @@ All four runs produced a clear photo region, handwriting area, and round postmar
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/pocket-postcard/01-architecture-cafe.png"><img src="examples/pocket-postcard/01-architecture-cafe.png" alt="pocket-postcard — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/pocket-postcard/02-mountain-lake.png"><img src="examples/pocket-postcard/02-mountain-lake.png" alt="pocket-postcard — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/pocket-postcard/03-portrait-camera-duo.png"><img src="examples/pocket-postcard/03-portrait-camera-duo.png" alt="pocket-postcard — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/pocket-postcard/04-animal-cat-dog.png"><img src="examples/pocket-postcard/04-animal-cat-dog.png" alt="pocket-postcard — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/pocket-postcard/README.md"><img src="assets/showcase-previews/pocket-postcard.webp" alt="pocket-postcard — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Street Photo Illustration](https://github.com/fangzhengjin/skills-hub/tree/main/skills/street-photo-illustration-skill)
 
@@ -499,14 +441,9 @@ The skill natively handles people only. Our two-person fixture is therefore a no
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/street-photo-illustration/01-architecture-cafe.png"><img src="examples/street-photo-illustration/01-architecture-cafe.png" alt="street-photo-illustration — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/street-photo-illustration/02-mountain-lake.png"><img src="examples/street-photo-illustration/02-mountain-lake.png" alt="street-photo-illustration — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/street-photo-illustration/03-portrait-camera-duo.png"><img src="examples/street-photo-illustration/03-portrait-camera-duo.png" alt="street-photo-illustration — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/street-photo-illustration/04-animal-cat-dog.png"><img src="examples/street-photo-illustration/04-animal-cat-dog.png" alt="street-photo-illustration — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/street-photo-illustration/README.md"><img src="assets/showcase-previews/street-photo-illustration.webp" alt="street-photo-illustration — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Heart Sticker ImageGen Skill](https://github.com/SpaceZephyr/heart-sticker-imagegen-skill)
 
@@ -535,14 +472,9 @@ Our samples use cartoon sticker, vintage comic, kawaii 3D, and clay. The method 
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/heart-sticker-imagegen/01-architecture-cafe.png"><img src="examples/heart-sticker-imagegen/01-architecture-cafe.png" alt="heart-sticker-imagegen — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/heart-sticker-imagegen/02-mountain-lake.png"><img src="examples/heart-sticker-imagegen/02-mountain-lake.png" alt="heart-sticker-imagegen — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/heart-sticker-imagegen/03-portrait-camera-duo.png"><img src="examples/heart-sticker-imagegen/03-portrait-camera-duo.png" alt="heart-sticker-imagegen — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/heart-sticker-imagegen/04-animal-cat-dog.png"><img src="examples/heart-sticker-imagegen/04-animal-cat-dog.png" alt="heart-sticker-imagegen — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/heart-sticker-imagegen/README.md"><img src="assets/showcase-previews/heart-sticker-imagegen.webp" alt="heart-sticker-imagegen — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Starryear Threefold Memory](https://github.com/Starryear/Starryear-Threefold-Memory)
 
@@ -571,14 +503,9 @@ The official repository shows 10 polished travel and nature examples, but its re
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/starryear-threefold-memory/01-architecture-cafe.png"><img src="examples/starryear-threefold-memory/01-architecture-cafe.png" alt="starryear-threefold-memory — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/starryear-threefold-memory/02-mountain-lake.png"><img src="examples/starryear-threefold-memory/02-mountain-lake.png" alt="starryear-threefold-memory — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/starryear-threefold-memory/03-portrait-camera-duo.png"><img src="examples/starryear-threefold-memory/03-portrait-camera-duo.png" alt="starryear-threefold-memory — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/starryear-threefold-memory/04-animal-cat-dog.png"><img src="examples/starryear-threefold-memory/04-animal-cat-dog.png" alt="starryear-threefold-memory — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/starryear-threefold-memory/README.md"><img src="assets/showcase-previews/starryear-threefold-memory.webp" alt="starryear-threefold-memory — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Outsider Art v1.2](https://github.com/fihaaade/skills/tree/main/outsider-art)
 
@@ -607,14 +534,9 @@ This is a rule-dense single-file skill with a specific visual language, prompt c
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/outsider-art-v1/01-architecture-cafe.png"><img src="examples/outsider-art-v1/01-architecture-cafe.png" alt="outsider-art-v1 — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/outsider-art-v1/02-mountain-lake.png"><img src="examples/outsider-art-v1/02-mountain-lake.png" alt="outsider-art-v1 — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/outsider-art-v1/03-portrait-camera-duo.png"><img src="examples/outsider-art-v1/03-portrait-camera-duo.png" alt="outsider-art-v1 — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/outsider-art-v1/04-animal-cat-dog.png"><img src="examples/outsider-art-v1/04-animal-cat-dog.png" alt="outsider-art-v1 — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/outsider-art-v1/README.md"><img src="assets/showcase-previews/outsider-art-v1.webp" alt="outsider-art-v1 — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Phosphor Relay Style](https://github.com/fihaaade/skills/tree/main/phosphor-relay-style)
 
@@ -643,14 +565,9 @@ The visual constraints, failure taxonomy, and inspection loop are unusually comp
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/phosphor-relay-style/01-architecture-cafe.png"><img src="examples/phosphor-relay-style/01-architecture-cafe.png" alt="phosphor-relay-style — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/phosphor-relay-style/02-mountain-lake.png"><img src="examples/phosphor-relay-style/02-mountain-lake.png" alt="phosphor-relay-style — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/phosphor-relay-style/03-portrait-camera-duo.png"><img src="examples/phosphor-relay-style/03-portrait-camera-duo.png" alt="phosphor-relay-style — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/phosphor-relay-style/04-animal-cat-dog.png"><img src="examples/phosphor-relay-style/04-animal-cat-dog.png" alt="phosphor-relay-style — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/phosphor-relay-style/README.md"><img src="assets/showcase-previews/phosphor-relay-style.webp" alt="phosphor-relay-style — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 <a id="branding--identity"></a>
 ## Branding & Identity
@@ -683,14 +600,9 @@ The showcase animals, ghosts, robots, and objects share bold rounded silhouettes
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/ip-as-logo/01-architecture-cafe.png"><img src="examples/ip-as-logo/01-architecture-cafe.png" alt="ip-as-logo — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/ip-as-logo/02-mountain-lake.png"><img src="examples/ip-as-logo/02-mountain-lake.png" alt="ip-as-logo — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/ip-as-logo/03-portrait-camera-duo.png"><img src="examples/ip-as-logo/03-portrait-camera-duo.png" alt="ip-as-logo — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/ip-as-logo/04-animal-cat-dog.png"><img src="examples/ip-as-logo/04-animal-cat-dog.png" alt="ip-as-logo — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/ip-as-logo/README.md"><img src="assets/showcase-previews/ip-as-logo.webp" alt="ip-as-logo — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [30x-image](https://github.com/norahe0304-art/30x-image)
 
@@ -719,14 +631,9 @@ This is one of the few system-level skills that maps a brand profile to many mar
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/30x-image/01-architecture-cafe.png"><img src="examples/30x-image/01-architecture-cafe.png" alt="30x-image — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/30x-image/02-mountain-lake.png"><img src="examples/30x-image/02-mountain-lake.png" alt="30x-image — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/30x-image/03-portrait-camera-duo.png"><img src="examples/30x-image/03-portrait-camera-duo.png" alt="30x-image — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/30x-image/04-animal-cat-dog.png"><img src="examples/30x-image/04-animal-cat-dog.png" alt="30x-image — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/30x-image/README.md"><img src="assets/showcase-previews/30x-image.webp" alt="30x-image — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [GPT Image 2 Ecommerce](https://github.com/buluslan/gpt-image2-ecommerce)
 
@@ -755,14 +662,9 @@ This is fundamentally an e-commerce template router plus a nested Codex CLI exec
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/gpt-image2-ecommerce/01-architecture-cafe.png"><img src="examples/gpt-image2-ecommerce/01-architecture-cafe.png" alt="gpt-image2-ecommerce — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/gpt-image2-ecommerce/02-mountain-lake.png"><img src="examples/gpt-image2-ecommerce/02-mountain-lake.png" alt="gpt-image2-ecommerce — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/gpt-image2-ecommerce/03-portrait-camera-duo.png"><img src="examples/gpt-image2-ecommerce/03-portrait-camera-duo.png" alt="gpt-image2-ecommerce — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/gpt-image2-ecommerce/04-animal-cat-dog.png"><img src="examples/gpt-image2-ecommerce/04-animal-cat-dog.png" alt="gpt-image2-ecommerce — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/gpt-image2-ecommerce/README.md"><img src="assets/showcase-previews/gpt-image2-ecommerce.webp" alt="gpt-image2-ecommerce — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 <a id="craft--textile"></a>
 ## Craft & Textile
@@ -794,14 +696,9 @@ The references show convincing pile, color blocking, and compositional consisten
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/yarn-rug-reference/01-architecture-cafe.png"><img src="examples/yarn-rug-reference/01-architecture-cafe.png" alt="yarn-rug-reference — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/yarn-rug-reference/02-mountain-lake.png"><img src="examples/yarn-rug-reference/02-mountain-lake.png" alt="yarn-rug-reference — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/yarn-rug-reference/03-portrait-camera-duo.png"><img src="examples/yarn-rug-reference/03-portrait-camera-duo.png" alt="yarn-rug-reference — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/yarn-rug-reference/04-animal-cat-dog.png"><img src="examples/yarn-rug-reference/04-animal-cat-dog.png" alt="yarn-rug-reference — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/yarn-rug-reference/README.md"><img src="assets/showcase-previews/yarn-rug-reference.webp" alt="yarn-rug-reference — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 <a id="illustrations--posters"></a>
 ## Illustrations & Posters
@@ -833,14 +730,9 @@ The repository publishes a substantial Image 2 test set and selected triptychs t
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/oriental-editorial-poster/01-architecture-cafe.png"><img src="examples/oriental-editorial-poster/01-architecture-cafe.png" alt="oriental-editorial-poster — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/oriental-editorial-poster/02-mountain-lake.png"><img src="examples/oriental-editorial-poster/02-mountain-lake.png" alt="oriental-editorial-poster — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/oriental-editorial-poster/03-portrait-camera-duo.png"><img src="examples/oriental-editorial-poster/03-portrait-camera-duo.png" alt="oriental-editorial-poster — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/oriental-editorial-poster/04-animal-cat-dog.png"><img src="examples/oriental-editorial-poster/04-animal-cat-dog.png" alt="oriental-editorial-poster — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/oriental-editorial-poster/README.md"><img src="assets/showcase-previews/oriental-editorial-poster.webp" alt="oriental-editorial-poster — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Ian Xiaohei Illustrations](https://github.com/helloianneo/ian-xiaohei-illustrations)
 
@@ -869,14 +761,9 @@ The public examples are notably consistent in their white ground, black protagon
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/ian-xiaohei-illustrations/01-architecture-cafe.png"><img src="examples/ian-xiaohei-illustrations/01-architecture-cafe.png" alt="ian-xiaohei-illustrations — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/ian-xiaohei-illustrations/02-mountain-lake.png"><img src="examples/ian-xiaohei-illustrations/02-mountain-lake.png" alt="ian-xiaohei-illustrations — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/ian-xiaohei-illustrations/03-portrait-camera-duo.png"><img src="examples/ian-xiaohei-illustrations/03-portrait-camera-duo.png" alt="ian-xiaohei-illustrations — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/ian-xiaohei-illustrations/04-animal-cat-dog.png"><img src="examples/ian-xiaohei-illustrations/04-animal-cat-dog.png" alt="ian-xiaohei-illustrations — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/ian-xiaohei-illustrations/README.md"><img src="assets/showcase-previews/ian-xiaohei-illustrations.webp" alt="ian-xiaohei-illustrations — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Ian Xiaohei Scenes](https://github.com/helloianneo/ian-xiaohei-scenes)
 
@@ -905,14 +792,9 @@ Seven examples clearly distinguish hand-drawn explanatory diagrams from white-st
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/ian-xiaohei-scenes/01-architecture-cafe.png"><img src="examples/ian-xiaohei-scenes/01-architecture-cafe.png" alt="ian-xiaohei-scenes — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/ian-xiaohei-scenes/02-mountain-lake.png"><img src="examples/ian-xiaohei-scenes/02-mountain-lake.png" alt="ian-xiaohei-scenes — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/ian-xiaohei-scenes/03-portrait-camera-duo.png"><img src="examples/ian-xiaohei-scenes/03-portrait-camera-duo.png" alt="ian-xiaohei-scenes — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/ian-xiaohei-scenes/04-animal-cat-dog.png"><img src="examples/ian-xiaohei-scenes/04-animal-cat-dog.png" alt="ian-xiaohei-scenes — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/ian-xiaohei-scenes/README.md"><img src="assets/showcase-previews/ian-xiaohei-scenes.webp" alt="ian-xiaohei-scenes — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Story Cover](https://github.com/worldwonderer/oh-story-claudecode/tree/main/skills/story-cover)
 
@@ -941,14 +823,9 @@ We fixed the author line to `IMAGEGEN SKILLS` and used `CORNER CAFE`, `MIST VALL
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/story-cover/01-architecture-cafe.png"><img src="examples/story-cover/01-architecture-cafe.png" alt="story-cover — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/story-cover/02-mountain-lake.png"><img src="examples/story-cover/02-mountain-lake.png" alt="story-cover — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/story-cover/03-portrait-camera-duo.png"><img src="examples/story-cover/03-portrait-camera-duo.png" alt="story-cover — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/story-cover/04-animal-cat-dog.png"><img src="examples/story-cover/04-animal-cat-dog.png" alt="story-cover — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/story-cover/README.md"><img src="assets/showcase-previews/story-cover.webp" alt="story-cover — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [TaiT CRT Interface Skill](https://github.com/TaiT-tt/tait-crt-interface-skill)
 
@@ -977,14 +854,9 @@ Our four samples use the image-derived palette, 4:3 for landscape inputs, and 3:
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/tait-crt-interface-skill/01-architecture-cafe.png"><img src="examples/tait-crt-interface-skill/01-architecture-cafe.png" alt="tait-crt-interface-skill — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/tait-crt-interface-skill/02-mountain-lake.png"><img src="examples/tait-crt-interface-skill/02-mountain-lake.png" alt="tait-crt-interface-skill — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/tait-crt-interface-skill/03-portrait-camera-duo.png"><img src="examples/tait-crt-interface-skill/03-portrait-camera-duo.png" alt="tait-crt-interface-skill — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/tait-crt-interface-skill/04-animal-cat-dog.png"><img src="examples/tait-crt-interface-skill/04-animal-cat-dog.png" alt="tait-crt-interface-skill — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/tait-crt-interface-skill/README.md"><img src="assets/showcase-previews/tait-crt-interface-skill.webp" alt="tait-crt-interface-skill — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 <a id="presentations--diagrams"></a>
 ## Presentations & Diagrams
@@ -1016,14 +888,9 @@ The public examples maintain a convincing near-white paper surface, fine lines, 
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/ian-handdrawn-ppt/01-architecture-cafe.png"><img src="examples/ian-handdrawn-ppt/01-architecture-cafe.png" alt="ian-handdrawn-ppt — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/ian-handdrawn-ppt/02-mountain-lake.png"><img src="examples/ian-handdrawn-ppt/02-mountain-lake.png" alt="ian-handdrawn-ppt — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/ian-handdrawn-ppt/03-portrait-camera-duo.png"><img src="examples/ian-handdrawn-ppt/03-portrait-camera-duo.png" alt="ian-handdrawn-ppt — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/ian-handdrawn-ppt/04-animal-cat-dog.png"><img src="examples/ian-handdrawn-ppt/04-animal-cat-dog.png" alt="ian-handdrawn-ppt — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/ian-handdrawn-ppt/README.md"><img src="assets/showcase-previews/ian-handdrawn-ppt.webp" alt="ian-handdrawn-ppt — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Codex Illustrator](https://github.com/99Gaoxiaoqi/codex-illustrator)
 
@@ -1051,14 +918,9 @@ This is a hybrid skill whose main value lies in deciding when to use each visual
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/codex-illustrator/01-architecture-cafe.png"><img src="examples/codex-illustrator/01-architecture-cafe.png" alt="codex-illustrator — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/codex-illustrator/02-mountain-lake.png"><img src="examples/codex-illustrator/02-mountain-lake.png" alt="codex-illustrator — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/codex-illustrator/03-portrait-camera-duo.png"><img src="examples/codex-illustrator/03-portrait-camera-duo.png" alt="codex-illustrator — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/codex-illustrator/04-animal-cat-dog.png"><img src="examples/codex-illustrator/04-animal-cat-dog.png" alt="codex-illustrator — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/codex-illustrator/README.md"><img src="assets/showcase-previews/codex-illustrator.webp" alt="codex-illustrator — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Baoyu Visual Skills Suite](https://github.com/JimLiu/baoyu-skills)
 
@@ -1087,50 +949,25 @@ This is the most complete suite found in the current collection and is a strong 
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/baoyu-article-illustrator/01-architecture-cafe.png"><img src="examples/baoyu-article-illustrator/01-architecture-cafe.png" alt="baoyu-article-illustrator — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/baoyu-article-illustrator/02-mountain-lake.png"><img src="examples/baoyu-article-illustrator/02-mountain-lake.png" alt="baoyu-article-illustrator — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/baoyu-article-illustrator/03-portrait-camera-duo.png"><img src="examples/baoyu-article-illustrator/03-portrait-camera-duo.png" alt="baoyu-article-illustrator — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/baoyu-article-illustrator/04-animal-cat-dog.png"><img src="examples/baoyu-article-illustrator/04-animal-cat-dog.png" alt="baoyu-article-illustrator — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/baoyu-article-illustrator/README.md"><img src="assets/showcase-previews/baoyu-article-illustrator.webp" alt="baoyu-article-illustrator — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/baoyu-cover-image/01-architecture-cafe.png"><img src="examples/baoyu-cover-image/01-architecture-cafe.png" alt="baoyu-cover-image — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/baoyu-cover-image/02-mountain-lake.png"><img src="examples/baoyu-cover-image/02-mountain-lake.png" alt="baoyu-cover-image — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/baoyu-cover-image/03-portrait-camera-duo.png"><img src="examples/baoyu-cover-image/03-portrait-camera-duo.png" alt="baoyu-cover-image — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/baoyu-cover-image/04-animal-cat-dog.png"><img src="examples/baoyu-cover-image/04-animal-cat-dog.png" alt="baoyu-cover-image — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/baoyu-cover-image/README.md"><img src="assets/showcase-previews/baoyu-cover-image.webp" alt="baoyu-cover-image — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/baoyu-comic/01-architecture-cafe.png"><img src="examples/baoyu-comic/01-architecture-cafe.png" alt="baoyu-comic — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/baoyu-comic/02-mountain-lake.png"><img src="examples/baoyu-comic/02-mountain-lake.png" alt="baoyu-comic — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/baoyu-comic/03-portrait-camera-duo.png"><img src="examples/baoyu-comic/03-portrait-camera-duo.png" alt="baoyu-comic — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/baoyu-comic/04-animal-cat-dog.png"><img src="examples/baoyu-comic/04-animal-cat-dog.png" alt="baoyu-comic — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/baoyu-comic/README.md"><img src="assets/showcase-previews/baoyu-comic.webp" alt="baoyu-comic — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/baoyu-infographic/01-architecture-cafe.png"><img src="examples/baoyu-infographic/01-architecture-cafe.png" alt="baoyu-infographic — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/baoyu-infographic/02-mountain-lake.png"><img src="examples/baoyu-infographic/02-mountain-lake.png" alt="baoyu-infographic — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/baoyu-infographic/03-portrait-camera-duo.png"><img src="examples/baoyu-infographic/03-portrait-camera-duo.png" alt="baoyu-infographic — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/baoyu-infographic/04-animal-cat-dog.png"><img src="examples/baoyu-infographic/04-animal-cat-dog.png" alt="baoyu-infographic — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/baoyu-infographic/README.md"><img src="assets/showcase-previews/baoyu-infographic.webp" alt="baoyu-infographic — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/baoyu-xhs-images/01-architecture-cafe.png"><img src="examples/baoyu-xhs-images/01-architecture-cafe.png" alt="baoyu-xhs-images — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/baoyu-xhs-images/02-mountain-lake.png"><img src="examples/baoyu-xhs-images/02-mountain-lake.png" alt="baoyu-xhs-images — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/baoyu-xhs-images/03-portrait-camera-duo.png"><img src="examples/baoyu-xhs-images/03-portrait-camera-duo.png" alt="baoyu-xhs-images — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/baoyu-xhs-images/04-animal-cat-dog.png"><img src="examples/baoyu-xhs-images/04-animal-cat-dog.png" alt="baoyu-xhs-images — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/baoyu-xhs-images/README.md"><img src="assets/showcase-previews/baoyu-xhs-images.webp" alt="baoyu-xhs-images — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Codex Image: Technical Infographics](https://github.com/philipbankier/codex-image-skill)
 
@@ -1159,14 +996,9 @@ This is a very new community project with a strong execution contract, privacy b
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/codex-image/01-architecture-cafe.png"><img src="examples/codex-image/01-architecture-cafe.png" alt="codex-image — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/codex-image/02-mountain-lake.png"><img src="examples/codex-image/02-mountain-lake.png" alt="codex-image — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/codex-image/03-portrait-camera-duo.png"><img src="examples/codex-image/03-portrait-camera-duo.png" alt="codex-image — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/codex-image/04-animal-cat-dog.png"><img src="examples/codex-image/04-animal-cat-dog.png" alt="codex-image — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/codex-image/README.md"><img src="assets/showcase-previews/codex-image.webp" alt="codex-image — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Codex Paper Figure Skill](https://github.com/pengqianhan/codex-paper-figure-skill)
 
@@ -1194,14 +1026,9 @@ This is a boundary entry: ImageGen is an important intermediate step, but the fi
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/codex-paper-figure-skill/01-architecture-cafe.png"><img src="examples/codex-paper-figure-skill/01-architecture-cafe.png" alt="codex-paper-figure-skill — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/codex-paper-figure-skill/02-mountain-lake.png"><img src="examples/codex-paper-figure-skill/02-mountain-lake.png" alt="codex-paper-figure-skill — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/codex-paper-figure-skill/03-portrait-camera-duo.png"><img src="examples/codex-paper-figure-skill/03-portrait-camera-duo.png" alt="codex-paper-figure-skill — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/codex-paper-figure-skill/04-animal-cat-dog.png"><img src="examples/codex-paper-figure-skill/04-animal-cat-dog.png" alt="codex-paper-figure-skill — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/codex-paper-figure-skill/README.md"><img src="assets/showcase-previews/codex-paper-figure-skill.webp" alt="codex-paper-figure-skill — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Image to SVG](https://github.com/cheshireyang/image-to-svg-skills)
 
@@ -1230,14 +1057,9 @@ A complete run generates multiple sub-elements for every source and then execute
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/image-to-svg/01-architecture-cafe.png"><img src="examples/image-to-svg/01-architecture-cafe.png" alt="image-to-svg — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/image-to-svg/02-mountain-lake.png"><img src="examples/image-to-svg/02-mountain-lake.png" alt="image-to-svg — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/image-to-svg/03-portrait-camera-duo.png"><img src="examples/image-to-svg/03-portrait-camera-duo.png" alt="image-to-svg — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/image-to-svg/04-animal-cat-dog.png"><img src="examples/image-to-svg/04-animal-cat-dog.png" alt="image-to-svg — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/image-to-svg/README.md"><img src="assets/showcase-previews/image-to-svg.webp" alt="image-to-svg — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 <a id="ui--product-design"></a>
 ## UI & Product Design
@@ -1253,14 +1075,9 @@ Explores several native Apple or Android UI directions, compares them with produ
 - **Structure:** `SKILL.md` plus focused references for backends, prompting, native components, implementation, dialogue, and validation
 - **License:** No open-source license declared upstream
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/prototype-ui-with-imagegen/01-architecture-cafe.png"><img src="examples/prototype-ui-with-imagegen/01-architecture-cafe.png" alt="prototype-ui-with-imagegen — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/prototype-ui-with-imagegen/02-mountain-lake.png"><img src="examples/prototype-ui-with-imagegen/02-mountain-lake.png" alt="prototype-ui-with-imagegen — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/prototype-ui-with-imagegen/03-portrait-camera-duo.png"><img src="examples/prototype-ui-with-imagegen/03-portrait-camera-duo.png" alt="prototype-ui-with-imagegen — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/prototype-ui-with-imagegen/04-animal-cat-dog.png"><img src="examples/prototype-ui-with-imagegen/04-animal-cat-dog.png" alt="prototype-ui-with-imagegen — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/prototype-ui-with-imagegen/README.md"><img src="assets/showcase-previews/prototype-ui-with-imagegen.webp" alt="prototype-ui-with-imagegen — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Frontend App Builder](https://github.com/openai/plugins/tree/main/plugins/build-web-apps/skills/frontend-app-builder)
 
@@ -1273,14 +1090,9 @@ An official OpenAI composite skill that designs complete pages, UI states, or ga
 - **Structure:** `SKILL.md`, `agents/openai.yaml`, and references for website concepts and visual validation
 - **License:** No open-source license declared upstream
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/frontend-app-builder/01-architecture-cafe.png"><img src="examples/frontend-app-builder/01-architecture-cafe.png" alt="frontend-app-builder — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/frontend-app-builder/02-mountain-lake.png"><img src="examples/frontend-app-builder/02-mountain-lake.png" alt="frontend-app-builder — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/frontend-app-builder/03-portrait-camera-duo.png"><img src="examples/frontend-app-builder/03-portrait-camera-duo.png" alt="frontend-app-builder — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/frontend-app-builder/04-animal-cat-dog.png"><img src="examples/frontend-app-builder/04-animal-cat-dog.png" alt="frontend-app-builder — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/frontend-app-builder/README.md"><img src="assets/showcase-previews/frontend-app-builder.webp" alt="frontend-app-builder — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Img to Frontend](https://github.com/am-will/codex-skills/tree/main/skills/img-to-frontend)
 
@@ -1308,14 +1120,9 @@ Its distinction from Prototype Native UI with Image Generation is clear: this sk
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/img-to-frontend/01-architecture-cafe.png"><img src="examples/img-to-frontend/01-architecture-cafe.png" alt="img-to-frontend — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/img-to-frontend/02-mountain-lake.png"><img src="examples/img-to-frontend/02-mountain-lake.png" alt="img-to-frontend — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/img-to-frontend/03-portrait-camera-duo.png"><img src="examples/img-to-frontend/03-portrait-camera-duo.png" alt="img-to-frontend — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/img-to-frontend/04-animal-cat-dog.png"><img src="examples/img-to-frontend/04-animal-cat-dog.png" alt="img-to-frontend — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/img-to-frontend/README.md"><img src="assets/showcase-previews/img-to-frontend.webp" alt="img-to-frontend — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Taste Image Generation Suite](https://github.com/Leonxlnx/taste-skill#image-generation-skills)
 
@@ -1344,32 +1151,17 @@ The rule set is enormous: the three `SKILL.md` files total more than 3,200 lines
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/taste-imagegen-frontend-web/01-architecture-cafe.png"><img src="examples/taste-imagegen-frontend-web/01-architecture-cafe.png" alt="taste-imagegen-frontend-web — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/taste-imagegen-frontend-web/02-mountain-lake.png"><img src="examples/taste-imagegen-frontend-web/02-mountain-lake.png" alt="taste-imagegen-frontend-web — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/taste-imagegen-frontend-web/03-portrait-camera-duo.png"><img src="examples/taste-imagegen-frontend-web/03-portrait-camera-duo.png" alt="taste-imagegen-frontend-web — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/taste-imagegen-frontend-web/04-animal-cat-dog.png"><img src="examples/taste-imagegen-frontend-web/04-animal-cat-dog.png" alt="taste-imagegen-frontend-web — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/taste-imagegen-frontend-web/README.md"><img src="assets/showcase-previews/taste-imagegen-frontend-web.webp" alt="taste-imagegen-frontend-web — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/taste-imagegen-frontend-mobile/01-architecture-cafe.png"><img src="examples/taste-imagegen-frontend-mobile/01-architecture-cafe.png" alt="taste-imagegen-frontend-mobile — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/taste-imagegen-frontend-mobile/02-mountain-lake.png"><img src="examples/taste-imagegen-frontend-mobile/02-mountain-lake.png" alt="taste-imagegen-frontend-mobile — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/taste-imagegen-frontend-mobile/03-portrait-camera-duo.png"><img src="examples/taste-imagegen-frontend-mobile/03-portrait-camera-duo.png" alt="taste-imagegen-frontend-mobile — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/taste-imagegen-frontend-mobile/04-animal-cat-dog.png"><img src="examples/taste-imagegen-frontend-mobile/04-animal-cat-dog.png" alt="taste-imagegen-frontend-mobile — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/taste-imagegen-frontend-mobile/README.md"><img src="assets/showcase-previews/taste-imagegen-frontend-mobile.webp" alt="taste-imagegen-frontend-mobile — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/taste-brandkit/01-architecture-cafe.png"><img src="examples/taste-brandkit/01-architecture-cafe.png" alt="taste-brandkit — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/taste-brandkit/02-mountain-lake.png"><img src="examples/taste-brandkit/02-mountain-lake.png" alt="taste-brandkit — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/taste-brandkit/03-portrait-camera-duo.png"><img src="examples/taste-brandkit/03-portrait-camera-duo.png" alt="taste-brandkit — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/taste-brandkit/04-animal-cat-dog.png"><img src="examples/taste-brandkit/04-animal-cat-dog.png" alt="taste-brandkit — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/taste-brandkit/README.md"><img src="assets/showcase-previews/taste-brandkit.webp" alt="taste-brandkit — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [HIAPI Icon Skills](https://github.com/HiAPIAI/hiapi-icon-skills)
 
@@ -1398,14 +1190,9 @@ The upstream test suite passes 12/12 locally. Two 1254×1254 examples also demon
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/hiapi-icon-skills/01-architecture-cafe.png"><img src="examples/hiapi-icon-skills/01-architecture-cafe.png" alt="hiapi-icon-skills — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/hiapi-icon-skills/02-mountain-lake.png"><img src="examples/hiapi-icon-skills/02-mountain-lake.png" alt="hiapi-icon-skills — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/hiapi-icon-skills/03-portrait-camera-duo.png"><img src="examples/hiapi-icon-skills/03-portrait-camera-duo.png" alt="hiapi-icon-skills — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/hiapi-icon-skills/04-animal-cat-dog.png"><img src="examples/hiapi-icon-skills/04-animal-cat-dog.png" alt="hiapi-icon-skills — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/hiapi-icon-skills/README.md"><img src="assets/showcase-previews/hiapi-icon-skills.webp" alt="hiapi-icon-skills — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Identity Skill](https://github.com/Sac-Y/identity-skill)
 
@@ -1434,14 +1221,9 @@ This is a hybrid boundary entry: ImageGen creates references and some assets, wh
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/identity-skill/01-architecture-cafe.png"><img src="examples/identity-skill/01-architecture-cafe.png" alt="identity-skill — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/identity-skill/02-mountain-lake.png"><img src="examples/identity-skill/02-mountain-lake.png" alt="identity-skill — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/identity-skill/03-portrait-camera-duo.png"><img src="examples/identity-skill/03-portrait-camera-duo.png" alt="identity-skill — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/identity-skill/04-animal-cat-dog.png"><img src="examples/identity-skill/04-animal-cat-dog.png" alt="identity-skill — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/identity-skill/README.md"><img src="assets/showcase-previews/identity-skill.webp" alt="identity-skill — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 <a id="game-assets--characters"></a>
 ## Game Assets & Characters
@@ -1457,14 +1239,9 @@ Creates an animatable pet from a concept or reference. ImageGen supplies the bas
 - **Structure:** `SKILL.md`, metadata, references, complete spritesheet/validation scripts, and `LICENSE.txt`
 - **License:** Apache-2.0
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/hatch-pet/01-architecture-cafe.png"><img src="examples/hatch-pet/01-architecture-cafe.png" alt="hatch-pet — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/hatch-pet/02-mountain-lake.png"><img src="examples/hatch-pet/02-mountain-lake.png" alt="hatch-pet — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/hatch-pet/03-portrait-camera-duo.png"><img src="examples/hatch-pet/03-portrait-camera-duo.png" alt="hatch-pet — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/hatch-pet/04-animal-cat-dog.png"><img src="examples/hatch-pet/04-animal-cat-dog.png" alt="hatch-pet — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/hatch-pet/README.md"><img src="assets/showcase-previews/hatch-pet.webp" alt="hatch-pet — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Character Sprite Maker](https://github.com/Clad3815/character-sprite-maker)
 
@@ -1477,14 +1254,9 @@ A character-sprite and animation-row workflow focused on consistency, strict chr
 - **Structure:** `SKILL.md`, `agents/`, `references/`, `scripts/`, `examples/`, and `LICENSE.txt`
 - **License:** Apache-2.0
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/character-sprite-maker/01-architecture-cafe.png"><img src="examples/character-sprite-maker/01-architecture-cafe.png" alt="character-sprite-maker — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/character-sprite-maker/02-mountain-lake.png"><img src="examples/character-sprite-maker/02-mountain-lake.png" alt="character-sprite-maker — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/character-sprite-maker/03-portrait-camera-duo.png"><img src="examples/character-sprite-maker/03-portrait-camera-duo.png" alt="character-sprite-maker — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/character-sprite-maker/04-animal-cat-dog.png"><img src="examples/character-sprite-maker/04-animal-cat-dog.png" alt="character-sprite-maker — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/character-sprite-maker/README.md"><img src="assets/showcase-previews/character-sprite-maker.webp" alt="character-sprite-maker — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Generating Dot Assets](https://github.com/abagames/agentic-gamedev-skills/tree/main/.agents/skills/generating-dot-assets)
 
@@ -1497,14 +1269,9 @@ An ImageGen skill for game objects, props, icons, and transparent-background pix
 - **Structure:** `SKILL.md`, an ImageGen recovery reference, and cutout/pixelize/fit/validate scripts
 - **License:** MIT
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/generating-dot-assets/01-architecture-cafe.png"><img src="examples/generating-dot-assets/01-architecture-cafe.png" alt="generating-dot-assets — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/generating-dot-assets/02-mountain-lake.png"><img src="examples/generating-dot-assets/02-mountain-lake.png" alt="generating-dot-assets — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/generating-dot-assets/03-portrait-camera-duo.png"><img src="examples/generating-dot-assets/03-portrait-camera-duo.png" alt="generating-dot-assets — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/generating-dot-assets/04-animal-cat-dog.png"><img src="examples/generating-dot-assets/04-animal-cat-dog.png" alt="generating-dot-assets — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/generating-dot-assets/README.md"><img src="assets/showcase-previews/generating-dot-assets.webp" alt="generating-dot-assets — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Minecraft Image Generation](https://github.com/Jahrome907/minecraft-agent-skills/tree/main/.codex/skills/minecraft-imagegen)
 
@@ -1533,14 +1300,9 @@ This is a domain router and briefing skill rather than a complete image-geometry
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/minecraft-imagegen/01-architecture-cafe.png"><img src="examples/minecraft-imagegen/01-architecture-cafe.png" alt="minecraft-imagegen — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/minecraft-imagegen/02-mountain-lake.png"><img src="examples/minecraft-imagegen/02-mountain-lake.png" alt="minecraft-imagegen — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/minecraft-imagegen/03-portrait-camera-duo.png"><img src="examples/minecraft-imagegen/03-portrait-camera-duo.png" alt="minecraft-imagegen — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/minecraft-imagegen/04-animal-cat-dog.png"><img src="examples/minecraft-imagegen/04-animal-cat-dog.png" alt="minecraft-imagegen — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/minecraft-imagegen/README.md"><img src="assets/showcase-previews/minecraft-imagegen.webp" alt="minecraft-imagegen — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Sprite Pipeline](https://github.com/openai/plugins/tree/main/plugins/game-studio/skills/sprite-pipeline)
 
@@ -1562,14 +1324,9 @@ Compared with a prompt that merely asks for a sprite sheet, this workflow confin
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/sprite-pipeline/01-architecture-cafe.png"><img src="examples/sprite-pipeline/01-architecture-cafe.png" alt="sprite-pipeline — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/sprite-pipeline/02-mountain-lake.png"><img src="examples/sprite-pipeline/02-mountain-lake.png" alt="sprite-pipeline — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/sprite-pipeline/03-portrait-camera-duo.png"><img src="examples/sprite-pipeline/03-portrait-camera-duo.png" alt="sprite-pipeline — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/sprite-pipeline/04-animal-cat-dog.png"><img src="examples/sprite-pipeline/04-animal-cat-dog.png" alt="sprite-pipeline — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/sprite-pipeline/README.md"><img src="assets/showcase-previews/sprite-pipeline.webp" alt="sprite-pipeline — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 <a id="storyboards--visual-narratives"></a>
 ## Storyboards & Visual Narratives
@@ -1601,23 +1358,13 @@ The domain information architecture is clear, but the repository ships no finish
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/video-poster-design/01-architecture-cafe.png"><img src="examples/video-poster-design/01-architecture-cafe.png" alt="video-poster-design — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/video-poster-design/02-mountain-lake.png"><img src="examples/video-poster-design/02-mountain-lake.png" alt="video-poster-design — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/video-poster-design/03-portrait-camera-duo.png"><img src="examples/video-poster-design/03-portrait-camera-duo.png" alt="video-poster-design — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/video-poster-design/04-animal-cat-dog.png"><img src="examples/video-poster-design/04-animal-cat-dog.png" alt="video-poster-design — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/video-poster-design/README.md"><img src="assets/showcase-previews/video-poster-design.webp" alt="video-poster-design — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/video-storyboard/01-architecture-cafe.png"><img src="examples/video-storyboard/01-architecture-cafe.png" alt="video-storyboard — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/video-storyboard/02-mountain-lake.png"><img src="examples/video-storyboard/02-mountain-lake.png" alt="video-storyboard — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/video-storyboard/03-portrait-camera-duo.png"><img src="examples/video-storyboard/03-portrait-camera-duo.png" alt="video-storyboard — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/video-storyboard/04-animal-cat-dog.png"><img src="examples/video-storyboard/04-animal-cat-dog.png" alt="video-storyboard — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/video-storyboard/README.md"><img src="assets/showcase-previews/video-storyboard.webp" alt="video-storyboard — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [TT Material Animation](https://github.com/pbwheel/tt-design/tree/main/skills/tt-material-animation)
 
@@ -1646,14 +1393,9 @@ Following the project's earlier decision to force all selected skills across all
 
 </details>
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/tt-material-animation/01-architecture-cafe.png"><img src="examples/tt-material-animation/01-architecture-cafe.png" alt="tt-material-animation — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/tt-material-animation/02-mountain-lake.png"><img src="examples/tt-material-animation/02-mountain-lake.png" alt="tt-material-animation — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/tt-material-animation/03-portrait-camera-duo.png"><img src="examples/tt-material-animation/03-portrait-camera-duo.png" alt="tt-material-animation — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/tt-material-animation/04-animal-cat-dog.png"><img src="examples/tt-material-animation/04-animal-cat-dog.png" alt="tt-material-animation — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/tt-material-animation/README.md"><img src="assets/showcase-previews/tt-material-animation.webp" alt="tt-material-animation — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Storyboard Skill](https://github.com/abel-vs/storyboard-skill)
 
@@ -1666,14 +1408,9 @@ A community skill for building storyboards and continuous visual narratives with
 - **Structure:** `SKILL.md`, `assets/template.html`, `references/styles.md`, and `evals/evals.json`
 - **License:** No open-source license declared upstream
 
-<table>
-  <tr>
-    <td width="25%" align="center"><a href="examples/storyboard-skill/01-architecture-cafe.png"><img src="examples/storyboard-skill/01-architecture-cafe.png" alt="storyboard-skill — architecture café" width="100%"></a><br><code>architecture-cafe</code></td>
-    <td width="25%" align="center"><a href="examples/storyboard-skill/02-mountain-lake.png"><img src="examples/storyboard-skill/02-mountain-lake.png" alt="storyboard-skill — mountain lake" width="100%"></a><br><code>mountain-lake</code></td>
-    <td width="25%" align="center"><a href="examples/storyboard-skill/03-portrait-camera-duo.png"><img src="examples/storyboard-skill/03-portrait-camera-duo.png" alt="storyboard-skill — portrait camera duo" width="100%"></a><br><code>portrait-camera-duo</code></td>
-    <td width="25%" align="center"><a href="examples/storyboard-skill/04-animal-cat-dog.png"><img src="examples/storyboard-skill/04-animal-cat-dog.png" alt="storyboard-skill — cat and dog" width="100%"></a><br><code>animal-cat-dog</code></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="examples/storyboard-skill/README.md"><img src="assets/showcase-previews/storyboard-skill.webp" alt="storyboard-skill — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 <a id="contributing"></a>
 ## Contributing
@@ -1685,28 +1422,13 @@ A community skill for building storyboards and continuous visual narratives with
 
 All four inputs were generated or edited with the system `imagegen` skill. Repository-relative paths keep them visible in forks, clones, and on GitHub.
 
-<table>
-  <tr>
-    <td width="25%" align="center">
-      <a href="fixtures/01-architecture-cafe.png"><img src="fixtures/01-architecture-cafe.png" alt="imagegen — architecture-cafe" width="100%"></a><br>
-      <code>imagegen / 01-architecture-cafe</code>
-    </td>
-    <td width="25%" align="center">
-      <a href="fixtures/02-mountain-lake.png"><img src="fixtures/02-mountain-lake.png" alt="imagegen — mountain-lake" width="100%"></a><br>
-      <code>imagegen / 02-mountain-lake</code>
-    </td>
-    <td width="25%" align="center">
-      <a href="fixtures/03-portrait-camera-duo.png"><img src="fixtures/03-portrait-camera-duo.png" alt="imagegen — portrait-camera-duo" width="100%"></a><br>
-      <code>imagegen / 03-portrait-camera-duo</code>
-    </td>
-    <td width="25%" align="center">
-      <a href="fixtures/04-animal-cat-dog.png"><img src="fixtures/04-animal-cat-dog.png" alt="imagegen — animal-cat-dog" width="100%"></a><br>
-      <code>imagegen / 04-animal-cat-dog</code>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <a href="fixtures/README.md"><img src="assets/showcase-previews/fixtures.webp" alt="Four standardized input fixtures" width="100%" loading="lazy"></a>
+</p>
 
 Outputs live under `examples/<skill-id>/`. Directory names match skill IDs and filenames match the input scenes. When a skill requires several directions, they are combined into one scene board so the README still shows one image per input.
+
+After adding or replacing samples, install ImageMagick and run `python3 scripts/build_showcase_previews.py`. The script rebuilds the lightweight four-up previews and per-skill full-resolution galleries, then validates preview counts in both READMEs.
 
 ### Curation
 
