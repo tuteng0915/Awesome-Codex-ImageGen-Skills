@@ -6,8 +6,8 @@
   <p>
     <a href="https://github.com/sindresorhus/awesome"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
     <img src="https://img.shields.io/badge/Codex-ImageGen-111827?style=flat-square&logo=openai&logoColor=white" alt="Codex ImageGen">
-    <img src="https://img.shields.io/badge/showcases-53-ec4899?style=flat-square" alt="53 skill showcases">
-    <img src="https://img.shields.io/badge/generated_samples-212-7c3aed?style=flat-square" alt="212 generated samples">
+    <img src="https://img.shields.io/badge/showcases-57-ec4899?style=flat-square" alt="57 skill showcases">
+    <img src="https://img.shields.io/badge/generated_samples-220-7c3aed?style=flat-square" alt="220 generated samples">
     <a href="#contributing"><img src="https://img.shields.io/badge/PRs-welcome-22c55e?style=flat-square" alt="PRs welcome"></a>
   </p>
   <p>
@@ -320,6 +320,37 @@
 
 <p align="center">
   <a href="examples/make-photo-stamp-archive/README.md"><img src="assets/showcase-previews/make-photo-stamp-archive.webp" alt="make-photo-stamp-archive 的四张统一输入生成预览" width="100%" loading="lazy"></a>
+</p>
+
+### [Photo Revival / 废片焕新](https://github.com/dacnay816y62-hub/photo-revival)
+
+把普通照片和生活随手拍当作“记忆证据”，保留主体、空间关系与情绪，再重新画成白纸上极小而鲜活的一页诗性手绘插画。
+
+- **Author:** [dacnay816y62-hub](https://github.com/dacnay816y62-hub)
+- **Input:** 一张日常照片、废片、旅行片段、建筑、物件、食物、动物或生活场景照片
+- **Output:** 默认 3:4 竖版的白纸手绘插画页，带局部色彩、少量纸张/拼贴痕迹和可选微型手写批注
+- **ImageGen role:** 识别照片中最重要的 1–3 个记忆点，用内置 ImageGen 重新绘制，而不是进行滤镜、写实精修或逐像素复制
+- **Structure:** 精简 `SKILL.md`、`agents/openai.yaml`、中文使用说明、17 张公开成品和 MIT License
+- **License:** MIT
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- 把 80%–88% 画面留作白纸，主体插画默认只占 10%–16%、绝不超过 18%，用极端尺度控制建立独特节奏。
+- 色彩只集中在小幅插画区域，结合铅笔边缘、水彩、干刷、蜡笔和轻微孔版颗粒，避免颜色污染整片留白。
+- 保留主体、姿态、空间关系、关键物件与情绪，但明确要求重新绘制，不能退化成照片滤镜。
+- 小字只承担日期、field note 或诗性碎片，不让大标题和密集版式抢走照片记忆的主体位置。
+
+**备注**
+
+它与 GC Minimal Zine Poster 都使用大面积留白，但目标不同：GC Minimal 可从文字或照片建立一个微型编辑事件，并通过多轴 recipe 变化；Photo Revival 专门从真实照片提取记忆锚点，再将其压缩为局部手绘。上游示例数量丰富，但没有同时公开对应原图，因此保真度仍需在我们的统一输入中单独验证。
+
+</details>
+
+<p align="center">
+  <a href="examples/photo-revival/README.md"><img src="assets/showcase-previews/photo-revival.webp" alt="photo-revival 的四张统一输入生成预览" width="100%" loading="lazy"></a>
 </p>
 
 ### [HBG Travel Photo Redraw](https://github.com/Mr-funny/hbg-travel-photo-redraw)
@@ -699,6 +730,37 @@ showcase 中的动物、幽灵、机器人和物件整体具有清楚的圆形�
 
 <p align="center">
   <a href="examples/yarn-rug-reference/README.md"><img src="assets/showcase-previews/yarn-rug-reference.webp" alt="yarn-rug-reference 的四张统一输入生成预览" width="100%" loading="lazy"></a>
+</p>
+
+### [Photo to Organic Knit](https://github.com/NalaZhang27/photo-to-organic-knit)
+
+从照片中选择少量识别锚点，再以针织、钩针、毛毡、圈圈纱和松散纤维重新组织成具有明确概念与负空间的手工织物艺术海报。
+
+- **Author:** [NalaZhang27](https://github.com/NalaZhang27)
+- **Input:** 一张横版、竖版或方形照片；可选精确的 2–4 词英文标题
+- **Output:** 保持原图方向的针织羊毛艺术海报或品牌视觉，默认带单根毛线构成的短标题
+- **ImageGen role:** 将原图作为主体事实参考、内置织物图作为质感参考，用内置 ImageGen 重新设计层级、尺度、间距、轮廓、视角、分层、负空间与视觉路径
+- **Structure:** `SKILL.md`、`agents/openai.yaml`、完整 style specification、一张风格参考、两组 before/after 展示、贡献与安全文档
+- **License:** MIT；上游提醒无授权的来源照片和第三方素材不随 Skill 许可自动开放
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- 生成前将原图元素明确分成 retain、transform 和 discard，并要求至少改变三项结构特征，避免只叠加羊毛滤镜。
+- 从负空间符号、非对称纪念碑、织物岛屿、毛线路径、尺度对比和分层拼贴中选择一个主手法、最多两个辅助手法。
+- 织物主体只占约 55%–60% 画布宽度、50%–55% 高度，四周保留暖象牙色编辑空间，不能满版铺开。
+- 用不均匀针脚、少量散线、毛绒纤维、抽丝与不规则边缘模拟可信的手工物件，并排除塑料或光滑 3D 质感。
+
+**备注**
+
+它与 Yarn Rug Reference 都使用纤维材料，但并不重复：Yarn Rug 主要把原构图简化成低色数簇绒版本并形成上下对照；Organic Knit 把照片当作素材库，主动删除背景、发明视觉隐喻并重构成独立海报。其内置 style reference 只作为质感和质量方向，运行时必须禁止复制其中的火车、桥、山丘、配色和文字。
+
+</details>
+
+<p align="center">
+  <a href="examples/photo-to-organic-knit/README.md"><img src="assets/showcase-previews/photo-to-organic-knit.webp" alt="photo-to-organic-knit 的四张统一输入生成预览" width="100%" loading="lazy"></a>
 </p>
 
 <a id="illustrations--posters"></a>
@@ -1273,6 +1335,60 @@ OpenAI 官方组合型 skill。先通过 ImageGen 设计完整页面、界面状
 <p align="center">
   <a href="examples/generating-dot-assets/README.md"><img src="assets/showcase-previews/generating-dot-assets.webp" alt="generating-dot-assets 的四张统一输入生成预览" width="100%" loading="lazy"></a>
 </p>
+
+### [Generate 2D Sprite](https://github.com/0x0funky/agent-sprite-forge/tree/main/skills/generate2dsprite)
+
+面向游戏生产的 2D sprite 工作流：从自然语言或参考图规划角色、怪物、道具与特效资产，再完成色键清理、切帧、对齐、质检和透明导出。
+
+- **Author:** [0x0funky](https://github.com/0x0funky)
+- **Input:** 角色、怪物、NPC、道具、法术或特效 brief；可选参考图、动作、视角、帧数、网格、锚点与目标引擎约束
+- **Output:** 透明 PNG 帧、动画网格或条带、GIF 预览、组合 atlas、QC 元数据，以及可选 Godot/Unity 运行时资产
+- **ImageGen role:** 用内置 `image_gen` 生成纯洋红背景的原始 sprite 或动画网格；本地处理器只负责去背、切帧、统一尺度与锚点、质检和导出
+- **Structure:** `SKILL.md`、`agents/openai.yaml`、模式与 prompt references、布局/角色锚点工具、sprite 处理器、atlas/GIF 导出脚本和测试
+- **License:** MIT
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- 不要求用户预先决定网格和帧数，而是从角色类型、动作与运行时需求推断最小可用资产计划。
+- 高价值角色的 idle、run、attack 等动作分别生成和质检，最后再确定性拼装 atlas，降低混合动作导致的身份与比例漂移。
+- 对身体动作、投射物、冲击和宽幅攻击特效进行拆层，并提供角色锚点、共享尺度、足底线和安全区约束。
+- 除角色外也支持地图道具包、法术 bundle、召唤物、透明 GIF 与引擎 atlas。
+
+**备注**
+
+它和现有 Sprite Pipeline 的核心差异是覆盖范围更宽：后者聚焦从一张已获批 seed frame 标准化动作条，本 Skill 还负责资产规划、参考图派生、角色与特效拆层、复杂 atlas 和引擎交付。流程很完整，但生成质量仍需要逐动作视觉 QA，脚本不能自动判断角色身份是否漂移。
+
+</details>
+
+### [Generate 2D Map](https://github.com/0x0funky/agent-sprite-forge/tree/main/skills/generate2dmap)
+
+从地图 brief 规划烘焙背景、分层场景、tilemap 或横版关卡，并把生成的地形与物件连接到可编辑的地图、碰撞和引擎场景。
+
+- **Author:** [0x0funky](https://github.com/0x0funky)
+- **Input:** 地图主题、类型、视角、玩法、目标引擎与可选视觉参考；可进一步指定尺寸、网格、分层、碰撞和交互对象
+- **Output:** 地图底图、分层背景、透明物件、tile/terrain atlas、placement/collision/zone 元数据、QA 预览，以及可选 Godot/Unity 场景
+- **ImageGen role:** 用内置 `image_gen` 生成地图底图、环境层、场景参考和物件素材；确定性脚本负责切分、组合预览、尺寸校验、位置数据与引擎接线
+- **Structure:** `SKILL.md`、`agents/openai.yaml`、地图策略与 layered-map contracts、prop/terrain 提取和预览脚本、Godot/Unity 输出约定及测试
+- **License:** MIT
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- 将 baked raster、layered raster、tilemap、grid、room chunk 和 side-scroll 视为不同交付模式，而不是用一张扁平图片覆盖所有地图需求。
+- 可玩分层地图先生成不含交互物的 foundation，再制作场景参考，最后把平台、门、危险物、拾取物和遮挡物拆成独立运行时资产。
+- 明确区分紧凑道具、宽长物件、大型物件、碰撞关键物件与可重复 strip，避免把所有东西硬塞进方形 prop pack。
+- 结构化记录 walkability、collision、spawn、camera bounds、trigger 和 occupant policy，并要求在真实游戏相机下检查角色可读性。
+
+**备注**
+
+这是地图生产与引擎交付 Skill，不只是风格化场景生成。我们现有四张照片可以测试它对题材、配色和空间线索的迁移能力，但不能完整覆盖碰撞、可玩性和引擎接线；这些能力需要另设地图型输入才能公平验证。
+
+</details>
 
 ### [Minecraft Image Generation](https://github.com/Jahrome907/minecraft-agent-skills/tree/main/.codex/skills/minecraft-imagegen)
 

@@ -6,8 +6,8 @@
   <p>
     <a href="https://github.com/sindresorhus/awesome"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
     <img src="https://img.shields.io/badge/Codex-ImageGen-111827?style=flat-square&logo=openai&logoColor=white" alt="Codex ImageGen">
-    <img src="https://img.shields.io/badge/showcases-53-ec4899?style=flat-square" alt="53 skill showcases">
-    <img src="https://img.shields.io/badge/generated_samples-212-7c3aed?style=flat-square" alt="212 generated samples">
+    <img src="https://img.shields.io/badge/showcases-57-ec4899?style=flat-square" alt="57 skill showcases">
+    <img src="https://img.shields.io/badge/generated_samples-220-7c3aed?style=flat-square" alt="220 generated samples">
     <a href="#contributing"><img src="https://img.shields.io/badge/PRs-welcome-22c55e?style=flat-square" alt="PRs welcome"></a>
   </p>
   <p>
@@ -319,6 +319,37 @@ The three official 1448×1086 examples have clean seams, warm whitespace, and co
 
 <p align="center">
   <a href="examples/make-photo-stamp-archive/README.md"><img src="assets/showcase-previews/make-photo-stamp-archive.webp" alt="make-photo-stamp-archive — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
+
+### [Photo Revival](https://github.com/dacnay816y62-hub/photo-revival)
+
+Treats ordinary snapshots as memory evidence, preserves their subject, spatial relationships, and mood, then redraws them as a tiny, vivid poetic illustration on white paper.
+
+- **Author:** [dacnay816y62-hub](https://github.com/dacnay816y62-hub)
+- **Input:** An everyday snapshot, travel fragment, building, object, food, animal, or daily-life photograph
+- **Output:** A portrait 3:4 white-paper illustration page with localized color, restrained paper or collage traces, and optional tiny handwritten notes
+- **ImageGen role:** Identifies one to three memorable anchors and redraws them with built-in ImageGen instead of applying a filter, photorealistic retouch, or pixel-level copy
+- **Structure:** A concise `SKILL.md`, `agents/openai.yaml`, a Chinese usage guide, 17 public finished examples, and an MIT License
+- **License:** MIT
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Reserves 80–88% of the page as white paper while the illustrated subject occupies 10–16%, with an absolute 18% maximum.
+- Concentrates color inside the tiny illustration and combines pencil edges, watercolor, dry brush, wax pastel, and light risograph grain without contaminating the blank field.
+- Preserves the subject, pose, spatial relationships, key objects, and mood while requiring a fresh redraw rather than a photo-filter treatment.
+- Limits text to dates, field notes, or poetic fragments so typography does not overpower the photographic memory.
+
+**Notes**
+
+It shares generous negative space with GC Minimal Zine Poster, but the objectives differ: GC Minimal can build a micro-editorial event from text or a photo and vary it through a recipe system, while Photo Revival specifically extracts memory anchors from a real photograph and compresses them into localized hand-drawn art. The upstream gallery is extensive but does not publish paired source photos, so fidelity still needs independent testing with our shared fixtures.
+
+</details>
+
+<p align="center">
+  <a href="examples/photo-revival/README.md"><img src="assets/showcase-previews/photo-revival.webp" alt="photo-revival — four standardized generated samples" width="100%" loading="lazy"></a>
 </p>
 
 ### [HBG Travel Photo Redraw](https://github.com/Mr-funny/hbg-travel-photo-redraw)
@@ -698,6 +729,37 @@ The references show convincing pile, color blocking, and compositional consisten
 
 <p align="center">
   <a href="examples/yarn-rug-reference/README.md"><img src="assets/showcase-previews/yarn-rug-reference.webp" alt="yarn-rug-reference — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
+
+### [Photo to Organic Knit](https://github.com/NalaZhang27/photo-to-organic-knit)
+
+Selects a few recognition anchors from a photograph, then reorganizes them as a concept-driven textile art poster made from knit, crochet, felt, boucle, and loose fibers with deliberate negative space.
+
+- **Author:** [NalaZhang27](https://github.com/NalaZhang27)
+- **Input:** One landscape, portrait, or square photograph; optional exact two-to-four-word English title
+- **Output:** A knitted-wool art poster or brand visual that preserves source orientation and normally includes a short title formed from one yarn strand
+- **ImageGen role:** Uses the photo as subject evidence and the bundled textile image as a tactile-quality reference, then uses built-in ImageGen to redesign hierarchy, scale, spacing, silhouette, viewpoint, layering, negative space, and visual path
+- **Structure:** `SKILL.md`, `agents/openai.yaml`, a complete style specification, one style reference, two before/after showcases, contribution guidance, and security documentation
+- **License:** MIT; source photographs and third-party material do not become reusable merely because the Skill is licensed
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Sorts source elements into retain, transform, and discard groups, then requires at least three structural changes so the result cannot collapse into a wool filter.
+- Selects one primary and at most two supporting devices from negative-space symbols, asymmetric monuments, textile islands, yarn paths, scale contrast, and layered collage.
+- Keeps the textile vignette at roughly 55–60% of canvas width and 50–55% of its height, surrounded by warm-ivory editorial space rather than edge-to-edge material.
+- Uses uneven stitches, restrained loose ends, fuzzy fibers, pulled loops, and irregular edges to suggest a believable handmade object while rejecting plastic or glossy 3D surfaces.
+
+**Notes**
+
+It does not duplicate Yarn Rug Reference despite the shared fiber medium. Yarn Rug mainly simplifies the original composition into a low-color tufted version and presents a before/after comparison; Organic Knit treats the photo as raw material, removes background information, invents a visual metaphor, and recomposes an independent poster. Its bundled style image is a tactile and quality reference only, so the workflow explicitly forbids copying that image's train, bridge, hills, palette, or caption.
+
+</details>
+
+<p align="center">
+  <a href="examples/photo-to-organic-knit/README.md"><img src="assets/showcase-previews/photo-to-organic-knit.webp" alt="photo-to-organic-knit — four standardized generated samples" width="100%" loading="lazy"></a>
 </p>
 
 <a id="illustrations--posters"></a>
@@ -1272,6 +1334,60 @@ An ImageGen skill for game objects, props, icons, and transparent-background pix
 <p align="center">
   <a href="examples/generating-dot-assets/README.md"><img src="assets/showcase-previews/generating-dot-assets.webp" alt="generating-dot-assets — four standardized generated samples" width="100%" loading="lazy"></a>
 </p>
+
+### [Generate 2D Sprite](https://github.com/0x0funky/agent-sprite-forge/tree/main/skills/generate2dsprite)
+
+A production-oriented 2D sprite workflow that plans characters, creatures, props, and effects from natural language or references, then cleans chroma keys, extracts frames, aligns assets, runs QC, and exports transparency.
+
+- **Author:** [0x0funky](https://github.com/0x0funky)
+- **Input:** A character, creature, NPC, prop, spell, or FX brief; optional references, action, view, frame count, grid, anchor, and engine constraints
+- **Output:** Transparent PNG frames, animation grids or strips, GIF previews, assembled atlases, QC metadata, and optional Godot/Unity runtime assets
+- **ImageGen role:** Uses built-in `image_gen` for raw sprites or animation grids on solid magenta; local processors only remove the key, slice frames, normalize scale and anchors, validate, and export
+- **Structure:** `SKILL.md`, `agents/openai.yaml`, mode and prompting references, layout and character-anchor tools, a sprite processor, atlas/GIF exporters, and tests
+- **License:** MIT
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Infers the smallest useful asset plan from character type, action, and runtime needs instead of requiring users to prescribe grids and frame counts.
+- Generates and reviews high-value actions such as idle, run, and attack separately before deterministic atlas assembly, reducing identity and scale drift across mixed actions.
+- Separates body motion, projectiles, impacts, and wide attack effects, with character anchors, shared scale profiles, feet lines, and safe-area constraints.
+- Extends beyond characters to map-prop packs, spell bundles, summons, transparent GIFs, and engine atlases.
+
+**Notes**
+
+Its scope is broader than the existing Sprite Pipeline: that entry focuses on normalizing action strips from one approved seed, while this Skill also handles asset planning, reference-derived variants, character/FX separation, complex atlases, and engine delivery. The workflow is substantial, but each action still needs visual QA because scripts cannot determine whether identity has drifted.
+
+</details>
+
+### [Generate 2D Map](https://github.com/0x0funky/agent-sprite-forge/tree/main/skills/generate2dmap)
+
+Plans baked backgrounds, layered scenes, tilemaps, or side-scrolling stages from a map brief, then connects generated terrain and objects to editable maps, collision, and engine scenes.
+
+- **Author:** [0x0funky](https://github.com/0x0funky)
+- **Input:** A map theme, type, view, gameplay purpose, target engine, and optional visual references; dimensions, grids, layers, collision, and interactables may be specified
+- **Output:** Map foundations, layered backgrounds, transparent objects, tile or terrain atlases, placement/collision/zone metadata, QA previews, and optional Godot/Unity scenes
+- **ImageGen role:** Uses built-in `image_gen` for foundations, environmental layers, scene references, and object art; deterministic scripts handle extraction, preview composition, dimension checks, placement data, and engine wiring
+- **Structure:** `SKILL.md`, `agents/openai.yaml`, map strategies and layered-map contracts, prop/terrain extraction and preview scripts, Godot/Unity delivery contracts, and tests
+- **License:** MIT
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Treats baked raster, layered raster, tilemap, grid, room-chunk, and side-scroll maps as distinct delivery modes instead of forcing every request into one flattened image.
+- Builds playable layered scenes from a prop-free foundation, then a dressed visual reference, then separate runtime platforms, doors, hazards, pickups, and occluders.
+- Classifies compact, wide, tall, collision-critical, and repeatable objects so unsuitable assets are not forced into square prop packs.
+- Records walkability, collision, spawns, camera bounds, triggers, and occupant policies structurally, with actor-readability checks at the real gameplay camera.
+
+**Notes**
+
+This is a map-production and engine-delivery Skill, not merely a stylized scene generator. Our four photographic fixtures can test how it transfers subject matter, palette, and spatial cues, but they cannot fairly cover collision, playability, or engine wiring; those capabilities need a dedicated map-shaped input.
+
+</details>
 
 ### [Minecraft Image Generation](https://github.com/Jahrome907/minecraft-agent-skills/tree/main/.codex/skills/minecraft-imagegen)
 

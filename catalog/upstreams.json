@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-27",
+  "updated_at": "2026-09-03",
   "notes": "Read-only local review clones. The upstream/ directory is gitignored; this file records the reviewed revisions without vendoring third-party code.",
   "sources": [
     {
@@ -20,6 +20,12 @@
       "url": "https://github.com/agentara/skills.git",
       "commit": "dcb37f647711a2765d4bb92c86096a91587d11fc",
       "scope": "skills/aigc/video-poster-design, skills/aigc/video-storyboard"
+    },
+    {
+      "name": "agent-sprite-forge",
+      "url": "https://github.com/0x0funky/agent-sprite-forge.git",
+      "commit": "64fd0b57d3f2ae117ef0a95e4c2decc25b4c9dd2",
+      "scope": "skills/generate2dsprite, skills/generate2dmap"
     },
     {
       "name": "baoyu-skills",
@@ -145,6 +151,11 @@
       "commit": "49e55073d6d0330274d31f75d27f5dd6eb35fd6d"
     },
     {
+      "name": "photo-revival",
+      "url": "https://github.com/dacnay816y62-hub/photo-revival.git",
+      "commit": "ca4c3c6c0f812355bd6d815d8a78652db801b7f1"
+    },
+    {
       "name": "photo-riso-poster",
       "url": "https://github.com/luckdvr/photo-riso-poster.git",
       "commit": "79564228948fd393ecf58ee9aeb74fbc3c1f1deb"
@@ -153,6 +164,12 @@
       "name": "photo-to-monthly-zine-postcard",
       "url": "https://github.com/shenchangyi/photo-to-monthly-zine-postcard.git",
       "commit": "26ab8d1a0435c1f96439647a6c4be3914e423878"
+    },
+    {
+      "name": "photo-to-organic-knit",
+      "url": "https://github.com/NalaZhang27/photo-to-organic-knit.git",
+      "commit": "b84efe522e758649e46fe59f34d700eb60bedc12",
+      "scope": "photo-to-organic-knit"
     },
     {
       "name": "photo-to-zine-postcard",
