@@ -242,6 +242,12 @@
       "url": "https://github.com/wnby/photo-relic-editorial.git",
       "commit": "2232da16afddc7940e2e2f280bfb85aa62da1bae",
       "scope": "root SKILL.md, prompt guide, license; fixture-only generation without bundled example inputs"
+    },
+    {
+      "name": "photo-to-handdrawn-poster-postcard",
+      "url": "https://github.com/Matthew0824/photo-to-handdrawn-poster-postcard.git",
+      "commit": "f84669bf751d75f3bc324df4bae48124e6957119",
+      "scope": "root SKILL.md, layout/prompt references, sharp-photo rebuild script; no sketch fallback"
     }
   ]
 }

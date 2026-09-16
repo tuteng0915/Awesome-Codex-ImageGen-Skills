@@ -6,8 +6,8 @@
   <p>
     <a href="https://github.com/sindresorhus/awesome"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
     <img src="https://img.shields.io/badge/Codex-ImageGen-111827?style=flat-square&logo=openai&logoColor=white" alt="Codex ImageGen">
-    <img src="https://img.shields.io/badge/skills-51-ec4899?style=flat-square" alt="51 curated skill entries">
-    <img src="https://img.shields.io/badge/generated_samples-224-7c3aed?style=flat-square" alt="224 generated samples">
+    <img src="https://img.shields.io/badge/skills-52-ec4899?style=flat-square" alt="52 curated skill entries">
+    <img src="https://img.shields.io/badge/generated_samples-228-7c3aed?style=flat-square" alt="228 generated samples">
     <a href="#contributing"><img src="https://img.shields.io/badge/PRs-welcome-22c55e?style=flat-square" alt="PRs welcome"></a>
   </p>
   <p>
@@ -224,6 +224,36 @@
 
 <p align="center">
   <a href="examples/photo-to-zine-postcard/README.md"><img src="assets/showcase-previews/photo-to-zine-postcard.webp" alt="photo-to-zine-postcard 的四张统一输入生成预览" width="100%" loading="lazy"></a>
+</p>
+
+### [Photo to Handdrawn Poster Postcard](https://github.com/Matthew0824/photo-to-handdrawn-poster-postcard)
+
+将照片制作成暖白纸上的手绘海报明信片：上方清晰原图、左下编辑式文字与三枚色块、右下来源相关的墨线水彩小景。
+
+- **Author:** [Matthew0824](https://github.com/Matthew0824)
+- **Input:** 一张照片或照片目录；可选目的地、标题与既有版式
+- **Output:** 默认 4:5 竖版摄影与手绘明信片，横图与竖图使用不同布局
+- **ImageGen role:** 使用内置 imagegen 生成手绘图案和下半排版，再用上游脚本把清晰原照片贴回指定区域
+- **Structure:** `SKILL.md`、Codex metadata、2 份 references、原图复原与线稿 fallback 脚本
+- **License:** 未提供独立 License；公开可读不等于允许修改、再分发或商用
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- 将“照片保真”从模型指令移到确定性后期合成，保留原图内容、比例和原有署名。
+- 横图顶部全宽 fit-width；竖图改用完整的居中高面板，避免挤掉下方文字和手绘区域。
+- 手绘小景必须来自当前主体，不以通用地标或相同线稿替代不同来源。
+
+**备注**
+
+这是带有个人 Vatican 系列默认值的工作流；我们显式改用来源相关的咖啡馆、湖景、协作摄影和猫狗标题，避免无关的 Rome 文案。四张最终图采用 1122×1402 画布，并运行上游 `rebuild_sharp_photo_poster.py` 贴回原照片；该过程保持内容与宽高比，但包含 Lanczos 重采样，不意味着保留原始像素尺寸。未执行本地线稿 fallback，也未使用第三方风格垫图。
+
+</details>
+
+<p align="center">
+  <a href="examples/photo-to-handdrawn-poster-postcard/README.md"><img src="assets/showcase-previews/photo-to-handdrawn-poster-postcard.webp" alt="photo-to-handdrawn-poster-postcard 的四张统一输入生成预览" width="100%" loading="lazy"></a>
 </p>
 
 ### [GC Minimal Zine Poster v0.3.1](https://github.com/LiamGvchi/gc-minimal-zine-poster)

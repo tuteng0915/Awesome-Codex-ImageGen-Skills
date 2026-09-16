@@ -6,8 +6,8 @@
   <p>
     <a href="https://github.com/sindresorhus/awesome"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
     <img src="https://img.shields.io/badge/Codex-ImageGen-111827?style=flat-square&logo=openai&logoColor=white" alt="Codex ImageGen">
-    <img src="https://img.shields.io/badge/skills-51-ec4899?style=flat-square" alt="51 curated skill entries">
-    <img src="https://img.shields.io/badge/generated_samples-224-7c3aed?style=flat-square" alt="224 generated samples">
+    <img src="https://img.shields.io/badge/skills-52-ec4899?style=flat-square" alt="52 curated skill entries">
+    <img src="https://img.shields.io/badge/generated_samples-228-7c3aed?style=flat-square" alt="228 generated samples">
     <a href="#contributing"><img src="https://img.shields.io/badge/PRs-welcome-22c55e?style=flat-square" alt="PRs welcome"></a>
   </p>
   <p>
@@ -223,6 +223,36 @@ Upstream publishes nine landscape and architecture outputs but not each example'
 
 <p align="center">
   <a href="examples/photo-to-zine-postcard/README.md"><img src="assets/showcase-previews/photo-to-zine-postcard.webp" alt="photo-to-zine-postcard — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
+
+### [Photo to Handdrawn Poster Postcard](https://github.com/Matthew0824/photo-to-handdrawn-poster-postcard)
+
+Turns photos into hand-drawn poster postcards on warm ivory paper: a sharp source photo above, lower-left editorial text and three swatches, and a source-specific ink-and-watercolor study at lower right.
+
+- **Author:** [Matthew0824](https://github.com/Matthew0824)
+- **Input:** One photograph or a photo folder; optional destination, copy, and existing layout
+- **Output:** Default 4:5 vertical photo-and-drawing postcards, with separate landscape and portrait layouts
+- **ImageGen role:** Uses built-in imagegen for the drawing and lower layout, then restores the sharp source photograph with an upstream composition script
+- **Structure:** `SKILL.md`, Codex metadata, two references, source-restoration and sketch-fallback scripts
+- **License:** No standalone License provided; public visibility does not grant modification, redistribution, or commercial rights
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Moves source-photo preservation from model instructions into deterministic composition, retaining source content, aspect ratio, and existing signatures.
+- Fits landscape photos full-width at the top and uses a complete centered tall panel for portrait photos to preserve the lower text and drawing area.
+- Requires a drawing derived from the current subject rather than a generic landmark or repeated stock sketch.
+
+**Notes**
+
+The workflow contains personal Vatican-series defaults. We explicitly substitute source-related café, lake, collaborative photography, and cat-and-dog copy to avoid irrelevant Rome labels. All four finals use a 1122×1402 canvas and the upstream `rebuild_sharp_photo_poster.py` to restore the source photo. This preserves content and aspect ratio but uses Lanczos resampling, not original pixel dimensions. We do not execute the local sketch fallback or supply third-party style reference images.
+
+</details>
+
+<p align="center">
+  <a href="examples/photo-to-handdrawn-poster-postcard/README.md"><img src="assets/showcase-previews/photo-to-handdrawn-poster-postcard.webp" alt="photo-to-handdrawn-poster-postcard — four standardized generated samples" width="100%" loading="lazy"></a>
 </p>
 
 ### [GC Minimal Zine Poster v0.3.1](https://github.com/LiamGvchi/gc-minimal-zine-poster)
