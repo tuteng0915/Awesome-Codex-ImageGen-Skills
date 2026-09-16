@@ -6,8 +6,8 @@
   <p>
     <a href="https://github.com/sindresorhus/awesome"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
     <img src="https://img.shields.io/badge/Codex-ImageGen-111827?style=flat-square&logo=openai&logoColor=white" alt="Codex ImageGen">
-    <img src="https://img.shields.io/badge/skills-52-ec4899?style=flat-square" alt="52 curated skill entries">
-    <img src="https://img.shields.io/badge/generated_samples-228-7c3aed?style=flat-square" alt="228 generated samples">
+    <img src="https://img.shields.io/badge/skills-53-ec4899?style=flat-square" alt="53 curated skill entries">
+    <img src="https://img.shields.io/badge/generated_samples-232-7c3aed?style=flat-square" alt="232 generated samples">
     <a href="#contributing"><img src="https://img.shields.io/badge/PRs-welcome-22c55e?style=flat-square" alt="PRs welcome"></a>
   </p>
   <p>
@@ -824,6 +824,38 @@ It does not duplicate Yarn Rug Reference despite the shared fiber medium. Yarn R
 
 <a id="illustrations--posters"></a>
 ## Illustrations & Posters
+
+### [Watercolor Diary](https://github.com/jiayuewangjavy/watercolor-diary)
+
+Turns food, drinks, or still-life elements into poetic naive-watercolor diaries with broken contours, translucent pigment, scattered vignettes, and an original short English fortune.
+
+- **Author:** [JavyWang / jiayuewangjavy](https://github.com/jiayuewangjavy)
+- **Input:** Food or drink photographs; also supports 3–6 still-life, household, or botanical object families
+- **Output:** Watercolor diary collages, symbol diaries, or element samplers with a source-linked English fortune
+- **ImageGen role:** Generates a text-free watercolor illustration without the source background, then adds locked copy in a second stage and checks spelling
+- **Structure:** Single-file `SKILL.md` (invocation name `food-watercolor-study`), Codex metadata, eight examples, and `LICENSE`
+- **License:** MIT
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Uses different subject rules for food, still life, and element lists, with orbit, falling sequence, scrapbook islands, botanical drift, and other composition paths.
+- Specifies at least 55% unpainted paper, 40–70% partial outlines, varied pigment density, and no global yellow cast.
+- Separates an original 5–15-word fortune into a second stage rather than gambling on illustration and text accuracy together.
+
+**Notes**
+
+Our four fixtures use source-element extraction, not whole-photo preservation. The café becomes bicycle, awning, doorway, pots, and lamp; the lake becomes mountains, bridge, red umbrella, pine, and water; the portrait contributes only camera, cup, prints, and textiles; the animals become cat, dog, yarn, and household symbols. Nature and animals test extended applicability, not the native food task or portrait identity fidelity. Built-in ImageGen handles both the text-free and typography stages, without upstream example images as inputs.
+
+The first pass misread background removal as transparency; the second explicitly restored cool-white paper and added the fortunes. All four finals have opaque paper backgrounds and manually checked English spelling. The objects remain relatively detailed and observational rather than fully naive minimal symbols; the 55% whitespace and partial-outline ratios have not been quantitatively verified.
+
+</details>
+
+<p align="center">
+  <a href="examples/watercolor-diary/README.md"><img src="assets/showcase-previews/watercolor-diary.webp" alt="watercolor-diary — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Oriental Editorial Poster](https://github.com/dacnay816y62-hub/fantasy-dongfang-jianyuehaibao)
 

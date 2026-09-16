@@ -6,8 +6,8 @@
   <p>
     <a href="https://github.com/sindresorhus/awesome"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
     <img src="https://img.shields.io/badge/Codex-ImageGen-111827?style=flat-square&logo=openai&logoColor=white" alt="Codex ImageGen">
-    <img src="https://img.shields.io/badge/skills-52-ec4899?style=flat-square" alt="52 curated skill entries">
-    <img src="https://img.shields.io/badge/generated_samples-228-7c3aed?style=flat-square" alt="228 generated samples">
+    <img src="https://img.shields.io/badge/skills-53-ec4899?style=flat-square" alt="53 curated skill entries">
+    <img src="https://img.shields.io/badge/generated_samples-232-7c3aed?style=flat-square" alt="232 generated samples">
     <a href="#contributing"><img src="https://img.shields.io/badge/PRs-welcome-22c55e?style=flat-square" alt="PRs welcome"></a>
   </p>
   <p>
@@ -825,6 +825,38 @@ showcase 中的动物、幽灵、机器人和物件整体具有清楚的圆形�
 
 <a id="illustrations--posters"></a>
 ## 插画与海报
+
+### [Watercolor Diary](https://github.com/jiayuewangjavy/watercolor-diary)
+
+将食物、饮品或一组静物元素转成朴拙水彩手帐，以断续轮廓、透明颜料、错落小景与一行原创英文短句形成诗意日记页。
+
+- **Author:** [JavyWang / jiayuewangjavy](https://github.com/jiayuewangjavy)
+- **Input:** 食物或饮品照片；也支持 3–6 组静物、家居与植物元素
+- **Output:** 水彩手帐、符号日记或元素拼画，附来源相关的英文 fortune
+- **ImageGen role:** 先生成无字水彩插画、移除原背景，再以第二阶段加入锁定短句并检查拼写
+- **Structure:** 单文件 `SKILL.md`（调用名 `food-watercolor-study`）、Codex metadata、8 张示例与 `LICENSE`
+- **License:** MIT
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- 食物、静物与元素列表采用不同主体规则，并提供轨道、坠落、拼贴岛屿、植物漂流等构图路径。
+- 对至少 55% 未着色纸面、40–70% 断续轮廓、颜料密度变化与去除全局泛黄给出具体约束。
+- 将 5–15 词原创英文 fortune 拆为第二阶段，避免生成插画时同时赌文字准确性。
+
+**备注**
+
+四张 fixtures 均采用来源元素提取，而不是保持整幅照片：咖啡馆转成自行车、遮阳篷、门、盆栽和灯；湖景提取山、桥、红伞、松枝与水；人物图仅提取相机、杯、印样和织物；动物图转为猫、狗、毛线与家居符号。自然与动物属于扩展适用性尝试，不代表已经验证原生食物任务或人物身份保真。使用内置 ImageGen 完成无字图与加字两阶段，不使用上游示例图作为输入。
+
+首轮把移除原背景误解成透明底，第二阶段已明确恢复冷白纸面并加入短句；四张最终图均为不透明纸面，英文拼写经人工检查。元素仍偏细致和观察性绘画，未完全达到极简朴拙符号目标；55% 留白与断续轮廓比例没有量化验证。
+
+</details>
+
+<p align="center">
+  <a href="examples/watercolor-diary/README.md"><img src="assets/showcase-previews/watercolor-diary.webp" alt="watercolor-diary 的四张统一输入生成预览" width="100%" loading="lazy"></a>
+</p>
 
 ### [Oriental Editorial Poster](https://github.com/dacnay816y62-hub/fantasy-dongfang-jianyuehaibao)
 
