@@ -6,8 +6,8 @@
   <p>
     <a href="https://github.com/sindresorhus/awesome"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
     <img src="https://img.shields.io/badge/Codex-ImageGen-111827?style=flat-square&logo=openai&logoColor=white" alt="Codex ImageGen">
-    <img src="https://img.shields.io/badge/skills-53-ec4899?style=flat-square" alt="53 curated skill entries">
-    <img src="https://img.shields.io/badge/generated_samples-232-7c3aed?style=flat-square" alt="232 generated samples">
+    <img src="https://img.shields.io/badge/skills-54-ec4899?style=flat-square" alt="54 curated skill entries">
+    <img src="https://img.shields.io/badge/generated_samples-236-7c3aed?style=flat-square" alt="236 generated samples">
     <a href="#contributing"><img src="https://img.shields.io/badge/PRs-welcome-22c55e?style=flat-square" alt="PRs welcome"></a>
   </p>
   <p>
@@ -886,6 +886,36 @@ The repository publishes a substantial Image 2 test set and selected triptychs t
 
 <p align="center">
   <a href="examples/oriental-editorial-poster/README.md"><img src="assets/showcase-previews/oriental-editorial-poster.webp" alt="oriental-editorial-poster — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
+
+### [Lulu Article Illustrations](https://github.com/Lupumbba/lulu-article-illustrations)
+
+Turns Chinese article arguments, processes, and states into white-background hand-drawn illustrations, with an orange-topped capybara named Lulu physically carrying, buffering, flattening, or delivering the core metaphor.
+
+- **Author:** [Lupumbba](https://github.com/Lupumbba)
+- **Input:** Chinese articles, posts, Markdown, screenshots, or one explicit topic
+- **Output:** 16:9 article-body illustrations and a shot list, with sparse handwritten Chinese annotations
+- **ImageGen role:** Extracts cognitive anchors, invents a physical metaphor for each idea, and generates images individually with character, whitespace, and text QA
+- **Structure:** `SKILL.md`, Codex metadata, and six references inside `lulu-article-illustrations/`; examples, MIT License, and NOTICE at repository root
+- **License:** MIT; NOTICE explicitly attributes inspiration from the Ian Xiaohei Illustrations workflow
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Selects cognitive anchors such as judgments, bottlenecks, evidence, branching, and handoffs instead of illustrating every paragraph evenly.
+- Invents low-tech physical metaphors; if removing Lulu leaves the core idea completely intact, the character is considered too decorative.
+- Fixes a pure-white, black-line, warm yellow-orange character palette with sparse red/orange/blue notes, excluding PPT diagrams, memes, and complex architecture charts.
+
+**Notes**
+
+This is an explicitly attributed derivative of Ian's workflow, not a duplicate upstream or an entirely original method merely because the mascot changes. Our four cases first turn fixture observations into short article theses about storefront-detail handoffs, room in plans, shared evidence review, and buffering interactions, then generate body illustrations. They test topic and prop transfer, not photographic identity reconstruction. We do not use upstream example images or the same repository's Cartea falcon brand reference assets.
+
+</details>
+
+<p align="center">
+  <a href="examples/lulu-article-illustrations/README.md"><img src="assets/showcase-previews/lulu-article-illustrations.webp" alt="lulu-article-illustrations — four standardized generated samples" width="100%" loading="lazy"></a>
 </p>
 
 ### [Ian Xiaohei Illustrations](https://github.com/helloianneo/ian-xiaohei-illustrations)

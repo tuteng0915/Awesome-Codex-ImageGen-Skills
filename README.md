@@ -6,8 +6,8 @@
   <p>
     <a href="https://github.com/sindresorhus/awesome"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
     <img src="https://img.shields.io/badge/Codex-ImageGen-111827?style=flat-square&logo=openai&logoColor=white" alt="Codex ImageGen">
-    <img src="https://img.shields.io/badge/skills-53-ec4899?style=flat-square" alt="53 curated skill entries">
-    <img src="https://img.shields.io/badge/generated_samples-232-7c3aed?style=flat-square" alt="232 generated samples">
+    <img src="https://img.shields.io/badge/skills-54-ec4899?style=flat-square" alt="54 curated skill entries">
+    <img src="https://img.shields.io/badge/generated_samples-236-7c3aed?style=flat-square" alt="236 generated samples">
     <a href="#contributing"><img src="https://img.shields.io/badge/PRs-welcome-22c55e?style=flat-square" alt="PRs welcome"></a>
   </p>
   <p>
@@ -887,6 +887,36 @@ showcase 中的动物、幽灵、机器人和物件整体具有清楚的圆形�
 
 <p align="center">
   <a href="examples/oriental-editorial-poster/README.md"><img src="assets/showcase-previews/oriental-editorial-poster.webp" alt="oriental-editorial-poster 的四张统一输入生成预览" width="100%" loading="lazy"></a>
+</p>
+
+### [Lulu Article Illustrations](https://github.com/Lupumbba/lulu-article-illustrations)
+
+把中文文章中的观点、流程和状态转成白底手绘解释图，让头顶橘子的水豚「噜噜」通过承接、缓冲、压平和递送等动作参与核心隐喻。
+
+- **Author:** [Lupumbba](https://github.com/Lupumbba)
+- **Input:** 中文文章、帖子、Markdown、截图或一个明确主题
+- **Output:** 16:9 横版正文插图与 shot list，附少量中文手写批注
+- **ImageGen role:** 提取认知锚点，为每个观点发明一个物理隐喻，逐张生成并检查角色参与、留白与文字
+- **Structure:** 子目录 `lulu-article-illustrations/` 中的 `SKILL.md`、Codex metadata、6 份 references；根目录含示例、MIT License 与 NOTICE
+- **License:** MIT；NOTICE 明确注明 Ian Xiaohei Illustrations 工作流的启发与署名
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- 不平均按段落配图，优先选择判断、断点、证据、分流与承接等认知锚点。
+- 以低科技物件和慢动作发明隐喻；“去掉噜噜后核心意思仍完全成立”被视为角色过于装饰。
+- 固定纯白、黑线、暖黄橙角色与少量红橙蓝批注，禁止 PPT、表情包和复杂架构图。
+
+**备注**
+
+这是明确署名的 Ian 工作流衍生路线，不重复计作原仓库，也不把更换角色描述成完全原创的方法体系。四个案例先从 fixtures 编写短主题，分别表达门店细节承接、计划留白、共同看证据与互动缓冲，再生成正文插图；它们测试主题与物件迁移，不测试照片级身份还原。未使用上游示例图或同仓库的 Cartea 猎隼品牌参考素材。
+
+</details>
+
+<p align="center">
+  <a href="examples/lulu-article-illustrations/README.md"><img src="assets/showcase-previews/lulu-article-illustrations.webp" alt="lulu-article-illustrations 的四张统一输入生成预览" width="100%" loading="lazy"></a>
 </p>
 
 ### [Ian Xiaohei Illustrations](https://github.com/helloianneo/ian-xiaohei-illustrations)

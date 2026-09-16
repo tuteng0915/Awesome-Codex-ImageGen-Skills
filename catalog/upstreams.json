@@ -254,6 +254,12 @@
       "url": "https://github.com/jiayuewangjavy/watercolor-diary.git",
       "commit": "fa05beab53afe95aa6e63bfad6bf21f75b24e18e",
       "scope": "root food-watercolor-study SKILL.md and license; two-pass fixture motif diary adaptation"
+    },
+    {
+      "name": "lulu-article-illustrations",
+      "url": "https://github.com/Lupumbba/lulu-article-illustrations.git",
+      "commit": "f3927da2a128d6c2ea23163765f1aec6aa4aedd9",
+      "scope": "lulu-article-illustrations subskill, six textual references, license and NOTICE; excludes Cartea brand assets"
     }
   ]
 }
