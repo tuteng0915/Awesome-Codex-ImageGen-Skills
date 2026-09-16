@@ -6,7 +6,7 @@
   <p>
     <a href="https://github.com/sindresorhus/awesome"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
     <img src="https://img.shields.io/badge/Codex-ImageGen-111827?style=flat-square&logo=openai&logoColor=white" alt="Codex ImageGen">
-    <img src="https://img.shields.io/badge/skills-54-ec4899?style=flat-square" alt="54 curated skill entries">
+    <img src="https://img.shields.io/badge/skills-55-ec4899?style=flat-square" alt="55 curated skill entries">
     <img src="https://img.shields.io/badge/generated_samples-236-7c3aed?style=flat-square" alt="236 generated samples">
     <a href="#contributing"><img src="https://img.shields.io/badge/PRs-welcome-22c55e?style=flat-square" alt="PRs welcome"></a>
   </p>
@@ -1105,6 +1105,32 @@ This is a hybrid skill whose main value lies in deciding when to use each visual
 <p align="center">
   <a href="examples/codex-illustrator/README.md"><img src="assets/showcase-previews/codex-illustrator.webp" alt="codex-illustrator — four standardized generated samples" width="100%" loading="lazy"></a>
 </p>
+
+### [cc2image / zscc 配图生成器](https://github.com/izscc/cc2image)
+
+A multi-style visual system for Chinese content creators, turning articles, concepts, and product topics into covers, body illustrations, knowledge cards, brand posters, or icons.
+
+- **Author:** [izscc](https://github.com/izscc)
+- **Input:** Chinese topics, articles, paragraphs, knowledge points, or product information; requires an explicit style or completed interactive selection
+- **Output:** Single covers/body illustrations/icons or batches; also supports structured prompts and JSON plans
+- **ImageGen role:** Final raster images must come from built-in `image_gen`; scripts handle selection, field validation, and prompt compilation only
+- **Structure:** `SKILL.md`, 49 content styles and eight icon styles, references, examples and thumbnails, an interactive selector, and prompt-schema scripts
+- **License:** MIT; bundled character and reference-image rights cannot be inferred solely from the root License and require separate checks
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Extracts cognitive anchors and information density before choosing diagram structures or visual metaphors instead of illustrating each paragraph evenly.
+- Covers real-object doodles, miniature maps, material typography, Eastern illustration, and commercial advertising rather than one fixed visual style.
+- Enforces Visualize selection when no valid style is specified; generation waits for submitted configuration, with no automatic recommendation acceptance or local-drawing substitute for ImageGen.
+
+**Notes**
+
+We curate one suite entry, not a separate entry for every style. Some branches depend on `assets/examples/xiaohei/`, 3D character, or furball references. Per-asset provenance and permissions are not yet confirmed, so we commit method descriptions and source links only; the reference library stays in the ignored local upstream directory rather than Git. Samples are pending explicit style selection: an automatic recommendation is not a user decision. This review verifies structure, generation routing, and license text, not stability across all styles.
+
+</details>
 
 ### [Baoyu Visual Skills Suite](https://github.com/JimLiu/baoyu-skills)
 

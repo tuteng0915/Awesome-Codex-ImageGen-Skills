@@ -6,7 +6,7 @@
   <p>
     <a href="https://github.com/sindresorhus/awesome"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
     <img src="https://img.shields.io/badge/Codex-ImageGen-111827?style=flat-square&logo=openai&logoColor=white" alt="Codex ImageGen">
-    <img src="https://img.shields.io/badge/skills-54-ec4899?style=flat-square" alt="54 curated skill entries">
+    <img src="https://img.shields.io/badge/skills-55-ec4899?style=flat-square" alt="55 curated skill entries">
     <img src="https://img.shields.io/badge/generated_samples-236-7c3aed?style=flat-square" alt="236 generated samples">
     <a href="#contributing"><img src="https://img.shields.io/badge/PRs-welcome-22c55e?style=flat-square" alt="PRs welcome"></a>
   </p>
@@ -1106,6 +1106,32 @@ showcase 中的动物、幽灵、机器人和物件整体具有清楚的圆形�
 <p align="center">
   <a href="examples/codex-illustrator/README.md"><img src="assets/showcase-previews/codex-illustrator.webp" alt="codex-illustrator 的四张统一输入生成预览" width="100%" loading="lazy"></a>
 </p>
+
+### [cc2image / zscc 配图生成器](https://github.com/izscc/cc2image)
+
+面向中文内容创作者的多风格配图系统，将文章、概念和产品主题拆成封面、正文插图、知识卡片、品牌海报或图标。
+
+- **Author:** [izscc](https://github.com/izscc)
+- **Input:** 中文主题、文章、段落、知识点或商品信息；需明确风格或完成交互选型
+- **Output:** 单张封面/正文插图/图标或批量图片；也支持结构化 prompt 与 JSON 清单
+- **ImageGen role:** 最终栅格图片必须由内置 `image_gen` 生成；脚本只负责选型、字段校验和提示编译
+- **Structure:** `SKILL.md`、49 套内容风格与 8 套图标风格、references、示例与缩略图库、交互选择器和 prompt schema 脚本
+- **License:** MIT；附带角色与参考图的权利不能仅由根 License 推定，使用前应单独核对
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- 先提炼认知锚点与信息密度，再选择图解结构或视觉隐喻，不平均按段落配图。
+- 覆盖实物涂鸦、微缩地图、材质字体、东方插画、商业广告等不同语言，而不是单一画风。
+- 未指定有效风格时有强制 Visualize 选型门槛；提交配置后才能生图，不允许自动采用推荐项或以本地绘图替代 ImageGen。
+
+**备注**
+
+本次收录的是一个套件入口，不把每个风格重复算成独立条目。部分分支依赖 `assets/examples/xiaohei/`、3D 角色或毛球角色参考；当前未确认逐资产来源与授权，因此仅提交方法介绍和来源链接，参考库只保存在被忽略的本地 upstream 目录，不进入 Git。示例尚未生成：须先明确风格，不能把自动推荐伪装成用户选择。现阶段只完成结构、生成路径与许可审阅，不能据此评价全部风格的稳定性。
+
+</details>
 
 ### [Baoyu Visual Skills Suite](https://github.com/JimLiu/baoyu-skills)
 

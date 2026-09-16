@@ -260,6 +260,12 @@
       "url": "https://github.com/Lupumbba/lulu-article-illustrations.git",
       "commit": "f3927da2a128d6c2ea23163765f1aec6aa4aedd9",
       "scope": "lulu-article-illustrations subskill, six textual references, license and NOTICE; excludes Cartea brand assets"
+    },
+    {
+      "name": "cc2image",
+      "url": "https://github.com/izscc/cc2image.git",
+      "commit": "33b18b399fcfc6a54a7c4cc2d137fa3dfd3afad8",
+      "scope": "suite SKILL.md, style options, prompt schema and MIT license; samples pending explicit style selection; asset rights unverified"
     }
   ]
 }
