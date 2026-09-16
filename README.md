@@ -6,8 +6,8 @@
   <p>
     <a href="https://github.com/sindresorhus/awesome"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
     <img src="https://img.shields.io/badge/Codex-ImageGen-111827?style=flat-square&logo=openai&logoColor=white" alt="Codex ImageGen">
-    <img src="https://img.shields.io/badge/showcases-57-ec4899?style=flat-square" alt="57 skill showcases">
-    <img src="https://img.shields.io/badge/generated_samples-220-7c3aed?style=flat-square" alt="220 generated samples">
+    <img src="https://img.shields.io/badge/skills-51-ec4899?style=flat-square" alt="51 curated skill entries">
+    <img src="https://img.shields.io/badge/generated_samples-224-7c3aed?style=flat-square" alt="224 generated samples">
     <a href="#contributing"><img src="https://img.shields.io/badge/PRs-welcome-22c55e?style=flat-square" alt="PRs welcome"></a>
   </p>
   <p>
@@ -70,6 +70,36 @@
 
 <p align="center">
   <a href="examples/photo-abstract-editorial/README.md"><img src="assets/showcase-previews/photo-abstract-editorial.webp" alt="photo-abstract-editorial 的四张统一输入生成预览" width="100%" loading="lazy"></a>
+</p>
+
+### [Photo Relic Editorial / 纸上留影](https://github.com/wnby/photo-relic-editorial)
+
+将真实照片与下半部的「纸上记忆版画」配成竖向编辑作品，把主体、光影、空间与情绪压缩成少量可识别的墨块和留白。
+
+- **Author:** [wnby](https://github.com/wnby)
+- **Input:** 一张已授权照片；可选标题语言、版式与系列方向
+- **Output:** 竖版摄影与纸张版画组合图
+- **ImageGen role:** 保留上层摄影区域，从原图身份、光线、色彩、边缘与尺度关系派生下层现代版画
+- **Structure:** `SKILL.md`、`agents/openai.yaml`、prompt guide、6 张 Paper Beijing 示例与 `LICENSE`
+- **License:** MIT；输入照片与附带视觉素材仍须确认相应使用权
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- 生成前提取 3–5 个来源线索，并选择版式、版画语法、笔触重量、标题和静态/动态种子组成的明确配方。
+- 以暖白纸、深墨块、负空间切口和一个来源相关的暖色点建立系列感，避免完整水彩重画或无意义色块。
+- 人物转为保留姿态与间隔的小型痕迹，不要求下层还原脸部；识别度和缩略图可读性均纳入质量门槛。
+
+**备注**
+
+本仓库仅使用四张合成 fixtures 作为内容输入，不把上游示例图送入生成器。四组保留了建筑、双人物和猫狗的来源关系，但下层整体偏具象，湖景尤其接近水彩重述，未完全达到少量痕迹的抽象目标。照片保真依赖模型指令，没有确定性贴回原图或逐像素校验；它与 Photo Abstract Editorial 的题材相近，但更强调纸张、现代版画笔触与完整主体轮廓，而不是纯几何关系面板。
+
+</details>
+
+<p align="center">
+  <a href="examples/photo-relic-editorial/README.md"><img src="assets/showcase-previews/photo-relic-editorial.webp" alt="photo-relic-editorial 的四张统一输入生成预览" width="100%" loading="lazy"></a>
 </p>
 
 ### [Muge Photo Diptych](https://github.com/Yeshmuge/muge-photo-diptych)

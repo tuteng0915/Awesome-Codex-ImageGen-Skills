@@ -6,8 +6,8 @@
   <p>
     <a href="https://github.com/sindresorhus/awesome"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
     <img src="https://img.shields.io/badge/Codex-ImageGen-111827?style=flat-square&logo=openai&logoColor=white" alt="Codex ImageGen">
-    <img src="https://img.shields.io/badge/showcases-57-ec4899?style=flat-square" alt="57 skill showcases">
-    <img src="https://img.shields.io/badge/generated_samples-220-7c3aed?style=flat-square" alt="220 generated samples">
+    <img src="https://img.shields.io/badge/skills-51-ec4899?style=flat-square" alt="51 curated skill entries">
+    <img src="https://img.shields.io/badge/generated_samples-224-7c3aed?style=flat-square" alt="224 generated samples">
     <a href="#contributing"><img src="https://img.shields.io/badge/PRs-welcome-22c55e?style=flat-square" alt="PRs welcome"></a>
   </p>
   <p>
@@ -69,6 +69,36 @@ The examples maintain a stable split layout, generous whitespace, and source-awa
 
 <p align="center">
   <a href="examples/photo-abstract-editorial/README.md"><img src="assets/showcase-previews/photo-abstract-editorial.webp" alt="photo-abstract-editorial — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
+
+### [Photo Relic Editorial / 纸上留影](https://github.com/wnby/photo-relic-editorial)
+
+Pairs a real photograph with a lower paper-memory print, compressing subject identity, light, space, and mood into a few recognizable ink marks and negative space.
+
+- **Author:** [wnby](https://github.com/wnby)
+- **Input:** One authorized photograph; optional title language, layout, and series direction
+- **Output:** A vertical photograph-and-paper-print editorial artwork
+- **ImageGen role:** Preserves the upper photographic region and derives a lower modern print from source identity, light, color, edges, and scale relationships
+- **Structure:** `SKILL.md`, `agents/openai.yaml`, a prompt guide, six Paper Beijing examples, and `LICENSE`
+- **License:** MIT; rights to input photographs and bundled visual assets still require confirmation
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Extracts 3–5 source cues and selects an explicit recipe across layout, print grammar, mark weight, title, and still/motion seed before generation.
+- Builds a series identity with warm paper, deep ink blocks, negative-space cuts, and one source-derived warm accent rather than a full watercolor redraw or arbitrary swatches.
+- Reduces people to small marks that retain posture and spacing, without requiring detailed faces; recognition and thumbnail legibility are explicit quality gates.
+
+**Notes**
+
+Our runs use only the four synthetic fixtures as content inputs, never upstream example images as generation references. All four retain source relationships for architecture, the two people, and the cat and dog, but the lower prints remain relatively pictorial; the lake is especially close to a watercolor retelling rather than the intended few abstract marks. Photo fidelity relies on model instructions rather than deterministic source restoration or pixel verification. It overlaps with Photo Abstract Editorial in subject matter but emphasizes paper, modern printmaking marks, and complete subject silhouettes rather than a purely geometric relationship panel.
+
+</details>
+
+<p align="center">
+  <a href="examples/photo-relic-editorial/README.md"><img src="assets/showcase-previews/photo-relic-editorial.webp" alt="photo-relic-editorial — four standardized generated samples" width="100%" loading="lazy"></a>
 </p>
 
 ### [Muge Photo Diptych](https://github.com/Yeshmuge/muge-photo-diptych)

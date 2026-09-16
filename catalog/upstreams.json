@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-03",
+  "updated_at": "2026-09-16",
   "notes": "Read-only local review clones. The upstream/ directory is gitignored; this file records the reviewed revisions without vendoring third-party code.",
   "sources": [
     {
@@ -236,6 +236,12 @@
       "name": "yarn-rug-reference",
       "url": "https://github.com/rlx-better/yarn-rug-reference.git",
       "commit": "edfc7e997754d1b73b68d48b8c35d85902a0fed6"
+    },
+    {
+      "name": "photo-relic-editorial",
+      "url": "https://github.com/wnby/photo-relic-editorial.git",
+      "commit": "2232da16afddc7940e2e2f280bfb85aa62da1bae",
+      "scope": "root SKILL.md, prompt guide, license; fixture-only generation without bundled example inputs"
     }
   ]
 }
