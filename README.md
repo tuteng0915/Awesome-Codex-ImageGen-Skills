@@ -6,8 +6,8 @@
   <p>
     <a href="https://github.com/sindresorhus/awesome"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
     <img src="https://img.shields.io/badge/Codex-ImageGen-111827?style=flat-square&logo=openai&logoColor=white" alt="Codex ImageGen">
-    <img src="https://img.shields.io/badge/skills-55-ec4899?style=flat-square" alt="55 curated skill entries">
-    <img src="https://img.shields.io/badge/generated_samples-236-7c3aed?style=flat-square" alt="236 generated samples">
+    <img src="https://img.shields.io/badge/skills-62-ec4899?style=flat-square" alt="62 curated skill entries">
+    <img src="https://img.shields.io/badge/generated_samples-252-7c3aed?style=flat-square" alt="252 generated samples">
     <a href="#contributing"><img src="https://img.shields.io/badge/PRs-welcome-22c55e?style=flat-square" alt="PRs welcome"></a>
   </p>
   <p>
@@ -750,12 +750,43 @@ showcase 中的动物、幽灵、机器人和物件整体具有清楚的圆形�
 
 **备注**
 
-它本质上是“电商模板路由器 + 嵌套 Codex CLI 执行器”，不是直接调用当前 harness 工具：`allowed-tools` 采用 Claude-style 声明，正常路径通过 shell 启动新的 `codex exec`，并假定结果位于 `~/.codex/generated_images/`；清理步骤还要求删除对应 session 目录，集成到其他环境前应审查路径和删除范围。本仓库四张实测覆盖门店、四季雨伞 campaign、相机 lifestyle 与宠物玩具 UGC；门店和人物图对原图变化较克制，四季网格表现出模板价值，UGC 则主要体现在裁切和质感变化。25 个模板目前没有随包逐模板成品或自动 eval，商品 Logo、包装文字、精确结构与多格一致性仍需人工复核。
+它本质上是“电商模板路由器 + 嵌套 Codex CLI 执行器”，不是直接调用当前 harness 工具：`allowed-tools` 采用 Claude-style 声明，正常路径通过 shell 启动新的 `codex exec`，并假定结果位于 `~/.codex/generated_images/`；清理步骤还要求删除对应 session 目录，集成到其他环境前应审查路径和删除范围。本仓库四张实测分别路由为咖啡店四视角 campaign、红伞四季商品 campaign、相机 lifestyle 和宠物玩具创意广告；所有结果都重新设计了构图与使用情境，而不是用轻微调色或裁切代替转换。店铺与四季套图能直接观察多格一致性，相机案例保留了双人物身份和商品颜色，宠物案例则把猫狗互动转成清楚的商品主视觉。25 个模板目前没有随包逐模板成品或自动 eval，商品 Logo、包装文字、精确结构与多格一致性仍需人工复核。
 
 </details>
 
 <p align="center">
   <a href="examples/gpt-image2-ecommerce/README.md"><img src="assets/showcase-previews/gpt-image2-ecommerce.webp" alt="gpt-image2-ecommerce 的四张统一输入生成预览" width="100%" loading="lazy"></a>
+</p>
+
+### [SellerPilot Product Image Industrial](https://github.com/ninemouth/sellerpilot-product-image-industrial)
+
+面向真实商业交付的工业级电商商品图生产系统：从来源照片、商品事实和平台要求出发，规划并生成主图、细节图、场景图与本地化套图，再通过身份、物理事实、文案、背景和谱系门禁完成审核与局部返修。
+
+- **Author:** [ninemouth](https://github.com/ninemouth)
+- **Input:** 一张或多张已授权商品图或 URL、商品与受众信息、目标平台、地区/语言、图片数量；可附竞品参考与已有 run
+- **Output:** 单张正式商品图或多图电商套图，附 manifest、lineage、QA 状态、套图总览、可选 tldraw 审稿工作区和可继续执行的修订任务
+- **ImageGen role:** 当前 Codex 暴露内置 `image_gen` 时固定走 `native_codex`，先生成风险自适应 anchor，再并发补齐其余角色；脚本只负责编译任务、证据和门禁，不用本地绘图冒充正式场景
+- **Structure:** 根 `SKILL.md`、Codex metadata、平台 profiles、生产 contracts/workflows、40+ references/policies、成套 Node.js 编排与 QA 脚本、JSON Schemas、测试、模板和 tldraw 审稿工作区
+- **License:** MIT
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- 先把标准化任务编译为单一 production contract、run-local DAG、generation jobs 和共享 run state，避免每个平台复制一套容易漂移的流程。
+- 对轮廓、材质、比例、组件、可见文字、支持性声明和物理事实建立证据锁；竞品图只允许分析，不会被当成用户商品参考送入生成。
+- 内置 Amazon、淘宝/天猫、京东、拼多多、抖音、小红书、Temu、TikTok Shop、Shopee/Lazada、Ozon 等平台 profile，并把地区文案和精确文字证明纳入门禁。
+- 先用小型 anchor batch 验证身份与方向，再只生成已批准的缺失角色；正式交付保留完整 lineage，并能把 tldraw 标注路由为最小范围返修。
+
+**备注**
+
+它与 GPT Image 2 Ecommerce 的边界很清楚：后者是 25 个视觉模板的轻量路由器，SellerPilot 则是一套 contract-driven 生产控制面，能力更完整，但安装、上下文和执行成本也明显更高。本次四张实测把咖啡空间、红伞、相机和毛线球分别视为门店体验或待销售对象；成品稳定保留建筑、商品、人物身份与动物数量，商业化处理偏克制。它们只验证原生 Codex ImageGen 的视觉终点，没有完整运行 contract DAG、平台门禁和 tldraw 返修闭环，因此不能替外部服务、营销效果或作者自测结论背书。
+
+</details>
+
+<p align="center">
+  <a href="examples/sellerpilot-product-image-industrial/README.md"><img src="assets/showcase-previews/sellerpilot-product-image-industrial.webp" alt="sellerpilot-product-image-industrial 的四张统一输入生成预览" width="100%" loading="lazy"></a>
 </p>
 
 <a id="craft--textile"></a>
@@ -918,6 +949,84 @@ showcase 中的动物、幽灵、机器人和物件整体具有清楚的圆形�
 <p align="center">
   <a href="examples/lulu-article-illustrations/README.md"><img src="assets/showcase-previews/lulu-article-illustrations.webp" alt="lulu-article-illustrations 的四张统一输入生成预览" width="100%" loading="lazy"></a>
 </p>
+
+### [Illo](https://github.com/tmchow/illo-skill)
+
+把文章、观点和流程变成原创印刷风编辑插画，让一个持续出现的角色用动作演出核心隐喻。
+
+- **Author:** [Trevin Chow](https://github.com/tmchow)
+- **Input:** 一句话、文章、流程或概念，可选自定义角色与风格
+- **Output:** 单幅场景、迷你漫画、解释图或透明背景角色 cutout
+- **ImageGen role:** 先提炼单一视觉隐喻，再通过 Codex、Grok 或 OpenRouter 图像后端生成；失败的订阅路径不会自动切换到付费 API
+- **Structure:** 多平台插件 metadata、`skills/illo/` 主 skill、风格与角色 references、生成脚本、测试与独立角色包
+- **License:** MIT；默认 Blot 角色与随包 artwork 受 `NOTICE` 约束，使用和分发时须保留 “Illo by Trevin Chow” 署名
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- 支持十余种印刷与材质方向，以及社区角色包和自定义角色，不只是一条固定 prompt。
+- 用“一个角色、一个动作、一个隐喻”压缩抽象内容，也能扩展成 flowchart、mini-comic 与 explainer。
+- 把模型、费用与失败策略写进执行层，避免在用户没有授权时偷偷切换到付费后端。
+
+**备注**
+
+这是成熟度较高的跨 harness 插画工具，角色与风格生态比单文件 skill 完整得多。MIT 适用于代码与说明，但随包角色和 artwork 仍需要遵守 `NOTICE`；后续统一测试应优先使用原创角色或作者明确允许的角色包，并记录实际图像后端。
+
+</details>
+
+### [Gimi Illustration](https://github.com/GiMi-Xiaomi/gimi-illustration-skill)
+
+把中文文章和口播脚本拆成镜头计划，再生成带统一角色 IP、标题与风格约束的系列配图。
+
+- **Author:** [Gimi（米未可）](https://github.com/GiMi-Xiaomi)
+- **Input:** 中文文章、口播脚本或主题，可选自定义 IP 正面参考、尺寸、标题与风格
+- **Output:** 一组文章配图、`shot-config.md` 与最终图片目录
+- **ImageGen role:** 先确认视觉方案和角色校准图，再调用宿主的 `image_gen` 逐镜生成；正式 IP 模式要求角色设定与当前风格参考同时存在
+- **Structure:** 根目录 `SKILL.md`、三套风格 references、IP 模板与校准资料、docs、examples、Codex metadata、License 与 IP Notice
+- **License:** 代码与 skill 文档为 MIT；默认 Gimi 角色 IP 不在 MIT 范围内，个人非商用可用，独立参考图再分发、商业标识或周边需另行授权
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- Public 3.0 提供怪诞手绘、暖调绘本和产品方案三种方向，并把标题、比例和角色一致性纳入同一份 shot plan。
+- 自定义 IP 有明确的注册与校准关卡：用户确认视觉方案前不生成，缺少角色设定或风格校准图时也不会直接进入正式出图。
+- `IP=none` 可以完全绕开默认角色，适合测试不依赖专有 IP 的通用文章配图能力。
+
+**备注**
+
+它的价值在于把“文章拆镜—角色校准—批量生成”连成完整流程，而不是只提供一个画风。默认 Gimi 角色有单独的 IP Notice，因此后续四张 fixture 应使用 `IP=none` 或自有合成角色；清单不会把 MIT 代码许可误写成角色可自由商用。
+
+</details>
+
+### [Editorial Line System](https://github.com/huxiang1126/editorial-line-system)
+
+把文字、图片或品牌概念转换为黑白几何线稿人物、强编辑排版、大留白与少量柔和色块组成的视觉系统。
+
+- **Author:** [huxiang1126](https://github.com/huxiang1126)
+- **Input:** 文本、图片、品牌名、产品、App、活动概念或混合 brief
+- **Output:** PNG 编辑海报、品牌系统板、图片转插画或多应用 campaign board；明确要求时也可输出 HTML
+- **ImageGen role:** 默认直接调用 `image_gen` 生成或编辑 PNG；图片输入尽量保留主体、姿态、构图与可识别物件
+- **Structure:** 单一根目录 `SKILL.md`，暂无独立 README、参考资产、示例、脚本或 eval
+- **License:** 上游未声明开源许可证
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- 视觉 DNA 很明确：黑白线稿人物、扁平几何比例、非对称杂志层级与黄、橙、粉、奶油等少量柔和强调色。
+- 会按文本、图片、品牌和混合输入选择不同输出；多概念内容优先组织成多面板系统，而不是纯文字卡片。
+- 长文本精确排版时明确提示 image generation 的文字限制，并把 HTML/SVG 或后期叠字作为可选路径。
+
+**备注**
+
+这是一个紧凑但证据仍少的风格系统：当前仓库只有一次提交和一份 `SKILL.md`，没有随包样例或自动检查。其规则可直接复现，但尚不能据此判断跨题材稳定性；许可证缺失也意味着复制、改编、再分发或商用前应先联系作者确认。
+
+</details>
 
 ### [Ian Xiaohei Illustrations](https://github.com/helloianneo/ian-xiaohei-illustrations)
 
@@ -1405,6 +1514,32 @@ OpenAI 官方组合型 skill。先通过 ImageGen 设计完整页面、界面状
   <a href="examples/hiapi-icon-skills/README.md"><img src="assets/showcase-previews/hiapi-icon-skills.webp" alt="hiapi-icon-skills 的四张统一输入生成预览" width="100%" loading="lazy"></a>
 </p>
 
+### [oil-icon](https://github.com/oil-oil/oil-icon)
+
+把一组产品概念一次生成成风格一致的宫格，再自动切分、去背景和逐图质检，交付可直接使用的透明 PNG 图标。
+
+- **Author:** [oil-oil](https://github.com/oil-oil)
+- **Input:** 图标清单与具体隐喻，可选内置风格、品牌页面、Logo、设计变量或色板
+- **Output:** 9 或 16 个风格统一的透明 PNG 图标，以及原始 sheet 与检查结果
+- **ImageGen role:** 优先使用宿主内置 `image_gen` 在纯灰背景生成 3×3/4×4 sheet；随后由确定性脚本切图、去背景并检查灰边与串格
+- **Structure:** 根目录 `SKILL.md`、9 套 styles、品牌适配与 prompt references、切图/去背/配置脚本、测试和成品展示资产
+- **License:** MIT
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- 先冻结色板、视角、线宽、圆角、材质与专属记号，再把整套图标放进同一次生成，降低逐张漂移。
+- 内置线性、实心、撞色、卡通、等轴、软 3D、贴纸、真实实物和动物徽标九种起点，也能从现有品牌资产反推专属规范。
+- 硬边图标用颜色识别去底，软边材质按需使用背景移除模型；高对比底色 QA 会检查灰边、串格和跨图一致性。
+
+**备注**
+
+它与通用图标 prompt 的差别在于包含真实的批量生产后处理。最适合较大的 feature、category、marketing 与 empty-state 图标；作者也明确建议 16–24px 功能 glyph 改用矢量图标库。一次宫格生成有助于一致性，但仍需要逐个检查，不能把它当作保证。
+
+</details>
+
 ### [Identity Skill](https://github.com/Sac-Y/identity-skill)
 
 面向个人网站的 image-first 工作流：先为每个 section 生成横向参考图，用户锁定后再拆分素材、按图实现，并以逐区截图和证据 manifest 验证。
@@ -1507,9 +1642,44 @@ OpenAI 官方组合型 skill。先通过 ImageGen 设计完整页面、界面状
 
 **备注**
 
-它和现有 Sprite Pipeline 的核心差异是覆盖范围更宽：后者聚焦从一张已获批 seed frame 标准化动作条，本 Skill 还负责资产规划、参考图派生、角色与特效拆层、复杂 atlas 和引擎交付。流程很完整，但生成质量仍需要逐动作视觉 QA，脚本不能自动判断角色身份是否漂移。
+它和现有 Sprite Pipeline 的核心差异是覆盖范围更宽：后者聚焦从一张已获批 seed frame 标准化动作条，本 Skill 还负责资产规划、参考图派生、角色与特效拆层、复杂 atlas 和引擎交付。本次实测分别从四张照片提取红色自行车、红伞、青绿色相机和猫狗组合，生成 2×3 纯洋红动作网格，再用上游脚本去背并导出透明 RGBA sheet。六格数量、主体身份和边缘安全整体稳定，但前三组更接近“道具状态变化”，没有覆盖多动作角色 atlas 或引擎交付。
 
 </details>
+
+<p align="center">
+  <a href="examples/generate2dsprite/README.md"><img src="assets/showcase-previews/generate2dsprite.webp" alt="generate2dsprite 的四张统一输入生成预览" width="100%" loading="lazy"></a>
+</p>
+
+### [2dimg2motion](https://github.com/WU-HAOTIAN34/2dimg2motion)
+
+把一张静态 2D 角色、动物、载具、武器或道具基准图扩展为身份与动作连贯的透明序列帧、spritesheet 和循环预览；核心是让模型重画完整关键姿势，而不是旋转或拉伸原图部件。
+
+- **Author:** [Haotian Wu / WU-HAOTIAN34](https://github.com/WU-HAOTIAN34)
+- **Input:** 一张已标准化或可标准化的 2D 基准图、动作类型、朝向、帧数/节奏、画布和交付要求
+- **Output:** 默认 14 张透明 RGBA full frames、4 张固定索引关键帧、spritesheet、contact sheet、白底 GIF 预览、prompt 文档和 manifest
+- **ImageGen role:** 使用内置 `image_gen`，以基准图作为身份锚点，在共享 pose sheet 中生成 02/05/08/11 四个完整关键姿势，再结合相邻锚点生成中间帧
+- **Structure:** 根 `SKILL.md`、Codex metadata、关键姿势与动作 prompt references、基准图标准化/GIF/14 帧验证脚本、6 组输入与 7 组 GIF 示例
+- **License:** MIT
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- 固定 14 帧计划使用 `00 → 02 → 05 → 08 → 11 → 13` 六个不可变锚点，并明确规定五段各插入 `1/2/2/2/1` 张中间帧。
+- 为主动肢体、锚定肢体、肩部、持械手和屏幕方向建立 topology lock，把换手、断肢、复制武器、比例跳变和裁切都列为必须重生成的硬失败。
+- 色键必须避开主体配色；本地脚本只能去背、统一画布、切帧、打包和验证，禁止用旋转、缩放、仿射或复制粘贴伪造动作。
+- 除文件数、命名、RGBA、透明角落、首尾字节一致和关键帧匹配等确定性检查外，还强制人工查看 contact sheet 与 GIF，避免“结构通过、视觉失败”。
+
+**备注**
+
+它和 Generate 2D Sprite、Sprite Pipeline 有相邻能力，但任务更窄也更深：从一张已批准的基准图生成一个动作，并把肢体拓扑与时间连续性作为一等约束。本次实测采用完整两阶段路径：先复用照片提取出的透明主体首帧，再分别生成共享关键姿势与八张中间帧，确定性组装为 14 帧；四组均通过上游对 RGBA、透明角、首尾字节一致、关键帧一致和 GIF 帧数的结构验证。视觉 QA 仍发现自行车、相机和猫狗部分中间帧存在尺度跳变，按上游硬门槛不能视为生产级通过；这里保留真实输出并明确暴露这一失败面，而没有用逐帧缩放掩盖。
+
+</details>
+
+<p align="center">
+  <a href="examples/2dimg2motion/README.md"><img src="assets/showcase-previews/2dimg2motion.webp" alt="2dimg2motion 的四张统一输入生成预览" width="100%" loading="lazy"></a>
+</p>
 
 ### [Generate 2D Map](https://github.com/0x0funky/agent-sprite-forge/tree/main/skills/generate2dmap)
 
@@ -1534,9 +1704,13 @@ OpenAI 官方组合型 skill。先通过 ImageGen 设计完整页面、界面状
 
 **备注**
 
-这是地图生产与引擎交付 Skill，不只是风格化场景生成。我们现有四张照片可以测试它对题材、配色和空间线索的迁移能力，但不能完整覆盖碰撞、可玩性和引擎接线；这些能力需要另设地图型输入才能公平验证。
+这是地图生产与引擎交付 Skill，不只是风格化场景生成。本次四张实测分别得到可进入的切顶咖啡馆、环湖探索关卡、摄影工作室和宠物互动客厅；关键建筑、桥与红伞、两名人物与相机、猫狗与毛线球都得到清楚迁移，地图层级和行走空间也可读。但展示的是单张 flattened map preview，没有继续拆分 terrain、props、collision、zones 或引擎场景，因此只验证了视觉规划与题材迁移，不能代表完整运行时交付。
 
 </details>
+
+<p align="center">
+  <a href="examples/generate2dmap/README.md"><img src="assets/showcase-previews/generate2dmap.webp" alt="generate2dmap 的四张统一输入生成预览" width="100%" loading="lazy"></a>
+</p>
 
 ### [Minecraft Image Generation](https://github.com/Jahrome907/minecraft-agent-skills/tree/main/.codex/skills/minecraft-imagegen)
 
@@ -1630,6 +1804,32 @@ OpenAI 官方 game-studio skill：从基准角色或 seed frame 生成动作条�
 <p align="center">
   <a href="examples/video-storyboard/README.md"><img src="assets/showcase-previews/video-storyboard.webp" alt="video-storyboard 的四张统一输入生成预览" width="100%" loading="lazy"></a>
 </p>
+
+### [Cinematic Storyboard Sheet](https://github.com/0xagi-bsky-social/Codex-Skills/tree/main/cinematic-storyboard-sheet)
+
+把剧本或 shot list 生成一张黑底纵向电影分镜表：左侧连续画幅，右侧为镜头动作、机位、镜头、运动、灯光与对白说明。
+
+- **Author:** [0xagi-bsky-social](https://github.com/0xagi-bsky-social)
+- **Input:** 故事文本、剧本、分镜清单或带角色参考的场景描述
+- **Output:** 一张连续纵向 storyboard sheet，每格左侧为 3:2 画面，右侧为结构化镜头信息
+- **ImageGen role:** 必须调用 `image_gen` 直接产出最终图片；提供参考图时持续约束人物身份、服装与道具连续性
+- **Structure:** `cinematic-storyboard-sheet/` 中的 `SKILL.md` 与 `agents/openai.yaml`；无独立脚本或随包样例
+- **License:** MIT（随 `Codex-Skills` 主仓库）
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- 固定黑色画布、纵向连续结构和“画面在左、说明在右”的电影制作表格语法，不是常见九宫格缩略图。
+- 每格要求 Timestamp、Shot Number、Shot Title、Action、Camera/Lens/Movement 与 Lighting/Color，可选 Dialogue，并明确禁止把日期当作时间戳。
+- 直接把连续性要求写进 image generation：角色面貌、服装、道具、空间方位与光色需要跨镜头保持。
+
+**备注**
+
+它的格式清楚、适合把镜头语言和画面放在一张交付物中，但也把可读文字、严格版式和人物连续性同时交给生成模型，这三项都应在实测中重点核对。上游目前没有随包成品或 eval，因此收录只代表工作流值得测试，不代表排版与文字准确率已经得到验证。
+
+</details>
 
 ### [TT Material Animation](https://github.com/pbwheel/tt-design/tree/main/skills/tt-material-animation)
 

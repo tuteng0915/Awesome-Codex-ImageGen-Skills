@@ -6,8 +6,8 @@
   <p>
     <a href="https://github.com/sindresorhus/awesome"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
     <img src="https://img.shields.io/badge/Codex-ImageGen-111827?style=flat-square&logo=openai&logoColor=white" alt="Codex ImageGen">
-    <img src="https://img.shields.io/badge/skills-55-ec4899?style=flat-square" alt="55 curated skill entries">
-    <img src="https://img.shields.io/badge/generated_samples-236-7c3aed?style=flat-square" alt="236 generated samples">
+    <img src="https://img.shields.io/badge/skills-62-ec4899?style=flat-square" alt="62 curated skill entries">
+    <img src="https://img.shields.io/badge/generated_samples-252-7c3aed?style=flat-square" alt="252 generated samples">
     <a href="#contributing"><img src="https://img.shields.io/badge/PRs-welcome-22c55e?style=flat-square" alt="PRs welcome"></a>
   </p>
   <p>
@@ -749,12 +749,43 @@ Maps a natural-language request and optional product reference to hero images, l
 
 **Notes**
 
-This is fundamentally an e-commerce template router plus a nested Codex CLI executor, not a direct caller of the current harness tool. Its `allowed-tools` frontmatter follows a Claude-style convention, the normal path launches a new `codex exec` process, and result handling assumes `~/.codex/generated_images/`; cleanup instructions also delete the corresponding session directory, so paths and deletion scope should be audited before integration elsewhere. Our samples cover a storefront, a four-season umbrella campaign, camera lifestyle photography, and pet-toy UGC. The storefront and portrait routes change the source conservatively, the seasonal grid demonstrates the clearest template value, and UGC mainly changes crop and texture. The 25 templates do not ship with per-template outputs or automated evals, so logos, packaging text, exact structure, and grid consistency remain manual review items.
+This is fundamentally an e-commerce template router plus a nested Codex CLI executor, not a direct caller of the current harness tool. Its `allowed-tools` frontmatter follows a Claude-style convention, the normal path launches a new `codex exec` process, and result handling assumes `~/.codex/generated_images/`; cleanup instructions also delete the corresponding session directory, so paths and deletion scope should be audited before integration elsewhere. Our four runs route the fixtures into a four-view café campaign, a four-season red-umbrella product campaign, camera lifestyle photography, and a creative pet-toy advertisement. Every result redesigns the composition and use context instead of substituting a light grade or crop for transformation. The storefront and seasonal sets expose cross-panel consistency, the camera image preserves both identities and the product color, and the pet image turns the cat–dog interaction into a clear product hero. The 25 templates do not ship with per-template outputs or automated evals, so logos, packaging text, exact structure, and grid consistency remain manual review items.
 
 </details>
 
 <p align="center">
   <a href="examples/gpt-image2-ecommerce/README.md"><img src="assets/showcase-previews/gpt-image2-ecommerce.webp" alt="gpt-image2-ecommerce — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
+
+### [SellerPilot Product Image Industrial](https://github.com/ninemouth/sellerpilot-product-image-industrial)
+
+An industrial product-image production system for real commercial delivery: it turns source photography, verified product facts, and platform requirements into hero, detail, lifestyle, and localized image sets, then reviews and repairs them through identity, physical-truth, copy, background, and lineage gates.
+
+- **Author:** [ninemouth](https://github.com/ninemouth)
+- **Input:** One or more authorized product images or URLs, product and audience information, target platform, locale/language, and image count; optional competitor references and an existing run
+- **Output:** One final product image or a multi-image commerce set with manifests, lineage, QA state, a set overview, an optional tldraw review workspace, and resumable revision tasks
+- **ImageGen role:** Locks to `native_codex` when the current Codex host exposes built-in `image_gen`, creates a risk-adaptive anchor first, then fills the remaining approved roles concurrently; scripts compile tasks, evidence, and gates rather than substituting local drawings for final scenes
+- **Structure:** Root `SKILL.md`, Codex metadata, platform profiles, production contracts/workflows, 40+ references and policies, a full suite of Node.js orchestration and QA scripts, JSON Schemas, tests, templates, and a tldraw review workspace
+- **License:** MIT
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Compiles a normalized task once into a single production contract, run-local DAG, generation jobs, and shared run state instead of maintaining drifting copies of each platform workflow.
+- Locks silhouette, material, proportions, components, visible text, supported claims, and physical facts to source evidence; competitor imagery is analysis-only and is never passed as if it were the user's product reference.
+- Includes profiles for Amazon, Taobao/Tmall, JD, Pinduoduo, Douyin, Xiaohongshu, Temu, TikTok Shop, Shopee/Lazada, Ozon, and others, with localized copy and exact-text proof inside the gate system.
+- Validates identity and direction with a small anchor batch before generating only approved missing roles; final delivery preserves full lineage, and tldraw annotations can route the smallest affected repair.
+
+**Notes**
+
+Its boundary with GPT Image 2 Ecommerce is clear: that entry is a lightweight router over 25 visual templates, while SellerPilot is a contract-driven production control plane with broader coverage and substantially greater setup, context, and runtime cost. Our four runs treat the café space, red umbrella, camera, and yarn ball as a storefront experience or sellable object. The results consistently preserve architecture, product geometry, human identity, and animal count while applying restrained commercial art direction. They test the native Codex ImageGen visual endpoint only, not the full contract DAG, platform gates, or tldraw revision loop, and do not endorse an external service, marketing outcome, or upstream self-test result.
+
+</details>
+
+<p align="center">
+  <a href="examples/sellerpilot-product-image-industrial/README.md"><img src="assets/showcase-previews/sellerpilot-product-image-industrial.webp" alt="sellerpilot-product-image-industrial — four standardized generated samples" width="100%" loading="lazy"></a>
 </p>
 
 <a id="craft--textile"></a>
@@ -917,6 +948,84 @@ This is an explicitly attributed derivative of Ian's workflow, not a duplicate u
 <p align="center">
   <a href="examples/lulu-article-illustrations/README.md"><img src="assets/showcase-previews/lulu-article-illustrations.webp" alt="lulu-article-illustrations — four standardized generated samples" width="100%" loading="lazy"></a>
 </p>
+
+### [Illo](https://github.com/tmchow/illo-skill)
+
+Turns articles, ideas, and processes into original print-style editorial illustrations in which a recurring character acts out one central metaphor.
+
+- **Author:** [Trevin Chow](https://github.com/tmchow)
+- **Input:** A sentence, article, process, or concept, with an optional custom character and style
+- **Output:** A single scene, mini-comic, explainer diagram, or transparent character cutout
+- **ImageGen role:** Distills one visual metaphor, then renders through Codex, Grok, or OpenRouter image backends; failed subscription routes do not silently fall through to a paid API
+- **Structure:** Multi-platform plugin metadata, the main skill under `skills/illo/`, style and character references, rendering scripts, tests, and a separate character-pack repository
+- **License:** MIT; the default Blot character and bundled artwork are covered by `NOTICE`, which requires retaining the “Illo by Trevin Chow” credit when used or redistributed
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Offers more than ten print and material directions, community character packs, and custom characters rather than a single fixed prompt.
+- Compresses abstract content into “one character, one action, one metaphor,” while also supporting flowcharts, mini-comics, and explainers.
+- Encodes model, cost, and failure behavior in the execution layer so an unavailable subscription does not trigger an unauthorized paid fallback.
+
+**Notes**
+
+This is a comparatively mature cross-harness illustration tool, with a richer character and style ecosystem than a single-file skill. MIT covers the code and instructions, but bundled characters and artwork still follow `NOTICE`; our future shared-input run should use an original character or an explicitly permitted pack and record the actual image backend.
+
+</details>
+
+### [Gimi Illustration](https://github.com/GiMi-Xiaomi/gimi-illustration-skill)
+
+Breaks Chinese articles and spoken-video scripts into a shot plan, then generates a series of illustrations with a consistent character IP, title treatment, and style contract.
+
+- **Author:** [Gimi (米未可)](https://github.com/GiMi-Xiaomi)
+- **Input:** Chinese article, spoken-video script, or topic, with optional front-view custom-IP reference, dimensions, title, and style
+- **Output:** A set of article illustrations, `shot-config.md`, and a final output directory
+- **ImageGen role:** Confirms the visual plan and character calibration first, then calls the host `image_gen` per shot; formal IP mode requires both the character definition and the current style-calibration reference
+- **Structure:** Root `SKILL.md`, three style references, IP templates and calibration material, docs, examples, Codex metadata, License, and IP Notice
+- **License:** Skill code and documentation are MIT; the default Gimi character IP is excluded from MIT—personal non-commercial use is allowed, while standalone reference redistribution, commercial identity, or merchandise requires separate permission
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Public 3.0 includes quirky sketch, warm storybook, and product proposal directions, with titles, aspect ratios, and character consistency managed in one shot plan.
+- Custom-IP enrollment has explicit registration and calibration gates: generation waits for visual-plan approval and will not enter formal rendering without both required references.
+- `IP=none` bypasses the default character entirely, making it suitable for testing the general article-illustration workflow without proprietary IP.
+
+**Notes**
+
+Its main contribution is the full article-to-shots-to-character-calibration-to-batch pipeline, not just an illustration look. Because the default Gimi character has its own IP Notice, our four-fixture run should use `IP=none` or a synthetic character we own; this list does not misrepresent the MIT code license as permission to commercialize the character.
+
+</details>
+
+### [Editorial Line System](https://github.com/huxiang1126/editorial-line-system)
+
+Converts text, images, or brand concepts into a visual system of monochrome geometric line characters, strong editorial typography, generous negative space, and sparse pastel blocks.
+
+- **Author:** [huxiang1126](https://github.com/huxiang1126)
+- **Input:** Text, image, brand name, product, app, campaign concept, or a mixed brief
+- **Output:** PNG editorial poster, brand-system board, image-to-illustration conversion, or multi-application campaign board; HTML is optional when explicitly requested
+- **ImageGen role:** Calls `image_gen` directly for PNG generation or editing by default; image inputs should preserve the subject, pose, composition, and recognizable objects
+- **Structure:** A single root `SKILL.md`, with no separate README, reference assets, examples, scripts, or evals yet
+- **License:** No license declared upstream
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Defines a clear visual DNA: monochrome line characters, flat geometric proportions, asymmetric magazine hierarchy, and restrained yellow, orange, pink, or cream accents.
+- Routes text, image, brand, and mixed inputs differently; multi-concept material becomes a multi-panel system rather than a plain text card.
+- Calls out image generation's text limitations and offers HTML/SVG or post-typesetting when long exact copy matters.
+
+**Notes**
+
+This is a compact style system with limited evidence so far: the repository currently contains one commit and one `SKILL.md`, with no bundled examples or automated checks. Its rules are directly reproducible, but cross-subject stability remains unproven; the missing license also means copying, modifying, redistributing, or commercial use should wait for the author's permission.
+
+</details>
 
 ### [Ian Xiaohei Illustrations](https://github.com/helloianneo/ian-xiaohei-illustrations)
 
@@ -1404,6 +1513,32 @@ The upstream test suite passes 12/12 locally. Two 1254×1254 examples also demon
   <a href="examples/hiapi-icon-skills/README.md"><img src="assets/showcase-previews/hiapi-icon-skills.webp" alt="hiapi-icon-skills — four standardized generated samples" width="100%" loading="lazy"></a>
 </p>
 
+### [oil-icon](https://github.com/oil-oil/oil-icon)
+
+Generates a cohesive icon set as one grid, then slices it, removes backgrounds, and reviews each cell to deliver production-ready transparent PNGs.
+
+- **Author:** [oil-oil](https://github.com/oil-oil)
+- **Input:** An icon list with concrete metaphors, plus an optional built-in style, brand page, logo, design tokens, or palette
+- **Output:** 9 or 16 stylistically consistent transparent PNG icons, the source sheet, and review results
+- **ImageGen role:** Prefers the host's built-in `image_gen` for a 3×3 or 4×4 sheet on flat gray; deterministic scripts then slice, remove the background, and inspect gray fringe and cross-cell leakage
+- **Structure:** Root `SKILL.md`, nine style presets, brand-adaptation and prompt references, slicing/background-removal/configuration scripts, tests, and showcase assets
+- **License:** MIT
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Freezes palette, viewpoint, stroke, corner radius, material, and signature motif before generation, then keeps the full set in one visual context to reduce per-icon drift.
+- Ships linear, filled, color-block, cartoon, isometric, soft 3D, sticker, realistic, and animal-badge starting points, and can derive a custom system from existing brand assets.
+- Uses color-key removal for hard edges and an optional background-removal model for soft materials; high-contrast QA checks fringe, spill, and set consistency.
+
+**Notes**
+
+What separates it from a generic icon prompt is its real batch-production post-processing. It best suits larger feature, category, marketing, and empty-state icons; the author explicitly recommends a vector icon library for 16–24px functional glyphs. A single grid helps consistency but does not guarantee it, so every icon still needs review.
+
+</details>
+
 ### [Identity Skill](https://github.com/Sac-Y/identity-skill)
 
 An image-first personal-site workflow that generates and locks section references before extracting assets, implementing, and validating the site.
@@ -1506,9 +1641,44 @@ A production-oriented 2D sprite workflow that plans characters, creatures, props
 
 **Notes**
 
-Its scope is broader than the existing Sprite Pipeline: that entry focuses on normalizing action strips from one approved seed, while this Skill also handles asset planning, reference-derived variants, character/FX separation, complex atlases, and engine delivery. The workflow is substantial, but each action still needs visual QA because scripts cannot determine whether identity has drifted.
+Its scope is broader than the existing Sprite Pipeline: that entry focuses on normalizing action strips from one approved seed, while this Skill also handles asset planning, reference-derived variants, character/FX separation, complex atlases, and engine delivery. Our runs extract the red bicycle, red umbrella, turquoise camera, and cat–dog pair from the four photographs, generate 2×3 action grids on pure magenta, then use the upstream processor to export transparent RGBA sheets. Frame count, subject identity, and edge safety are generally stable, although the first three read more as animated prop-state studies and do not cover a multi-action character atlas or engine delivery.
 
 </details>
+
+<p align="center">
+  <a href="examples/generate2dsprite/README.md"><img src="assets/showcase-previews/generate2dsprite.webp" alt="generate2dsprite — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
+
+### [2dimg2motion](https://github.com/WU-HAOTIAN34/2dimg2motion)
+
+Expands one static 2D character, creature, vehicle, weapon, or prop baseline into an identity- and motion-consistent transparent frame sequence, spritesheet, and loop preview. Its core method redraws complete key poses instead of rotating or stretching pieces of the source.
+
+- **Author:** [Haotian Wu / WU-HAOTIAN34](https://github.com/WU-HAOTIAN34)
+- **Input:** One standardized or standardizable 2D baseline image, action type, facing direction, frame count/timing, canvas, and delivery requirements
+- **Output:** By default, 14 transparent RGBA full frames, four fixed-index keyframes, a spritesheet, contact sheet, white-background GIF preview, prompt document, and manifest
+- **ImageGen role:** Uses built-in `image_gen` with the baseline as the identity anchor, generates four complete key poses at 02/05/08/11 in a shared pose sheet, then creates in-betweens from adjacent anchors
+- **Structure:** Root `SKILL.md`, Codex metadata, key-pose and motion-prompt references, baseline-standardization/GIF/14-frame validation scripts, six source sets, and seven GIF examples
+- **License:** MIT
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Its fixed 14-frame plan uses six immutable anchors in the order `00 → 02 → 05 → 08 → 11 → 13`, with `1/2/2/2/1` in-betweens prescribed across the five segments.
+- Establishes topology locks for the active limb, anchor limb, shoulder, weapon hand, and screen-space side; hand swaps, disconnected limbs, duplicated weapons, scale popping, and cropping are hard failures that require regeneration.
+- The chroma key must not collide with subject colors. Local scripts may remove backgrounds, normalize canvases, split, pack, and validate, but may not fabricate motion through rotation, scaling, affine transforms, or copy-paste.
+- Combines deterministic checks for count, names, RGBA, transparent corners, byte-identical endpoints, and keyframe matches with mandatory inspection of the contact sheet and GIF, catching cases where structure passes but motion fails visually.
+
+**Notes**
+
+It overlaps with Generate 2D Sprite and Sprite Pipeline, but goes narrower and deeper: it generates one action from one approved baseline while treating limb topology and temporal continuity as first-class constraints. Our runs use the full two-stage adaptation: reuse a transparent extracted subject as the baseline, generate shared key poses and eight in-betweens separately, then assemble a deterministic 14-frame sequence. All four pass the upstream structural checks for RGBA, transparent corners, byte-identical endpoints, keyframe identity, and GIF frame count. Visual QA still finds scale popping in some bicycle, camera, and cat–dog in-betweens, so the results do not pass the upstream production bar. They are kept as honest evidence rather than concealed with per-frame scaling.
+
+</details>
+
+<p align="center">
+  <a href="examples/2dimg2motion/README.md"><img src="assets/showcase-previews/2dimg2motion.webp" alt="2dimg2motion — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Generate 2D Map](https://github.com/0x0funky/agent-sprite-forge/tree/main/skills/generate2dmap)
 
@@ -1533,9 +1703,13 @@ Plans baked backgrounds, layered scenes, tilemaps, or side-scrolling stages from
 
 **Notes**
 
-This is a map-production and engine-delivery Skill, not merely a stylized scene generator. Our four photographic fixtures can test how it transfers subject matter, palette, and spatial cues, but they cannot fairly cover collision, playability, or engine wiring; those capabilities need a dedicated map-shaped input.
+This is a map-production and engine-delivery Skill, not merely a stylized scene generator. Our four runs produce an enterable cutaway café, a lake-loop exploration level, a photography studio, and a pet-interaction living room. The café landmark, bridge and red umbrella, two people and camera, and cat–dog–yarn relationship all transfer clearly, with readable map hierarchy and circulation. These are single flattened map previews; terrain, props, collision, zones, and engine scenes were not split out, so the evidence covers visual planning and subject transfer rather than full runtime delivery.
 
 </details>
+
+<p align="center">
+  <a href="examples/generate2dmap/README.md"><img src="assets/showcase-previews/generate2dmap.webp" alt="generate2dmap — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Minecraft Image Generation](https://github.com/Jahrome907/minecraft-agent-skills/tree/main/.codex/skills/minecraft-imagegen)
 
@@ -1629,6 +1803,32 @@ The domain information architecture is clear, but the repository ships no finish
 <p align="center">
   <a href="examples/video-storyboard/README.md"><img src="assets/showcase-previews/video-storyboard.webp" alt="video-storyboard — four standardized generated samples" width="100%" loading="lazy"></a>
 </p>
+
+### [Cinematic Storyboard Sheet](https://github.com/0xagi-bsky-social/Codex-Skills/tree/main/cinematic-storyboard-sheet)
+
+Turns a script or shot list into one black vertical cinematic storyboard sheet, with continuous frames on the left and action, camera, lens, movement, lighting, and dialogue notes on the right.
+
+- **Author:** [0xagi-bsky-social](https://github.com/0xagi-bsky-social)
+- **Input:** Story text, screenplay, shot list, or scene description with optional character references
+- **Output:** One continuous vertical storyboard sheet, with a 3:2 image on the left of each row and structured shot information on the right
+- **ImageGen role:** Must call `image_gen` for the final image; when references are supplied, it carries character identity, wardrobe, and prop continuity across shots
+- **Structure:** `SKILL.md` and `agents/openai.yaml` under `cinematic-storyboard-sheet/`; no separate scripts or bundled examples
+- **License:** MIT, inherited from the `Codex-Skills` repository
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Fixes a black canvas, continuous vertical structure, and a production-sheet grammar of “image left, notes right,” rather than a conventional thumbnail grid.
+- Requires Timestamp, Shot Number, Shot Title, Action, Camera/Lens/Movement, and Lighting/Color for every row, with optional Dialogue, and explicitly rejects calendar dates as timestamps.
+- Carries continuity requirements directly into image generation: face, wardrobe, props, spatial orientation, and lighting palette should persist across shots.
+
+**Notes**
+
+The format is clear and useful for keeping shot language beside the image, but it also asks the image model to solve readable text, strict layout, and character continuity at once—all three deserve focused verification. With no bundled outputs or evals upstream, inclusion means the workflow is worth testing, not that typography and layout accuracy have already been proven.
+
+</details>
 
 ### [TT Material Animation](https://github.com/pbwheel/tt-design/tree/main/skills/tt-material-animation)
 

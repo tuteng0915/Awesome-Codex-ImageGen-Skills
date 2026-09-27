@@ -1,8 +1,14 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-16",
+  "updated_at": "2026-09-27",
   "notes": "Read-only local review clones. The upstream/ directory is gitignored; this file records the reviewed revisions without vendoring third-party code.",
   "sources": [
+    {
+      "name": "2dimg2motion",
+      "url": "https://github.com/WU-HAOTIAN34/2dimg2motion.git",
+      "commit": "d4d73e243b6ff64b7cbb3879e45e951f972a7e62",
+      "scope": "root SKILL.md, references, animation helpers, and examples"
+    },
     {
       "name": "30x-image",
       "url": "https://github.com/norahe0304-art/30x-image.git",
@@ -177,6 +183,12 @@
       "commit": "0091403bccb219d1be78c5be8552de29a6446f0a"
     },
     {
+      "name": "sellerpilot-product-image-industrial",
+      "url": "https://github.com/ninemouth/sellerpilot-product-image-industrial.git",
+      "commit": "4a399d6ffe926079472e6d1118140548a8b28496",
+      "scope": "root SKILL.md, production contracts, platform workflows, QA gates, and review tooling"
+    },
+    {
       "name": "skill-make-photo-stamp-archive",
       "url": "https://github.com/Dlcccc71913/skill-make-photo-stamp-archive.git",
       "commit": "1eaae73ad1d4b64a56cee297a924d253f860ac5b"
@@ -266,6 +278,36 @@
       "url": "https://github.com/izscc/cc2image.git",
       "commit": "33b18b399fcfc6a54a7c4cc2d137fa3dfd3afad8",
       "scope": "suite SKILL.md, style options, prompt schema and MIT license; samples pending explicit style selection; asset rights unverified"
+    },
+    {
+      "name": "oil-icon",
+      "url": "https://github.com/oil-oil/oil-icon.git",
+      "commit": "afb20072cb29a7b45d6f36a203648beb0535c710",
+      "scope": "root SKILL.md, nine style presets, references, slicing and background-removal scripts, tests, showcase assets, and MIT license"
+    },
+    {
+      "name": "illo-skill",
+      "url": "https://github.com/tmchow/illo-skill.git",
+      "commit": "0b0abee9214d9cef3c9f42d5c739a0d63cb618e6",
+      "scope": "skills/illo, multi-platform plugin metadata, rendering engines, tests, MIT license, and character/artwork NOTICE"
+    },
+    {
+      "name": "gimi-illustration-skill",
+      "url": "https://github.com/GiMi-Xiaomi/gimi-illustration-skill.git",
+      "commit": "0f602eaf5c50c8b0c7a4619ce53095cfc9e30622",
+      "scope": "root SKILL.md, three style systems, IP enrollment and calibration references, examples, MIT license, and separate IP Notice"
+    },
+    {
+      "name": "cinematic-storyboard-sheet",
+      "url": "https://github.com/0xagi-bsky-social/Codex-Skills.git",
+      "commit": "e0f5d34de56f464ffaf8f2a41c8cb1135af24b8b",
+      "scope": "cinematic-storyboard-sheet/SKILL.md, Codex metadata, and repository MIT license"
+    },
+    {
+      "name": "editorial-line-system",
+      "url": "https://github.com/huxiang1126/editorial-line-system.git",
+      "commit": "03f5be1601de18473853f633202e833523e5095c",
+      "scope": "single root SKILL.md; no README, examples, supporting assets, evals, or declared license"
     }
   ]
 }
