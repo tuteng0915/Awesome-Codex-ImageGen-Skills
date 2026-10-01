@@ -6,8 +6,8 @@
   <p>
     <a href="https://github.com/sindresorhus/awesome"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
     <img src="https://img.shields.io/badge/Codex-ImageGen-111827?style=flat-square&logo=openai&logoColor=white" alt="Codex ImageGen">
-    <img src="https://img.shields.io/badge/skills-62-ec4899?style=flat-square" alt="62 curated skill entries">
-    <img src="https://img.shields.io/badge/generated_samples-252-7c3aed?style=flat-square" alt="252 generated samples">
+    <img src="https://img.shields.io/badge/skills-63-ec4899?style=flat-square" alt="63 curated skill entries">
+    <img src="https://img.shields.io/badge/generated_samples-276-7c3aed?style=flat-square" alt="276 generated samples">
     <a href="#contributing"><img src="https://img.shields.io/badge/PRs-welcome-22c55e?style=flat-square" alt="PRs welcome"></a>
   </p>
   <p>
@@ -442,6 +442,36 @@
 
 <p align="center">
   <a href="examples/hbg-travel-photo-redraw/README.md"><img src="assets/showcase-previews/hbg-travel-photo-redraw.webp" alt="hbg-travel-photo-redraw 的四张统一输入生成预览" width="100%" loading="lazy"></a>
+</p>
+
+### [Intaglio Travel Poster](https://github.com/karylee996/Intaglio-Travel-Poster)
+
+把旅行、建筑、风景、城市或人像照片转绘为横版雕版印刷研究海报：保留原图的主体、空间和光线，用细密刻线、低饱和油墨与少量虚构防伪纹样重新表现。
+
+- **Author:** [karylee996](https://github.com/karylee996)
+- **Input:** 一张旅行、建筑、风景、城市或人像照片；可提供确定的英文地名
+- **Output:** 每张照片对应一张独立的 16:9 横版雕版风格海报
+- **ImageGen role:** 将原图作为结构参考交给宿主图像生成/编辑工具，转绘雕版线条与纸张质感；上游没有指定 `image_gen` 调用接口或可执行脚本
+- **Structure:** 根目录 `SKILL.md` 与简短 `README.md`；暂无示例图片、references、自动检查或脚本
+- **License:** 上游未声明开源许可证
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- 明确约束人物和建筑数量、姿态、地标几何、透视、天际线、地形水系、光照方向与主要色彩，装饰只进入原图留白。
+- 用平行刻线、交叉排线、点刻与线密度塑造明暗；白天、黄昏和夜景分别规定纸色、墨色与灯光的转换方式。
+- 防伪纹样必须是原创、抽象、非官方的装饰，禁止真实面额、银行、印章、序列号或可被误认为流通货币的版式。
+
+**备注**
+
+四张统一输入已用 Codex 内置 ImageGen 实测：建筑、湖桥、双人与猫狗的主体关系都能转成雕版线条与纸面质感，海报文字仍需人工复核。这验证了本仓库的宿主适配，不代表上游自带 Codex 集成。上游仍未提供成品或复现记录；地点不确定时应用宽泛标签或省略。许可证尚未声明，复制或再分发上游文件前应向作者确认。
+
+</details>
+
+<p align="center">
+  <a href="examples/intaglio-travel-poster/README.md"><img src="assets/showcase-previews/intaglio-travel-poster.webp" alt="intaglio-travel-poster 的四张统一输入生成预览" width="100%" loading="lazy"></a>
 </p>
 
 ### [Travel Memory Sticker Card](https://github.com/carolinaaafy/travel-memory-sticker-card)
@@ -972,9 +1002,13 @@ showcase 中的动物、幽灵、机器人和物件整体具有清楚的圆形�
 
 **备注**
 
-这是成熟度较高的跨 harness 插画工具，角色与风格生态比单文件 skill 完整得多。MIT 适用于代码与说明，但随包角色和 artwork 仍需要遵守 `NOTICE`；后续统一测试应优先使用原创角色或作者明确允许的角色包，并记录实际图像后端。
+四张统一输入以默认 Blot 角色、`ink-punch` 孔版配色和 Codex 内置 ImageGen 生成。墨滴在开门、扶伞、推相机与调停毛线球时承担画面动作；景物和人物会主动简化，因此这组样例测试的是隐喻与角色一致性，不是照片级还原。MIT 适用于代码与说明，使用或分发默认角色及 artwork 时仍须遵守 `NOTICE`，署名 “Illo by Trevin Chow”。
 
 </details>
+
+<p align="center">
+  <a href="examples/illo/README.md"><img src="assets/showcase-previews/illo.webp" alt="illo 的四张统一输入生成预览" width="100%" loading="lazy"></a>
+</p>
 
 ### [Gimi Illustration](https://github.com/GiMi-Xiaomi/gimi-illustration-skill)
 
@@ -998,9 +1032,13 @@ showcase 中的动物、幽灵、机器人和物件整体具有清楚的圆形�
 
 **备注**
 
-它的价值在于把“文章拆镜—角色校准—批量生成”连成完整流程，而不是只提供一个画风。默认 Gimi 角色有单独的 IP Notice，因此后续四张 fixture 应使用 `IP=none` 或自有合成角色；清单不会把 MIT 代码许可误写成角色可自由商用。
+四张样例先把 fixture 内容压缩成短篇配图意图，再用 `IP=none`、默认怪诞手绘风格和上游无角色校准图生成；未使用默认 Gimi 角色。它们呈现的是物件、关系与手绘动线的迁移，不承诺人物照片级身份还原。默认 Gimi 角色有单独的 IP Notice，不能把 MIT 代码许可理解成角色可自由商用。
 
 </details>
+
+<p align="center">
+  <a href="examples/gimi-illustration/README.md"><img src="assets/showcase-previews/gimi-illustration.webp" alt="gimi-illustration 的四张统一输入生成预览" width="100%" loading="lazy"></a>
+</p>
 
 ### [Editorial Line System](https://github.com/huxiang1126/editorial-line-system)
 
@@ -1024,9 +1062,13 @@ showcase 中的动物、幽灵、机器人和物件整体具有清楚的圆形�
 
 **备注**
 
-这是一个紧凑但证据仍少的风格系统：当前仓库只有一次提交和一份 `SKILL.md`，没有随包样例或自动检查。其规则可直接复现，但尚不能据此判断跨题材稳定性；许可证缺失也意味着复制、改编、再分发或商用前应先联系作者确认。
+四张统一输入已按图片转插画路径实测：大标题、线描主体和少量柔和色块在建筑、景观、人物、动物间保持一致，关键物件总体可辨。标题与细小文字仍应逐张检查。上游目前只有一份 `SKILL.md`，没有随包样例或自动检查；许可证缺失，复制、改编、再分发或商用前应先联系作者确认。
 
 </details>
+
+<p align="center">
+  <a href="examples/editorial-line-system/README.md"><img src="assets/showcase-previews/editorial-line-system.webp" alt="editorial-line-system 的四张统一输入生成预览" width="100%" loading="lazy"></a>
+</p>
 
 ### [Ian Xiaohei Illustrations](https://github.com/helloianneo/ian-xiaohei-illustrations)
 
@@ -1536,9 +1578,13 @@ OpenAI 官方组合型 skill。先通过 ImageGen 设计完整页面、界面状
 
 **备注**
 
-它与通用图标 prompt 的差别在于包含真实的批量生产后处理。最适合较大的 feature、category、marketing 与 empty-state 图标；作者也明确建议 16–24px 功能 glyph 改用矢量图标库。一次宫格生成有助于一致性，但仍需要逐个检查，不能把它当作保证。
+四张 fixture 各提炼 16 个图标概念，按内置 `colorblock` 风格生成 4×4 灰底宫格，再运行上游脚本切分、去底，交付 64 枚单独的透明 PNG。下方每张样例是对应输入的透明图标集预览，点击可查看和下载各枚图标；原始灰底 sheet 留在不入库的本地测试目录。它适合较大的分类或营销图标，16–24px 功能 glyph 仍更适合矢量库；一次宫格生成有助于一致性，但各格仍需单独检查。
 
 </details>
+
+<p align="center">
+  <a href="examples/oil-icon/README.md"><img src="assets/showcase-previews/oil-icon.webp" alt="oil-icon 的四张统一输入生成预览" width="100%" loading="lazy"></a>
+</p>
 
 ### [Identity Skill](https://github.com/Sac-Y/identity-skill)
 
@@ -1827,9 +1873,13 @@ OpenAI 官方 game-studio skill：从基准角色或 seed frame 生成动作条�
 
 **备注**
 
-它的格式清楚、适合把镜头语言和画面放在一张交付物中，但也把可读文字、严格版式和人物连续性同时交给生成模型，这三项都应在实测中重点核对。上游目前没有随包成品或 eval，因此收录只代表工作流值得测试，不代表排版与文字准确率已经得到验证。
+四张统一输入各生成一张三镜头纵向分镜表；黑底、左画面右镜头信息的结构基本稳定，双人服装与猫狗位置也能在同张表内保持。细小英文说明仍可能出现拼写或语义漂移，应在交付前人工校对，不能把生成图当作已验证的拍摄脚本。上游没有随包成品或 eval。
 
 </details>
+
+<p align="center">
+  <a href="examples/cinematic-storyboard-sheet/README.md"><img src="assets/showcase-previews/cinematic-storyboard-sheet.webp" alt="cinematic-storyboard-sheet 的四张统一输入生成预览" width="100%" loading="lazy"></a>
+</p>
 
 ### [TT Material Animation](https://github.com/pbwheel/tt-design/tree/main/skills/tt-material-animation)
 

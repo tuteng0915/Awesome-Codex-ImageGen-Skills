@@ -115,6 +115,16 @@ def build_detail_page(directory: Path, title: str, upstream: str) -> None:
   </tr>
 </table>
 """
+    if directory.name == "oil-icon":
+        icon_links = "\n".join(
+            f"- [{html.escape(label_zh)} · {html.escape(label_en)}]"
+            f"({Path(filename).stem}-icons/) — 16 transparent PNG icons"
+            for filename, label_zh, label_en in SAMPLES
+        )
+        page += (
+            "\n<details>\n<summary>逐枚透明图标 · Individual transparent icons</summary>\n\n"
+            f"{icon_links}\n\n</details>\n"
+        )
     (directory / "README.md").write_text(page, encoding="utf-8")
 
 

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-27",
+  "updated_at": "2026-10-01",
   "notes": "Read-only local review clones. The upstream/ directory is gitignored; this file records the reviewed revisions without vendoring third-party code.",
   "sources": [
     {
@@ -308,6 +308,12 @@
       "url": "https://github.com/huxiang1126/editorial-line-system.git",
       "commit": "03f5be1601de18473853f633202e833523e5095c",
       "scope": "single root SKILL.md; no README, examples, supporting assets, evals, or declared license"
+    },
+    {
+      "name": "intaglio-travel-poster",
+      "url": "https://github.com/karylee996/Intaglio-Travel-Poster.git",
+      "commit": "68d86197351846a43b45eb6246561fbebb408294",
+      "scope": "root SKILL.md and README; no declared license, bundled outputs, scripts, or explicit image_gen adapter"
     }
   ]
 }

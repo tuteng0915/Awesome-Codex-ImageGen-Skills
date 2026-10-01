@@ -6,8 +6,8 @@
   <p>
     <a href="https://github.com/sindresorhus/awesome"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
     <img src="https://img.shields.io/badge/Codex-ImageGen-111827?style=flat-square&logo=openai&logoColor=white" alt="Codex ImageGen">
-    <img src="https://img.shields.io/badge/skills-62-ec4899?style=flat-square" alt="62 curated skill entries">
-    <img src="https://img.shields.io/badge/generated_samples-252-7c3aed?style=flat-square" alt="252 generated samples">
+    <img src="https://img.shields.io/badge/skills-63-ec4899?style=flat-square" alt="63 curated skill entries">
+    <img src="https://img.shields.io/badge/generated_samples-276-7c3aed?style=flat-square" alt="276 generated samples">
     <a href="#contributing"><img src="https://img.shields.io/badge/PRs-welcome-22c55e?style=flat-square" alt="PRs welcome"></a>
   </p>
   <p>
@@ -441,6 +441,36 @@ The upstream repository publishes 17 style modules, with 27 examples across eigh
 
 <p align="center">
   <a href="examples/hbg-travel-photo-redraw/README.md"><img src="assets/showcase-previews/hbg-travel-photo-redraw.webp" alt="hbg-travel-photo-redraw — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
+
+### [Intaglio Travel Poster](https://github.com/karylee996/Intaglio-Travel-Poster)
+
+Transforms travel, architecture, landscape, cityscape, or portrait photographs into horizontal intaglio study posters, preserving the source's subjects, space, and light through fine engraving lines, muted inks, and restrained fictional security ornament.
+
+- **Author:** [karylee996](https://github.com/karylee996)
+- **Input:** One travel, architecture, landscape, cityscape, or portrait photo; an accurate English location label when known
+- **Output:** One independent 16:9 horizontal intaglio-style poster per photo
+- **ImageGen role:** Passes the source photo as a structural reference to the host's image generation or editing tool for engraved linework and paper texture; upstream does not specify an `image_gen` call or executable adapter
+- **Structure:** A root `SKILL.md` and short `README.md`; no bundled images, references, automated checks, or scripts yet
+- **License:** No open-source license declared upstream
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Explicitly locks subject and building counts, poses, landmark geometry, perspective, skyline, terrain and water, lighting direction, and identifying colors; ornament stays in the source's negative space.
+- Uses parallel engraving, cross-hatching, stippling, and line density for tonal modeling, with different paper, ink, and light treatments for day, dusk, and night scenes.
+- Requires original, abstract, non-governmental security ornament and excludes real denominations, banks, seals, serial numbers, or any layout that could be mistaken for circulating currency.
+
+**Notes**
+
+We tested all four shared inputs with Codex's built-in ImageGen. Architecture, the lake bridge, the two people, and the cat–dog interaction transfer well into engraved linework and paper texture; poster text still needs human review. This validates our host adaptation, not an upstream Codex integration. Upstream still supplies no finished examples or reproduction record. Use a broad location label or none when uncertain. Because no license is declared, obtain permission before copying or redistributing upstream files.
+
+</details>
+
+<p align="center">
+  <a href="examples/intaglio-travel-poster/README.md"><img src="assets/showcase-previews/intaglio-travel-poster.webp" alt="intaglio-travel-poster — four standardized generated samples" width="100%" loading="lazy"></a>
 </p>
 
 ### [Travel Memory Sticker Card](https://github.com/carolinaaafy/travel-memory-sticker-card)
@@ -971,9 +1001,13 @@ Turns articles, ideas, and processes into original print-style editorial illustr
 
 **Notes**
 
-This is a comparatively mature cross-harness illustration tool, with a richer character and style ecosystem than a single-file skill. MIT covers the code and instructions, but bundled characters and artwork still follow `NOTICE`; our future shared-input run should use an original character or an explicitly permitted pack and record the actual image backend.
+Our four shared-input examples use the default Blot character, the `ink-punch` riso palette, and Codex's built-in ImageGen. Blot performs the central move—opening a door, bracing an umbrella, pushing a camera, or holding the yarn—rather than appearing as decoration. People and scenery are deliberately simplified, so this tests metaphor and character consistency, not photographic fidelity. Code and instructions are MIT; use or redistribution of the default character and artwork must still retain the “Illo by Trevin Chow” credit under `NOTICE`.
 
 </details>
+
+<p align="center">
+  <a href="examples/illo/README.md"><img src="assets/showcase-previews/illo.webp" alt="illo — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Gimi Illustration](https://github.com/GiMi-Xiaomi/gimi-illustration-skill)
 
@@ -997,9 +1031,13 @@ Breaks Chinese articles and spoken-video scripts into a shot plan, then generate
 
 **Notes**
 
-Its main contribution is the full article-to-shots-to-character-calibration-to-batch pipeline, not just an illustration look. Because the default Gimi character has its own IP Notice, our four-fixture run should use `IP=none` or a synthetic character we own; this list does not misrepresent the MIT code license as permission to commercialize the character.
+For these four examples, we condensed each fixture into a short illustration intent, then rendered with `IP=none`, the default quirky-sketch style, and upstream's no-IP calibration images. We did not use the Gimi character. The results test how objects, relationships, and drawn reading paths carry over, not photorealistic identity preservation. The default Gimi character has a separate IP Notice; the MIT license for code is not permission to commercialize the character.
 
 </details>
+
+<p align="center">
+  <a href="examples/gimi-illustration/README.md"><img src="assets/showcase-previews/gimi-illustration.webp" alt="gimi-illustration — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Editorial Line System](https://github.com/huxiang1126/editorial-line-system)
 
@@ -1023,9 +1061,13 @@ Converts text, images, or brand concepts into a visual system of monochrome geom
 
 **Notes**
 
-This is a compact style system with limited evidence so far: the repository currently contains one commit and one `SKILL.md`, with no bundled examples or automated checks. Its rules are directly reproducible, but cross-subject stability remains unproven; the missing license also means copying, modifying, redistributing, or commercial use should wait for the author's permission.
+We tested the image-to-illustration route on all four fixtures. Large titles, line-drawn subjects, and restrained pastel blocks stay fairly consistent across architecture, landscape, people, and animals, with the main objects recognizable. Titles and small type still need per-image review. Upstream currently has one `SKILL.md` and no bundled examples or automated checks; because no license is declared, seek permission before copying, modifying, redistributing, or commercial use.
 
 </details>
+
+<p align="center">
+  <a href="examples/editorial-line-system/README.md"><img src="assets/showcase-previews/editorial-line-system.webp" alt="editorial-line-system — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Ian Xiaohei Illustrations](https://github.com/helloianneo/ian-xiaohei-illustrations)
 
@@ -1535,9 +1577,13 @@ Generates a cohesive icon set as one grid, then slices it, removes backgrounds, 
 
 **Notes**
 
-What separates it from a generic icon prompt is its real batch-production post-processing. It best suits larger feature, category, marketing, and empty-state icons; the author explicitly recommends a vector icon library for 16–24px functional glyphs. A single grid helps consistency but does not guarantee it, so every icon still needs review.
+We distilled each fixture into 16 icon concepts, generated a 4×4 gray-backed sheet in the built-in `colorblock` style, then used upstream's slicer for 64 individual transparent PNGs. Each example below is a transparent set preview; click through to inspect and download the icons. The raw gray sheets remain in our ignored local test directory. This suits larger category or marketing icons; 16–24px functional glyphs still favor vector libraries. One generated grid helps consistency, but each cell needs its own review.
 
 </details>
+
+<p align="center">
+  <a href="examples/oil-icon/README.md"><img src="assets/showcase-previews/oil-icon.webp" alt="oil-icon — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Identity Skill](https://github.com/Sac-Y/identity-skill)
 
@@ -1826,9 +1872,13 @@ Turns a script or shot list into one black vertical cinematic storyboard sheet, 
 
 **Notes**
 
-The format is clear and useful for keeping shot language beside the image, but it also asks the image model to solve readable text, strict layout, and character continuity at once—all three deserve focused verification. With no bundled outputs or evals upstream, inclusion means the workflow is worth testing, not that typography and layout accuracy have already been proven.
+Each shared input produced a vertical, three-shot sheet. The black ground and image-left/shot-notes-right structure are mostly stable; the two people's wardrobe and the animals' positions also carry across a sheet. Small English notes may still drift in spelling or meaning, so these images are not verified shooting scripts and need editorial review. Upstream supplies no finished outputs or evals.
 
 </details>
+
+<p align="center">
+  <a href="examples/cinematic-storyboard-sheet/README.md"><img src="assets/showcase-previews/cinematic-storyboard-sheet.webp" alt="cinematic-storyboard-sheet — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [TT Material Animation](https://github.com/pbwheel/tt-design/tree/main/skills/tt-material-animation)
 
