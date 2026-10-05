@@ -6,8 +6,8 @@
   <p>
     <a href="https://github.com/sindresorhus/awesome"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
     <img src="https://img.shields.io/badge/Codex-ImageGen-111827?style=flat-square&logo=openai&logoColor=white" alt="Codex ImageGen">
-    <img src="https://img.shields.io/badge/skills-63-ec4899?style=flat-square" alt="63 curated skill entries">
-    <img src="https://img.shields.io/badge/generated_samples-276-7c3aed?style=flat-square" alt="276 generated samples">
+    <img src="https://img.shields.io/badge/skills-65-ec4899?style=flat-square" alt="65 curated skill entries">
+    <img src="https://img.shields.io/badge/generated_samples-284-7c3aed?style=flat-square" alt="284 generated samples">
     <a href="#contributing"><img src="https://img.shields.io/badge/PRs-welcome-22c55e?style=flat-square" alt="PRs welcome"></a>
   </p>
   <p>
@@ -382,6 +382,36 @@
   <a href="examples/make-photo-stamp-archive/README.md"><img src="assets/showcase-previews/make-photo-stamp-archive.webp" alt="make-photo-stamp-archive 的四张统一输入生成预览" width="100%" loading="lazy"></a>
 </p>
 
+### [postmark](https://github.com/pamler1004/postmark)
+
+将旅行或风景照片重绘为完整的纪念邮票：主图置于齿孔纸框内，再按目的地组织国名、地名、面值和可选邮戳。
+
+- **Author:** [pamler1004（Leon）](https://github.com/pamler1004)
+- **Input:** 一张照片、地点与国家；可选六种画风、标语、信息密度和邮戳等参数
+- **Output:** 随原图方向变化的横版、竖版或方形邮票 PNG，并记录使用的 prompt 与信息来源
+- **ImageGen role:** 以原照片为场景参考，调用 Codex 内置 `imagegen` 一次生成邮票插画、齿孔、文字与邮戳；生成后逐项检查文字、事实信息和边距
+- **Structure:** `SKILL.md`、六份风格指南、排版与设计系统、prompt 模板、QA 清单、eval 和作者样例
+- **License:** MIT
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- 提供经典、水彩、复古、孔版、木刻和雕版六种主图画法；不是只给照片套同一枚邮票外框。
+- 按目的地选择中、英、日、法、韩五种票面语言，并明确规定辅助文字、标题轴线、面值与邮戳的层级。
+- 坐标、年份和地点别称必须有来源；无法核验就省略，避免为了“像邮票”而编造地理或发行资料。
+
+**备注**
+
+四张统一输入分别测试了孔版街角、水彩山湖、雕版双人与经典宠物邮票。fixture 都是合成图片，不附真实国家或拍摄地；本次明确给出虚构国家 `STORYLAND`、场景标题和装饰面值 `1`，邮戳中的 2026-10-05 只是制作日期，不代表照片拍摄或真实发行。它与 Make Photo Stamp Archive 的档案纸小图章不同，交付物本身是一整枚邮票。细小邮戳文字和严格边距仍应人工复核。
+
+</details>
+
+<p align="center">
+  <a href="examples/postmark/README.md"><img src="assets/showcase-previews/postmark.webp" alt="postmark 的四张统一输入生成预览" width="100%" loading="lazy"></a>
+</p>
+
 ### [Photo Revival / 废片焕新](https://github.com/dacnay816y62-hub/photo-revival)
 
 把普通照片和生活随手拍当作“记忆证据”，保留主体、空间关系与情绪，再重新画成白纸上极小而鲜活的一页诗性手绘插画。
@@ -503,6 +533,36 @@
 
 <p align="center">
   <a href="examples/travel-memory-sticker-card/README.md"><img src="assets/showcase-previews/travel-memory-sticker-card.webp" alt="travel-memory-sticker-card 的四张统一输入生成预览" width="100%" loading="lazy"></a>
+</p>
+
+### [Travel Ticket 旅行票根](https://github.com/zczc1001/artifact-template-travel-ticket)
+
+把照片放进有齿孔、撕票虚线和装饰条码的复古票根；纸质票券保持固定构图，外侧织物背景则从每张照片取低饱和辅助色。
+
+- **Author:** [zczc1001](https://github.com/zczc1001)
+- **Input:** 一张旅行照片或其他场景照片、简短票根标题与可选编号；随包参考图提供布局和材质锚点
+- **Output:** 一张 3:4 竖版收藏票根 PNG，含照片窗、纸质票券、装饰条码与协调的织物背景
+- **ImageGen role:** 将作者保留的参考图作为布局/材质参考，将用户照片作为内容/色彩参考，调用内置 `$imagegen` 生成并检查成品
+- **Structure:** 根目录 `SKILL.md`、`artifact-template.json`、`agents/openai.yaml`、参考图和预览图
+- **License:** MIT
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- 参考图锁定纸券比例、圆角照片窗、齿孔、撕票线、投影与条码位置，减少每次重新设计版式的漂移。
+- 背景不机械复刻示例里的蓝色，而是从当次照片提取主色或辅助色，降饱和后保持米白票券的对比。
+- 票券正文以照片主体和可识别细节为主；条码只是装饰，不能当作可扫描编码。
+
+**备注**
+
+四张统一输入均按同一张随包参考图生成：咖啡馆取青绿、山湖取蓝绿、双人取暖赭、猫狗取橄榄绿背景。为避免把合成 fixture 假装成真实旅程，票面使用场景标题 `CORNER CAFE`、`MOUNTAIN LAKE`、`PHOTO STUDY`、`PLAYTIME` 和装饰编号，而非真实地名。横版场景进入竖向照片窗后会重新构图，因此适合检验关键元素保留，不适合宣称逐像素照片保真。
+
+</details>
+
+<p align="center">
+  <a href="examples/artifact-template-travel-ticket/README.md"><img src="assets/showcase-previews/artifact-template-travel-ticket.webp" alt="artifact-template-travel-ticket 的四张统一输入生成预览" width="100%" loading="lazy"></a>
 </p>
 
 ### [Pocket Postcard](https://github.com/kaijie-czyh/pocket-postcard-skill)

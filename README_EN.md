@@ -6,8 +6,8 @@
   <p>
     <a href="https://github.com/sindresorhus/awesome"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
     <img src="https://img.shields.io/badge/Codex-ImageGen-111827?style=flat-square&logo=openai&logoColor=white" alt="Codex ImageGen">
-    <img src="https://img.shields.io/badge/skills-63-ec4899?style=flat-square" alt="63 curated skill entries">
-    <img src="https://img.shields.io/badge/generated_samples-276-7c3aed?style=flat-square" alt="276 generated samples">
+    <img src="https://img.shields.io/badge/skills-65-ec4899?style=flat-square" alt="65 curated skill entries">
+    <img src="https://img.shields.io/badge/generated_samples-284-7c3aed?style=flat-square" alt="284 generated samples">
     <a href="#contributing"><img src="https://img.shields.io/badge/PRs-welcome-22c55e?style=flat-square" alt="PRs welcome"></a>
   </p>
   <p>
@@ -381,6 +381,36 @@ The three official 1448×1086 examples have clean seams, warm whitespace, and co
   <a href="examples/make-photo-stamp-archive/README.md"><img src="assets/showcase-previews/make-photo-stamp-archive.webp" alt="make-photo-stamp-archive — four standardized generated samples" width="100%" loading="lazy"></a>
 </p>
 
+### [postmark](https://github.com/pamler1004/postmark)
+
+Redraws a travel or landscape photo as a complete commemorative stamp: the scene sits inside perforated paper, with a country, place, denomination, and optional cancellation arranged around it.
+
+- **Author:** [pamler1004 (Leon)](https://github.com/pamler1004)
+- **Input:** One photo, place, and country; optional choice of six styles, tagline, information density, and cancellation
+- **Output:** A landscape, portrait, or square stamp PNG following the source orientation, plus a record of the prompt and information sources
+- **ImageGen role:** Uses the photo as a scene reference and Codex's built-in `imagegen` to generate the illustration, perforations, lettering, and cancellation in one pass; then checks type, factual details, and margins
+- **Structure:** `SKILL.md`, six style guides, typography and design-system references, prompt template, QA checklist, eval, and author examples
+- **License:** MIT
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Offers classic, watercolor, vintage, risograph, woodblock, and engraved treatments rather than applying one frame to every photo.
+- Chooses among five on-stamp language packs—Chinese, English, Japanese, French, and Korean—and specifies secondary type, title axes, denomination, and cancellation hierarchy.
+- Requires provenance for coordinates, years, and place epithets; unknown facts are omitted instead of invented for visual effect.
+
+**Notes**
+
+Our four shared inputs test a riso café, watercolor lake, engraved duo, and classic pet stamp. The fixtures are synthetic and contain no real country or shooting location, so this run explicitly supplies the fictional country `STORYLAND`, scene titles, and decorative denomination `1`. The cancellation date, 2026-10-05, is the design date—not the photo date or a real postal issue. Unlike Make Photo Stamp Archive's small stamp on archival paper, the entire output here is a stamp. Fine cancellation text and exact margins still need human review.
+
+</details>
+
+<p align="center">
+  <a href="examples/postmark/README.md"><img src="assets/showcase-previews/postmark.webp" alt="postmark — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
+
 ### [Photo Revival](https://github.com/dacnay816y62-hub/photo-revival)
 
 Treats ordinary snapshots as memory evidence, preserves their subject, spatial relationships, and mood, then redraws them as a tiny, vivid poetic illustration on white paper.
@@ -502,6 +532,36 @@ All four shared inputs passed on the first generation: keyword count, sticker co
 
 <p align="center">
   <a href="examples/travel-memory-sticker-card/README.md"><img src="assets/showcase-previews/travel-memory-sticker-card.webp" alt="travel-memory-sticker-card — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
+
+### [Travel Ticket 旅行票根](https://github.com/zczc1001/artifact-template-travel-ticket)
+
+Places a photo inside a vintage ticket stub with die cuts, tear-line perforations, and a decorative barcode. The paper ticket keeps a stable layout, while the surrounding woven-fabric backdrop takes a muted supporting color from each source photo.
+
+- **Author:** [zczc1001](https://github.com/zczc1001)
+- **Input:** One travel or other scene photo, a short ticket title, and optional number; the bundled reference image supplies the layout and material anchor
+- **Output:** One 3:4 portrait collectible-ticket PNG with a photo window, paper stub, decorative barcode, and coordinated woven backdrop
+- **ImageGen role:** Passes the author's retained image as a layout/material reference and the user's photo as a content/color reference to built-in `$imagegen`, then visually checks the result
+- **Structure:** Root `SKILL.md`, `artifact-template.json`, `agents/openai.yaml`, and reference and preview images
+- **License:** MIT
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- The retained reference anchors ticket proportions, rounded photo window, die cuts, tear line, shadow, and barcode placement, reducing layout drift between runs.
+- The backdrop does not blindly copy the example's blue: it draws a dominant or supporting hue from each photo and desaturates it so the ivory ticket remains distinct.
+- The photo subject and recognizable details carry the ticket; the barcode is decorative, not a scannable code.
+
+**Notes**
+
+All four shared inputs use the same bundled reference: café teal, lake blue-green, duo warm ochre, and cat–dog olive backgrounds. To avoid presenting synthetic fixtures as real trips, the stubs use scene titles—`CORNER CAFE`, `MOUNTAIN LAKE`, `PHOTO STUDY`, `PLAYTIME`—and decorative numbers rather than real place names. Landscape sources must be recomposed inside the portrait photo window, so these examples test preservation of key elements, not pixel-perfect photo fidelity.
+
+</details>
+
+<p align="center">
+  <a href="examples/artifact-template-travel-ticket/README.md"><img src="assets/showcase-previews/artifact-template-travel-ticket.webp" alt="artifact-template-travel-ticket — four standardized generated samples" width="100%" loading="lazy"></a>
 </p>
 
 ### [Pocket Postcard](https://github.com/kaijie-czyh/pocket-postcard-skill)

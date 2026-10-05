@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-01",
+  "updated_at": "2026-10-05",
   "notes": "Read-only local review clones. The upstream/ directory is gitignored; this file records the reviewed revisions without vendoring third-party code.",
   "sources": [
     {
@@ -314,6 +314,18 @@
       "url": "https://github.com/karylee996/Intaglio-Travel-Poster.git",
       "commit": "68d86197351846a43b45eb6246561fbebb408294",
       "scope": "root SKILL.md and README; no declared license, bundled outputs, scripts, or explicit image_gen adapter"
+    },
+    {
+      "name": "artifact-template-travel-ticket",
+      "url": "https://github.com/zczc1001/artifact-template-travel-ticket.git",
+      "commit": "14f9642d7f946d88580c9739ed82af08fa7706b4",
+      "scope": "root SKILL.md and artifact-template.json, retained layout/material reference image, preview image, Codex metadata, and MIT license"
+    },
+    {
+      "name": "postmark",
+      "url": "https://github.com/pamler1004/postmark.git",
+      "commit": "17398767e2a75261d53d00ff151b10f0cdd0f3de",
+      "scope": "root SKILL.md, six style references, typography and design system, prompt and QA templates, evals, author examples, and MIT license"
     }
   ]
 }
