@@ -6,8 +6,8 @@
   <p>
     <a href="https://github.com/sindresorhus/awesome"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
     <img src="https://img.shields.io/badge/Codex-ImageGen-111827?style=flat-square&logo=openai&logoColor=white" alt="Codex ImageGen">
-    <img src="https://img.shields.io/badge/skills-65-ec4899?style=flat-square" alt="65 curated skill entries">
-    <img src="https://img.shields.io/badge/generated_samples-284-7c3aed?style=flat-square" alt="284 generated samples">
+    <img src="https://img.shields.io/badge/skills-68-ec4899?style=flat-square" alt="68 curated skill entries">
+    <img src="https://img.shields.io/badge/generated_samples-296-7c3aed?style=flat-square" alt="296 generated samples">
     <a href="#contributing"><img src="https://img.shields.io/badge/PRs-welcome-22c55e?style=flat-square" alt="PRs welcome"></a>
   </p>
   <p>
@@ -503,6 +503,66 @@ We tested all four shared inputs with Codex's built-in ImageGen. Architecture, t
   <a href="examples/intaglio-travel-poster/README.md"><img src="assets/showcase-previews/intaglio-travel-poster.webp" alt="intaglio-travel-poster — four standardized generated samples" width="100%" loading="lazy"></a>
 </p>
 
+### [Isometric Healing Blocks](https://github.com/GZ-L/photo-to-poster-skills/tree/main/skills/isometric-healing-blocks)
+
+Distills a photo's subjects, occlusions, and spatial relationships into a gentle isometric block sculpture, rebuilding the whole image with matte materials, rounded volumes, and source-derived color.
+
+- **Author:** [GZ-L](https://github.com/GZ-L)
+- **Input:** One photograph with recognizable subjects and spatial relationships
+- **Output:** One fully redrawn 3:4 vertical sculpture poster per source
+- **ImageGen role:** Uses the photo as content and color reference, then reconstructs volumes, layers, and negative space from rounded isometric modules without displaying the source photo
+- **Structure:** A standalone `SKILL.md` and `agents/openai.yaml` within a collection of 14 photo-to-poster skills
+- **License:** MIT
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Preserves subject count, proportions, curves, occlusions, and relative placement before dropping secondary detail; the aim is structural reconstruction, not a toy-filter overlay.
+- Derives a distinct dominant and accent palette from each source rather than using one fixed color card; materials are low-gloss pulp, wood, and powder-wax.
+- Allows a small scene-derived editorial title, but not invented places or years.
+
+**Notes**
+
+All four standardized outputs retain their key relationships: café door/awning/bicycle, lake bridge/red umbrella, two people/camera, and cat/dog/yarn. The results read more as polished miniatures than as the more abstract modular sculpture described upstream—an instructive style drift to consider when comparing examples.
+
+</details>
+
+<p align="center">
+  <a href="examples/isometric-healing-blocks/README.md"><img src="assets/showcase-previews/isometric-healing-blocks.webp" alt="isometric-healing-blocks — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
+
+### [Kraft Stencil Landmark](https://github.com/GZ-L/photo-to-poster-skills/tree/main/skills/kraft-stencil-landmark)
+
+Extracts one strong architectural or object silhouette from a photo and compresses it into a two-color stencil poster on dark natural-fiber paper.
+
+- **Author:** [GZ-L](https://github.com/GZ-L)
+- **Input:** One photo with a clearly isolated landmark or object; split-comparison and full-canvas modes are available
+- **Output:** One 3:4 vertical two-color stencil poster per source
+- **ImageGen role:** Selects one source-grounded subject, preserves its silhouette, proportions, and a few essential openings, then redraws it with paper fiber and irregular ink gaps instead of thresholding the whole photo
+- **Structure:** Standalone `SKILL.md`, Codex metadata, and `full-canvas`/`split-comparison` mode guides within the 14-skill collection
+- **License:** MIT
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Has an explicit applicability gate: do not force the style when no single recognizable subject exists, or invent a generic landmark.
+- Full-canvas mode restricts the print to one dark paper color, one light ink, a few internal openings, and exactly one truthful English scene word.
+- Uses irregular ink gaps near the lower edge to reveal paper fibers; forbids digital fade, regular halftones, multicolor print, and generic vector-icon treatment.
+
+**Notes**
+
+We used full-canvas mode for all four fixtures, extracting the café frontage, lake bridge, handheld camera, and red yarn ball respectively. The last two are **single-object extraction** tests: they intentionally do not preserve the people or the cat–dog interaction, so they should not be compared as full-scene redraws. All four produce recognizable two-color paper prints; the bridge and camera retain denser line detail than the specification calls for, worth inspecting at full size.
+
+</details>
+
+<p align="center">
+  <a href="examples/kraft-stencil-landmark/README.md"><img src="assets/showcase-previews/kraft-stencil-landmark.webp" alt="kraft-stencil-landmark — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
+
 ### [Travel Memory Sticker Card](https://github.com/carolinaaafy/travel-memory-sticker-card)
 
 Redraws one travel, street, landscape, lifestyle, portrait, or pet photo as a horizontal collectible card: a dominant scene illustration on the left, six source-derived stickers on the right, and three English phrases summarizing its memory cues below.
@@ -945,6 +1005,36 @@ It does not duplicate Yarn Rug Reference despite the shared fiber medium. Yarn R
 
 <a id="illustrations--posters"></a>
 ## Illustrations & Posters
+
+### [DnR FlatPic](https://github.com/CreateLafont/dnr-flat-pic)
+
+Compresses a photo into a few identity-bearing shapes, then rebuilds it as a saturated flat illustration with crisp boundaries and large solid fills rather than tracing it or applying a cartoon filter.
+
+- **Author:** [CreateLafont](https://github.com/CreateLafont)
+- **Input:** One photograph or visually dense image; optional complexity target and output aspect ratio
+- **Output:** A flat-illustration PNG at the source aspect ratio by default; poster and SVG modes are optional downstream derivatives
+- **ImageGen role:** Finds 3–6 identity anchors and the main spatial relationships, discards secondary meanings, then generates fixed-HSB, hard-edged closed color shapes and reviews the result
+- **Structure:** Root `SKILL.md`; references for generation rules, semantic complexity, aspect adaptation, and failures; plus derivative-output scripts and tests
+- **License:** MIT
+
+<details>
+<summary><strong>✨ Features & Notes</strong></summary>
+
+**Features**
+
+- Measures complexity by independent semantic systems rather than pixels or literal object count; its default target is at most 6/10, preserving relationships and identity anchors while removing noise.
+- Strictly requires closed shapes, uniform fills, and crisp edges, forbidding gradients, soft light, texture, and photographic surface detail; palette roles are semantic rather than sampled from the photo.
+- Separates the base PNG from downstream poster, square SVG icon, and source-ratio SVG exports, keeping derivative layouts out of the initial redraw.
+
+**Notes**
+
+All four standardized outputs retain subjects and spatial relationships, especially the distinct two-person/camera setup and the cat–dog/yarn interaction. However, visible local gradients and colors outside the strict palette remained after the first run and one targeted regeneration. These examples **do not fully pass the upstream uniform-fill requirement**; they document an actual run, not a compliance gold standard. Users needing verifiably solid-color vector work should inspect or post-process the result.
+
+</details>
+
+<p align="center">
+  <a href="examples/dnr-flat-pic/README.md"><img src="assets/showcase-previews/dnr-flat-pic.webp" alt="dnr-flat-pic — four standardized generated samples" width="100%" loading="lazy"></a>
+</p>
 
 ### [Watercolor Diary](https://github.com/jiayuewangjavy/watercolor-diary)
 
@@ -2050,7 +2140,7 @@ One sentence explaining the visual task.
 <a id="related-collections"></a>
 ## Related Collections
 
-These broader collections help discover candidates and understand the Agent Skills ecosystem. Inclusion there does not imply compliance with this repository's ImageGen, example, or licensing standards.
+These collections help discover candidates and understand the Agent Skills ecosystem. Inclusion there does not imply compliance with this repository's ImageGen, example, or licensing standards.
 
 <a id="official-foundations"></a>
 ### Official Foundations
@@ -2066,6 +2156,7 @@ These broader collections help discover candidates and understand the Agent Skil
 
 ### Skills discovery
 
+- [Photo-to-Poster Skills](https://github.com/GZ-L/photo-to-poster-skills) — GZ-L's collection of 14 photo-to-editorial-poster skills; we include two and test them independently on the standard inputs.
 - [Awesome Codex Skills](https://github.com/composio-community/awesome-codex-skills) — A broad Codex skills collection.
 - [Awesome Agent Skills](https://github.com/VoltAgent/awesome-agent-skills) — A large cross-runtime directory with dedicated OpenAI sections.
 - [Agent Skill Index](https://github.com/heilcheng/awesome-agent-skills) — A multilingual guide and index across runtimes.

@@ -326,6 +326,18 @@
       "url": "https://github.com/pamler1004/postmark.git",
       "commit": "17398767e2a75261d53d00ff151b10f0cdd0f3de",
       "scope": "root SKILL.md, six style references, typography and design system, prompt and QA templates, evals, author examples, and MIT license"
+    },
+    {
+      "name": "photo-to-poster-skills",
+      "url": "https://github.com/GZ-L/photo-to-poster-skills.git",
+      "commit": "268ee78460ab5592167082d0501b7834f2e5b676",
+      "scope": "skills/isometric-healing-blocks and skills/kraft-stencil-landmark, selected full-canvas mode guide, Codex metadata, and MIT license"
+    },
+    {
+      "name": "dnr-flat-pic",
+      "url": "https://github.com/CreateLafont/dnr-flat-pic.git",
+      "commit": "11284b53c18c2ee5cfbd76089c1eb30a383c302b",
+      "scope": "root SKILL.md, canonical rendering and semantic-complexity references, derivative-output scripts, tests, and MIT license"
     }
   ]
 }

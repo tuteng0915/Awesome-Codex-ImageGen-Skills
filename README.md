@@ -6,8 +6,8 @@
   <p>
     <a href="https://github.com/sindresorhus/awesome"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
     <img src="https://img.shields.io/badge/Codex-ImageGen-111827?style=flat-square&logo=openai&logoColor=white" alt="Codex ImageGen">
-    <img src="https://img.shields.io/badge/skills-65-ec4899?style=flat-square" alt="65 curated skill entries">
-    <img src="https://img.shields.io/badge/generated_samples-284-7c3aed?style=flat-square" alt="284 generated samples">
+    <img src="https://img.shields.io/badge/skills-68-ec4899?style=flat-square" alt="68 curated skill entries">
+    <img src="https://img.shields.io/badge/generated_samples-296-7c3aed?style=flat-square" alt="296 generated samples">
     <a href="#contributing"><img src="https://img.shields.io/badge/PRs-welcome-22c55e?style=flat-square" alt="PRs welcome"></a>
   </p>
   <p>
@@ -504,6 +504,66 @@
   <a href="examples/intaglio-travel-poster/README.md"><img src="assets/showcase-previews/intaglio-travel-poster.webp" alt="intaglio-travel-poster 的四张统一输入生成预览" width="100%" loading="lazy"></a>
 </p>
 
+### [Isometric Healing Blocks](https://github.com/GZ-L/photo-to-poster-skills/tree/main/skills/isometric-healing-blocks)
+
+将照片中的主体、遮挡和空间关系提炼为柔和的等距积木雕塑，以哑光材质、圆润体块和来源相关的配色重建整幅画面。
+
+- **Author:** [GZ-L](https://github.com/GZ-L)
+- **Input:** 一张可辨认主体与空间关系的照片
+- **Output:** 每张输入对应一张完整重绘的 3:4 竖版雕塑海报
+- **ImageGen role:** 以原图为内容与色彩参考，拆解主体后用圆润的等距模块重建体积、层次和负空间，不展示原照片
+- **Structure:** 合集中的独立 `SKILL.md` 与 `agents/openai.yaml`；同仓库另有 13 个照片转海报 Skill
+- **License:** MIT
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- 明确要求保留主体数量、比例、曲线、遮挡与相互位置，再舍弃次要细节；重点是结构重组，不是给照片套玩具滤镜。
+- 每张图从来源照片提取自己的主色与点缀色，不使用固定色卡；材料限定为纸浆、木材、粉蜡等低反光触感。
+- 允许少量从场景派生的编辑式短标题，但不应编造地名或年份。
+
+**备注**
+
+四张统一输入都保留了关键关系：咖啡馆的门、遮篷与自行车；湖桥与红伞；双人与相机；猫狗和毛球。成品更接近精致微缩场景，模块化的抽象程度弱于上游所描述的“雕塑重组”；这正是后续比较时值得留意的风格漂移。
+
+</details>
+
+<p align="center">
+  <a href="examples/isometric-healing-blocks/README.md"><img src="assets/showcase-previews/isometric-healing-blocks.webp" alt="isometric-healing-blocks 的四张统一输入生成预览" width="100%" loading="lazy"></a>
+</p>
+
+### [Kraft Stencil Landmark](https://github.com/GZ-L/photo-to-poster-skills/tree/main/skills/kraft-stencil-landmark)
+
+从照片里选出一个轮廓强烈的建筑或物件，压缩为深色天然纤维纸与浅色油墨构成的双色孔版海报。
+
+- **Author:** [GZ-L](https://github.com/GZ-L)
+- **Input:** 一张含清晰单一地标或物件的照片；可选择上下对照或全幅孔版模式
+- **Output:** 每张输入对应一张 3:4 竖版双色孔版海报
+- **ImageGen role:** 依据原图挑选唯一主体，保留轮廓、比例和少量关键孔洞，以纸纤维和不规则漏印重绘，而非把整张照片阈值化
+- **Structure:** 独立 `SKILL.md`、Codex metadata、`full-canvas` 与 `split-comparison` 两份模式指南；同属 14 个 Skill 的合集
+- **License:** MIT
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- 明确设有适用门槛：没有单一可识别主体时不应强行套用，也不能凭空补一个通用地标。
+- 全幅模式只保留一块深色纸面、一种浅色油墨、少量内孔和恰好一个真实的英文场景词。
+- 下缘用不规则漏印显露纸纤维，禁止数字渐隐、常规半调网点、多色印刷和普通矢量图标感。
+
+**备注**
+
+本仓库统一采用全幅模式；从四张 fixture 依次抽取咖啡馆店面、湖上的桥、人物手中的相机和猫狗之间的毛球。后两张是“单物件提取”测试，**不保留**原图的人物或动物互动，不能与完整场景重绘直接比较。四张均形成了可辨认的双色纸张印刷效果；桥和相机仍有比规则希望的更密集的线条细节，适合在高清图中检查。
+
+</details>
+
+<p align="center">
+  <a href="examples/kraft-stencil-landmark/README.md"><img src="assets/showcase-previews/kraft-stencil-landmark.webp" alt="kraft-stencil-landmark 的四张统一输入生成预览" width="100%" loading="lazy"></a>
+</p>
+
 ### [Travel Memory Sticker Card](https://github.com/carolinaaafy/travel-memory-sticker-card)
 
 把一张旅行、街景、风光、生活、人像或宠物照片重绘成横版收藏卡：左侧是主场景插画，右侧是从原图提取的六枚贴纸，下方用三组英文短语概括记忆线索。
@@ -946,6 +1006,36 @@ showcase 中的动物、幽灵、机器人和物件整体具有清楚的圆形�
 
 <a id="illustrations--posters"></a>
 ## 插画与海报
+
+### [DnR FlatPic](https://github.com/CreateLafont/dnr-flat-pic)
+
+将照片语义压缩为少量关键形状，再用高饱和、硬边界、固定色卡的大块纯色重建扁平插画，而不是描边或叠加卡通滤镜。
+
+- **Author:** [CreateLafont](https://github.com/CreateLafont)
+- **Input:** 一张照片或视觉信息较密的图片；可选目标复杂度与画幅比例
+- **Output:** 默认沿用原图比例的扁平插画 PNG；海报和 SVG 是生成基础图后才可选择的派生模式
+- **ImageGen role:** 识别 3–6 个身份锚点与主要空间关系，删除次要语义，再依固定 HSB 色卡生成硬边封闭色块并自检
+- **Structure:** 根目录 `SKILL.md`、生成规范、语义复杂度、画幅适配与错误案例 references，另有派生输出脚本和测试
+- **License:** MIT
+
+<details>
+<summary><strong>✨ 特色与备注</strong></summary>
+
+**特色**
+
+- 用“独立语义系统”而非像素或物件数量衡量复杂度；默认目标不高于 6/10，要求保留关系与身份锚点、删除噪声。
+- 硬性规定封闭形状、纯色填充与清晰边界，禁止渐变、柔光、纹理和照片表面细节；色卡按语义角色分配，不照搬原图色相。
+- 将基础 PNG 与后续海报、方形 SVG 图标、原比例 SVG 导出分开，避免让派生版式污染原始转绘步骤。
+
+**备注**
+
+四张统一输入都保留了主体和空间关系，尤其双人身份、相机以及猫狗与毛线的互动较清楚。但首轮与一次针对性重生成后，图中仍可见局部渐变与超出严格色卡的颜色，**没有完全通过上游的纯色硬约束**。这里展示的是实际运行结果而非合规标杆；使用者若需要真正可验证的纯色矢量输出，仍需额外检查或后处理。
+
+</details>
+
+<p align="center">
+  <a href="examples/dnr-flat-pic/README.md"><img src="assets/showcase-previews/dnr-flat-pic.webp" alt="dnr-flat-pic 的四张统一输入生成预览" width="100%" loading="lazy"></a>
+</p>
 
 ### [Watercolor Diary](https://github.com/jiayuewangjavy/watercolor-diary)
 
@@ -2062,7 +2152,7 @@ OpenAI 官方 game-studio skill：从基准角色或 seed frame 生成动作条�
 <a id="related-collections"></a>
 ## 相关合集
 
-下面这些汇总项目覆盖范围比本仓库更广，适合发现候选、比较分类方式或了解 Agent Skills 生态。被它们收录不代表项目自动满足本仓库的 built-in ImageGen、示例与许可标准。
+下面这些汇总项目适合发现候选、比较分类方式或了解 Agent Skills 生态。被它们收录不代表项目自动满足本仓库的 built-in ImageGen、示例与许可标准。
 
 <a id="official-foundations"></a>
 ### 官方基础
@@ -2080,6 +2170,7 @@ OpenAI 官方 game-studio skill：从基准角色或 seed frame 生成动作条�
 
 ### Skills 发现
 
+- [Photo-to-Poster Skills](https://github.com/GZ-L/photo-to-poster-skills) — GZ-L 的 14 个照片转编辑海报 Skill 合集；本仓库收录了其中两个，并用统一输入独立测试。
 - [Awesome Codex Skills](https://github.com/composio-community/awesome-codex-skills) — Codex 专门的通用 skills 清单，包含分类、安装说明和部分外部社区项目；不限于视觉或 ImageGen。
 - [Awesome Agent Skills](https://github.com/VoltAgent/awesome-agent-skills) — 按官方团队和社区来源整理的大型跨运行时目录，覆盖 Codex，并单列 OpenAI skills 与质量标准；维护者明确提醒其收录项目未经安全审计。
 - [Agent Skill Index](https://github.com/heilcheng/awesome-agent-skills) — 多语言 Agent Skills 指南和索引，连接 GitHub 清单、网页目录及多种运行时；适合广泛检索，不应把自动索引或热度当作质量证明。
